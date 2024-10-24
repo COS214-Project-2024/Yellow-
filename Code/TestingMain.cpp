@@ -31,36 +31,78 @@
 TEST_CASE("Factory method") {
     IndustrialFactory i = IndustrialFactory();
     Industrial* p = i.createForestry();
+    delete p;
+    p = nullptr;
     p = i.createSteelFactory();
+    delete p;
+    p = nullptr;
     p = i.createForestry();
+    delete p;
+    p = nullptr;
     p = i.createConcreteFactory();
+    delete p;
+    p = nullptr;
 
     LandmarkFactory l = LandmarkFactory();
     Landmarks* park = l.createPark();
+    delete park;
+    park = nullptr;
     park = l.createMuseum();
+    delete park;
+    park = nullptr;
 
     ServiceFactory s = ServiceFactory();
 
     Service* serv = s.createAirport();
+    delete serv;
+    serv = nullptr;
     serv = s.createHospital();
+    delete serv;
+    serv = nullptr;
     serv = s.createPoliceStation();
+    delete serv;
+    serv = nullptr;
     serv = s.createSchool();
+    delete serv;
+    serv = nullptr;
     serv = s.createTownHall();
+    delete serv;
+    serv = nullptr;
     serv = s.createTrainStation();
+    delete serv;
+    serv = nullptr;
 
     Utilities* utls = s.createPowerPlant();
+    delete utls;
+    utls = nullptr;
     utls = s.createWastePlant();
+    delete utls;
+    utls = nullptr;
     utls = s.createWaterPlant();
+    delete utls;
+    utls = nullptr;
 
     ResidentialFactory r = ResidentialFactory();
     Residential* house = r.createComplex();
+    delete house;
+    house = nullptr;
     house = r.createApartment();
+    delete house;
+    house = nullptr;
     house = r.createHouse();
+    delete house;
+    house = nullptr;
 
     CommercialFactory f = CommercialFactory();
     Commercial* business = f.createMall();
+    delete business;
+    business = nullptr;
     business = f.createShop();
+    delete business;
+    business = nullptr;
     business = f.createOffice();
+    delete business;
+    business = nullptr;
 }
 
 TEST_CASE("Composite") {
