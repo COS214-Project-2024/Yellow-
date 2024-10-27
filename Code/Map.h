@@ -11,7 +11,7 @@ using namespace std;
 class Map {
 private:
    vector<vector<Cell*>> map;
-    vector<vector<Cell*>> distanceMatrix;
+   vector<vector<Cell*>> distanceMatrix;
 
 public:
     Map(vector<vector<Cell*>> map, vector<vector<Cell*>> distanceMatrix);
