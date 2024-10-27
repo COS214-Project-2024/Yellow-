@@ -4,6 +4,7 @@
 
 #ifndef GROUPPROJECT_MAP_H
 #define GROUPPROJECT_MAP_H
+
 #include "Cell.h"
 #include <iostream>
 #include <vector>

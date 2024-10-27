@@ -1,7 +1,7 @@
 #ifndef STEELFACTORY_H
 #define STEELFACTORY_H
-
-class SteelFactory {
+#include "Industrial.h"
+class SteelFactory : public Industrial {
 
 
 public:

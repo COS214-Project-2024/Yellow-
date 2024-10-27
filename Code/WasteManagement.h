@@ -1,7 +1,7 @@
 #ifndef WASTEMANAGEMENT_H
 #define WASTEMANAGEMENT_H
-
-class WasteManagement : Utilities {
+#include "Utilities.h"
+class WasteManagement : public Utilities {
 };
 
 #endif

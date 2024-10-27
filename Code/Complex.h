@@ -1,7 +1,7 @@
 #ifndef COMPLEX_H
 #define COMPLEX_H
-
-class Complex {
+#include "Residential.h"
+class Complex : public Residential {
 
 
 public:

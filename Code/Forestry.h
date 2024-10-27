@@ -1,7 +1,7 @@
 #ifndef FORESTRY_H
 #define FORESTRY_H
-
-class Forestry {
+#include "Industrial.h"
+class Forestry : public Industrial {
 
 
 public:

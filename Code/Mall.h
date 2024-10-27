@@ -1,7 +1,7 @@
 #ifndef MALL_H
 #define MALL_H
-
-class Mall {
+#include "Commercial.h"
+class Mall : public Commercial {
 
 
 public:

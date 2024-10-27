@@ -1,7 +1,7 @@
 #ifndef SCHOOL_H
 #define SCHOOL_H
-
-class School {
+#include "Service.h"
+class School : public Service {
 };
 
 #endif

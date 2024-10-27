@@ -2,7 +2,7 @@
 
 void Budget::setSeverity(Severity *sev) {
 
-//    delete this->severity;
+    delete this->severity;
     this->severity = sev;
 
 }

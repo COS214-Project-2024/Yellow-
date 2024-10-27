@@ -1,29 +1,48 @@
 #ifndef SERVICEFACTORY_H
 #define SERVICEFACTORY_H
-
-class ServiceFactory {
+#include "BuildingFactory.h"
+class ServiceFactory : public BuildingFactory{
 
 
 public:
-	void Hospital();
+	Residential* createHouse();
 
-	void TownHall();
+	Residential* createApartment();
 
-	void WaterPlant();
+	Residential* createComplex();
+	Landmarks* createPark() override;
 
-	void PowerPlant();
+	Landmarks* createMuseum() override;
 
-	void WastePlant();
+	Service* createHospital() override;
 
-	void SewageTreatmentPlant();
+	Service* createTownHall() override;
 
-	void School();
+	Utilities* createWaterPlant() override;
 
-	void TrainStation();
+	Utilities* createPowerPlant() override;
 
-	void Airport();
+	Utilities* createWastePlant() override;
 
-	void PoliceStation();
+	Service* createSchool() override;
+
+	Service* createTrainStation() override;
+
+	Service* createAirport() override;
+
+	Service* createPoliceStation() override;
+
+	Industrial* createForestry() override;
+
+	Industrial* createSteelFactory() override;
+
+	Industrial* createConcreteFactory() override;
+
+	Commercial* createShop() override;
+
+	Commercial* createOffice() override;
+
+	Commercial* createMall() override;
 };
 
 #endif

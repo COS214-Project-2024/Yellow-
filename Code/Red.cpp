@@ -12,7 +12,7 @@ Severity *Red::handle(bool increment) {
     }
     else{
         cout << "\033[38;5;9m Things are at their lowest. Pay attention to your city! State staying red \033[0m" << endl;
-        return this;
+        return new Red();
     }
 
 }

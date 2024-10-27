@@ -2,7 +2,7 @@
 #define TRAINSTATION_H
 #include <vector>
 #include "Service.h"
-class TrainStation : Service{
+class TrainStation : public Service{
 private:
     vector<TrainStation*> availableStops;
     vector<int> rideTime;
