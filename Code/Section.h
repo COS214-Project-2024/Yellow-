@@ -10,7 +10,7 @@ class Section {
 public:
 	virtual void addSection(Section* section) = 0;
 
-	virtual void removeSection(Section* section) = 0;
+	virtual void removeSection(int idx) = 0;
 
 	virtual Section* getSection(int idx) = 0;
 
