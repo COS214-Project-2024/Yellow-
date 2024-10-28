@@ -37,14 +37,17 @@ void Government::setStrategy(Strategy* newStrategy) {
 
 Government* Government :: uniqueInstanceGov = nullptr;
 
-Government* Government::onlyInstance() {
-    if( uniqueInstanceGov == nullptr){
-        uniqueInstanceGov = new Government ();
-        cout << "\033[38;5;39mYour city's Government has been created. \033[0m" << endl;
-    }
-    else{
-        cout << "\033[38;5;196mThere already exists a government. Check the city books in the library to be educated on the ruling of this city \033[0m" << endl;
-    }
+Government& Government::onlyInstance() {
+//    if( uniqueInstanceGov == nullptr){
+//        uniqueInstanceGov = new Government ();
+//        cout << "\033[38;5;39mYour city's Government has been created. \033[0m" << endl;
+//    }
+//    else{
+//        cout << "\033[38;5;196mThere already exists a government. Check the city books in the library to be educated on the ruling of this city \033[0m" << endl;
+//    }
+
+    static Government uniqueInstanceGov;
+    cout << "\033[38;5;39mYour city's Government has been created. If you want to create another, first delete this one! \033[0m" << endl;
 
     return uniqueInstanceGov;
 }

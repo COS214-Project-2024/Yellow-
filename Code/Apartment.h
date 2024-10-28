@@ -1,7 +1,7 @@
 #ifndef APARTMENT_H
 #define APARTMENT_H
-
-class Apartment {
+#include "Residential.h"
+class Apartment : public Residential{
 
 
 public:

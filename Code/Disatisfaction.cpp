@@ -1,7 +1,7 @@
 #include "Disatisfaction.h"
 
 void Disatisfaction::setSeverity(Severity *sev) {
-//    delete this->severity;
+    delete this->severity;
     this->severity = sev;
 
 }

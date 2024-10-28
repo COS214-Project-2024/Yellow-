@@ -1,8 +1,8 @@
 #ifndef COMMERCIAL_H
 #define COMMERCIAL_H
 
-#include "Buildings.h"
 #include "Visitor.h"
+#include "Buildings.h"
 class Commercial : public Buildings {
 
 

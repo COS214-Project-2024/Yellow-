@@ -1,7 +1,7 @@
 #ifndef POLICESTATION_H
 #define POLICESTATION_H
-
-class PoliceStation {
+#include "Service.h"
+class PoliceStation : public Service {
 };
 
 #endif

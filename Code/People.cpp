@@ -1,7 +1,7 @@
 #include "People.h"
 
 void People::setSeverity(Severity *sev) {
-//    delete this->severity;
+    delete this->severity;
     this->severity = sev;
 
 }

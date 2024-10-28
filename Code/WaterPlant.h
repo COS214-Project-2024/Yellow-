@@ -1,7 +1,7 @@
 #ifndef WATERPLANT_H
 #define WATERPLANT_H
-
-class WaterPlant {
+#include "Utilities.h"
+class WaterPlant : public Utilities {
 };
 
 #endif

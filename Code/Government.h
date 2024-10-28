@@ -41,7 +41,7 @@ class Government {
 
 
         //Singleton method
-        static Government* onlyInstance();
+        static Government& onlyInstance();
 
         //State methods
         void handlePeople(bool upOrDown);

@@ -1,51 +1,92 @@
 #include "ServiceFactory.h"
 
-void ServiceFactory::Hospital() {
-	// TODO - implement ServiceFactory::Hospital
-	throw "Not yet implemented";
+Service* ServiceFactory::createHospital() {
+	return new Hospital();
 }
 
-void ServiceFactory::TownHall() {
-	// TODO - implement ServiceFactory::TownHall
-	throw "Not yet implemented";
+Service* ServiceFactory::createTownHall() {
+	return new TownHall();
 }
 
-void ServiceFactory::WaterPlant() {
-	// TODO - implement ServiceFactory::WaterPlant
-	throw "Not yet implemented";
+Utilities* ServiceFactory::createWaterPlant() {
+	return new WaterPlant();
 }
 
-void ServiceFactory::PowerPlant() {
-	// TODO - implement ServiceFactory::PowerPlant
-	throw "Not yet implemented";
+Utilities* ServiceFactory::createPowerPlant() {
+	return new PowerPlant();
 }
 
-void ServiceFactory::WastePlant() {
-	// TODO - implement ServiceFactory::WastePlant
-	throw "Not yet implemented";
+Utilities* ServiceFactory::createWastePlant() {
+	return new WasteManagement();
 }
 
-void ServiceFactory::SewageTreatmentPlant() {
-	// TODO - implement ServiceFactory::SewageTreatmentPlant
-	throw "Not yet implemented";
+Service* ServiceFactory::createSchool() {
+	return new School();
 }
 
-void ServiceFactory::School() {
-	// TODO - implement ServiceFactory::School
-	throw "Not yet implemented";
+Service* ServiceFactory::createTrainStation() {
+	return new TrainStation();
 }
 
-void ServiceFactory::TrainStation() {
-	// TODO - implement ServiceFactory::TrainStation
-	throw "Not yet implemented";
+Service* ServiceFactory::createAirport() {
+	return new Airport();
 }
 
-void ServiceFactory::Airport() {
-	// TODO - implement ServiceFactory::Airport
-	throw "Not yet implemented";
+Service* ServiceFactory::createPoliceStation() {
+	return new PoliceStation();
 }
 
-void ServiceFactory::PoliceStation() {
-	// TODO - implement ServiceFactory::PoliceStation
-	throw "Not yet implemented";
+Residential *ServiceFactory::createHouse()
+{
+    return nullptr;
+}
+
+Residential *ServiceFactory::createApartment()
+{
+    return nullptr;
+}
+
+Residential *ServiceFactory::createComplex()
+{
+    return nullptr;
+}
+
+Industrial *ServiceFactory::createForestry()
+{
+    return nullptr;
+}
+
+Industrial *ServiceFactory::createSteelFactory()
+{
+    return nullptr;
+}
+
+Industrial *ServiceFactory::createConcreteFactory()
+{
+    return nullptr;
+}
+
+Commercial *ServiceFactory::createShop()
+{
+    return nullptr;
+}
+
+Commercial *ServiceFactory::createOffice()
+{
+    return nullptr;
+}
+
+Commercial *ServiceFactory::createMall()
+{
+    return nullptr;
+}
+
+Landmarks *ServiceFactory::createPark()
+{
+    return nullptr;
+}
+
+Landmarks *ServiceFactory::createMuseum()
+{
+    return nullptr;
 }

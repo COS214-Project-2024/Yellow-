@@ -4,7 +4,7 @@
 #include "Plane.h"
 #include "Service.h"
 using namespace std;
-class Airport : Service{
+class Airport : public Service{
 private:
     /*
     string destinations1;
@@ -21,5 +21,3 @@ private:
 };
 
 #endif
-
-

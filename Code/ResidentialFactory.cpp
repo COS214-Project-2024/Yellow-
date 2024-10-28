@@ -1,16 +1,98 @@
 #include "ResidentialFactory.h"
 
-void ResidentialFactory::House() {
-	// TODO - implement ResidentialFactory::House
-	throw "Not yet implemented";
+Residential* ResidentialFactory::createHouse() {
+	return new House();
 }
 
-void ResidentialFactory::Apartment() {
-	// TODO - implement ResidentialFactory::Apartment
-	throw "Not yet implemented";
+Residential* ResidentialFactory::createApartment() {
+	return new Apartment();
 }
 
-void ResidentialFactory::Complex() {
-	// TODO - implement ResidentialFactory::Complex
-	throw "Not yet implemented";
+Residential* ResidentialFactory::createComplex() {
+	return new Complex();
+}
+
+Landmarks *ResidentialFactory::createPark()
+{
+    return nullptr;
+}
+
+Landmarks *ResidentialFactory::createMuseum()
+{
+    return nullptr;
+}
+
+Service *ResidentialFactory::createHospital()
+{
+    return nullptr;
+}
+
+Service *ResidentialFactory::createTownHall()
+{
+    return nullptr;
+}
+
+Utilities *ResidentialFactory::createWaterPlant()
+{
+    return nullptr;
+}
+
+Utilities *ResidentialFactory::createPowerPlant()
+{
+    return nullptr;
+}
+
+Utilities *ResidentialFactory::createWastePlant()
+{
+    return nullptr;
+}
+
+Service *ResidentialFactory::createSchool()
+{
+    return nullptr;
+}
+
+Service *ResidentialFactory::createTrainStation()
+{
+    return nullptr;
+}
+
+Service *ResidentialFactory::createAirport()
+{
+    return nullptr;
+}
+
+Service *ResidentialFactory::createPoliceStation()
+{
+    return nullptr;
+}
+
+Industrial *ResidentialFactory::createForestry()
+{
+    return nullptr;
+}
+
+Industrial *ResidentialFactory::createSteelFactory()
+{
+    return nullptr;
+}
+
+Industrial *ResidentialFactory::createConcreteFactory()
+{
+    return nullptr;
+}
+
+Commercial *ResidentialFactory::createShop()
+{
+    return nullptr;
+}
+
+Commercial *ResidentialFactory::createOffice()
+{
+    return nullptr;
+}
+
+Commercial *ResidentialFactory::createMall()
+{
+    return nullptr;
 }

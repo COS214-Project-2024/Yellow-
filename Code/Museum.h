@@ -8,6 +8,7 @@ class Museum : public Landmarks {
 
 public:
 	float taxBuilding();
+	Museum();
 };
 
 #endif

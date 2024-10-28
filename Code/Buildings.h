@@ -1,6 +1,6 @@
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
-
+#include <iostream>
 #include "Section.h"
 class Buildings : public Section {
 
@@ -15,7 +15,7 @@ public:
 
 	void addSection(Section* section);
 
-	void removeSection(Section* section);
+	void removeSection(int idx);
 
 	Section* getSection(int idx);
 
