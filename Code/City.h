@@ -3,9 +3,23 @@
 
 #include "Resources.h"
 #include "Taxes.h"
+#include "Government.h"
+
+struct Varibals
+{
+	Resources* res = new Resources();
+	Taxes* tax = new Taxes();
+};
+
 class City {
 public:
+	Varibals stuff;
+	City();
 	static City& instanceCity();
+	void collectResources();
+	void collectTaxtes();
+	void dealWithResources();
+	void dealWithPolicies();
 };
 
 #endif
