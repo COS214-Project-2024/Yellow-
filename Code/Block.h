@@ -19,7 +19,7 @@ public:
 
 	void addSection(Section* section);
 
-	void removeSection(Section* section);
+	void removeSection(int idx);
 
 	Section* getSection(int idx);
 

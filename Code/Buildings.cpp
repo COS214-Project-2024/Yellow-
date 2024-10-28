@@ -2,7 +2,7 @@
 
 void Buildings::addSection(Section* section){}
 
-void Buildings::removeSection(Section* section){}
+void Buildings::removeSection(int idx){}
 
 Section* Buildings::getSection(int idx)
 {

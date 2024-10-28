@@ -7,38 +7,28 @@ Block::~Block()
 
 void Block::addSection(Section *section)
 {
-	children.push_back(section);
-}
-
-void Block::removeSection(Section* section){
-	int idx = 0;
-	for (Section* sec : children)
-	{
-		if(sec == section)
+	 if (Block* blockSection = dynamic_cast<Block*>(section)) {
+        const auto& blockChildren = section->getChildren();
+        for (Section* child : blockChildren)
 		{
-			children.erase(children.begin() + idx);
+			this->addSection(child);
 		}
-	}
+    } 
+	else 
+	{
+        children.push_back(section);
+    }
 }
 
-Section* Block::getSection(int idx){
-	cout << "idx = " << idx << endl;
-	
-	if (idx < 0 || children.size()-1 <= 0)
-	{
-		cout << "Did not find" << endl;
-		return nullptr;
-	}
-	else if (idx > children.size()-1)
-	{
-		cout << "Going down" << endl;
-		return children.back()->getSection(idx - (children.size()-1));
-	}
-	else
-	{
-		cout << "Found it" << endl;
-		return children.at(idx);
-	}
+void Block::removeSection(int idx){
+	children.erase(children.begin() + idx);
+}
+
+Section* Block::getSection(int idx){	
+	if (idx < 0 || idx >= children.size()) {
+        return nullptr;
+    }
+	return children.at(idx);
 }
 
 void Block::acceptVisitor(Visitor* v) {
