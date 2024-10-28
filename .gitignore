@@ -11,3 +11,5 @@ Main.cpp/
 main.cpp/
 Main.h/
 main.h/
+*.gcda
+*.gcno
