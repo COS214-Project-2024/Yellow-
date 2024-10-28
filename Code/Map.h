@@ -18,6 +18,8 @@ public:
     Map(vector<vector<Cell*>> map, vector<vector<Cell*>> distanceMatrix);
     void addNode(Cell* object, int x, int y, int height, int width);//coordinates for top left of object(x,y)
     //updates map and distance matrix
+    void addNode(Cell* object);
+    void addNode(Cell* object, vector<Coordinate> coordinates);
     void printMap();
 };
 #endif //GROUPPROJECT_MAP_H
