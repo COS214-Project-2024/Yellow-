@@ -4,17 +4,21 @@
 #include "Resources.h"
 #include "Taxes.h"
 #include "Government.h"
+#include "Section.h"
+#include <vector>
 
 struct Varibals
 {
 	Resources* res = new Resources();
 	Taxes* tax = new Taxes();
+	Section* head;
 };
 
 class City {
 public:
 	Varibals stuff;
-	City();
+	City(){}
+	City(Section* head);
 	static City& instanceCity();
 	void collectResources();
 	void collectTaxtes();
