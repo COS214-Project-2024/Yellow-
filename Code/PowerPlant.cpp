@@ -4,3 +4,7 @@ PowerPlant::PowerPlant()
 {
     std::cout << "Power plant created" << std::endl;
 }
+
+void PowerPlant::createResource()
+{
+}

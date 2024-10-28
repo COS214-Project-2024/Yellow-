@@ -25,6 +25,8 @@ class BuildingFactory {
 
 
 protected:
+	void useBuildingResources(int numSteel, int numConcrete); // add to factory functions
+
 	virtual Service* createHospital() = 0;
 
 	virtual Service* createTownHall() = 0;

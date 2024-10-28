@@ -11,6 +11,8 @@ public:
 	virtual float taxBuilding() = 0;
 
 	void acceptVisitor(Visitor* v);
+
+	virtual void createBuildingResource() = 0;
 };
 
 #endif
