@@ -17,7 +17,7 @@ public:
 	City();
 	static City& instanceCity();
 	void collectResources();
-	void collectTaxtes();
+	void collectTaxes();
 	void dealWithResources();
 	void dealWithPolicies();
 };
