@@ -219,11 +219,6 @@ TEST_CASE("Strategy"){
     newGovernment.setPeopleState(new People(new Red()));
     newGovernment.setStrategy(expandingCity);
     CHECK("ExpandCity" == newGovernment.implementPolicyPeople());
-
-    delete newStrategy;
-    delete increasingTaxes;
-    delete increasingWages;
-    delete expandingCity;
 }
 
 TEST_CASE("Transport") {
