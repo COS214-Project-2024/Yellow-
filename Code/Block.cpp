@@ -1,7 +1,12 @@
 #include "Block.h"
 
-void Block::addSection(Section* section) {
-	//Come back to to go through the childrent
+Block::~Block()
+{
+	
+}
+
+void Block::addSection(Section *section)
+{
 	children.push_back(section);
 }
 
@@ -17,18 +22,22 @@ void Block::removeSection(Section* section){
 }
 
 Section* Block::getSection(int idx){
-	if (idx >= 0 && idx < children.size()) 
+	cout << "idx = " << idx << endl;
+	
+	if (idx < 0 || children.size()-1 <= 0)
 	{
-		return children[idx];
+		cout << "Did not find" << endl;
+		return nullptr;
+	}
+	else if (idx > children.size()-1)
+	{
+		cout << "Going down" << endl;
+		return children.back()->getSection(idx - (children.size()-1));
 	}
 	else
 	{
-		if (idx == children.size()-1)
-		{
-			return children[idx]->getSection(idx);
-		}
-		
-		return nullptr;
+		cout << "Found it" << endl;
+		return children.at(idx);
 	}
 }
 
@@ -37,4 +46,9 @@ void Block::acceptVisitor(Visitor* v) {
 	{
 		v->visitBuilding(sec);
 	}
+}
+
+vector<Section*> Block::getChildren()
+{
+	return children;
 }
