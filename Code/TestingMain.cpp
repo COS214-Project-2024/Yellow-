@@ -28,82 +28,82 @@
 #include "Hospital.h"
 #include "City.h"
 
-// TEST_CASE("Factory method") {
-//     IndustrialFactory i = IndustrialFactory();
-//     Industrial* p = i.createForestry();
-//     delete p;
-//     p = nullptr;
-//     p = i.createSteelFactory();
-//     delete p;
-//     p = nullptr;
-//     p = i.createForestry();
-//     delete p;
-//     p = nullptr;
-//     p = i.createConcreteFactory();
-//     delete p;
-//     p = nullptr;
+TEST_CASE("Factory method") {
+    IndustrialFactory i = IndustrialFactory();
+    Industrial* p = i.createForestry();
+    delete p;
+    p = nullptr;
+    p = i.createSteelFactory();
+    delete p;
+    p = nullptr;
+    p = i.createForestry();
+    delete p;
+    p = nullptr;
+    p = i.createConcreteFactory();
+    delete p;
+    p = nullptr;
 
-//     LandmarkFactory l = LandmarkFactory();
-//     Landmarks* park = l.createPark();
-//     delete park;
-//     park = nullptr;
-//     park = l.createMuseum();
-//     delete park;
-//     park = nullptr;
+    LandmarkFactory l = LandmarkFactory();
+    Landmarks* park = l.createPark();
+    delete park;
+    park = nullptr;
+    park = l.createMuseum();
+    delete park;
+    park = nullptr;
 
-//     ServiceFactory s = ServiceFactory();
+    ServiceFactory s = ServiceFactory();
 
-//     Service* serv = s.createAirport();
-//     delete serv;
-//     serv = nullptr;
-//     serv = s.createHospital();
-//     delete serv;
-//     serv = nullptr;
-//     serv = s.createPoliceStation();
-//     delete serv;
-//     serv = nullptr;
-//     serv = s.createSchool();
-//     delete serv;
-//     serv = nullptr;
-//     serv = s.createTownHall();
-//     delete serv;
-//     serv = nullptr;
-//     serv = s.createTrainStation();
-//     delete serv;
-//     serv = nullptr;
+    Service* serv = s.createAirport();
+    delete serv;
+    serv = nullptr;
+    serv = s.createHospital();
+    delete serv;
+    serv = nullptr;
+    serv = s.createPoliceStation();
+    delete serv;
+    serv = nullptr;
+    serv = s.createSchool();
+    delete serv;
+    serv = nullptr;
+    serv = s.createTownHall();
+    delete serv;
+    serv = nullptr;
+    serv = s.createTrainStation();
+    delete serv;
+    serv = nullptr;
 
-//     Utilities* utls = s.createPowerPlant();
-//     delete utls;
-//     utls = nullptr;
-//     utls = s.createWastePlant();
-//     delete utls;
-//     utls = nullptr;
-//     utls = s.createWaterPlant();
-//     delete utls;
-//     utls = nullptr;
+    Utilities* utls = s.createPowerPlant();
+    delete utls;
+    utls = nullptr;
+    utls = s.createWastePlant();
+    delete utls;
+    utls = nullptr;
+    utls = s.createWaterPlant();
+    delete utls;
+    utls = nullptr;
 
-//     ResidentialFactory r = ResidentialFactory();
-//     Residential* house = r.createComplex();
-//     delete house;
-//     house = nullptr;
-//     house = r.createApartment();
-//     delete house;
-//     house = nullptr;
-//     house = r.createHouse();
-//     delete house;
-//     house = nullptr;
+    ResidentialFactory r = ResidentialFactory();
+    Residential* house = r.createComplex();
+    delete house;
+    house = nullptr;
+    house = r.createApartment();
+    delete house;
+    house = nullptr;
+    house = r.createHouse();
+    delete house;
+    house = nullptr;
 
-//     CommercialFactory f = CommercialFactory();
-//     Commercial* business = f.createMall();
-//     delete business;
-//     business = nullptr;
-//     business = f.createShop();
-//     delete business;
-//     business = nullptr;
-//     business = f.createOffice();
-//     delete business;
-//     business = nullptr;
-// }
+    CommercialFactory f = CommercialFactory();
+    Commercial* business = f.createMall();
+    delete business;
+    business = nullptr;
+    business = f.createShop();
+    delete business;
+    business = nullptr;
+    business = f.createOffice();
+    delete business;
+    business = nullptr;
+}
 
 TEST_CASE("Composite") {
     Section* test = new Block();
@@ -130,108 +130,108 @@ TEST_CASE("Composite") {
     CHECK(nullptr == test->getSection(1));
 }
 
-// TEST_CASE("Visitor")
-// {
-//     Section* test = new Block();
-//     Section* test2 = new Block();
+TEST_CASE("Visitor")
+{
+    Section* test = new Block();
+    Section* test2 = new Block();
 
-//     Section* building1 = new Hospital();
+    Section* building1 = new Hospital();
 
-//     test->addSection(building1);
-//     test->addSection(building1);
+    test->addSection(building1);
+    test->addSection(building1);
 
-//     Visitor* vis = new CVisitor();
+    Visitor* vis = new CVisitor();
 
-//     test->acceptVisitor(vis);
+    test->acceptVisitor(vis);
 
-//     delete vis;
-//     delete building1;
-//     delete test2;
-//     delete test;
-// }
+    delete vis;
+    delete building1;
+    delete test2;
+    delete test;
+}
 
-// TEST_CASE("State"){
-//     People people(new Green());
-//     Budget budget(new Green());
-//     Disatisfaction dissatisfaction(new Green());
+TEST_CASE("State"){
+    People people(new Green());
+    Budget budget(new Green());
+    Disatisfaction dissatisfaction(new Green());
 
-//     people.handleSeverity(true);
-//     budget.handleSeverity(false);
-//     dissatisfaction.handleSeverity(true);
+    people.handleSeverity(true);
+    budget.handleSeverity(false);
+    dissatisfaction.handleSeverity(true);
 
-//     people.handleSeverity(false);
-//     budget.handleSeverity(true);
-//     dissatisfaction.handleSeverity(false);
-//     dissatisfaction.handleSeverity(false);
-//     dissatisfaction.handleSeverity(false);
-//     dissatisfaction.handleSeverity(true);
-//     dissatisfaction.handleSeverity(true);
-// }
+    people.handleSeverity(false);
+    budget.handleSeverity(true);
+    dissatisfaction.handleSeverity(false);
+    dissatisfaction.handleSeverity(false);
+    dissatisfaction.handleSeverity(false);
+    dissatisfaction.handleSeverity(true);
+    dissatisfaction.handleSeverity(true);
+}
 
-// TEST_CASE("Government Singleton"){
+TEST_CASE("Government Singleton"){
 
-//     Government newGovernment = Government::onlyInstance();
-//     Government newGovernment2 = Government::onlyInstance();
+    Government newGovernment = Government::onlyInstance();
+    Government newGovernment2 = Government::onlyInstance();
 
-// }
+}
 
-// TEST_CASE("City Singleton"){
+TEST_CASE("City Singleton"){
 
-//     City newCity = City::instanceCity();
-//     City newCity2 = City::instanceCity();
-// }
+    City newCity = City::instanceCity();
+    City newCity2 = City::instanceCity();
+}
 
-// TEST_CASE("Strategy"){
-//     Government newGovernment = Government::onlyInstance();
+TEST_CASE("Strategy"){
+    Government newGovernment = Government::onlyInstance();
 
-//     People* people = new People(new Green());
-//     Budget* budget = new Budget(new Green());
-//     Disatisfaction* dissatisfaction = new Disatisfaction(new Green());
+    People* people = new People(new Green());
+    Budget* budget = new Budget(new Green());
+    Disatisfaction* dissatisfaction = new Disatisfaction(new Green());
 
-//     newGovernment.setPeopleState(people);
-//     newGovernment.setBudgetState(budget);
-//     newGovernment.setMoraleState(dissatisfaction);
+    newGovernment.setPeopleState(people);
+    newGovernment.setBudgetState(budget);
+    newGovernment.setMoraleState(dissatisfaction);
 
-//     AddPublicTransport* newStrategy = new AddPublicTransport();
-//     newGovernment.setStrategy(newStrategy);
-//     CHECK("AddPublicTransport" == newGovernment.implementPolicyBudget());
+    AddPublicTransport* newStrategy = new AddPublicTransport();
+    newGovernment.setStrategy(newStrategy);
+    CHECK("AddPublicTransport" == newGovernment.implementPolicyBudget());
 
-//     newGovernment.setBudgetState(new Budget(new Red()));
-//     IncreaseTaxes* increasingTaxes = new IncreaseTaxes();
-//     newGovernment.setStrategy(increasingTaxes);
-//     CHECK("IncreaseTaxes" == newGovernment.implementPolicyBudget());
+    newGovernment.setBudgetState(new Budget(new Red()));
+    IncreaseTaxes* increasingTaxes = new IncreaseTaxes();
+    newGovernment.setStrategy(increasingTaxes);
+    CHECK("IncreaseTaxes" == newGovernment.implementPolicyBudget());
 
-//     newGovernment.setMoraleState(new Disatisfaction(new Red()));
+    newGovernment.setMoraleState(new Disatisfaction(new Red()));
 
-//     IncreaseWages* increasingWages = new IncreaseWages();
-//     newGovernment.setStrategy(increasingWages);
-//     CHECK("IncreaseWages" == newGovernment.implementPolicyMorale());
+    IncreaseWages* increasingWages = new IncreaseWages();
+    newGovernment.setStrategy(increasingWages);
+    CHECK("IncreaseWages" == newGovernment.implementPolicyMorale());
 
-//     ExpandCity* expandingCity = new ExpandCity();
+    ExpandCity* expandingCity = new ExpandCity();
 
-//     newGovernment.setStrategy(expandingCity);
-//     cout << newGovernment.implementPolicyPeople() << endl;
-//     CHECK("\033[38;5;210mNo new policy changes\033[0m" == newGovernment.implementPolicyPeople());
+    newGovernment.setStrategy(expandingCity);
+    cout << newGovernment.implementPolicyPeople() << endl;
+    CHECK("\033[38;5;210mNo new policy changes\033[0m" == newGovernment.implementPolicyPeople());
 
 
-//     newGovernment.setPeopleState(new People(new Red()));
-//     newGovernment.setStrategy(expandingCity);
-//     CHECK("ExpandCity" == newGovernment.implementPolicyPeople());
+    newGovernment.setPeopleState(new People(new Red()));
+    newGovernment.setStrategy(expandingCity);
+    CHECK("ExpandCity" == newGovernment.implementPolicyPeople());
 
-//     delete newStrategy;
-//     delete increasingTaxes;
-//     delete increasingWages;
-//     delete expandingCity;
-// }
+    delete newStrategy;
+    delete increasingTaxes;
+    delete increasingWages;
+    delete expandingCity;
+}
 
-// TEST_CASE("Transport") {
-//     vector<vector<Cell*>> cellMap(5, vector<Cell*>(5, nullptr));
-//     vector<vector<Cell*>> matrix(5, vector<Cell*>(5, nullptr));
+TEST_CASE("Transport") {
+    vector<vector<Cell*>> cellMap(5, vector<Cell*>(5, nullptr));
+    vector<vector<Cell*>> matrix(5, vector<Cell*>(5, nullptr));
 
-//     Map myMap(cellMap, matrix);
-//     myMap.addNode(new Cell("Building 1"), 0, 0, 2, 2);
-//     myMap.addNode(new Cell("Building 2"), 3, 3, 2, 2);
+    Map myMap(cellMap, matrix);
+    myMap.addNode(new Cell("Building 1"), 0, 0, 2, 2);
+    myMap.addNode(new Cell("Building 2"), 3, 3, 2, 2);
 
-//     myMap.printMap();
+    myMap.printMap();
 
-// }
+}
