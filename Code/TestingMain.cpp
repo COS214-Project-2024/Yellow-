@@ -68,18 +68,21 @@ TEST_CASE("Composite") {
     Section* test2 = new Block();
 
     Section* building1 = new Hospital();
+    Section* building2 = new Park();
 
     test->addSection(building1);
-    test2->addSection(building1);
+    test2->addSection(building2);
 
     test->addSection(test2);
 
-    CHECK(test->getSection(0) == building1);
-    CHECK(test->getSection(1) == test2);
+    test->getSection(1);
+
+    CHECK(building1 == test->getSection(0));
+    CHECK(building2 == test->getSection(1));
 
     test->removeSection(test2);
 
-    CHECK(test->getSection(1) == nullptr);
+    CHECK(nullptr == test->getSection(1));
 }
 
 TEST_CASE("Visitor")
