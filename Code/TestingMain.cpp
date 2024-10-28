@@ -117,7 +117,10 @@ TEST_CASE("Composite") {
 
     test->addSection(test2);
 
-    test->getSection(1);
+    cout << test << endl;
+    cout << test2 << endl;
+    cout << test->getSection(0) << endl;
+    cout << test->getSection(1) << endl;
 
     CHECK(building1 == test->getSection(0));
     CHECK(building2 == test->getSection(1));

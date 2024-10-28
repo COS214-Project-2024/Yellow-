@@ -26,15 +26,17 @@ Section* Block::getSection(int idx){
 	
 	if (idx < 0 || children.size()-1 <= 0)
 	{
+		cout << "Did not find" << endl;
 		return nullptr;
 	}
-	else if (idx >= children.size()-1)
+	else if (idx > children.size()-1)
 	{
 		cout << "Going down" << endl;
 		return children.back()->getSection(idx - (children.size()-1));
 	}
 	else
 	{
+		cout << "Found it" << endl;
 		return children.at(idx);
 	}
 }
