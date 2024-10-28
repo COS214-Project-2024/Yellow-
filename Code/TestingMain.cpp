@@ -117,15 +117,17 @@ TEST_CASE("Composite") {
 
     test->addSection(test2);
 
-    cout << test << endl;
-    cout << test2 << endl;
-    cout << test->getSection(0) << endl;
-    cout << test->getSection(1) << endl;
+    cout << "Test: " << test << endl;
+    cout << "Building1: " << building1 << endl;
+    cout << "Test2: " << test2 << endl;
+    cout << "Building2: " << building2 << endl;
+    cout << "getSection(0): " << test->getSection(0) << endl;
+    cout << "getSection(1): " << test->getSection(1) << endl;
 
     CHECK(building1 == test->getSection(0));
     CHECK(building2 == test->getSection(1));
 
-    test->removeSection(test2);
+    test->removeSection(1);
 
     CHECK(nullptr == test->getSection(1));
 }
