@@ -6,6 +6,7 @@ class ConcreteFactory : public Industrial {
 
 public:
 	float taxBuilding();
+	void createBuildingResource() override;
 };
 
 #endif

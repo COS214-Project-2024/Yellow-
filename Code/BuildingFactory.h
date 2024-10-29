@@ -21,10 +21,14 @@
 #include "Office.h"
 #include "Shop.h"
 
+#include "City.h"
+
 class BuildingFactory {
 
 
 protected:
+	bool useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget); // add to factory functions
+
 	virtual Service* createHospital() = 0;
 
 	virtual Service* createTownHall() = 0;
@@ -64,6 +68,8 @@ protected:
 	virtual Landmarks* createPark() = 0;
 
 	virtual Landmarks* createMuseum() = 0;
+	
+	virtual ~BuildingFactory();
 };
 
 #endif
