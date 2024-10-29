@@ -13,6 +13,7 @@ class Map {
 private:
    vector<vector<Cell*>> map;
    vector<vector<Cell*>> distanceMatrix;
+   //TODO: find out how to set distances between buildings
 
 public:
     Map(vector<vector<Cell*>> map, vector<vector<Cell*>> distanceMatrix);

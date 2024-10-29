@@ -212,6 +212,10 @@ TEST_CASE("Transport") {
     vector<vector<Cell*>> cellMap(5, vector<Cell*>(5, nullptr));
     vector<vector<Cell*>> matrix(5, vector<Cell*>(5, nullptr));
 
+    ServiceFactory s = ServiceFactory();
+
+    Cell* hospital = s.createHospital();
+
     Map myMap(cellMap, matrix);
     myMap.addNode(new Cell("Building 1"), 0, 0, 2, 2);
     myMap.addNode(new Cell("Building 2"), 3, 3, 2, 2);
