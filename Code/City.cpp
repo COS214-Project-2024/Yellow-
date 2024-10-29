@@ -32,7 +32,7 @@ void City::collectTaxtes()
 	//If Citizen, collect incomeTax and propretyTax
 	//If building, collect businessTax and propretyTax (skip Service building)
 
-
+	
 }
 
 void City::dealWithResources()
@@ -42,30 +42,5 @@ void City::dealWithResources()
 
 void City::dealWithPolicies()
 {
-	if (stuff.res->getPopulation() < 500)
-	{
-		Government::onlyInstance().handlePeople(false);
-	}
-	else
-	{
-		Government::onlyInstance().handlePeople(true);
-	}
 	
-	if (stuff.res->getBudget() < 500)
-	{
-		Government::onlyInstance().handleBudget(false);
-	}
-	else
-	{
-		Government::onlyInstance().handleBudget(true);
-	}
-
-	if (stuff.res->getMorale() < 500)
-	{
-		Government::onlyInstance().handleMorale(false);
-	}
-	else
-	{
-		Government::onlyInstance().handleMorale(true);
-	}
 }

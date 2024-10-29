@@ -41,9 +41,11 @@ TEST_CASE("City Test")
 
     test->addSection(test2);
 
-    City* newCity = new City(test);
+    City newCity = City::instanceCity();
 
-    newCity->instanceCity();
+    newCity.instanceCity();
+
+    delete test, test2;
 }
 
 // TEST_CASE("Factory method") {

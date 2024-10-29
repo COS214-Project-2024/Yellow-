@@ -2,7 +2,7 @@
 
 Block::~Block()
 {
-	
+	children.clear();
 }
 
 void Block::addSection(Section *section)

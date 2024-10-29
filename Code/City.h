@@ -5,10 +5,12 @@
 #include "Taxes.h"
 #include "Government.h"
 #include "Section.h"
+#include "Population.h"
 #include <vector>
 
 struct Varibals
 {
+	Population* population;
 	Resources* res = new Resources();
 	Taxes* tax = new Taxes();
 	Section* head;

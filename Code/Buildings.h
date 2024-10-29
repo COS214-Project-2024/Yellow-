@@ -22,6 +22,8 @@ public:
 	void acceptVisitor(Visitor* v);
 
 	virtual float taxBuilding() = 0;
+
+	virtual ~Buildings();
 };
 
 #endif
