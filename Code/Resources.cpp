@@ -1,3 +1,4 @@
+
 #include "Resources.h"
 
 void Resources::setConcrete(int newAmount)
@@ -22,52 +23,43 @@ int Resources::getSteel()
 
 void Resources::setEnergy(int newAmount)
 {
-    energy = newAmount;
+    this->energy = newAmount;
 }
 
-int Resources::getEnergy()
-{
-    return energy;
+int Resources::getEnergy() {
+    return this->energy;
 }
 
-void Resources::setWater(int newAmount)
-{
-    water = newAmount;
+void Resources::setWater(int newAmount) {
+    this->water = newAmount;
 }
 
-int Resources::getWater()
-{
-    return water;
+int Resources::getWater() {
+    return this->water;
 }
 
-void Resources::setBudget(float newAmount)
-{
-    budget = newAmount;
+void Resources::setBudget(float newAmount) {
+    this->budget = newAmount;
 }
 
-float Resources::getBudget()
-{
-    return budget;
+float Resources::getBudget() {
+    return this->budget;
 }
 
-void Resources::setPopulation(int newAmount)
-{
-    population = newAmount;
+void Resources::setPopulation(int newAmount) {
+    this->population = newAmount;
 }
 
-int Resources::getPopulation()
-{
-    return population;
+int Resources::getPopulation() {
+    return this->population;
 }
 
-void Resources::setMorale(int newAmount)
-{
-    morale = newAmount;
+void Resources::setMorale(int newAmount) {
+    this->morale = newAmount;
 }
 
-int Resources::getMorale()
-{
-    return morale;
+int Resources::getMorale() {
+    return this->morale;
 }
 
 void Resources::setWood(int newAmount)
@@ -77,5 +69,5 @@ void Resources::setWood(int newAmount)
 
 int Resources::getWood()
 {
-    return wood;
+    return this->wood;
 }

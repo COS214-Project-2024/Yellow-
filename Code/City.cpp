@@ -20,7 +20,7 @@ void City::collectResources()
 	
 }
 
-void City::collectTaxtes()
+void City::collectTaxes()
 {
 	//Loop over every citizen and Building
 	//If Citizen, collect incomeTax and propretyTax

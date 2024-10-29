@@ -220,7 +220,6 @@ TEST_CASE("Strategy"){
     newGovernment.setPeopleState(new People(new Red()));
     newGovernment.setStrategy(expandingCity);
     CHECK("ExpandCity" == newGovernment.implementPolicyPeople());
-
 }
 
 TEST_CASE("Transport") {
