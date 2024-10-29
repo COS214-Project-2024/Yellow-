@@ -7,6 +7,8 @@ class Commercial : public Buildings {
 
 
 public:
+	Commercial(string cellType);
+	
 	virtual float taxBuilding() = 0;
 
 	void acceptVisitor(Visitor* v);

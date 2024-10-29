@@ -1,5 +1,8 @@
 #include "Commercial.h"
 
-void Commercial::acceptVisitor(Visitor* v) {
-	v->visitBuilding(this);
+Commercial::Commercial(string cellType) : Buildings(cellType) {}
+
+void Commercial::acceptVisitor(Visitor *v)
+{
+    v->visitBuilding(this);
 }

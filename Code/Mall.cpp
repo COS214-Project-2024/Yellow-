@@ -1,6 +1,11 @@
 #include "Mall.h"
 
-float Mall::taxBuilding() {
-	// TODO - implement Mall::taxBuilding
+Mall::Mall() : Commercial("Mall")
+{
+}
+
+float Mall::taxBuilding()
+{
+    // TODO - implement Mall::taxBuilding
 	throw "Not yet implemented";
 }

@@ -5,6 +5,8 @@
 #include "Service.h"
 using namespace std;
 class Airport : public Service{
+    public:
+        Airport();
 private:
     /*
     string destinations1;

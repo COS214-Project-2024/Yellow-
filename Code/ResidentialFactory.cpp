@@ -1,15 +1,32 @@
 #include "ResidentialFactory.h"
 
 Residential* ResidentialFactory::createHouse() {
-	return new House();
+    if (useBuildingResources(50,50,50,500))
+	    return new House();
+    else 
+        return nullptr;
 }
 
-Residential* ResidentialFactory::createApartment() {
-	return new Apartment();
+Residential* ResidentialFactory::createApartment() { 
+    if (useBuildingResources(50,50,50,500) == false)
+        return nullptr;
+    else
+	    return new Apartment();
 }
 
 Residential* ResidentialFactory::createComplex() {
-	return new Complex();
+    if (useBuildingResources(50,50,50,500) == false)
+        return nullptr;
+    else
+	    return new Complex();
+}
+
+Residential *ResidentialFactory::createHouseHold()
+{
+    if (useBuildingResources(50,50,50,500) == false)
+        return nullptr;
+    else
+	    return new HouseHold();
 }
 
 Landmarks *ResidentialFactory::createPark()

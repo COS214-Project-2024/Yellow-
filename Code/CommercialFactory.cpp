@@ -1,14 +1,20 @@
 #include "CommercialFactory.h"
 
 Commercial* CommercialFactory::createShop() {
+    if (useBuildingResources(100,100,100,800) == false)
+        return nullptr;
 	return new Shop();
 }
 
 Commercial* CommercialFactory::createOffice() {
+    if (useBuildingResources(100,100,100,800) == false)
+        return nullptr;
 	return new Office();
 }
 
 Commercial* CommercialFactory::createMall() {
+    if (useBuildingResources(100,100,100,800) == false)
+        return nullptr;
 	return new Mall();
 }
 
@@ -23,6 +29,11 @@ Residential *CommercialFactory::createApartment()
 }
 
 Residential *CommercialFactory::createComplex()
+{
+    return nullptr;
+}
+
+Residential *CommercialFactory::createHouseHold()
 {
     return nullptr;
 }

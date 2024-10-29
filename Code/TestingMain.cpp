@@ -27,6 +27,7 @@
 #include "Buildings.h"
 #include "Hospital.h"
 #include "City.h"
+#include <typeinfo>
 
 TEST_CASE("Factory method") {
     IndustrialFactory i = IndustrialFactory();
@@ -110,18 +111,26 @@ TEST_CASE("Composite") {
     Section* test2 = new Block();
 
     Section* building1 = new Hospital();
+    Section* building2 = new Park();
 
     test->addSection(building1);
-    test2->addSection(building1);
+    test2->addSection(building2);
 
     test->addSection(test2);
 
-    CHECK(test->getSection(0) == building1);
-    CHECK(test->getSection(1) == test2);
+    cout << "Test: " << test << endl;
+    cout << "Building1: " << building1 << endl;
+    cout << "Test2: " << test2 << endl;
+    cout << "Building2: " << building2 << endl;
+    cout << "getSection(0): " << test->getSection(0) << endl;
+    cout << "getSection(1): " << test->getSection(1) << endl;
 
-    test->removeSection(test2);
+    CHECK(building1 == test->getSection(0));
+    CHECK(building2 == test->getSection(1));
 
-    CHECK(test->getSection(1) == nullptr);
+    test->removeSection(1);
+
+    CHECK(nullptr == test->getSection(1));
 }
 
 TEST_CASE("Visitor")
@@ -137,6 +146,11 @@ TEST_CASE("Visitor")
     Visitor* vis = new CVisitor();
 
     test->acceptVisitor(vis);
+
+    delete vis;
+    delete building1;
+    delete test2;
+    delete test;
 }
 
 TEST_CASE("State"){
@@ -221,5 +235,153 @@ TEST_CASE("Transport") {
     myMap.addNode(new Cell("Building 2"), 3, 3, 2, 2);
 
     myMap.printMap();
+}
 
+TEST_CASE("Factory and City integration") {
+    City city = City::instanceCity();
+    int resources = 2000;
+    float money = 4000;
+    city.stuff.res->setConcrete(resources);
+    CHECK(city.stuff.res->getConcrete() == resources);
+
+    city.stuff.res->setSteel(resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+
+    city.stuff.res->setWood(resources);
+    CHECK(city.stuff.res->getWood() == resources);
+
+    city.stuff.res->setBudget(money);
+    CHECK(city.stuff.res->getBudget() == money);
+
+    city.stuff.res->setMorale(0);
+    CHECK(city.stuff.res->getMorale() == 0);
+
+    city.stuff.res->setPopulation(10);
+    CHECK(city.stuff.res->getPopulation() == 10);
+
+    city.stuff.res->setWater(0);
+    CHECK(city.stuff.res->getWater() == 0);
+
+    city.stuff.res->setEnergy(0);
+    CHECK(city.stuff.res->getEnergy() == 0);    
+
+    IndustrialFactory* industrialFactory = new IndustrialFactory();
+    Industrial* cf = industrialFactory->createConcreteFactory();
+    CHECK(typeid(*cf) == typeid(ConcreteFactory));
+    resources -= 80;
+    money -= 700;
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+    CHECK(city.stuff.res->getBudget() == money);
+
+    Industrial* forest = industrialFactory->createForestry();
+    CHECK(typeid(*forest) == typeid(Forestry));
+    resources -= 80;
+    money -= 700;
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+    CHECK(city.stuff.res->getBudget() == money);
+
+    Industrial* sf = industrialFactory->createSteelFactory();
+    CHECK(typeid(*sf) == typeid(SteelFactory));
+    resources -= 80;
+    money -= 700;
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+    CHECK(city.stuff.res->getBudget() == money);
+    
+    resources+=90;
+    sf->createBuildingResource();
+    cf->createBuildingResource();
+    forest->createBuildingResource();
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+
+    ServiceFactory serviceFactory = ServiceFactory();
+    
+    Utilities* power = serviceFactory.createPowerPlant();   
+    power->createResource();
+    CHECK(typeid(*power) == typeid(PowerPlant));
+    resources -= 80;
+    money -= 700;
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+    CHECK(city.stuff.res->getBudget() == money);
+    CHECK(city.stuff.res->getEnergy() == 150); //change value if value in code is changed
+
+    Utilities* water = serviceFactory.createWaterPlant();
+    CHECK(typeid(*water) == typeid(WaterPlant));
+    water->createResource();
+    resources -= 80;
+    money -= 700;
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+    CHECK(city.stuff.res->getBudget() == money);
+    CHECK(city.stuff.res->getEnergy() == 150);
+
+    Utilities* waste = serviceFactory.createWastePlant();
+    CHECK(typeid(*waste) == typeid(WasteManagement));
+    waste->createResource();
+    resources -= 80;
+    money -= 700;
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+    CHECK(city.stuff.res->getBudget() == money);
+    CHECK(city.stuff.res->getMorale() == 1);
+
+    LandmarkFactory landmarkFactory = LandmarkFactory();
+    Landmarks* park = landmarkFactory.createPark();
+    CHECK(typeid(*park) == typeid(Park));
+    resources -= 150;
+    money -= 650;
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+    CHECK(city.stuff.res->getBudget() == money);
+    park->createBuildingResource();
+    CHECK(city.stuff.res->getMorale() == 2);
+
+    Landmarks* museum = landmarkFactory.createMuseum();
+    CHECK(typeid(*museum) == typeid(Museum));
+    resources -= 150;
+    money -= 650;
+    CHECK(city.stuff.res->getConcrete() == resources);
+    CHECK(city.stuff.res->getSteel() == resources);
+    CHECK(city.stuff.res->getWood() == resources);
+    CHECK(city.stuff.res->getBudget() == money);
+    museum->createBuildingResource();
+    CHECK(city.stuff.res->getMorale() == 3);
+
+    ResidentialFactory houseFactory = ResidentialFactory();
+    Residential* h = houseFactory.createHouseHold();
+    CHECK(typeid(*h) == typeid(HouseHold));
+
+    delete h;
+    delete cf;
+    cf = nullptr;
+    delete sf;
+    sf = nullptr;
+    delete forest;
+    forest = nullptr;
+    delete industrialFactory;
+    industrialFactory = nullptr;
+
+    delete power;
+    power = nullptr;
+    delete water;
+    water = nullptr;
+    delete waste;
+    waste = nullptr;
+
+    delete park;
+    park = nullptr;
+    delete museum;
+    museum = nullptr;
 }

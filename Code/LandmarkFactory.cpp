@@ -1,11 +1,15 @@
 #include "LandmarkFactory.h"
 
 Landmarks* LandmarkFactory::createPark() {
-	return new Park();
+    if (useBuildingResources(150,150,150,650))
+	    return new Park();
+    return nullptr;
 }
 
 Landmarks* LandmarkFactory::createMuseum() {
-	return new Museum();
+    if (useBuildingResources(150,150,150,650))
+	    return new Museum();
+    return nullptr;
 }
 
 Service *LandmarkFactory::createHospital()
@@ -64,6 +68,11 @@ Residential *LandmarkFactory::createApartment()
 }
 
 Residential *LandmarkFactory::createComplex()
+{
+    return nullptr;
+}
+
+Residential *LandmarkFactory::createHouseHold()
 {
     return nullptr;
 }

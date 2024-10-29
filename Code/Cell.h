@@ -18,6 +18,7 @@ public:
     vector<Coordinate> getCoordinates();
     void setCoordinates(vector<Coordinate> newCoordinates);
     virtual void setIcon() = 0;
+    virtual ~Cell();
     //virtual Cell* clone() = 0;
 };
 
