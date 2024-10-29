@@ -9,6 +9,7 @@ class Utilities : public Buildings {
 public:
 	void acceptVisitor(Visitor* v);
 	virtual float taxBuilding();
+	virtual void createResource() = 0;
 };
 
 #endif
