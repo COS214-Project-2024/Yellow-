@@ -21,6 +21,14 @@ Residential* ResidentialFactory::createComplex() {
 	    return new Complex();
 }
 
+Residential *ResidentialFactory::createHouseHold()
+{
+    if (useBuildingResources(50,50,50,500) == false)
+        return nullptr;
+    else
+	    return new HouseHold();
+}
+
 Landmarks *ResidentialFactory::createPark()
 {
     return nullptr;

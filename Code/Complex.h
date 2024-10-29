@@ -5,6 +5,7 @@ class Complex : public Residential {
 
 
 public:
+	Complex();
 	float taxBuilding();
 };
 

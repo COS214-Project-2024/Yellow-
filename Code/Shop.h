@@ -5,6 +5,7 @@ class Shop : public Commercial {
 
 
 public:
+	Shop();
 	float taxBuilding();
 };
 

@@ -1,5 +1,9 @@
 #include "WasteManagement.h"
 
+WasteManagement::WasteManagement() : Utilities("WasteManagement")
+{
+}
+
 void WasteManagement::createResource()
 {
     City c = City::instanceCity();

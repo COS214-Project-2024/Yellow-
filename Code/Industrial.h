@@ -8,6 +8,8 @@ class Industrial : public Buildings {
 
 
 public:
+	Industrial(string cellType);
+	
 	virtual float taxBuilding() = 0;
 
 	void acceptVisitor(Visitor* v);

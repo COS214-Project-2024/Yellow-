@@ -5,9 +5,8 @@ float Park::taxBuilding() {
 	throw "Not yet implemented";
 }
 
-Park::Park()
+Park::Park() : Landmarks("Park")
 {
-	std::cout << "created Park" << std::endl;
 }
 
 void Park::createBuildingResource()

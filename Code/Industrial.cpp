@@ -1,5 +1,8 @@
 #include "Industrial.h"
 
-void Industrial::acceptVisitor(Visitor* v) {
-	v->visitBuilding(this);
+Industrial::Industrial(string cellType) : Buildings(cellType) {}
+
+void Industrial::acceptVisitor(Visitor *v)
+{
+    v->visitBuilding(this);
 }
