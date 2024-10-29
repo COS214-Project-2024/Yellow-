@@ -14,3 +14,8 @@ void Buildings::acceptVisitor(Visitor* v){}
 int Buildings::getMaxCitizens() {
 	return this->maxCitizens;
 }
+
+Buildings::~Buildings()
+{
+	
+}
