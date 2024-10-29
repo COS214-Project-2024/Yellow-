@@ -9,11 +9,8 @@ class Citizen;
 
 using namespace std;
 class Population {
-
 private:
-    static const int maxObservers = 10;
-    int observerCount;
-    Observer* observerList[maxObservers];
+    vector<Observer*> observerList;
 	vector<Citizen*> listOfCitizens;
 
 public:

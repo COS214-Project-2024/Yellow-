@@ -1,6 +1,5 @@
 #ifndef HAPPYOBSERVER_H
 #define HAPPYOBSERVER_H
-
 #include "Observer.h"
 #include "Citizen.h"
 

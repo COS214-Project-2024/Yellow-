@@ -1,6 +1,8 @@
 #include "Citizen.h"
 
-// Citizen - Default Constructor
+////////////// Constructors ///////////////
+
+/// Default Constructor
 Citizen::Citizen(){
     happiness = 100;
 	employment = "unemployed";
@@ -8,49 +10,59 @@ Citizen::Citizen(){
     // Residence and business address can be added later, e.g., addResidence and addBusinessAdress
 }
 
-// Citizen - Variable constructor
+/// Variable constructor
 Citizen::Citizen(int happy, Residential* acc, string job, float cash, string addr)
         : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr) {}
 
-// Citizen - Copy Constructor
+/// Copy Constructor
 Citizen::Citizen(const Citizen& other){
     happiness = other.happiness;
 	employment = other.employment;
 	money = other.getMoney();
 }
 
-// Citizen - Get Happiness
+////////////// Happiness ///////////////
+
+/// Get happiness
 int Citizen::getHappiness() const {
     return happiness;
 }
-
+/// Set happiness
 void Citizen::setHappiness(int value) {
     happiness = value;
 }
 
-// Citizen - Get Residence
+//////////// Residence /////////////
+
+/// Get residence
 Residential* Citizen::getAccommodation() const{
     return accommodation;
 }
-
+/// Set residence
 void Citizen::setAccommodation(Residential* acc){
     accommodation = acc;
 }
 
-// Citizen - Get Employment
+//////////// Employment /////////////
+
+/// Get employment
 string Citizen::getEmployment() const{
     return employment;
 }
 
+/// Set employment
 void Citizen::setEmployment(string job){
     employment = job;
 }
 
-// Citizen - Get Money
+//////////// Money /////////////
+
+/// Get money
 float Citizen::getMoney() const{
     return money;
 }
 
+/// Set money
 void Citizen::setMoney(float cash){
     money = cash;
 }
