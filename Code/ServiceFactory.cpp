@@ -69,6 +69,11 @@ Residential *ServiceFactory::createComplex()
     return nullptr;
 }
 
+Residential *ServiceFactory::createHouseHold()
+{
+    return nullptr;
+}
+
 Industrial *ServiceFactory::createForestry()
 {
     return nullptr;

@@ -7,6 +7,8 @@
 class Landmarks : public Buildings {
 
 public:
+	Landmarks(string cellType);
+
 	virtual float taxBuilding() = 0;
 
 	void acceptVisitor(Visitor* v);

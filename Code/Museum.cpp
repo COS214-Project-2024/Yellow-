@@ -5,9 +5,8 @@ float Museum::taxBuilding() {
 	throw "Not yet implemented";
 }
 
-Museum::Museum()
+Museum::Museum() : Landmarks("Museum")
 {
-	std::cout << "created Museum" << std::endl;
 }
 
 void Museum::createBuildingResource()

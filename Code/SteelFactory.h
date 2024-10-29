@@ -5,6 +5,7 @@ class SteelFactory : public Industrial {
 
 
 public:
+	SteelFactory();
 	float taxBuilding();
 	void createBuildingResource() override;
 };

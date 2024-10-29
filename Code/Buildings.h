@@ -12,6 +12,8 @@ private:
 	int* sectionCoordinate;
 
 public:
+	Buildings(string cellType);
+	
 	int getMaxCitizens();
 
 	void addSection(Section* section);

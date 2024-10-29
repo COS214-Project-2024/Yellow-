@@ -10,6 +10,9 @@ public:
 	Residential* createApartment();
 
 	Residential* createComplex();
+
+	Residential* createHouseHold() override;
+	
 	Landmarks* createPark() override;
 
 	Landmarks* createMuseum() override;

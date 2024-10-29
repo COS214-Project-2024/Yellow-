@@ -20,7 +20,7 @@
 #include "Mall.h"
 #include "Office.h"
 #include "Shop.h"
-
+#include "HouseHold.h"
 #include "City.h"
 
 class BuildingFactory {
@@ -52,6 +52,8 @@ protected:
 	virtual Residential* createApartment() = 0;
 
 	virtual Residential* createComplex() = 0;
+
+	virtual Residential* createHouseHold() = 0;
 
 	virtual Industrial* createForestry() = 0;
 

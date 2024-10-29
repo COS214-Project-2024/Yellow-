@@ -1,8 +1,7 @@
 #include "PowerPlant.h"
 
-PowerPlant::PowerPlant()
+PowerPlant::PowerPlant() : Utilities("PowerPlant")
 {
-    std::cout << "Power plant created" << std::endl;
 }
 
 void PowerPlant::createResource()

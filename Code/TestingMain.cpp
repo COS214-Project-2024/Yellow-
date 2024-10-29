@@ -355,7 +355,11 @@ TEST_CASE("Factory and City integration") {
     museum->createBuildingResource();
     CHECK(city.stuff.res->getMorale() == 3);
 
+    ResidentialFactory houseFactory = ResidentialFactory();
+    Residential* h = houseFactory.createHouseHold();
+    CHECK(typeid(*h) == typeid(HouseHold));
 
+    delete h;
     delete cf;
     cf = nullptr;
     delete sf;

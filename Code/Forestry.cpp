@@ -1,7 +1,12 @@
 #include "Forestry.h"
 
-float Forestry::taxBuilding() {
-	// TODO - implement Forestry::taxBuilding
+Forestry::Forestry() : Industrial("Forestry")
+{
+}
+
+float Forestry::taxBuilding()
+{
+    // TODO - implement Forestry::taxBuilding
 	throw "Not yet implemented";
 }
 

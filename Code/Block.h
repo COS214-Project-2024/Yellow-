@@ -15,6 +15,7 @@ private:
 	Buildings* building;
 
 public:
+	Block();
 	~Block();
 
 	void addSection(Section* section);
