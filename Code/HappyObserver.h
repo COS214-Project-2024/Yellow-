@@ -4,11 +4,10 @@
 #include "Citizen.h"
 
 class HappyObserver : public Observer {
-
 public:
+	HappyObserver();
+	HappyObserver(Citizen* subj);
 	Citizen* subject;
-    HappyObserver();
-    HappyObserver(Citizen* subj);
 	void update();
 };
 
