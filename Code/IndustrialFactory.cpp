@@ -32,6 +32,11 @@ Residential *IndustrialFactory::createComplex()
     return nullptr;
 }
 
+Residential *IndustrialFactory::createHouseHold()
+{
+    return nullptr;
+}
+
 Landmarks *IndustrialFactory::createPark()
 {
     return nullptr;

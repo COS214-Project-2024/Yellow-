@@ -5,6 +5,7 @@ class Forestry : public Industrial {
 
 
 public:
+	Forestry();
 	float taxBuilding();
 	void createBuildingResource() override;
 };

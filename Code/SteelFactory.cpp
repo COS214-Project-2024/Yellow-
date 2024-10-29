@@ -1,7 +1,12 @@
 #include "SteelFactory.h"
 
-float SteelFactory::taxBuilding() {
-	// TODO - implement SteelFactory::taxBuilding
+SteelFactory::SteelFactory() : Industrial("SteelFactory")
+{
+}
+
+float SteelFactory::taxBuilding()
+{
+    // TODO - implement SteelFactory::taxBuilding
 	throw "Not yet implemented";
 }
 

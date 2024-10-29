@@ -2,6 +2,8 @@
 #define TOWNHALL_H
 #include "Service.h"
 class TownHall : public Service {
+public:
+    TownHall();
 };
 
 #endif

@@ -5,6 +5,7 @@ class Mall : public Commercial {
 
 
 public:
+	Mall();
 	float taxBuilding();
 };
 

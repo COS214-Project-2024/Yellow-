@@ -7,9 +7,12 @@ class ResidentialFactory : public BuildingFactory {
 public:
 	Residential* createHouse() override;
 
-	Residential* createApartment();
+	Residential* createApartment() override;
 
-	Residential* createComplex();
+	Residential* createComplex() override;
+
+	Residential* createHouseHold() override;
+	
 	Landmarks* createPark() override;
 
 	Landmarks* createMuseum() override;

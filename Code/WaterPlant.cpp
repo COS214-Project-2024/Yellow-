@@ -1,5 +1,9 @@
 #include "WaterPlant.h"
 
+WaterPlant::WaterPlant() : Utilities("WaterPlant")
+{
+}
+
 void WaterPlant::createResource()
 {
     City c = City::instanceCity();
