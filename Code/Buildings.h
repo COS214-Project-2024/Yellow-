@@ -2,6 +2,7 @@
 #define BUILDINGS_H
 #include <iostream>
 #include "Section.h"
+#include "City.h"
 class Buildings : public Section {
 
 protected:

@@ -7,4 +7,8 @@ float Forestry::taxBuilding() {
 
 void Forestry::createBuildingResource()
 {
+	if (&City::instanceCity() == nullptr)
+		return;
+	City c = City::instanceCity();
+    c.stuff.res->setWood(c.stuff.res->getWood() + 90);
 }
