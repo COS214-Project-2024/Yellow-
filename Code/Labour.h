@@ -5,9 +5,12 @@
 
 class Labour : public Department {
 
+    private:
+        Department* successor;
+        RandomUtil* randomVal;
 
-public:
-	void handle();
+    public:
+        MaterialOrder* handle(Policies* policy);
 };
 
 #endif
