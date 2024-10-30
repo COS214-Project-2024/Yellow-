@@ -1,13 +1,19 @@
 #include "IndustrialFactory.h"
 Industrial* IndustrialFactory::createForestry() {
+    if (useBuildingResources(80,80,80,700) == false)
+        return nullptr;
 	return new Forestry();
 }
 
 Industrial* IndustrialFactory::createSteelFactory() {
+    if (useBuildingResources(80,80,80,700) == false)
+        return nullptr;
 	return new SteelFactory();
 }
 
 Industrial* IndustrialFactory::createConcreteFactory() {
+    if (useBuildingResources(80,80,80,700) == false)
+        return nullptr;
 	return new ConcreteFactory();
 }
 
@@ -22,6 +28,11 @@ Residential *IndustrialFactory::createApartment()
 }
 
 Residential *IndustrialFactory::createComplex()
+{
+    return nullptr;
+}
+
+Residential *IndustrialFactory::createHouseHold()
 {
     return nullptr;
 }

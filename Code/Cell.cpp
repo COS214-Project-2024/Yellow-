@@ -7,3 +7,7 @@ Cell::Cell(string cellType) {
 string Cell::getCell() {
     return this->type;
 }
+
+Cell::~Cell()
+{
+}

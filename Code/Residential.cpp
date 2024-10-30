@@ -1,5 +1,8 @@
 #include "Residential.h"
 
-void Residential::acceptVisitor(Visitor* v) {
-	v->visitBuilding(this);
+Residential::Residential(string cellType) : Buildings(cellType) {}
+
+void Residential::acceptVisitor(Visitor *v)
+{
+    v->visitBuilding(this);
 }

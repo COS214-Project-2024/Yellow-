@@ -5,7 +5,6 @@ float Office::taxBuilding() {
 	throw "Not yet implemented";
 }
 
-Office::Office()
+Office::Office() : Commercial("Office")
 {
-	std::cout << "created office" << std::endl;
 }

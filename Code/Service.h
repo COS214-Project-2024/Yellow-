@@ -8,8 +8,9 @@ class Service : public Buildings{
 
 
 public:
+	Service(string cellType);
 	float taxBuilding();
-	
+	void createBuildingResource();
 	void acceptVisitor(Visitor* v);
 };
 

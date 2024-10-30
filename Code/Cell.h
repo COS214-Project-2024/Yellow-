@@ -9,6 +9,7 @@ public:
     // Cell would possibly be the highest Abstraction of Buildings and Roads
     Cell(string cellType);  // for testing purposes
     string getCell();
+    virtual ~Cell();
 };
 
 

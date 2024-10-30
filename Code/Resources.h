@@ -4,7 +4,9 @@
 class Resources {
 
 private:
-	int materials;
+	int concrete;
+	int steel;
+	int wood;
 	int energy;
 	int water;
 	float budget;
@@ -12,8 +14,10 @@ private:
     int morale;
 
 public:
-	void setMaterials(int newAmount);
-	int getMaterials();
+	void setConcrete(int newAmount);
+	int getConcrete();
+	void setSteel(int newAmount);
+	int getSteel();
 	void setEnergy(int newAmount);
 	int getEnergy();
 	void setWater(int newAmount);
@@ -24,6 +28,8 @@ public:
 	int getPopulation();
 	void setMorale(int newAmount);
 	int getMorale();
+	void setWood(int newAmount);
+	int getWood();
 };
 
 #endif

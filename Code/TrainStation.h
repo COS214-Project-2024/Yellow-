@@ -3,6 +3,8 @@
 #include <vector>
 #include "Service.h"
 class TrainStation : public Service{
+    public:
+    TrainStation();
 private:
     vector<TrainStation*> availableStops;
     vector<int> rideTime;
