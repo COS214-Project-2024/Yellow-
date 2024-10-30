@@ -2,14 +2,39 @@
 #include <iostream>
 
 HappyObserver::HappyObserver() {
-	subject = nullptr;
 	observationType = "happiness";
 }
 
-HappyObserver::HappyObserver(Citizen* subj) : subject(subj) {}
+HappyObserver::HappyObserver(vector<Citizen*> subj) {
+	listOfSubjects = subj;
+	observationType = "happiness";
+}
 
 void HappyObserver::update() {
-	std::cout << "Observer: Citizen's happiness is now " << subject->getHappiness() << "!" << std::endl;
+
+	if (listOfSubjects.empty()) {
+		std::cout << "No citizens to observe." << std::endl;
+		return;
+	}
+
+	float totalHappiness = 0;
+	int citizenCount = 0;
+
+	// Calculate the total happiness
+	for (Citizen* cit : listOfSubjects) {
+		if (cit) {  // Ensure the pointer is valid
+			totalHappiness += cit->getHappiness();
+			citizenCount++;
+		}
+	}
+
+	// Calculate and print the average happiness
+	if (citizenCount > 0) {
+		float averageHappiness = totalHappiness / citizenCount;
+		std::cout << "Observer: Average happiness of citizens: " << averageHappiness << "!" << std::endl;
+	} else {
+		std::cout << "Observer: No valid citizens found for happiness calculation." << std::endl;
+	}
 }
 
 

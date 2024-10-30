@@ -102,3 +102,8 @@ void Population::acceptVisitor(Visitor* v) {
 		v->visitCitizens(cit);
 	}
 }
+
+
+// void Citizen::setSelfObserver(Observer* obs) {
+//     obs->setSubject(this);
+// }

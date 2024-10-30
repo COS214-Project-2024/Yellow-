@@ -7,18 +7,21 @@ Citizen::Citizen(){
     happiness = 100;
 	employment = "unemployed";
 	money = 0;
-    // Residence and business address can be added later, e.g., addResidence and addBusinessAdress
+    std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 /// Variable constructor
 Citizen::Citizen(int happy, Residential* acc, string job, float cash, string addr)
-        : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr) {}
+        : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr) {
+    std::cout << "A new Citizen has entered the city." << std::endl;
+}
 
 /// Copy Constructor
 Citizen::Citizen(const Citizen& other){
     happiness = other.happiness;
 	employment = other.employment;
 	money = other.getMoney();
+    std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 ////////////// Happiness ///////////////

@@ -1,11 +1,11 @@
 #ifndef CITIZEN_H
 #define CITIZEN_H
-#include "Population.h"
 #include "Residential.h"
+#include "Observer.h"
 #include <string>
 using namespace std;
 
-class Citizen : public Population {
+class Citizen{
 protected:
 	int happiness;						// How happy is the citizen? (Out of 100)
 	Residential* accommodation;			// Where does the citizen live?
@@ -28,6 +28,7 @@ public:
     string getBusinessAddress();
     void setBusinessAddress(string address);
 	Citizen* procreate();
+
 };
 
 #endif

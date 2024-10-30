@@ -1,13 +1,12 @@
 #ifndef HAPPYOBSERVER_H
 #define HAPPYOBSERVER_H
 #include "Observer.h"
-#include "Citizen.h"
 
 class HappyObserver : public Observer {
 public:
+	int totalHappiness;
 	HappyObserver();
-	HappyObserver(Citizen* subj);
-	Citizen* subject;
+	HappyObserver(vector<Citizen*> subj);
 	void update();
 };
 
