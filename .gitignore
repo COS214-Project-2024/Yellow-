@@ -3,7 +3,6 @@ CMakeLists.txt
 cmake-build-debug/
 main.cpp
 Main.cpp
-Makefile
 .vscode/
 Main.h
 main.h
@@ -13,3 +12,6 @@ Main.h/
 main.h/
 *.gcda
 *.gcno
+valg.txt
+Makefile
+makefile

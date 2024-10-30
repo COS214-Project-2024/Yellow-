@@ -4,6 +4,9 @@
 class PowerPlant : public Utilities {
     public: 
         PowerPlant();
+
+        void createResource() override;
+
 };
 
 #endif

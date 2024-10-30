@@ -5,6 +5,7 @@ class Apartment : public Residential{
 
 
 public:
+	Apartment();
 	float taxBuilding();
 };
 

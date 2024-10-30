@@ -1,6 +1,11 @@
 #include "Shop.h"
 
-float Shop::taxBuilding() {
-	// TODO - implement Shop::taxBuilding
+Shop::Shop() : Commercial("Shop")
+{
+}
+
+float Shop::taxBuilding()
+{
+    // TODO - implement Shop::taxBuilding
 	throw "Not yet implemented";
 }

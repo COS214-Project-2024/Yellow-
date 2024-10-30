@@ -1,35 +1,38 @@
 #include "Block.h"
 
-void Block::addSection(Section* section) {
-	//Come back to to go through the childrent
-	children.push_back(section);
+Block::Block() : Section("Block") //review
+{
 }
 
-void Block::removeSection(Section* section){
-	int idx = 0;
-	for (Section* sec : children)
-	{
-		if(sec == section)
-		{
-			children.erase(children.begin() + idx);
-		}
-	}
+Block::~Block()
+{
+	
 }
 
-Section* Block::getSection(int idx){
-	if (idx >= 0 && idx < children.size()) 
-	{
-		return children[idx];
-	}
-	else
-	{
-		if (idx == children.size()-1)
+void Block::addSection(Section *section)
+{
+	 if (Block* blockSection = dynamic_cast<Block*>(section)) {
+        const auto& blockChildren = section->getChildren();
+        for (Section* child : blockChildren)
 		{
-			return children[idx]->getSection(idx);
+			this->addSection(child);
 		}
-		
-		return nullptr;
-	}
+    } 
+	else 
+	{
+        children.push_back(section);
+    }
+}
+
+void Block::removeSection(int idx){
+	children.erase(children.begin() + idx);
+}
+
+Section* Block::getSection(int idx){	
+	if (idx < 0 || idx >= children.size()) {
+        return nullptr;
+    }
+	return children.at(idx);
 }
 
 void Block::acceptVisitor(Visitor* v) {
@@ -37,4 +40,9 @@ void Block::acceptVisitor(Visitor* v) {
 	{
 		v->visitBuilding(sec);
 	}
+}
+
+vector<Section*> Block::getChildren()
+{
+	return children;
 }
