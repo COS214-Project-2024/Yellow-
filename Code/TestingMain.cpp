@@ -153,21 +153,22 @@ TEST_CASE("Visitor")
 }
 
 TEST_CASE("State"){
-    People people(new Green());
-    Budget budget(new Green());
-    Disatisfaction dissatisfaction(new Green());
+    People* people = new People(new Green());
+    Budget* budget = new Budget(new Green());
+    Disatisfaction* dissatisfaction = new Disatisfaction(new Green());
 
-    people.handleSeverity(true);
-    budget.handleSeverity(false);
-    dissatisfaction.handleSeverity(true);
+    people->handleSeverity(true);
+    budget->handleSeverity(false);
+    dissatisfaction->handleSeverity(true);
 
-    people.handleSeverity(false);
-    budget.handleSeverity(true);
-    dissatisfaction.handleSeverity(false);
-    dissatisfaction.handleSeverity(false);
-    dissatisfaction.handleSeverity(false);
-    dissatisfaction.handleSeverity(true);
-    dissatisfaction.handleSeverity(true);
+    people->handleSeverity(false);
+    budget->handleSeverity(true);
+    dissatisfaction->handleSeverity(false);
+    dissatisfaction->handleSeverity(false);
+    dissatisfaction->handleSeverity(false);
+    dissatisfaction->handleSeverity(true);
+    dissatisfaction->handleSeverity(true);
+    CHECK_NOTHROW(dissatisfaction->handleSeverity(true));
 }
 
 TEST_CASE("Government Singleton"){
@@ -194,31 +195,41 @@ TEST_CASE("Strategy"){
     newGovernment.setBudgetState(budget);
     newGovernment.setMoraleState(dissatisfaction);
 
+    //AddPublicTransport
+
     AddPublicTransport* newStrategy = new AddPublicTransport();
     newGovernment.setStrategy(newStrategy);
-    CHECK("AddPublicTransport" == newGovernment.implementPolicyBudget());
+    newGovernment.setBudgetState(new Budget(new Yellow()));
+    newGovernment.setBudgetState(new Budget(new Green()));
+    Policies * currPolicy = newGovernment.implementPolicyBudget(new Yellow());
+    CHECK("AddPublicTransport" == currPolicy->getPolicy());
 
+    //IncreaseTaxes
+
+    IncreaseTaxes* newStrategyTaxes = new IncreaseTaxes();
+    newGovernment.setStrategy(newStrategyTaxes);
+    newGovernment.setBudgetState(new Budget(new Yellow()));
     newGovernment.setBudgetState(new Budget(new Red()));
-    IncreaseTaxes* increasingTaxes = new IncreaseTaxes();
-    newGovernment.setStrategy(increasingTaxes);
-    CHECK("IncreaseTaxes" == newGovernment.implementPolicyBudget());
+    currPolicy = newGovernment.implementPolicyBudget(new Yellow());
+    CHECK("IncreaseTaxes" == currPolicy->getPolicy());
 
+    //IncreaseWages
+
+    IncreaseWages* newStrategyWages = new IncreaseWages();
+    newGovernment.setStrategy(newStrategyWages);
+    newGovernment.setMoraleState(new Disatisfaction(new Yellow()));
     newGovernment.setMoraleState(new Disatisfaction(new Red()));
+    currPolicy = newGovernment.implementPolicyMorale(new Yellow());
+    CHECK("IncreaseWages" == currPolicy->getPolicy());
 
-    IncreaseWages* increasingWages = new IncreaseWages();
-    newGovernment.setStrategy(increasingWages);
-    CHECK("IncreaseWages" == newGovernment.implementPolicyMorale());
+    //ExpandingCity
 
-    ExpandCity* expandingCity = new ExpandCity();
-
-    newGovernment.setStrategy(expandingCity);
-    cout << newGovernment.implementPolicyPeople() << endl;
-    CHECK("\033[38;5;210mNo new policy changes\033[0m" == newGovernment.implementPolicyPeople());
-
-
+    ExpandCity* newStrategyCity = new ExpandCity();
+    newGovernment.setStrategy(newStrategyCity);
+    newGovernment.setPeopleState(new People(new Yellow()));
     newGovernment.setPeopleState(new People(new Red()));
-    newGovernment.setStrategy(expandingCity);
-    CHECK("ExpandCity" == newGovernment.implementPolicyPeople());
+    currPolicy = newGovernment.implementPolicyPeople(new Yellow());
+    CHECK("ExpandCity" == currPolicy->getPolicy());
 }
 
 TEST_CASE("Transport") {

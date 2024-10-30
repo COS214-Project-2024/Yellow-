@@ -1,6 +1,6 @@
 #include "Strategy.h"
 
-string Strategy::implementPolicy(string stateType, string stateColour) {
-    return "No new policies";
+Policies* Strategy::implementPolicy(string stateType, string prevStateColour, string currStateColour) {
+    return nullptr;
 }
 

@@ -1,33 +1,43 @@
 #include "Government.h"
 
-string Government::implementPolicy(string stateType, Severity* state) {
-    string stateColour = "";
-    if(typeid(*state) == typeid(Green)){
-        stateColour = "Green";
+Policies* Government::implementPolicy(string stateType, Severity* prevState, Severity* currState) {
+    string currStateColour = "";
+    if(typeid(*currState) == typeid(Green)){
+        currStateColour = "Green";
     }
-    else if(typeid(*state) == typeid(Yellow)){
-        stateColour = "Yellow";
+    else if(typeid(*currState) == typeid(Yellow)){
+        currStateColour = "Yellow";
     }
-    else if(typeid(*state) == typeid(Red)){
-        stateColour = "Red";
+    else if(typeid(*currState) == typeid(Red)){
+        currStateColour = "Red";
     }
 
+    string prevStateColour = "";
+    if(typeid(*prevState) == typeid(Green)){
+        prevStateColour = "Green";
+    }
+    else if(typeid(*prevState) == typeid(Yellow)){
+        prevStateColour = "Yellow";
+    }
+    else if(typeid(*prevState) == typeid(Red)){
+        prevStateColour = "Red";
+    }
 
-    string policy = strategy->implementPolicy(stateType, stateColour);
+    Policies* policy = strategy->implementPolicy(stateType, prevStateColour, currStateColour);
 
     return policy;
 }
 
-string Government::implementPolicyPeople() {
-    return this->implementPolicy("People", this->peopleState->getState());
+Policies* Government::implementPolicyPeople(Severity* prevState) {
+    return this->implementPolicy("People", prevState, this->peopleState->getState());
 }
 
-string Government::implementPolicyBudget() {
-    return this->implementPolicy("Budget", this->budgetState->getState());
+Policies* Government::implementPolicyBudget(Severity* prevState) {
+    return this->implementPolicy("Budget", prevState, this->budgetState->getState());
 }
 
-string Government::implementPolicyMorale() {
-    return this->implementPolicy("Disatisfaction", this->disatisfactionState->getState());
+Policies* Government::implementPolicyMorale(Severity* prevState) {
+    return this->implementPolicy("Disatisfaction", prevState, this->disatisfactionState->getState());
 
 }
 
@@ -38,34 +48,42 @@ void Government::setStrategy(Strategy* newStrategy) {
 Government* Government :: uniqueInstanceGov = nullptr;
 
 Government& Government::onlyInstance() {
-//    if( uniqueInstanceGov == nullptr){
-//        uniqueInstanceGov = new Government ();
-//        cout << "\033[38;5;39mYour city's Government has been created. \033[0m" << endl;
-//    }
-//    else{
-//        cout << "\033[38;5;196mThere already exists a government. Check the city books in the library to be educated on the ruling of this city \033[0m" << endl;
-//    }
-
     static Government uniqueInstanceGov;
     cout << "\033[38;5;39mYour city's Government has been created. If you want to create another, first delete this one! \033[0m" << endl;
 
     return uniqueInstanceGov;
 }
 
-void Government::handlePeople(bool upOrDown) {
-    //TODO: this will have to be more advanced to change the state with the fully fledged game
+MaterialOrder* Government::handlePeople(bool upOrDown) {
+
+    Severity* prevSev = this->peopleState->getState();
+
     this->peopleState->handleSeverity(upOrDown);
 
+    Policies* newPolicy = implementPolicyPeople(prevSev);
+
+    return this->department->handle(newPolicy);
+
 }
 
-void Government::handleBudget(bool upOrDown) {
-    //TODO: this will have to be more advanced to change the state with the fully fledged game
+MaterialOrder* Government::handleBudget(bool upOrDown) {
+    Severity* prevSev = this->peopleState->getState();
+
     this->disatisfactionState->handleSeverity(upOrDown);
+
+    Policies* newPolicy = implementPolicyBudget(prevSev);
+
+    return this->department->handle(newPolicy);
 }
 
-void Government::handleMorale(bool upOrDown) {
-    //TODO: this will have to be more advanced to change the state with the fully fledged game
+MaterialOrder* Government::handleMorale(bool upOrDown) {
+    Severity* prevSev = this->peopleState->getState();
+
     this->budgetState->handleSeverity(upOrDown);
+
+    Policies* newPolicy = implementPolicyMorale(prevSev);
+
+    return this->department->handle(newPolicy);
 }
 
 Severity *Government::getBudgetState() {
