@@ -19,3 +19,7 @@ vector<Coordinate> Cell::getCoordinates() {
 void Cell::setCoordinates(vector<Coordinate> newCoordinates) {
     this->coordinates = std::move(newCoordinates);
 }
+
+void Cell::setCellType(string str) {
+    this->type = str;
+}

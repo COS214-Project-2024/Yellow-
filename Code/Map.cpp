@@ -105,3 +105,34 @@ void Map::addToMatrix(Cell* object) {
     pos.resize(pos.size()+1, 0);
 
 }
+
+void Map::djikstrasAneurysm(Cell* object){
+    if (object->getCellType() == "Road"){
+        return;
+    }
+
+}
+
+vector<Cell*> Map::findBorderRoads(Cell* building) {
+    vector<Cell*> borderRoads;
+    int directions[4][2] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+    for (int i = 0; i < this->map.size(); i++) {
+        for (int j = 0; j < this->map[i].size(); j++) {
+            if (map[i][j]->getCellType() != "Road") {
+                for (auto& dir : directions) {
+                    int newRow = i + dir[0];
+                    int newCol = j + dir[1];
+                    if (isInBounds(newRow, newCol) && map[newRow][newCol]->getCellType() == "Road") {
+                        borderRoads.push_back(map[newRow][newCol]);
+                    }
+                }
+            }
+        }
+    }
+    return borderRoads;
+}
+
+bool Map::isInBounds(int r, int c) {
+    return r >= 0 && r < map.size() && c >= 0 && c < map[0].size();
+}

@@ -14,8 +14,11 @@ private:
    vector<vector<Cell*>> map;
    vector<vector<int>> distanceMatrix;
    vector<Cell*> pos;
+   vector<Cell*> buildings;
    //TODO: find out how to set distances between buildings
    void addToMatrix(Cell* object);
+   vector<Cell*> findBorderRoads(Cell* building);
+   bool isInBounds(int r, int c);
 
 public:
     Map(vector<vector<Cell*>> map, vector<vector<int>> distanceMatrix, vector<Cell*> pos);
@@ -27,5 +30,6 @@ public:
     void printMap();
     void removeNode(Cell* object);
     void removeNode(Coordinate* coordinate);
+    void djikstrasAneurysm(Cell* object);
 };
 #endif //GROUPPROJECT_MAP_H
