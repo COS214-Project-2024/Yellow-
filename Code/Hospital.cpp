@@ -3,3 +3,5 @@
 Hospital::Hospital() : Service("Hospital")
 {
 }
+
+Hospital::

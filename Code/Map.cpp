@@ -3,8 +3,13 @@
 //
 
 #include "Map.h"
-Map::Map(vector<vector<Cell*>> map, vector<vector<Cell*>> distanceMatrix)
+Map::Map(vector<vector<Cell*>> map, vector<vector<int>> distanceMatrix, vector<Cell*> pos)
         : map(map), distanceMatrix(distanceMatrix) {}
+
+Map::Map(){
+    map = vector<vector<Cell*>>();
+    distanceMatrix = vector<vector<int>>();
+}
 
 void Map::addNode(Cell *object, int x, int y, int height, int width) {
     int curHeight = x;
@@ -77,4 +82,26 @@ void Map::addNode(Cell *object) {
 void Map::addNode(Cell *object, vector<Coordinate> coordinates){
     object->setCoordinates(std::move(coordinates));
     addNode(object);
+}
+
+void Map::removeNode(Cell *object) {
+//Todo: remove object from all coords that object occupies
+}
+
+void Map::removeNode(Coordinate *coordinate) {
+//Todo: remove object based on coords
+}
+
+void Map::addToMatrix(Cell* object) {
+    if (distanceMatrix.empty()) {
+        distanceMatrix.resize(1, std::vector<int>(1, 0));
+    } else {
+        int newSize = distanceMatrix.size() + 1;
+        distanceMatrix.resize(newSize);
+        for (auto& row : distanceMatrix) {
+            row.resize(newSize, 0);
+        }
+    }
+    pos.resize(pos.size()+1, 0);
+
 }
