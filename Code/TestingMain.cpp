@@ -27,6 +27,10 @@
 #include "Buildings.h"
 #include "Hospital.h"
 #include "City.h"
+#include "Population.h"
+#include "Citizen.h"
+#include "Observer.h"
+#include "HappyObserver.h"
 #include <typeinfo>
 
 TEST_CASE("Factory method") {
@@ -270,7 +274,7 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getWater() == 0);
 
     city.stuff.res->setEnergy(0);
-    CHECK(city.stuff.res->getEnergy() == 0);    
+    CHECK(city.stuff.res->getEnergy() == 0);
 
     IndustrialFactory* industrialFactory = new IndustrialFactory();
     Industrial* cf = industrialFactory->createConcreteFactory();
@@ -299,7 +303,7 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getSteel() == resources);
     CHECK(city.stuff.res->getWood() == resources);
     CHECK(city.stuff.res->getBudget() == money);
-    
+
     resources+=90;
     sf->createBuildingResource();
     cf->createBuildingResource();
@@ -309,8 +313,8 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getWood() == resources);
 
     ServiceFactory serviceFactory = ServiceFactory();
-    
-    Utilities* power = serviceFactory.createPowerPlant();   
+
+    Utilities* power = serviceFactory.createPowerPlant();
     power->createResource();
     CHECK(typeid(*power) == typeid(PowerPlant));
     resources -= 80;
@@ -391,4 +395,53 @@ TEST_CASE("Factory and City integration") {
     park = nullptr;
     delete museum;
     museum = nullptr;
+}
+
+TEST_CASE("Observer") {
+    Population population;
+    Citizen* citizen1 = new Citizen(50, nullptr, "Teacher", 100.0f, "123 School Rd");
+    Citizen* citizen2 = new Citizen(90, nullptr, "Engineer", 200.0f, "456 Tech Ave");
+
+    population.addCitizen(citizen1);
+    population.addCitizen(citizen2);
+    CHECK(population.getCitizens().size() == 2);
+
+    HappyObserver* happyObserver = new HappyObserver(population.getCitizens());
+    population.attach(happyObserver);
+    CHECK(population.getObservers().size() == 1);
+
+    SUBCASE("Observer receives correct updates") {
+        // Capture output for validation
+        std::ostringstream oss;
+        std::streambuf* coutBuf = std::cout.rdbuf();
+        std::cout.rdbuf(oss.rdbuf());
+
+        population.notify(); 
+
+        std::cout.rdbuf(coutBuf);  // Restore std::cout
+        std::string output = oss.str();
+
+        CHECK(output.find("Average happiness of citizens: 70") != std::string::npos);
+    }
+
+    SUBCASE("Attach and detach observer") {
+        population.detach(happyObserver);
+        CHECK(population.getObservers().empty());
+
+        // Try notifying with no observers attached (should not throw errors)
+        std::ostringstream oss;
+        std::streambuf* coutBuf = std::cout.rdbuf();
+        std::cout.rdbuf(oss.rdbuf());
+
+        population.notify();
+
+        std::cout.rdbuf(coutBuf);  // Restore std::cout
+        std::string output = oss.str();
+
+        CHECK(output == "All observers have been notified.\n");
+    }
+
+    delete citizen1;
+    delete citizen2;
+    delete happyObserver;
 }
