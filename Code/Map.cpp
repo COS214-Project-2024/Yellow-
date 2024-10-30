@@ -110,6 +110,7 @@ void Map::djikstrasAneurysm(Cell* object){
     if (object->getCellType() == "Road"){
         return;
     }
+    vector<Cell*> borderRoads = findBorderRoads(object);
 
 }
 
