@@ -15,11 +15,6 @@ void Budget::handleSeverity(bool upOrDown) {
 
 }
 
-void Budget::increaseTaxes() {
-	// TODO - implement Budget::increaseTaxes
-	throw "Not yet implemented";
-}
-
 Severity *Budget::getState() {
     return this->severity;
 }

@@ -9,6 +9,7 @@ protected:
 	int numberOfHouseholds;
 
 public:
+	Residential(string cellType);
 	virtual float taxBuilding() = 0;
 
 	void acceptVisitor(Visitor* v);

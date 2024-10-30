@@ -1,61 +1,73 @@
+
 #include "Resources.h"
 
-// Setter for materials
-void Resources::setMaterials(int newAmount) {
-    materials = newAmount;
+void Resources::setConcrete(int newAmount)
+{
+    concrete = newAmount;
 }
 
-// Getter for materials
-int Resources::getMaterials() {
-    return materials;
+int Resources::getConcrete()
+{
+    return concrete;
 }
 
-// Setter for energy
-void Resources::setEnergy(int newAmount) {
-    energy = newAmount;
+void Resources::setSteel(int newAmount)
+{
+    steel = newAmount;
 }
 
-// Getter for energy
+int Resources::getSteel()
+{
+    return steel;
+}
+
+void Resources::setEnergy(int newAmount)
+{
+    this->energy = newAmount;
+}
+
 int Resources::getEnergy() {
-    return energy;
+    return this->energy;
 }
 
-// Setter for water
 void Resources::setWater(int newAmount) {
-    water = newAmount;
+    this->water = newAmount;
 }
 
-// Getter for water
 int Resources::getWater() {
-    return water;
+    return this->water;
 }
 
-// Setter for budget
 void Resources::setBudget(float newAmount) {
-    budget = newAmount;
+    this->budget = newAmount;
 }
 
-// Getter for budget
 float Resources::getBudget() {
-    return budget;
+    return this->budget;
 }
 
-// Setter for population
 void Resources::setPopulation(int newAmount) {
-    population = newAmount;
+    this->population = newAmount;
 }
 
-// Getter for population
 int Resources::getPopulation() {
-    return population;
+    return this->population;
 }
 
-// Setter for morale
 void Resources::setMorale(int newAmount) {
-    morale = newAmount;
+    this->morale = newAmount;
 }
 
-// Getter for morale
 int Resources::getMorale() {
-    return morale;
+    return this->morale;
+}
+
+void Resources::setWood(int newAmount)
+{
+    wood = newAmount;
+}
+
+int Resources::getWood()
+{
+    return this->wood;
 }

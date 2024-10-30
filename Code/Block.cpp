@@ -1,5 +1,9 @@
 #include "Block.h"
 
+Block::Block() : Section("Block") //review
+{
+}
+
 Block::~Block()
 {
 	children.clear();

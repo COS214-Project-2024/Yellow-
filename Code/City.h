@@ -2,7 +2,6 @@
 #define CITY_H
 
 #include "Resources.h"
-#include "Taxes.h"
 #include "Government.h"
 #include "Section.h"
 #include "Population.h"
@@ -23,7 +22,7 @@ public:
 	City(Section* head);
 	static City& instanceCity();
 	void collectResources();
-	void collectTaxtes();
+	void collectTaxes();
 	void dealWithResources();
 	void dealWithPolicies();
 };
