@@ -7,6 +7,7 @@ using namespace std;
 class Airport : public Service{
     public:
         Airport();
+        void setIcon() override;
 private:
     /*
     string destinations1;

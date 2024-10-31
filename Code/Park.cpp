@@ -1,6 +1,6 @@
 #include "Park.h"
 
-float Park::taxBuilding() {
+void Park::taxBuilding() {
 	// TODO - implement Park::taxBuilding
 	throw "Not yet implemented";
 }

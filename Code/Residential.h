@@ -10,9 +10,10 @@ protected:
 
 public:
 	Residential(string cellType);
-	virtual float taxBuilding() = 0;
+	virtual void taxBuilding() = 0;
 
 	void acceptVisitor(Visitor* v);
+	virtual void setIcon();
 };
 
 #endif

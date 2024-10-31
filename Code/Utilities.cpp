@@ -8,7 +8,11 @@ void Utilities::acceptVisitor(Visitor *v)
 	throw "Not yet implemented";
 }
 
-float Utilities::taxBuilding()
+void Utilities::taxBuilding()
 {
     return 0.0f;
+}
+
+void Utilities::setIcon()
+{
 }

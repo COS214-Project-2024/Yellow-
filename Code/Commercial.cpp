@@ -6,3 +6,7 @@ void Commercial::acceptVisitor(Visitor *v)
 {
     v->visitBuilding(this);
 }
+
+void Commercial::setIcon()
+{
+}

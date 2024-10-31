@@ -3,3 +3,7 @@
 Airport::Airport() : Service("Airport")
 {
 }
+
+void Airport::setIcon()
+{
+}

@@ -5,7 +5,7 @@ class Park : public Landmarks {
 
 
 public:
-	float taxBuilding();
+	void taxBuilding() override;
 	Park();
 	void createBuildingResource() override;
 };

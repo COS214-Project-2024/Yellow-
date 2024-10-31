@@ -7,47 +7,47 @@ class CommercialFactory : public BuildingFactory {
 
 
 public:
-	Commercial* createShop() override;
+	Commercial* createShop(vector<Coordinate> coordinates) override;
 
-	Commercial* createOffice() override;
+	Commercial* createOffice(vector<Coordinate> coordinates) override;
 
-	Commercial* createMall() override;
+	Commercial* createMall(vector<Coordinate> coordinates) override;
 
-	Residential* createHouse() override;
+	Residential* createHouse(vector<Coordinate> coordinates) override;
 
-	Residential* createApartment() override;
+	Residential* createApartment(vector<Coordinate> coordinates) override;
 
-	Residential* createComplex() override;
+	Residential* createComplex(vector<Coordinate> coordinates) override;
 	
-	Residential* createHouseHold() override;
+	Residential* createHouseHold(vector<Coordinate> coordinates) override;
 
-	Landmarks* createPark() override;
+	Landmarks* createPark(vector<Coordinate> coordinates) override;
 
-	Landmarks* createMuseum() override;
+	Landmarks* createMuseum(vector<Coordinate> coordinates) override;
 
-	Service* createHospital() override;
+	Service* createHospital(vector<Coordinate> coordinates) override;
 
-	Service* createTownHall() override;
+	Service* createTownHall(vector<Coordinate> coordinates) override;
 
-	Utilities* createWaterPlant() override;
+	Utilities* createWaterPlant(vector<Coordinate> coordinates) override;
 
-	Utilities* createPowerPlant() override;
+	Utilities* createPowerPlant(vector<Coordinate> coordinates) override;
 
-	Utilities* createWastePlant() override;
+	Utilities* createWastePlant(vector<Coordinate> coordinates) override;
 
-	Service* createSchool() override;
+	Service* createSchool(vector<Coordinate> coordinates) override;
 
-	Service* createTrainStation() override;
+	Service* createTrainStation(vector<Coordinate> coordinates) override;
 
-	Service* createAirport() override;
+	Service* createAirport(vector<Coordinate> coordinates) override;
 
-	Service* createPoliceStation() override;
+	Service* createPoliceStation(vector<Coordinate> coordinates) override;
 
-	Industrial* createForestry() override;
+	Industrial* createForestry(vector<Coordinate> coordinates) override;
 
-	Industrial* createSteelFactory() override;
+	Industrial* createSteelFactory(vector<Coordinate> coordinates) override;
 
-	Industrial* createConcreteFactory() override;
+	Industrial* createConcreteFactory(vector<Coordinate> coordinates) override;
 };
 
 #endif

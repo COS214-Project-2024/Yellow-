@@ -6,3 +6,7 @@ void Landmarks::acceptVisitor(Visitor *v)
 {
     v->visitBuilding(this);
 }
+
+void Landmarks::setIcon()
+{
+}

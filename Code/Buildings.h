@@ -8,11 +8,15 @@ class Buildings : public Section {
 protected:
 	int maxCitizens;
 	int currentNumberOfCitizens;
+	float buildingMoney;
 private:
 	int* sectionCoordinate;
-
 public:
 	Buildings(string cellType);
+
+	float getMoney();
+
+	void setMoney(float newAmount);
 	
 	int getMaxCitizens();
 
@@ -24,7 +28,9 @@ public:
 
 	void acceptVisitor(Visitor* v);
 
-	virtual float taxBuilding() = 0;
+	virtual void taxBuilding() = 0;
+
+	virtual void setIcon();
 };
 
 #endif

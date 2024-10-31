@@ -10,11 +10,13 @@ class Industrial : public Buildings {
 public:
 	Industrial(string cellType);
 	
-	virtual float taxBuilding() = 0;
+	virtual void taxBuilding();
 
 	void acceptVisitor(Visitor* v);
 
 	virtual void createBuildingResource() = 0;
+
+	virtual void setIcon();
 };
 
 #endif

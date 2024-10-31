@@ -6,7 +6,8 @@ class Mall : public Commercial {
 
 public:
 	Mall();
-	float taxBuilding();
+	void taxBuilding() override;
+	void setIcon() override;
 };
 
 #endif

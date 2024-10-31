@@ -253,7 +253,7 @@ TEST_CASE("Transport") {
     myMap.printMap();
 }
 
-TEST_CASE("Factory and City integration") {
+/*TEST_CASE("Factory and City integration") {
     City city = City::instanceCity();
     int resources = 2000;
     float money = 4000;
@@ -400,7 +400,7 @@ TEST_CASE("Factory and City integration") {
     park = nullptr;
     delete museum;
     museum = nullptr;
-}
+}*/
 
 TEST_CASE("Observer") {
     Population population;

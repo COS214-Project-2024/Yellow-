@@ -4,6 +4,7 @@
 class Hospital : public Service {
     public:
     Hospital();
+    void setIcon() override;
 };
 
 #endif

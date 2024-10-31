@@ -4,4 +4,6 @@ Hospital::Hospital() : Service("Hospital")
 {
 }
 
-Hospital::
+void Hospital::setIcon()
+{
+}

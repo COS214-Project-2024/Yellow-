@@ -9,9 +9,10 @@ class Service : public Buildings{
 
 public:
 	Service(string cellType);
-	float taxBuilding();
+	virtual void taxBuilding();
 	void createBuildingResource();
 	void acceptVisitor(Visitor* v);
+	virtual void setIcon();
 };
 
 #endif

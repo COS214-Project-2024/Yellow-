@@ -1,115 +1,115 @@
 #include "ServiceFactory.h"
 
-Service* ServiceFactory::createHospital() {
-    if (useBuildingResources(80,80,80,700) == false)
+Service* ServiceFactory::createHospital(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new Hospital();
 }
 
-Service* ServiceFactory::createTownHall() {
-    if (useBuildingResources(80,80,80,700) == false)
+Service* ServiceFactory::createTownHall(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new TownHall();
 }
 
-Utilities* ServiceFactory::createWaterPlant() {
-    if (useBuildingResources(80,80,80,700) == false)
+Utilities* ServiceFactory::createWaterPlant(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new WaterPlant();
 }
 
-Utilities* ServiceFactory::createPowerPlant() {
-    if (useBuildingResources(80,80,80,700) == false)
+Utilities* ServiceFactory::createPowerPlant(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new PowerPlant();
 }
 
-Utilities* ServiceFactory::createWastePlant() {
-    if (useBuildingResources(80,80,80,700) == false)
+Utilities* ServiceFactory::createWastePlant(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new WasteManagement();
 }
 
-Service* ServiceFactory::createSchool() {
-    if (useBuildingResources(80,80,80,700) == false)
+Service* ServiceFactory::createSchool(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new School();
 }
 
-Service* ServiceFactory::createTrainStation() {
-    if (useBuildingResources(80,80,80,700) == false)
+Service* ServiceFactory::createTrainStation(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new TrainStation();
 }
 
-Service* ServiceFactory::createAirport() {
-    if (useBuildingResources(80,80,80,700) == false)
+Service* ServiceFactory::createAirport(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new Airport();
 }
 
-Service* ServiceFactory::createPoliceStation() {
-    if (useBuildingResources(80,80,80,700) == false)
+Service* ServiceFactory::createPoliceStation(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new PoliceStation();
 }
 
-Residential *ServiceFactory::createHouse()
+Residential *ServiceFactory::createHouse(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *ServiceFactory::createApartment()
+Residential *ServiceFactory::createApartment(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *ServiceFactory::createComplex()
+Residential *ServiceFactory::createComplex(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *ServiceFactory::createHouseHold()
+Residential *ServiceFactory::createHouseHold(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Industrial *ServiceFactory::createForestry()
+Industrial *ServiceFactory::createForestry(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Industrial *ServiceFactory::createSteelFactory()
+Industrial *ServiceFactory::createSteelFactory(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Industrial *ServiceFactory::createConcreteFactory()
+Industrial *ServiceFactory::createConcreteFactory(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *ServiceFactory::createShop()
+Commercial *ServiceFactory::createShop(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *ServiceFactory::createOffice()
+Commercial *ServiceFactory::createOffice(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *ServiceFactory::createMall()
+Commercial *ServiceFactory::createMall(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Landmarks *ServiceFactory::createPark()
+Landmarks *ServiceFactory::createPark(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Landmarks *ServiceFactory::createMuseum()
+Landmarks *ServiceFactory::createMuseum(vector<Coordinate> coordinates)
 {
     return nullptr;
 }

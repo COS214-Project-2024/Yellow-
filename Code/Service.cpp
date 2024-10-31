@@ -4,9 +4,9 @@ Service::Service(string cellType) : Buildings(cellType)
 {
 }
 
-float Service::taxBuilding()
+void Service::taxBuilding()
 {
-	return 0.0f;
+	return;
 }
 
 void Service::createBuildingResource()
@@ -17,4 +17,8 @@ void Service::createBuildingResource()
 
 void Service::acceptVisitor(Visitor* v) {
 	v->visitBuilding(this);
+}
+
+void Service::setIcon()
+{
 }

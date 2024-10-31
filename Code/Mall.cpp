@@ -4,8 +4,12 @@ Mall::Mall() : Commercial("Mall")
 {
 }
 
-float Mall::taxBuilding()
+void Mall::taxBuilding()
 {
     // TODO - implement Mall::taxBuilding
 	throw "Not yet implemented";
+}
+
+void Mall::setIcon()
+{
 }

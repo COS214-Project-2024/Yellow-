@@ -1,6 +1,6 @@
 #include "BuildingFactory.h"
 
-bool BuildingFactory::useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget)
+bool BuildingFactory::useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget, int cellCount)
 {
     City* city = &City::instanceCity();
     if (city != nullptr) {
