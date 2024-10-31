@@ -11,7 +11,9 @@ Section* Buildings::getSection(int idx)
 
 void Buildings::acceptVisitor(Visitor* v){}
 
-Buildings::Buildings(string cellType) : Section(cellType) {}
+Buildings::Buildings(string cellType) : Section(cellType) {
+
+}
 
 int Buildings::getMaxCitizens()
 {

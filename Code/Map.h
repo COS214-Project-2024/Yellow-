@@ -12,12 +12,24 @@ using namespace std;
 class Map {
 private:
    vector<vector<Cell*>> map;
-    vector<vector<Cell*>> distanceMatrix;
+   vector<vector<int>> distanceMatrix;
+   vector<Cell*> pos;
+   vector<Cell*> buildings;
+   //TODO: find out how to set distances between buildings
+   void addToMatrix(Cell* object);
+   vector<Cell*> findBorderRoads(Cell* building);
+   bool isInBounds(int r, int c);
 
 public:
-    Map(vector<vector<Cell*>> map, vector<vector<Cell*>> distanceMatrix);
+    Map(vector<vector<Cell*>> map, vector<vector<int>> distanceMatrix, vector<Cell*> pos);
+    Map();
     void addNode(Cell* object, int x, int y, int height, int width);//coordinates for top left of object(x,y)
     //updates map and distance matrix
+    void addNode(Cell* object);
+    void addNode(Cell* object, vector<Coordinate> coordinates);
     void printMap();
+    void removeNode(Cell* object);
+    void removeNode(Coordinate* coordinate);
+    void djikstrasAneurysm(Cell* object);
 };
 #endif //GROUPPROJECT_MAP_H

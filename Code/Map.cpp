@@ -3,8 +3,13 @@
 //
 
 #include "Map.h"
-Map::Map(vector<vector<Cell*>> map, vector<vector<Cell*>> distanceMatrix)
+Map::Map(vector<vector<Cell*>> map, vector<vector<int>> distanceMatrix, vector<Cell*> pos)
         : map(map), distanceMatrix(distanceMatrix) {}
+
+Map::Map(){
+    map = vector<vector<Cell*>>();
+    distanceMatrix = vector<vector<int>>();
+}
 
 void Map::addNode(Cell *object, int x, int y, int height, int width) {
     int curHeight = x;
@@ -56,4 +61,79 @@ void Map::printMap() {
         }
         cout << endl << endl;
     }
+}
+
+void Map::addNode(Cell *object) {
+    int x;
+    int y;
+    vector<Coordinate> coordinates = object->getCoordinates();
+    if (coordinates.empty()){
+        return;
+    }
+    for (int K = 0; K < coordinates.size(); K++){
+        x = coordinates[K].x;
+        y = coordinates[K].y;
+        if ((x < map.size()) && (y < map[x].size())){
+            map[x][y] = object;
+        }
+    }
+}
+
+void Map::addNode(Cell *object, vector<Coordinate> coordinates){
+    object->setCoordinates(std::move(coordinates));
+    addNode(object);
+}
+
+void Map::removeNode(Cell *object) {
+//Todo: remove object from all coords that object occupies
+}
+
+void Map::removeNode(Coordinate *coordinate) {
+//Todo: remove object based on coords
+}
+
+void Map::addToMatrix(Cell* object) {
+    if (distanceMatrix.empty()) {
+        distanceMatrix.resize(1, std::vector<int>(1, 0));
+    } else {
+        int newSize = distanceMatrix.size() + 1;
+        distanceMatrix.resize(newSize);
+        for (auto& row : distanceMatrix) {
+            row.resize(newSize, 0);
+        }
+    }
+    pos.resize(pos.size()+1, 0);
+
+}
+
+void Map::djikstrasAneurysm(Cell* object){
+    if (object->getCellType() == "Road"){
+        return;
+    }
+    vector<Cell*> borderRoads = findBorderRoads(object);
+
+}
+
+vector<Cell*> Map::findBorderRoads(Cell* building) {
+    vector<Cell*> borderRoads;
+    int directions[4][2] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+    for (int i = 0; i < this->map.size(); i++) {
+        for (int j = 0; j < this->map[i].size(); j++) {
+            if (map[i][j]->getCellType() != "Road") {
+                for (auto& dir : directions) {
+                    int newRow = i + dir[0];
+                    int newCol = j + dir[1];
+                    if (isInBounds(newRow, newCol) && map[newRow][newCol]->getCellType() == "Road") {
+                        borderRoads.push_back(map[newRow][newCol]);
+                    }
+                }
+            }
+        }
+    }
+    return borderRoads;
+}
+
+bool Map::isInBounds(int r, int c) {
+    return r >= 0 && r < map.size() && c >= 0 && c < map[0].size();
 }

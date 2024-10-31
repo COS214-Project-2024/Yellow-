@@ -4,10 +4,22 @@ Cell::Cell(string cellType) {
     this->type = cellType;
 }
 
-string Cell::getCell() {
+Cell* Cell::getCell() {
+    return this;
+}
+
+string Cell::getCellType() {
     return this->type;
 }
 
-Cell::~Cell()
-{
+vector<Coordinate> Cell::getCoordinates() {
+    return this->coordinates;
+}
+
+void Cell::setCoordinates(vector<Coordinate> newCoordinates) {
+    this->coordinates = std::move(newCoordinates);
+}
+
+void Cell::setCellType(string str) {
+    this->type = str;
 }
