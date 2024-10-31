@@ -1,73 +1,168 @@
-
+#include "City.h"
 #include "Resources.h"
 
-void Resources::setConcrete(int newAmount)
+Resources::Resources()
 {
-    concrete = newAmount;
+    concrete = 0;
+    steel = 0;
+    wood = 0;
+    powerGrid = 150;
+    powerUsage = 150;
+    waterGrid = 150;
+    waterUsage = 150;
+	budget = 10000;
+    population = 10;
+    morale = 60;
+    businessTax = 5;
+    propertyTax = 7;
+    incomeTax = 10;
 }
 
-int Resources::getConcrete()
+void Resources::printResources()
 {
-    return concrete;
+    cout << "Population: " << population << endl;
+    cout << "Budget: " << budget << endl;
+    cout << "Moral: " << morale << "/100" << endl;
+    cout << "Concrete: " << concrete << endl;
+    cout << "Steel: " << steel << endl;
+    cout << "Wood: " << wood << endl;
+    cout << "Power: " << powerUsage << "/" << powerGrid << endl;
+    cout << "Water: " << waterUsage << "/" << waterGrid << endl;
+    cout << "Business Tax: " << businessTax << "%" << endl;
+    cout << "Property Tax: " << propertyTax << "%" << endl;
+    cout << "Income Tax: " << incomeTax << "%" << endl;
 }
 
-void Resources::setSteel(int newAmount)
-{
-    steel = newAmount;
+// Setters
+void Resources::setConcrete(int newValue)
+{ 
+    concrete = newValue; 
 }
 
-int Resources::getSteel()
-{
-    return steel;
+void Resources::setSteel(int newValue) 
+{ 
+    steel = newValue; 
 }
 
-void Resources::setEnergy(int newAmount)
-{
-    this->energy = newAmount;
+void Resources::setWood(int newValue) 
+{ 
+    wood = newValue; 
 }
 
-int Resources::getEnergy() {
-    return this->energy;
+void Resources::setPowerGrid(int newValue) 
+{ 
+    powerGrid = newValue; 
 }
 
-void Resources::setWater(int newAmount) {
-    this->water = newAmount;
+void Resources::setPowerUsage(int newValue) 
+{ 
+    powerUsage = newValue; 
 }
 
-int Resources::getWater() {
-    return this->water;
+void Resources::setWaterGrid(int newValue) 
+{ 
+    waterGrid = newValue; 
 }
 
-void Resources::setBudget(float newAmount) {
-    this->budget = newAmount;
+void Resources::setWaterUsage(int newValue) 
+{ 
+    waterUsage = newValue; 
 }
 
-float Resources::getBudget() {
-    return this->budget;
+void Resources::setBudget(float newValue) 
+{ 
+    budget = newValue; 
 }
 
-void Resources::setPopulation(int newAmount) {
-    this->population = newAmount;
+void Resources::setPopulation(int newValue) 
+{ 
+    population = newValue; 
 }
 
-int Resources::getPopulation() {
-    return this->population;
+void Resources::setMorale(int newValue) 
+{ 
+    morale = min(newValue, 100);
 }
 
-void Resources::setMorale(int newAmount) {
-    this->morale = newAmount;
+void Resources::setBusinessTax(int newValue) 
+{ 
+    businessTax = newValue; 
 }
 
-int Resources::getMorale() {
-    return this->morale;
+void Resources::setPropertyTax(int newValue) 
+{ 
+    propertyTax = newValue; 
 }
 
-void Resources::setWood(int newAmount)
-{
-    wood = newAmount;
+void Resources::setIncomeTax(int newValue) 
+{ 
+    incomeTax = newValue; 
 }
 
-int Resources::getWood()
-{
-    return this->wood;
+
+// Getters
+int Resources::getConcrete() const 
+{ 
+    return concrete; 
 }
+
+int Resources::getSteel() const 
+{ 
+    return steel; 
+}
+
+int Resources::getWood() const 
+{ 
+    return wood; 
+}
+
+int Resources::getPowerGrid() const 
+{ 
+    return powerGrid; 
+}
+
+int Resources::getPowerUsage() const 
+{ 
+    return powerUsage; 
+}
+
+int Resources::getWaterGrid() const 
+{ 
+    return waterGrid; 
+}
+
+int Resources::getWaterUsage() const 
+{ 
+    return waterUsage; 
+}
+
+float Resources::getBudget() const 
+{ 
+    return budget; 
+}
+
+int Resources::getPopulation() const 
+{ 
+    return population; 
+}
+
+int Resources::getMorale() const 
+{ 
+    return morale; 
+}
+
+int Resources::getBusinessTax() const 
+{ 
+    return businessTax; 
+}
+
+int Resources::getPropertyTax() const 
+{ 
+    return propertyTax; 
+}
+
+int Resources::getIncomeTax() const 
+{ 
+    return incomeTax; 
+}
+
