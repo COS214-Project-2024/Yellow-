@@ -1,19 +1,19 @@
 #include "CommercialFactory.h"
 
 Commercial* CommercialFactory::createShop(vector<Coordinate> coordinates) {
-    if (useBuildingResources(100,100,100,800) == false)
+    if (useBuildingResources(100,100,100,800,coordinates.size()) == false)
         return nullptr;
 	return new Shop();
 }
 
 Commercial* CommercialFactory::createOffice(vector<Coordinate> coordinates) {
-    if (useBuildingResources(100,100,100,800) == false)
+    if (useBuildingResources(100,100,100,800,coordinates.size()) == false)
         return nullptr;
 	return new Office();
 }
 
 Commercial* CommercialFactory::createMall(vector<Coordinate> coordinates) {
-    if (useBuildingResources(100,100,100,800) == false)
+    if (useBuildingResources(100,100,100,800,coordinates.size()) == false)
         return nullptr;
 	return new Mall();
 }

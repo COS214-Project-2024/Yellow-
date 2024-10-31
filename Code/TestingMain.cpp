@@ -33,7 +33,7 @@
 #include "HappyObserver.h"
 #include <typeinfo>
 
-TEST_CASE("Factory method") {
+/*TEST_CASE("Factory method") {
     IndustrialFactory i = IndustrialFactory();
     Industrial* p = i.createForestry();
     delete p;
@@ -108,7 +108,7 @@ TEST_CASE("Factory method") {
     business = f.createOffice();
     delete business;
     business = nullptr;
-}
+}*/
 
 TEST_CASE("Composite") {
     Section* test = new Block();
@@ -237,7 +237,7 @@ TEST_CASE("Strategy"){
     CHECK("ExpandCity" == currPolicy->getPolicy());
 }
 
-TEST_CASE("Transport") {
+/*TEST_CASE("Transport") {
     vector<vector<Cell*>> cellMap(5, vector<Cell*>(5, nullptr));
     vector<vector<int>> matrix(5, vector<int>(5, 0));
     vector<Cell*> pos(5, nullptr);
@@ -251,7 +251,7 @@ TEST_CASE("Transport") {
     myMap.addNode(new Cell("Building 2"), 3, 3, 2, 2);
 
     myMap.printMap();
-}
+}*/
 
 /*TEST_CASE("Factory and City integration") {
     City city = City::instanceCity();

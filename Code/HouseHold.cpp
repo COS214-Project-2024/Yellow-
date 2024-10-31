@@ -4,7 +4,6 @@ HouseHold::HouseHold() : Residential("Household")
 {
 }
 
-float HouseHold::taxBuilding()
+void HouseHold::taxBuilding()
 {
-    return 0.0f;
 }

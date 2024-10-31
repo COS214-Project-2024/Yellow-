@@ -10,7 +10,6 @@ void Utilities::acceptVisitor(Visitor *v)
 
 void Utilities::taxBuilding()
 {
-    return 0.0f;
 }
 
 void Utilities::setIcon()

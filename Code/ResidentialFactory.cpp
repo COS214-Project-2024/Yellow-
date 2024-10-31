@@ -1,21 +1,21 @@
 #include "ResidentialFactory.h"
 
 Residential* ResidentialFactory::createHouse(vector<Coordinate> coordinates) {
-    if (useBuildingResources(50,50,50,500))
+    if (useBuildingResources(50,50,50,500,coordinates.size()))
 	    return new House();
     else 
         return nullptr;
 }
 
 Residential* ResidentialFactory::createApartment(vector<Coordinate> coordinates) { 
-    if (useBuildingResources(50,50,50,500) == false)
+    if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
         return nullptr;
     else
 	    return new Apartment();
 }
 
 Residential* ResidentialFactory::createComplex(vector<Coordinate> coordinates) {
-    if (useBuildingResources(50,50,50,500) == false)
+    if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
         return nullptr;
     else
 	    return new Complex();
@@ -23,7 +23,7 @@ Residential* ResidentialFactory::createComplex(vector<Coordinate> coordinates) {
 
 Residential *ResidentialFactory::createHouseHold(vector<Coordinate> coordinates)
 {
-    if (useBuildingResources(50,50,50,500) == false)
+    if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
         return nullptr;
     else
 	    return new HouseHold();

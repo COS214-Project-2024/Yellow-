@@ -4,10 +4,8 @@ Complex::Complex() : Residential("Complex")
 {
 }
 
-float Complex::taxBuilding()
+void Complex::taxBuilding()
 {
-    // TODO - implement Complex::taxBuilding
-	throw "Not yet implemented";
 }
 
 void Complex::setIcon()

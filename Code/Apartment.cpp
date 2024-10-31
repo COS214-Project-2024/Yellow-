@@ -4,10 +4,8 @@ Apartment::Apartment() : Residential("Apartment")
 {
 }
 
-float Apartment::taxBuilding()
+void Apartment::taxBuilding()
 {
-    // TODO - implement Apartment::taxBuilding
-	throw "Not yet implemented";
 }
 
 void Apartment::setIcon()
