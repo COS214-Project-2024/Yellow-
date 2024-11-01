@@ -30,6 +30,8 @@ public:
 
 	virtual void taxBuilding() = 0;
 
+	virtual void payEmployees() = 0;
+
 	virtual void setIcon();
 };
 

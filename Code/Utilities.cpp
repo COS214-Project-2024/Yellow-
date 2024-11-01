@@ -10,6 +10,7 @@ void Utilities::acceptVisitor(Visitor *v)
 
 void Utilities::taxBuilding()
 {
+    // do nothing
 }
 
 void Utilities::setIcon()

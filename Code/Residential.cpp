@@ -10,3 +10,8 @@ void Residential::acceptVisitor(Visitor *v)
 void Residential::setIcon()
 {
 }
+
+void Residential::payEmployees()
+{
+    // do nothing
+}
