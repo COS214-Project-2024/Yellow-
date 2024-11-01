@@ -21,17 +21,19 @@ class Government {
         Budget* budgetState;
         Disatisfaction* disatisfactionState;
         Strategy* strategy;
+        static Government* uniqueInstanceGov;
         Department* department;
 
     protected:
-        Government(){};
 
     public:
+        Government(){};
         ~Government(){
             delete peopleState;
             delete budgetState;
             delete disatisfactionState;
             delete strategy;
+            uniqueInstanceGov = nullptr;
         };
 
         //Strategy methods

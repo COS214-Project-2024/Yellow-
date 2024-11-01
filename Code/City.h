@@ -24,6 +24,7 @@ class City {
 		int prevMoral;
 		int prevPopulation;
 		int prevBudget;
+		Government gov;
 
 	public:
 		Varibals stuff;

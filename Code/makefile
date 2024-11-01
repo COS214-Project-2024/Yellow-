@@ -10,6 +10,7 @@ main: *.o
 
 debugcpp: debugo
 	g++ -std=c++20 -ggdb3 -o main *.o
+	gdb ./main
 
 debugo: *.cpp
 	g++ -std=c++20 -ggdb3 -c -w *.cpp

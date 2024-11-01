@@ -3,6 +3,7 @@
 City::City()
 {
 	stuff.res = new Resources();
+	gov = Government::onlyInstance();
 	prevMoral = 0;
 	prevBudget = 0;
 	prevPopulation = 0;
@@ -35,12 +36,10 @@ void City::dealWithPolicies()
 	MaterialOrder* orderMoral = nullptr;
 	MaterialOrder* orderBudget = nullptr;
 	MaterialOrder* orderPopulation = nullptr;
-
-	Government gov = Government::onlyInstance();
     
     //Moral
     if (stuff.res->getMorale() - prevMoral <= 0) {
-        orderMoral = gov.handleMorale(true);
+        orderMoral = gov.handleMorale(false);
     } else {
         orderMoral = gov.handleMorale(false);
     }
