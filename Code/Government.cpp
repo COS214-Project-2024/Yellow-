@@ -45,8 +45,6 @@ void Government::setStrategy(Strategy* newStrategy) {
     this->strategy = newStrategy;
 }
 
-Government* Government :: uniqueInstanceGov = nullptr;
-
 Government& Government::onlyInstance() {
     static Government uniqueInstanceGov;
     cout << "\033[38;5;39mYour city's Government has been created. If you want to create another, first delete this one! \033[0m" << endl;

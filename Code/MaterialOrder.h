@@ -7,7 +7,7 @@ using namespace std;
 
 class MaterialOrder {
 public:
-    vector<string, float>  materials;
+    vector<pair<string, float>>  materials;
 
     void addMaterial(string newMaterial, float newQuantity);
 };

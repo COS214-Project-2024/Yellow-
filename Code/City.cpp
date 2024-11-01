@@ -2,15 +2,10 @@
 
 City::City()
 {
+	stuff.res = new Resources();
 	prevMoral = 0;
 	prevBudget = 0;
 	prevPopulation = 0;
-}
-
-City::City(Section* head)
-{
-	Government::onlyInstance();
-	stuff.head = head;
 }
 
 City &City::instanceCity()
@@ -21,9 +16,13 @@ City &City::instanceCity()
 
 void City::nextIteration()
 {
+	if (stuff.res == nullptr) {
+        std::cerr << "Resources not initialized!" << std::endl;
+        return;
+    }
 	collection();
 	dealWithPolicies();
-	stuff.res->printResources();
+    stuff.res->printResources();
 }
 
 void City::collection()
@@ -33,101 +32,91 @@ void City::collection()
 
 void City::dealWithPolicies()
 {
-	Government &gov = Government::onlyInstance();
+	MaterialOrder* orderMoral = nullptr;
+	MaterialOrder* orderBudget = nullptr;
+	MaterialOrder* orderPopulation = nullptr;
 
-	MaterialOrder* orderMoral;
-	MaterialOrder* orderBudget;
-	MaterialOrder* orderPopulation;
+	Government gov = Government::onlyInstance();
+    
+    //Moral
+    if (stuff.res->getMorale() - prevMoral <= 0) {
+        orderMoral = gov.handleMorale(true);
+    } else {
+        orderMoral = gov.handleMorale(false);
+    }
 
-	//Moral
-	if (stuff.res->getMorale() - prevMoral < 0)
-	{
-		orderMoral = gov.handleMorale(true);
-	}
-	else 
-	{
-		orderMoral = gov.handleMorale(false);
-	}
-
-	vector<string, float>::iterator itr;
-
-	for (itr = orderMoral->materials.begin(); itr != orderMoral->materials.end(); itr++)							
-	{
-		if (*itr->first == "Morale")
-		{
-			stuff.res->setMorale(stuff.res->getMorale() + *itr->second);
-		}
-	}
+	// for (auto &material : orderMoral->materials)							
+	// {
+	// 	if (material.first == "Morale")
+	// 	{
+	// 		stuff.res->setMorale(stuff.res->getMorale() + material.second);
+	// 	}
+	// }
 	
-	//Budget
-	if (stuff.res->getBudget() - prevBudget < 0)
-	{
-		orderBudget = gov.handleBudget(false);
-	}
-	else 
-	{
-		orderBudget = gov.handleBudget(true);
-	}
+	// //Budget
+	// if (stuff.res->getBudget() - prevBudget < 0)
+	// {
+	// 	orderBudget = gov.handleBudget(false);
+	// }
+	// else 
+	// {
+	// 	orderBudget = gov.handleBudget(true);
+	// }
 
-	for (itr = orderBudget->materials.begin(); itr != orderBudget->materials.end(); itr++)							
-	{
-		if (*itr->first == "PropertyTax")
-		{
-			stuff.res->setPropertyTax(stuff.res->getPropertyTax() + *itr->second);
-			stuff.res->setMorale(stuff.res->getMorale() - 1);
-		}
+	// for (auto &material : orderBudget->materials)							
+	// {
+	// 	if (material.first == "PropertyTax")
+	// 	{
+	// 		stuff.res->setPropertyTax(stuff.res->getPropertyTax() + material.second);
+	// 		stuff.res->setMorale(stuff.res->getMorale() - 1);
+	// 	}
 
-		if (*itr->first == "IncomeTax")
-		{
-			stuff.res->setIncomeTax(stuff.res->getIncomeTax() + *itr->second);
-			stuff.res->setMorale(stuff.res->getMorale() - 1);
-		}
+	// 	if (material.first == "IncomeTax")
+	// 	{
+	// 		stuff.res->setIncomeTax(stuff.res->getIncomeTax() + material.second);
+	// 		stuff.res->setMorale(stuff.res->getMorale() - 1);
+	// 	}
 
-		if (*itr->first == "BusinessTax")
-		{
-			stuff.res->setBusinessTax(stuff.res->getBusinessTax() + *itr->second);
-			stuff.res->setMorale(stuff.res->getMorale() - 1);
-		}
-	}
+	// 	if (material.first == "BusinessTax")
+	// 	{
+	// 		stuff.res->setBusinessTax(stuff.res->getBusinessTax() + material.second);
+	// 		stuff.res->setMorale(stuff.res->getMorale() - 1);
+	// 	}
+	// }
 
-	//Population
-	if (stuff.res->getPopulation() - prevPopulation < 0)
-	{
-		orderPopulation = gov.handlePeople(true);
-	}
-	else 
-	{
-		orderPopulation = gov.handlePeople(false);
-	}
+	// //Population
+	// if (stuff.res->getPopulation() - prevPopulation < 0)
+	// {
+	// 	orderPopulation = gov.handlePeople(true);
+	// }
+	// else 
+	// {
+	// 	orderPopulation = gov.handlePeople(false);
+	// }
 
-	for (itr = orderPopulation->materials.begin(); itr != orderPopulation->materials.end(); itr++)
-	{
-		BuildingFactory* serviceFactory = new ServiceFactory();
-		BuildingFactory* residentialFactory = new ResidentialFactory();
-		BuildingFactory* industrialFactory = new IndustrialFactory();
-		BuildingFactory* commercialFactory = new CommercialFactory();
-		BuildingFactory* landmarkFactory = new LandmarkFactory();
-		//Transport
-		if (*itr->first == "BusStop")
-		{
-			//stuff.map-> addNode(static_cast<Cell*>(serviceFactory->createBus()),0,0,1,1)
-		}
+	// for (auto &material : orderPopulation->materials)
+	// {
+	// 	//Transport
+	// 	if (material.first == "BusStop")
+	// 	{
+	// 		//stuff.map-> addNode(static_cast<Cell*>(serviceFactory->createBus()),0,0,1,1)
+	// 	}
 		
-		if (*itr->first == "TrainStation")
-		{
-			//stuff.map-> addNode(static_cast<Cell*>(serviceFactory->createTrainStation()),0,0,1,1);
-		}
+	// 	if (material.first == "TrainStation")
+	// 	{
+	// 		//stuff.map-> addNode(static_cast<Cell*>(serviceFactory->createTrainStation()),0,0,1,1);
+	// 	}
 		
-		if (*itr->first == "Morale")
-		{
-			stuff.res->setMorale(stuff.res->getMorale() + *itr->second);
-		}
+	// 	if (material.first == "Morale")
+	// 	{
+	// 		stuff.res->setMorale(stuff.res->getMorale() + material.second);
+	// 	}
 			
-		//Bulding
-	}
+	// 	//Bulding
+	// }
 
 	//Increase or Deacrease population
-	int populationAddedOrRemoved = stuff.res->getPopulation()*(stuff.res->getMorale()/100);
+	int populationAddedOrRemoved = floor(stuff.res->getPopulation()*(stuff.res->getMorale()/100.0));
 
 	if (stuff.res->getMorale() <= 50)
 	{
@@ -137,7 +126,6 @@ void City::dealWithPolicies()
 	{
 		stuff.res->setPopulation(stuff.res->getPopulation() + populationAddedOrRemoved);
 	}
-	
 
 	prevMoral = stuff.res->getMorale();
     prevBudget = stuff.res->getBudget();

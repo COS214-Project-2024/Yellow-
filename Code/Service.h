@@ -3,6 +3,7 @@
 
 #include "Visitor.h"
 #include "Buildings.h"
+#include "City.h"
 
 class Service : public Buildings{
 

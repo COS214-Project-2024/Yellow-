@@ -7,18 +7,13 @@
 #include "Population.h"
 #include "Map.h"
 #include "MaterialOrder.h"
-#include "BuildingFactory.h"
-#include "IndustrialFactory.h"
-#include "LandmarkFactory.h"
-#include "ResidentialFactory.h"
-#include "CommercialFactory.h"
-#include "ServiceFactory.h"
 #include <vector>
+#include <cmath>
 
 struct Varibals
 {
 	Population* population;
-	Resources* res = new Resources();
+	Resources* res;
 	Section* head;
 	Map* map;
 };
@@ -33,7 +28,7 @@ class City {
 	public:
 		Varibals stuff;
 		City();
-		City(Section* head);
+		//City(Section* head);
 		static City& instanceCity();
 		void nextIteration();
 		void collection();

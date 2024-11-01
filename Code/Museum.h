@@ -2,6 +2,7 @@
 #define MUSEUM_H
 
 #include "Landmarks.h"
+#include "City.h"
 
 class Museum : public Landmarks {
 

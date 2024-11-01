@@ -31,6 +31,7 @@ void Resources::printResources()
     cout << "Business Tax: " << businessTax << "%" << endl;
     cout << "Property Tax: " << propertyTax << "%" << endl;
     cout << "Income Tax: " << incomeTax << "%" << endl;
+    cout << "====================================" << endl;
 }
 
 // Setters

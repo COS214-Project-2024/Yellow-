@@ -41,8 +41,14 @@ TEST_CASE("City Test")
     Section* building1 = new Hospital();
     Section* building2 = new Park();
 
-    City& city = City::instanceCity();
-    city.nextIteration();
+    City::instanceCity().nextIteration();
+    CHECK(16 == City::instanceCity().stuff.res->getPopulation());
+
+    for (int i = 0; i < 5; i++)
+    {
+        City::instanceCity().nextIteration();
+    }
+    
 }
 
 // TEST_CASE("Visitor")
@@ -236,19 +242,6 @@ TEST_CASE("City Test")
 // //     dissatisfaction.handleSeverity(false);
 // //     dissatisfaction.handleSeverity(true);
 // //     dissatisfaction.handleSeverity(true);
-// // }
-
-// // TEST_CASE("Government Singleton"){
-
-// //     Government newGovernment = Government::onlyInstance();
-// //     Government newGovernment2 = Government::onlyInstance();
-
-// // }
-
-// // TEST_CASE("City Singleton"){
-
-// //     City newCity = City::instanceCity();
-// //     City newCity2 = City::instanceCity();
 // // }
 
 // TEST_CASE("Strategy"){

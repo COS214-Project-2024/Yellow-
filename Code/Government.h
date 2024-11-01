@@ -21,7 +21,6 @@ class Government {
         Budget* budgetState;
         Disatisfaction* disatisfactionState;
         Strategy* strategy;
-        static Government* uniqueInstanceGov;
         Department* department;
 
     protected:
@@ -33,7 +32,6 @@ class Government {
             delete budgetState;
             delete disatisfactionState;
             delete strategy;
-            uniqueInstanceGov = nullptr;
         };
 
         //Strategy methods
