@@ -33,6 +33,8 @@ public:
 	virtual void payEmployees() = 0;
 
 	virtual void setIcon();
+
+	virtual void addCitizenToBuilding() = 0;
 };
 
 #endif

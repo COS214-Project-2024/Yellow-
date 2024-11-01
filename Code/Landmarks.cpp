@@ -10,3 +10,7 @@ void Landmarks::acceptVisitor(Visitor *v)
 void Landmarks::setIcon()
 {
 }
+
+void Landmarks::payEmployees()
+{
+}

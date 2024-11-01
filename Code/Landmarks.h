@@ -16,6 +16,8 @@ public:
 	virtual void createBuildingResource() = 0;
 	
 	virtual void setIcon();
+
+	virtual void payEmployees();
 };
 
 #endif
