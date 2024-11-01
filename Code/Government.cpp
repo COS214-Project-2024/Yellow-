@@ -1,43 +1,22 @@
 #include "Government.h"
 
-Policies* Government::implementPolicy(string stateType, Severity* prevState, Severity* currState) {
-    string currStateColour = "";
-    if(typeid(*currState) == typeid(Green)){
-        currStateColour = "Green";
-    }
-    else if(typeid(*currState) == typeid(Yellow)){
-        currStateColour = "Yellow";
-    }
-    else if(typeid(*currState) == typeid(Red)){
-        currStateColour = "Red";
-    }
+Policies* Government::implementPolicy(string stateType, string prevState, string currState) {
 
-    string prevStateColour = "";
-    if(typeid(*prevState) == typeid(Green)){
-        prevStateColour = "Green";
-    }
-    else if(typeid(*prevState) == typeid(Yellow)){
-        prevStateColour = "Yellow";
-    }
-    else if(typeid(*prevState) == typeid(Red)){
-        prevStateColour = "Red";
-    }
-
-    Policies* policy = strategy->implementPolicy(stateType, prevStateColour, currStateColour);
+    Policies* policy = strategy->implementPolicy(stateType, prevState, currState);
 
     return policy;
 }
 
-Policies* Government::implementPolicyPeople(Severity* prevState) {
-    return this->implementPolicy("People", prevState, this->peopleState->getState());
+Policies* Government::implementPolicyPeople(string prevState) {
+    return this->implementPolicy("People", prevState, this->peopleState->getState()->getSeverity());
 }
 
-Policies* Government::implementPolicyBudget(Severity* prevState) {
-    return this->implementPolicy("Budget", prevState, this->budgetState->getState());
+Policies* Government::implementPolicyBudget(string prevState) {
+    return this->implementPolicy("Budget", prevState, this->budgetState->getState()->getSeverity());
 }
 
-Policies* Government::implementPolicyMorale(Severity* prevState) {
-    return this->implementPolicy("Disatisfaction", prevState, this->disatisfactionState->getState());
+Policies* Government::implementPolicyMorale(string prevState) {
+    return this->implementPolicy("Disatisfaction", prevState, this->disatisfactionState->getState()->getSeverity());
 
 }
 
@@ -56,34 +35,49 @@ Government& Government::onlyInstance() {
 
 MaterialOrder* Government::handlePeople(bool upOrDown) {
 
-    Severity* prevSev = this->peopleState->getState();
+    string prevSev = this->peopleState->getState()->getSeverity();
 
     this->peopleState->handleSeverity(upOrDown);
 
     Policies* newPolicy = implementPolicyPeople(prevSev);
 
-    return this->department->handle(newPolicy);
+    if(newPolicy != nullptr){
+        return this->department->handle(newPolicy);
+    }
+
+
+    return nullptr;
 
 }
 
 MaterialOrder* Government::handleBudget(bool upOrDown) {
-    Severity* prevSev = this->peopleState->getState();
-
-    this->disatisfactionState->handleSeverity(upOrDown);
-
-    Policies* newPolicy = implementPolicyBudget(prevSev);
-
-    return this->department->handle(newPolicy);
-}
-
-MaterialOrder* Government::handleMorale(bool upOrDown) {
-    Severity* prevSev = this->peopleState->getState();
+    string prevSev = this->budgetState->getState()->getSeverity();
 
     this->budgetState->handleSeverity(upOrDown);
 
+    Policies* newPolicy = implementPolicyBudget(prevSev);
+
+    if(newPolicy != nullptr){
+        return this->department->handle(newPolicy);
+    }
+
+
+    return nullptr;
+}
+
+MaterialOrder* Government::handleMorale(bool upOrDown) {
+    string prevSev = this->disatisfactionState->getState()->getSeverity();
+
+    this->disatisfactionState->handleSeverity(upOrDown);
+
     Policies* newPolicy = implementPolicyMorale(prevSev);
 
-    return this->department->handle(newPolicy);
+    if(newPolicy != nullptr){
+        return this->department->handle(newPolicy);
+    }
+
+
+    return nullptr;
 }
 
 Severity *Government::getBudgetState() {
@@ -111,4 +105,19 @@ void Government::setBudgetState(Budget *budget) {
 void Government::setMoraleState(Disatisfaction *morale) {
     this->disatisfactionState = morale;
 
+}
+
+Government::Government() {
+    peopleState = new People(new Green());
+    budgetState = new Budget(new Green());
+    disatisfactionState = new Disatisfaction(new Green());
+    strategy = new AddPublicTransport();
+    Department * newDepartment = new Transport();
+    Department* newAmen = new Amenities();
+    Department* newLabour = new Labour();
+    Department* newFinances = new Finances();
+    newDepartment->setSuccessor(newAmen);
+    newAmen->setSuccessor(newLabour);
+    newLabour->setSuccessor(newFinances);
+    department = newDepartment;
 }

@@ -18,8 +18,6 @@ class People {
         void handleSeverity(bool upOrDown);
         Severity* getState();
 
-        void increaseDisatidfaction();
-
 };
 
 #endif

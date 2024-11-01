@@ -39,9 +39,32 @@ void City::dealWithPolicies()
     
     //Moral
     if (stuff.res->getMorale() - prevMoral <= 0) {
-        orderMoral = gov.handleMorale(false);
+        orderMoral = gov.handleMorale(true);
+        if(orderMoral == nullptr){
+            cout << "No new material order" << endl;
+        }
     } else {
         orderMoral = gov.handleMorale(false);
+    }
+
+    //Budget
+    if (stuff.res->getBudget() - prevBudget <= 0) {
+        orderBudget = gov.handleBudget(true);
+        if(orderBudget == nullptr){
+            cout << "No new material order" << endl;
+        }
+    } else {
+        orderBudget = gov.handleBudget(false);
+    }
+
+    //People
+    if (stuff.res->getPopulation() - prevPopulation <= 0) {
+        orderPopulation = gov.handlePeople(true);
+        if(orderPopulation == nullptr){
+            cout << "No new material order" << endl;
+        }
+    } else {
+        orderPopulation = gov.handlePeople(false);
     }
 
 	// for (auto &material : orderMoral->materials)							

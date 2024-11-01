@@ -9,6 +9,11 @@
 #include "MaterialOrder.h"
 #include "Policies.h"
 #include "Department.h"
+#include "AddPublicTransport.h"
+#include "Transport.h"
+#include "Labour.h"
+#include "Amenities.h"
+#include "Finances.h"
 
 #include <iostream>
 #include <typeinfo>
@@ -27,7 +32,7 @@ class Government {
     protected:
 
     public:
-        Government(){};
+        Government();
         ~Government(){
             delete peopleState;
             delete budgetState;
@@ -37,10 +42,10 @@ class Government {
         };
 
         //Strategy methods
-        Policies* implementPolicy(string stateType, Severity* prevState, Severity* currState);
-        Policies* implementPolicyPeople(Severity* prevState);
-        Policies* implementPolicyBudget(Severity* prevState);
-        Policies* implementPolicyMorale(Severity* prevState);
+        Policies* implementPolicy(string stateType, string prevState, string currState);
+        Policies* implementPolicyPeople(string prevState);
+        Policies* implementPolicyBudget(string prevState);
+        Policies* implementPolicyMorale(string prevState);
         void setStrategy(Strategy* newStrategy);
 
 
