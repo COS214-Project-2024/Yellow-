@@ -31,3 +31,12 @@ Cell *Road::clone() {
     Cell* newRoad = road();
     return newRoad;
 }
+
+bool Road::contains(Cell *object) {
+    for (int K = 0; K < buildings.size(); ++K){
+        if (buildings[K] == object){
+            return true;
+        }
+    }
+    return false;
+}

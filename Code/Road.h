@@ -7,13 +7,15 @@
 class Road : public Cell{
 protected:
     int cost;
-    vector<Cell*> buildings;
+
 public:
     Road();
+    vector<Cell*> buildings;
     void setIcon() override;
     void addBuilding(Cell* building);
     void removeBuilding(Cell* building);
     Cell * clone() override;
+    bool contains(Cell* object);
 };
 
 #endif

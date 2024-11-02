@@ -9,6 +9,7 @@
 #include <iostream>
 #include <vector>
 #include "OpenField.h"
+#include "Road.h"
 using namespace std;
 class Map {
 private:
@@ -24,6 +25,7 @@ private:
    bool isInBounds(int r, int c);
    void removeFromMatrix(Cell* object);
    int findIndex(Cell* object);
+   Cell* findObject(Coordinate coord);
     void setRoadConnections();
 
 public:

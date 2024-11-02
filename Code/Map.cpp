@@ -207,6 +207,28 @@ Map::Map(const Map &other) {
     for (size_t i = 0; i < other.buildings.size(); ++i) {
         buildings[i] = other.buildings[i]->clone();
     }
+
+    setRoadConnections();
+}
+
+void Map::setRoadConnections() {
+    vector<Cell*> roadCoords;
+    Road* road;
+    for (int K = 0; K < buildings.size(); ++K){
+        roadCoords = findBorderRoads(buildings[K]);
+        for (int i = 0; i < roadCoords.size(); ++i){
+            road = (Road*) findObject(roadCoords[i]->getCoordinates()[0]);
+            if (road->contains(buildings[K])){
+                continue;
+            }else{
+                road->addBuilding(buildings[K]);
+            }
+        }
+    }
+}
+
+Cell *Map::findObject(Coordinate coord) {
+    return map[coord.x][coord.y];
 }
 
 
