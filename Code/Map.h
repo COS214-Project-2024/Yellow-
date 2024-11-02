@@ -29,6 +29,7 @@ private:
 
 public:
     Map(vector<vector<Cell*>> map, vector<vector<int>> distanceMatrix, vector<Cell*> pos);
+    vector<Coordinate> returnFreeCoords();
     Map();
     void addNode(Cell* object, int x, int y, int height, int width);
     void addNode(Cell* object);

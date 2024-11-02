@@ -29,17 +29,17 @@ void Map::addNode(Cell *object, int x, int y, int height, int width) {
         if (i == x) {
             for (int j = 0; j < map[i].size(); j++) {
                 if (j == y) {
-                        for (int row = 0; row < height; row++) {
-                            for (int col = 0; col < width; col++) {
-                                if (row + curHeight < map.size() && col + curWidth < map[i].size()) {
-                                    map[row + curHeight][col + curWidth] = object;
-                                }
-
-                                // curWidth++;
+                    for (int row = 0; row < height; row++) {
+                        for (int col = 0; col < width; col++) {
+                            if (row + curHeight < map.size() && col + curWidth < map[i].size()) {
+                                map[row + curHeight][col + curWidth] = object;
                             }
 
-                            // curHeight++;
+                            // curWidth++;
                         }
+
+                        // curHeight++;
+                    }
                 }
             }
         }
@@ -170,4 +170,20 @@ int Map::findIndex(Cell *object) {
             return K;
         }
     }
+}
+
+vector<Coordinate> Map::returnFreeCoords() {
+    vector<Coordinate> freeCoords;
+    vector<Coordinate> cellCoords;
+    for (int K = 0; K < map.size(); ++K) {
+        for (int i = 0; i < map[K].size(); ++i) {
+            if (map[K][i]->getCellType() == "Field") {
+                cellCoords = map[K][i]->getCoordinates();
+                for (int j = 0; j < cellCoords.size(); ++j){
+                    freeCoords.push_back(cellCoords[j]);
+                }
+            }
+        }
+    }
+    return freeCoords;
 }
