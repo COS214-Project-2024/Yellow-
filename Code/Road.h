@@ -16,6 +16,7 @@ public:
     void removeBuilding(Cell* building);
     Cell * clone() override;
     bool contains(Cell* object);
+    bool sameStreet(Cell* building1, Cell* buuilding2);
 };
 
 #endif

@@ -40,3 +40,7 @@ bool Road::contains(Cell *object) {
     }
     return false;
 }
+
+bool Road::sameStreet(Cell *building1, Cell *building2) {
+    return (contains(building1 && contains(building2)));
+}

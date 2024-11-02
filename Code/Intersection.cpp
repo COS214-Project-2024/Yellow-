@@ -3,3 +3,6 @@
 //
 
 #include "Intersection.h"
+Cell * Intersection::clone() {
+    return Intersection();
+}

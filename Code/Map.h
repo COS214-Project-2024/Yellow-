@@ -18,7 +18,6 @@ private:
    vector<vector<int>> distanceMatrix;
    vector<Cell*> pos;
    vector<Cell*> buildings;
-   //TODO: deepCopy
    //TODO: aneurysm
    void addToMatrix(Cell* object);
    vector<Cell*> findBorderRoads(Cell* building);
@@ -27,6 +26,7 @@ private:
    int findIndex(Cell* object);
    Cell* findObject(Coordinate coord);
     void setRoadConnections();
+    int coordDiff(Cell* ob1, Cell* ob2);
 
 public:
     Map(const Map& other);
