@@ -22,3 +22,7 @@ void Service::acceptVisitor(Visitor* v) {
 void Service::setIcon()
 {
 }
+
+void Service::payEmployees()
+{
+}

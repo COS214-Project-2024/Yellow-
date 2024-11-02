@@ -4,21 +4,13 @@ WasteManagement::WasteManagement() : Utilities("WasteManagement")
 {
 }
 
-void WasteManagement::createResource()
+void WasteManagement::createBuildingResource()
 {
     City c = City::instanceCity();
-    c.stuff.res->setMorale(c.stuff.res->getMorale() + 1); // good hygiene improves morale
+    c.stuff.res->setMorale(c.stuff.res->getMorale() + productionPerCell*coordinates.size()); // good hygiene improves morale
 }
 
 void WasteManagement::setIcon()
-{
-}
-
-void WasteManagement::payEmployees()
-{
-}
-
-void WasteManagement::addCitizenToBuilding(Citizen *newCitizen)
 {
 }
 

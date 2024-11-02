@@ -5,14 +5,13 @@
 #include "Visitor.h"
 
 class Industrial : public Buildings {
-
-protected:
-	int productionPerCell;
 	
 public:
 	Industrial(string cellType);
 	
-	virtual void taxBuilding();
+	void taxBuilding() override;
+
+	void payEmployees() override;
 
 	void acceptVisitor(Visitor* v);
 
@@ -23,6 +22,8 @@ public:
 	virtual Cell* clone() = 0;
 
 	void setProductionRate(int newRate) override;
+
+	void payEmployees() override;
 };
 
 #endif

@@ -8,8 +8,6 @@ class Airport : public Service{
     public:
         Airport();
         void setIcon() override;
-        void payEmployees() override;
-        void addCitizenToBuilding(Citizen* newCitizen);
         Cell* clone() override;
 private:
     /*

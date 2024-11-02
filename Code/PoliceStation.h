@@ -4,8 +4,6 @@
 class PoliceStation : public Service {
     public:
     PoliceStation();
-    void payEmployees() override;
-    void addCitizenToBuilding(Citizen* newCitizen);
     Cell* clone() override;
 };
 

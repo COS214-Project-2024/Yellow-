@@ -16,6 +16,7 @@ private:
 	int incomeTaxRate;
 	int businessTaxRate;
 public:
+	Resources();
 	void setConcrete(int newAmount);
 	int getConcrete();
 	void setSteel(int newAmount);

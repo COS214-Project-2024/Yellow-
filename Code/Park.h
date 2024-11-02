@@ -5,11 +5,8 @@ class Park : public Landmarks {
 
 
 public:
-	void taxBuilding() override;
 	Park();
 	void createBuildingResource() override;
-	void payEmployees() override;
-    void addCitizenToBuilding(Citizen* newCitizen);
     Cell* clone() override;
 };
 

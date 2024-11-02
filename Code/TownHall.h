@@ -4,8 +4,6 @@
 class TownHall : public Service {
 public:
     TownHall();
-    void payEmployees() override;
-    void addCitizenToBuilding(Citizen* newCitizen);
     Cell* clone() override;
 };
 

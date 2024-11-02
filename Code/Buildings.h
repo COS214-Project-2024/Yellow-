@@ -11,6 +11,7 @@ protected:
 	int currentNumberOfCitizens;
 	float buildingMoney;
 	vector<Citizen*> dependentCitizens;
+	int productionPerCell;
 public:
 	Buildings(string cellType);
 
@@ -34,7 +35,7 @@ public:
 
 	virtual void setIcon();
 
-	virtual void addCitizenToBuilding(Citizen* newCitizen) = 0;
+	void addCitizenToBuilding(Citizen* newCitizen);
 	virtual Cell* clone() = 0;
 	virtual void setProductionRate(int newRate);
 	virtual void createBuildingResource();

@@ -1,6 +1,10 @@
 
 #include "Resources.h"
 
+Resources::Resources()
+{
+}
+
 void Resources::setConcrete(int newAmount)
 {
     concrete = newAmount;

@@ -2,6 +2,10 @@
 
 Landmarks::Landmarks(string cellType) : Buildings(cellType) {}
 
+void Landmarks::taxBuilding()
+{
+}
+
 void Landmarks::acceptVisitor(Visitor *v)
 {
     v->visitBuilding(this);

@@ -7,18 +7,10 @@ ConcreteFactory::ConcreteFactory() : Industrial("ConcreteFactory")
 void ConcreteFactory::createBuildingResource()
 {
     City c = City::instanceCity();
-    c.stuff.res->setConcrete(c.stuff.res->getConcrete() + 90); // + any number - 90 chosen at random
+    c.stuff.res->setConcrete(c.stuff.res->getConcrete() + productionPerCell*coordinates.size()); // + any number - 90 chosen at random
 }
 
 void ConcreteFactory::setIcon()
-{
-}
-
-void ConcreteFactory::payEmployees()
-{
-}
-
-void ConcreteFactory::addCitizenToBuilding(Citizen *newCitizen)
 {
 }
 

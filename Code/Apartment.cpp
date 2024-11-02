@@ -4,15 +4,7 @@ Apartment::Apartment() : Residential("Apartment")
 {
 }
 
-void Apartment::taxBuilding()
-{
-}
-
 void Apartment::setIcon()
-{
-}
-
-void Apartment::addCitizenToBuilding(Citizen *newCitizen)
 {
 }
 

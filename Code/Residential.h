@@ -9,14 +9,12 @@ protected:
 	int numberOfHouseholds;
 public:
 	Residential(string cellType);
-	virtual void taxBuilding() = 0;
+	void taxBuilding() override;
 
 	void acceptVisitor(Visitor* v);
 	virtual void setIcon();
 
-	virtual void payEmployees();
-
-	virtual void addCitizenToBuilding();
+	void payEmployees() override;
 	
 	virtual Cell* clone() = 0;
 };

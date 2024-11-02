@@ -14,6 +14,10 @@ void Industrial::taxBuilding()
 {
 }
 
+void Industrial::payEmployees()
+{
+}
+
 void Industrial::acceptVisitor(Visitor *v)
 {
     v->visitBuilding(this);

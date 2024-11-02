@@ -16,6 +16,7 @@ void House::setIcon()
 
 void House::addCitizenToBuilding(Citizen *newCitizen)
 {
+    dependentCitizens.push_back(newCitizen);
 }
 
 Cell *House::clone()

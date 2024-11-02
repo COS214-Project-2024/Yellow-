@@ -10,15 +10,7 @@ void SteelFactory::createBuildingResource()
         return;
     
     City c = City::instanceCity();
-    c.stuff.res->setSteel(c.stuff.res->getSteel() + 90); // + any number - 90 chosen at random
-}
-
-void SteelFactory::payEmployees()
-{
-}
-
-void SteelFactory::addCitizenToBuilding(Citizen *newCitizen)
-{
+    c.stuff.res->setSteel(c.stuff.res->getSteel() + productionPerCell*coordinates.size()); // + any number - 90 chosen at random
 }
 
 Cell *SteelFactory::clone()

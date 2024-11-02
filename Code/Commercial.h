@@ -9,13 +9,15 @@ class Commercial : public Buildings {
 public:
 	Commercial(string cellType);
 	
-	virtual void taxBuilding() = 0;
+	void taxBuilding() override;
 
 	void acceptVisitor(Visitor* v);
 	
 	virtual void setIcon();
 
 	virtual Cell* clone() = 0;
+
+	void payEmployees() override;
 };
 
 #endif

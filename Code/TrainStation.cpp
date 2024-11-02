@@ -4,14 +4,6 @@ TrainStation::TrainStation() : Service("TrainStation")
 {
 }
 
-void TrainStation::payEmployees()
-{
-}
-
-void TrainStation::addCitizenToBuilding(Citizen *newCitizen)
-{
-}
-
 Cell *TrainStation::clone()
 {
     Cell* c = new TrainStation();

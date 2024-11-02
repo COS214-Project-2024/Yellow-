@@ -9,16 +9,16 @@ class Landmarks : public Buildings {
 public:
 	Landmarks(string cellType);
 
-	virtual void taxBuilding() = 0;
+	void taxBuilding() override;
 
 	void acceptVisitor(Visitor* v);
 
 	virtual void createBuildingResource() = 0;
 	
 	virtual void setIcon();
-
-	virtual void payEmployees();
 	
+	void payEmployees() override;
+
 	virtual Cell* clone() = 0;
 };
 

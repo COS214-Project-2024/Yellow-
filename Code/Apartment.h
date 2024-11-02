@@ -6,9 +6,7 @@ class Apartment : public Residential{
 
 public:
 	Apartment();
-	void taxBuilding();
 	void setIcon() override;
-	void addCitizenToBuilding(Citizen* newCitizen);
     Cell* clone() override;
 };
 

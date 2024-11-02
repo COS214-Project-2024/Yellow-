@@ -8,14 +8,6 @@ void Airport::setIcon()
 {
 }
 
-void Airport::payEmployees()
-{
-}
-
-void Airport::addCitizenToBuilding(Citizen *newCitizen)
-{
-}
-
 Cell *Airport::clone()
 {
     Cell* c = new Airport();

@@ -21,3 +21,7 @@ void Utilities::setProductionRate(int newRate)
 {
     productionPerCell = newRate;
 }
+
+void Utilities::payEmployees()
+{
+}

@@ -16,14 +16,6 @@ void Forestry::setIcon()
 {
 }
 
-void Forestry::payEmployees()
-{
-}
-
-void Forestry::addCitizenToBuilding(Citizen *newCitizen)
-{
-}
-
 Cell *Forestry::clone()
 {
     Cell* c = new Forestry();

@@ -8,8 +8,6 @@ public:
 	ConcreteFactory();
 	void createBuildingResource() override;
 	void setIcon() override;
-	void payEmployees() override;
-    void addCitizenToBuilding(Citizen* newCitizen);
     Cell* clone() override;
 };
 

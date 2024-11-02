@@ -15,6 +15,7 @@ public:
 	virtual void setIcon();
 	virtual Cell* clone() = 0;
 	void setProductionRate(int newRate) override;
+	void payEmployees() override;
 };
 
 #endif

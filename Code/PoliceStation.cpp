@@ -4,14 +4,6 @@ PoliceStation::PoliceStation() : Service("Police")
 {
 }
 
-void PoliceStation::payEmployees()
-{
-}
-
-void PoliceStation::addCitizenToBuilding(Citizen *newCitizen)
-{
-}
-
 Cell *PoliceStation::clone()
 {
     Cell* c = new PoliceStation();
