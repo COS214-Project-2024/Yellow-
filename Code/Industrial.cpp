@@ -12,6 +12,10 @@ Industrial::Industrial(string cellType) : Buildings(cellType)
 
 void Industrial::taxBuilding()
 {
+    float tax = buildingMoney * City::instanceCity().stuff.res->getPropertyTaxRate();
+    buildingMoney -= tax;
+    float cityMoney = City::instanceCity().stuff.res->getBudget();
+    City::instanceCity().stuff.res->setBudget(cityMoney + tax);
 }
 
 void Industrial::payEmployees()
