@@ -13,3 +13,19 @@ void WasteManagement::createResource()
 void WasteManagement::setIcon()
 {
 }
+
+void WasteManagement::payEmployees()
+{
+}
+
+void WasteManagement::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+Cell *WasteManagement::clone()
+{
+    Cell* c = new WasteManagement();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}

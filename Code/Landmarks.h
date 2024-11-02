@@ -18,6 +18,8 @@ public:
 	virtual void setIcon();
 
 	virtual void payEmployees();
+	
+	virtual Cell* clone() = 0;
 };
 
 #endif

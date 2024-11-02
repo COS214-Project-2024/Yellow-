@@ -12,6 +12,7 @@ public:
 	virtual void taxBuilding();
 	virtual void createResource() = 0;
 	virtual void setIcon();
+	virtual Cell* clone() = 0;
 };
 
 #endif

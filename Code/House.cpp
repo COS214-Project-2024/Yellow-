@@ -13,3 +13,15 @@ void House::taxBuilding()
 void House::setIcon()
 {
 }
+
+void House::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+Cell *House::clone()
+{
+    Cell* c = new House();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}

@@ -22,6 +22,8 @@ public:
 	virtual vector<Section*> getChildren();
 	
 	virtual void setIcon();
+
+	virtual Cell* clone();
 };
 
 #endif

@@ -17,6 +17,8 @@ public:
 	virtual void createBuildingResource() = 0;
 
 	virtual void setIcon();
+
+	virtual Cell* clone() = 0;
 };
 
 #endif

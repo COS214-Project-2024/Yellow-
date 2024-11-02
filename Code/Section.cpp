@@ -11,3 +11,8 @@ vector<Section *> Section::getChildren()
 void Section::setIcon()
 {
 }
+
+Cell *Section::clone()
+{
+    return nullptr;
+}

@@ -19,6 +19,8 @@ public:
 	virtual void payEmployees();
 
 	virtual void addCitizenToBuilding();
+	
+	virtual Cell* clone() = 0;
 };
 
 #endif

@@ -13,3 +13,19 @@ void WaterPlant::createResource()
 void WaterPlant::setIcon()
 {
 }
+
+void WaterPlant::payEmployees()
+{
+}
+
+void WaterPlant::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+Cell *WaterPlant::clone()
+{
+    Cell* c = new WaterPlant();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}

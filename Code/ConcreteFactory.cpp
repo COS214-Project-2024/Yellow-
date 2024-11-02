@@ -13,3 +13,19 @@ void ConcreteFactory::createBuildingResource()
 void ConcreteFactory::setIcon()
 {
 }
+
+void ConcreteFactory::payEmployees()
+{
+}
+
+void ConcreteFactory::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+Cell *ConcreteFactory::clone()
+{
+    Cell* c = new ConcreteFactory();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}

@@ -7,6 +7,11 @@ class PowerPlant : public Utilities {
 
         void createResource() override;
 
+        void payEmployees() override;
+    
+        void addCitizenToBuilding(Citizen* newCitizen);
+        
+        Cell* clone() override;
 };
 
 #endif

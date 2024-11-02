@@ -5,6 +5,9 @@
 class TrainStation : public Service{
     public:
     TrainStation();
+    void payEmployees() override;
+    void addCitizenToBuilding(Citizen* newCitizen);
+    Cell* clone() override;
 private:
     vector<TrainStation*> availableStops;
     vector<int> rideTime;

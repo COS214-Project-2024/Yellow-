@@ -14,6 +14,8 @@ public:
 	void acceptVisitor(Visitor* v);
 	
 	virtual void setIcon();
+
+	virtual Cell* clone() = 0;
 };
 
 #endif

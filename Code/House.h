@@ -10,6 +10,8 @@ public:
 	House();
 	void taxBuilding();
 	void setIcon() override;
+	void addCitizenToBuilding(Citizen* newCitizen);
+    Cell* clone() override;
 };
 
 #endif

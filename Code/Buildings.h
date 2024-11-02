@@ -3,14 +3,14 @@
 #include <iostream>
 #include "Section.h"
 #include "City.h"
+class Citizen;
 class Buildings : public Section {
 
 protected:
 	int maxCitizens;
 	int currentNumberOfCitizens;
 	float buildingMoney;
-private:
-	int* sectionCoordinate;
+	vector<Citizen*> dependentCitizens;
 public:
 	Buildings(string cellType);
 
@@ -34,7 +34,8 @@ public:
 
 	virtual void setIcon();
 
-	virtual void addCitizenToBuilding() = 0;
+	virtual void addCitizenToBuilding(Citizen* newCitizen) = 0;
+	virtual Cell* clone() = 0;
 };
 
 #endif

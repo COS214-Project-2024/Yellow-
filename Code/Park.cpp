@@ -16,3 +16,19 @@ void Park::createBuildingResource()
 	City city = City::instanceCity();
 	city.stuff.res->setMorale(city.stuff.res->getMorale() + 1);
 }
+
+void Park::payEmployees()
+{
+}
+
+void Park::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+Cell *Park::clone()
+{
+    Cell* c = new Park();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}

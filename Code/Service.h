@@ -13,6 +13,7 @@ public:
 	void createBuildingResource();
 	void acceptVisitor(Visitor* v);
 	virtual void setIcon();
+	virtual Cell* clone() = 0;
 };
 
 #endif

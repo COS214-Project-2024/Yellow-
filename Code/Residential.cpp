@@ -15,3 +15,7 @@ void Residential::payEmployees()
 {
     // do nothing
 }
+
+void Residential::addCitizenToBuilding()
+{
+}

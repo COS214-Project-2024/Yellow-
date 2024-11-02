@@ -16,3 +16,19 @@ void Museum::createBuildingResource()
 	City city = City::instanceCity();
 	city.stuff.res->setMorale(city.stuff.res->getMorale() + 1);
 }
+
+void Museum::payEmployees()
+{
+}
+
+void Museum::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+Cell *Museum::clone()
+{
+    Cell* c = new Museum();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}

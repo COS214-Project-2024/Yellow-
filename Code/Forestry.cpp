@@ -15,3 +15,19 @@ void Forestry::createBuildingResource()
 void Forestry::setIcon()
 {
 }
+
+void Forestry::payEmployees()
+{
+}
+
+void Forestry::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+Cell *Forestry::clone()
+{
+    Cell* c = new Forestry();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}
