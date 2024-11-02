@@ -40,3 +40,11 @@ bool Road::contains(Cell *object) {
     }
     return false;
 }
+
+void Road::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+void Road::setProductionRate(int newRate)
+{
+}

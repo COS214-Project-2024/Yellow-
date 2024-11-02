@@ -22,7 +22,7 @@ public:
 
 	virtual Cell* clone() = 0;
 
-	void setProductionRate(int newRate);
+	void setProductionRate(int newRate) override;
 };
 
 #endif

@@ -2,13 +2,11 @@
 #define RESIDENTIAL_H
 class Visitor;
 #include "Buildings.h"
-#include <vector>
 class Citizen;
 class Residential : public Buildings {
 
 protected:
 	int numberOfHouseholds;
-	vector<Citizen*> residents;
 public:
 	Residential(string cellType);
 	virtual void taxBuilding() = 0;

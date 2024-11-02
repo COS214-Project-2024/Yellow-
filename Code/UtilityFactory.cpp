@@ -55,6 +55,7 @@ Cell *UtilityFactory::createPowerPlant(vector<Coordinate> coordinates)
         return nullptr;
     Cell* res = new PowerPlant();
     res->setCoordinates(coordinates);
+    res->setProductionRate(45);
     return res;
 }
 

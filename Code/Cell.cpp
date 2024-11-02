@@ -24,6 +24,10 @@ void Cell::setCellType(string str) {
     this->type = str;
 }
 
+Cell::~Cell()
+{
+}
+
 Cell * Cell::clone() {
 
 }
