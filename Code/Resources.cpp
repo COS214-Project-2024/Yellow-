@@ -75,3 +75,33 @@ int Resources::getWood()
 {
     return this->wood;
 }
+
+void Resources::setPropertyTaxRate(float newRate)
+{
+    propertyTaxRate = newRate;
+}
+
+float Resources::getPropertyTaxRate()
+{
+    return propertyTaxRate;
+}
+
+void Resources::setIncomeTaxRate(float newRate)
+{
+    incomeTaxRate = newRate;
+}
+
+float Resources::getIncomeTaxRate()
+{
+    return incomeTaxRate;
+}
+
+void Resources::setBusinessTaxRate(float newRate)
+{
+    businessTaxRate = newRate;
+}
+
+float Resources::getBusinessTaxRate()
+{
+    return businessTaxRate;
+}

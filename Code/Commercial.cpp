@@ -17,4 +17,7 @@ void Commercial::setIcon()
 
 void Commercial::payEmployees()
 {
+    if (dependentCitizens.size() == 0)
+        return;
+    
 }
