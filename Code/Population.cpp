@@ -69,7 +69,7 @@ void Population::notify() {
 /// Add new Citizen
 void Population::addCitizen(Citizen* citizen) {
     listOfCitizens.push_back(citizen);
-    std::cout << "A new Citizen has joined the Population." << std::endl;
+    std::cout << "The Citizen is now a registered member of the Population." << std::endl;
 }
 
 /// Make Citizens procreate

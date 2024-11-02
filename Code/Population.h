@@ -5,9 +5,8 @@
 #include "Citizen.h"
 #include <string>
 #include <vector>
-using namespace std;
-
 class Observer;
+using namespace std;
 
 class Population {
 private:

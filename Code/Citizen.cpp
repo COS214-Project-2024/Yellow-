@@ -1,5 +1,6 @@
 #include "Citizen.h"
 
+
 ////////////// Constructors ///////////////
 
 /// Default Constructor

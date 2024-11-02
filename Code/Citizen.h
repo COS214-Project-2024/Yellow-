@@ -8,11 +8,11 @@ using namespace std;
 class Citizen{
 protected:
 	int happiness;						// How happy is the citizen? (Out of 100)
-	Residential* accommodation;			// Where does the citizen live?
+	Residential* accommodation;			// Where does the citizen live?					// Cell pointers
 	string employment;					// What is the citizen's job?
 private:
 	float money;						// What is the citizen's bank balance?
-	string businessAddress;				// Where does the citizen work?
+	string businessAddress;				// Where does the citizen work?					// Cell pointers
 public:
     Citizen();
     Citizen(int happy, Residential* acc, string job, float cash, string addr);

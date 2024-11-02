@@ -416,7 +416,7 @@ TEST_CASE("Observer") {
         std::streambuf* coutBuf = std::cout.rdbuf();
         std::cout.rdbuf(oss.rdbuf());
 
-        population.notify(); 
+        population.notify();
 
         std::cout.rdbuf(coutBuf);  // Restore std::cout
         std::string output = oss.str();
