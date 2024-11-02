@@ -1,6 +1,14 @@
 #include "Industrial.h"
 
-Industrial::Industrial(string cellType) : Buildings(cellType) {}
+void Industrial::setProductionRate(int newRate)
+{
+    productionPerCell = newRate;
+}
+
+Industrial::Industrial(string cellType) : Buildings(cellType)
+{
+    productionPerCell = 0;
+}
 
 void Industrial::taxBuilding()
 {

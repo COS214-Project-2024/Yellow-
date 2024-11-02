@@ -6,7 +6,9 @@
 
 class Industrial : public Buildings {
 
-
+protected:
+	int productionPerCell;
+	
 public:
 	Industrial(string cellType);
 	
@@ -19,6 +21,8 @@ public:
 	virtual void setIcon();
 
 	virtual Cell* clone() = 0;
+
+	void setProductionRate(int newRate);
 };
 
 #endif

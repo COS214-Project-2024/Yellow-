@@ -16,3 +16,8 @@ void Utilities::taxBuilding()
 void Utilities::setIcon()
 {
 }
+
+void Utilities::setProductionRate(int newRate)
+{
+    productionPerCell = newRate;
+}

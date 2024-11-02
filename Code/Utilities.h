@@ -5,7 +5,8 @@
 
 class Utilities : public Buildings {
 
-
+protected:
+	int productionPerCell;
 public:
 	Utilities(string cellType);
 	void acceptVisitor(Visitor* v);
@@ -13,6 +14,7 @@ public:
 	virtual void createResource() = 0;
 	virtual void setIcon();
 	virtual Cell* clone() = 0;
+	void setProductionRate(int newRate);
 };
 
 #endif
