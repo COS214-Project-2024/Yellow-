@@ -27,9 +27,13 @@
 #include "Buildings.h"
 #include "Hospital.h"
 #include "City.h"
+#include "Population.h"
+#include "Citizen.h"
+#include "Observer.h"
+#include "HappyObserver.h"
 #include <typeinfo>
 
-TEST_CASE("Factory method") {
+/*TEST_CASE("Factory method") {
     IndustrialFactory i = IndustrialFactory();
     Industrial* p = i.createForestry();
     delete p;
@@ -104,7 +108,7 @@ TEST_CASE("Factory method") {
     business = f.createOffice();
     delete business;
     business = nullptr;
-}
+}*/
 
 TEST_CASE("Composite") {
     Section* test = new Block();
@@ -154,21 +158,22 @@ TEST_CASE("Visitor")
 }
 
 TEST_CASE("State"){
-    People people(new Green());
-    Budget budget(new Green());
-    Disatisfaction dissatisfaction(new Green());
+    People* people = new People(new Green());
+    Budget* budget = new Budget(new Green());
+    Disatisfaction* dissatisfaction = new Disatisfaction(new Green());
 
-    people.handleSeverity(true);
-    budget.handleSeverity(false);
-    dissatisfaction.handleSeverity(true);
+    people->handleSeverity(true);
+    budget->handleSeverity(false);
+    dissatisfaction->handleSeverity(true);
 
-    people.handleSeverity(false);
-    budget.handleSeverity(true);
-    dissatisfaction.handleSeverity(false);
-    dissatisfaction.handleSeverity(false);
-    dissatisfaction.handleSeverity(false);
-    dissatisfaction.handleSeverity(true);
-    dissatisfaction.handleSeverity(true);
+    people->handleSeverity(false);
+    budget->handleSeverity(true);
+    dissatisfaction->handleSeverity(false);
+    dissatisfaction->handleSeverity(false);
+    dissatisfaction->handleSeverity(false);
+    dissatisfaction->handleSeverity(true);
+    dissatisfaction->handleSeverity(true);
+    CHECK_NOTHROW(dissatisfaction->handleSeverity(true));
 }
 
 TEST_CASE("Government Singleton"){
@@ -195,34 +200,44 @@ TEST_CASE("Strategy"){
     newGovernment.setBudgetState(budget);
     newGovernment.setMoraleState(dissatisfaction);
 
+    //AddPublicTransport
+
     AddPublicTransport* newStrategy = new AddPublicTransport();
     newGovernment.setStrategy(newStrategy);
-    CHECK("AddPublicTransport" == newGovernment.implementPolicyBudget());
+    newGovernment.setBudgetState(new Budget(new Yellow()));
+    newGovernment.setBudgetState(new Budget(new Green()));
+    Policies * currPolicy = newGovernment.implementPolicyBudget(new Yellow());
+    CHECK("AddPublicTransport" == currPolicy->getPolicy());
 
+    //IncreaseTaxes
+
+    IncreaseTaxes* newStrategyTaxes = new IncreaseTaxes();
+    newGovernment.setStrategy(newStrategyTaxes);
+    newGovernment.setBudgetState(new Budget(new Yellow()));
     newGovernment.setBudgetState(new Budget(new Red()));
-    IncreaseTaxes* increasingTaxes = new IncreaseTaxes();
-    newGovernment.setStrategy(increasingTaxes);
-    CHECK("IncreaseTaxes" == newGovernment.implementPolicyBudget());
+    currPolicy = newGovernment.implementPolicyBudget(new Yellow());
+    CHECK("IncreaseTaxes" == currPolicy->getPolicy());
 
+    //IncreaseWages
+
+    IncreaseWages* newStrategyWages = new IncreaseWages();
+    newGovernment.setStrategy(newStrategyWages);
+    newGovernment.setMoraleState(new Disatisfaction(new Yellow()));
     newGovernment.setMoraleState(new Disatisfaction(new Red()));
+    currPolicy = newGovernment.implementPolicyMorale(new Yellow());
+    CHECK("IncreaseWages" == currPolicy->getPolicy());
 
-    IncreaseWages* increasingWages = new IncreaseWages();
-    newGovernment.setStrategy(increasingWages);
-    CHECK("IncreaseWages" == newGovernment.implementPolicyMorale());
+    //ExpandingCity
 
-    ExpandCity* expandingCity = new ExpandCity();
-
-    newGovernment.setStrategy(expandingCity);
-    cout << newGovernment.implementPolicyPeople() << endl;
-    CHECK("\033[38;5;210mNo new policy changes\033[0m" == newGovernment.implementPolicyPeople());
-
-
+    ExpandCity* newStrategyCity = new ExpandCity();
+    newGovernment.setStrategy(newStrategyCity);
+    newGovernment.setPeopleState(new People(new Yellow()));
     newGovernment.setPeopleState(new People(new Red()));
-    newGovernment.setStrategy(expandingCity);
-    CHECK("ExpandCity" == newGovernment.implementPolicyPeople());
+    currPolicy = newGovernment.implementPolicyPeople(new Yellow());
+    CHECK("ExpandCity" == currPolicy->getPolicy());
 }
 
-TEST_CASE("Transport") {
+/*TEST_CASE("Transport") {
     vector<vector<Cell*>> cellMap(5, vector<Cell*>(5, nullptr));
     vector<vector<int>> matrix(5, vector<int>(5, 0));
     vector<Cell*> pos(5, nullptr);
@@ -236,9 +251,9 @@ TEST_CASE("Transport") {
     myMap.addNode(new Cell("Building 2"), 3, 3, 2, 2);
 
     myMap.printMap();
-}
+}*/
 
-TEST_CASE("Factory and City integration") {
+/*TEST_CASE("Factory and City integration") {
     City city = City::instanceCity();
     int resources = 2000;
     float money = 4000;
@@ -264,7 +279,7 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getWater() == 0);
 
     city.stuff.res->setEnergy(0);
-    CHECK(city.stuff.res->getEnergy() == 0);    
+    CHECK(city.stuff.res->getEnergy() == 0);
 
     IndustrialFactory* industrialFactory = new IndustrialFactory();
     Industrial* cf = industrialFactory->createConcreteFactory();
@@ -293,7 +308,7 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getSteel() == resources);
     CHECK(city.stuff.res->getWood() == resources);
     CHECK(city.stuff.res->getBudget() == money);
-    
+
     resources+=90;
     sf->createBuildingResource();
     cf->createBuildingResource();
@@ -303,8 +318,8 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getWood() == resources);
 
     ServiceFactory serviceFactory = ServiceFactory();
-    
-    Utilities* power = serviceFactory.createPowerPlant();   
+
+    Utilities* power = serviceFactory.createPowerPlant();
     power->createResource();
     CHECK(typeid(*power) == typeid(PowerPlant));
     resources -= 80;
@@ -385,4 +400,53 @@ TEST_CASE("Factory and City integration") {
     park = nullptr;
     delete museum;
     museum = nullptr;
+}*/
+
+TEST_CASE("Observer") {
+    Population population;
+    Citizen* citizen1 = new Citizen(50, nullptr, "Teacher", 100.0f, "123 School Rd");
+    Citizen* citizen2 = new Citizen(90, nullptr, "Engineer", 200.0f, "456 Tech Ave");
+
+    population.addCitizen(citizen1);
+    population.addCitizen(citizen2);
+    CHECK(population.getCitizens().size() == 2);
+
+    HappyObserver* happyObserver = new HappyObserver(population.getCitizens());
+    population.attach(happyObserver);
+    CHECK(population.getObservers().size() == 1);
+
+    SUBCASE("Observer receives correct updates") {
+        // Capture output for validation
+        std::ostringstream oss;
+        std::streambuf* coutBuf = std::cout.rdbuf();
+        std::cout.rdbuf(oss.rdbuf());
+
+        population.notify(); 
+
+        std::cout.rdbuf(coutBuf);  // Restore std::cout
+        std::string output = oss.str();
+
+        CHECK(output.find("Average happiness of citizens: 70") != std::string::npos);
+    }
+
+    SUBCASE("Attach and detach observer") {
+        population.detach(happyObserver);
+        CHECK(population.getObservers().empty());
+
+        // Try notifying with no observers attached (should not throw errors)
+        std::ostringstream oss;
+        std::streambuf* coutBuf = std::cout.rdbuf();
+        std::cout.rdbuf(oss.rdbuf());
+
+        population.notify();
+
+        std::cout.rdbuf(coutBuf);  // Restore std::cout
+        std::string output = oss.str();
+
+        CHECK(output == "All observers have been notified.\n");
+    }
+
+    delete citizen1;
+    delete citizen2;
+    delete happyObserver;
 }

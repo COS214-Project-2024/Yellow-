@@ -5,6 +5,7 @@ class WaterPlant : public Utilities {
     public:
     WaterPlant();
     void createResource() override;
+    void setIcon() override;
 };
 
 #endif

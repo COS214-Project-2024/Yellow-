@@ -1,108 +1,112 @@
 #include "IndustrialFactory.h"
-Industrial* IndustrialFactory::createForestry() {
-    if (useBuildingResources(80,80,80,700) == false)
+Cell* IndustrialFactory::createForestry(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-	return new Forestry();
+	Industrial* f = new Forestry();
+    f->setCoordinates(coordinates);
+    return f;
 }
 
-Industrial* IndustrialFactory::createSteelFactory() {
-    if (useBuildingResources(80,80,80,700) == false)
+Cell* IndustrialFactory::createSteelFactory(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700, coordinates.size()) == false)
         return nullptr;
-	return new SteelFactory();
+	Industrial* s = new SteelFactory();
+    s->setCoordinates(coordinates);
+    return s;
 }
 
-Industrial* IndustrialFactory::createConcreteFactory() {
-    if (useBuildingResources(80,80,80,700) == false)
+Cell* IndustrialFactory::createConcreteFactory(vector<Coordinate> coordinates) {
+    if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
 	return new ConcreteFactory();
 }
 
-Residential *IndustrialFactory::createHouse()
+Cell *IndustrialFactory::createHouse(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *IndustrialFactory::createApartment()
+Cell *IndustrialFactory::createApartment(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *IndustrialFactory::createComplex()
+Cell *IndustrialFactory::createComplex(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *IndustrialFactory::createHouseHold()
+Cell *IndustrialFactory::createHouseHold(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Landmarks *IndustrialFactory::createPark()
+Cell *IndustrialFactory::createPark(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Landmarks *IndustrialFactory::createMuseum()
+Cell *IndustrialFactory::createMuseum(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *IndustrialFactory::createHospital()
+Cell *IndustrialFactory::createHospital(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *IndustrialFactory::createTownHall()
+Cell *IndustrialFactory::createTownHall(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Utilities *IndustrialFactory::createWaterPlant()
+Cell *IndustrialFactory::createWaterPlant(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Utilities *IndustrialFactory::createPowerPlant()
+Cell *IndustrialFactory::createPowerPlant(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Utilities *IndustrialFactory::createWastePlant()
+Cell *IndustrialFactory::createWastePlant(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *IndustrialFactory::createSchool()
+Cell *IndustrialFactory::createSchool(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *IndustrialFactory::createTrainStation()
+Cell *IndustrialFactory::createTrainStation(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *IndustrialFactory::createAirport()
+Cell *IndustrialFactory::createAirport(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *IndustrialFactory::createPoliceStation()
+Cell *IndustrialFactory::createPoliceStation(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *IndustrialFactory::createShop()
+Cell *IndustrialFactory::createShop(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *IndustrialFactory::createOffice()
+Cell *IndustrialFactory::createOffice(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *IndustrialFactory::createMall()
+Cell *IndustrialFactory::createMall(vector<Coordinate> coordinates)
 {
     return nullptr;
 }

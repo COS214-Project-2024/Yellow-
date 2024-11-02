@@ -12,7 +12,9 @@ private:
 	float budget;
     int population;
     int morale;
-
+	int propertyTaxRate;
+	int incomeTaxRate;
+	int businessTaxRate;
 public:
 	void setConcrete(int newAmount);
 	int getConcrete();

@@ -20,6 +20,8 @@ public:
 	virtual void acceptVisitor(Visitor* v) = 0;
 
 	virtual vector<Section*> getChildren();
+	
+	virtual void setIcon();
 };
 
 #endif

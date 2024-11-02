@@ -6,6 +6,9 @@
 #include "Disatisfaction.h"
 #include "Strategy.h"
 #include "Green.h"
+#include "MaterialOrder.h"
+#include "Policies.h"
+#include "Department.h"
 
 #include <iostream>
 #include <typeinfo>
@@ -19,6 +22,7 @@ class Government {
         Disatisfaction* disatisfactionState;
         Strategy* strategy;
         static Government* uniqueInstanceGov;
+        Department* department;
 
     protected:
         Government(){};
@@ -33,10 +37,10 @@ class Government {
         };
 
         //Strategy methods
-        string implementPolicy(string stateType, Severity* state);
-        string implementPolicyPeople();
-        string implementPolicyBudget();
-        string implementPolicyMorale();
+        Policies* implementPolicy(string stateType, Severity* prevState, Severity* currState);
+        Policies* implementPolicyPeople(Severity* prevState);
+        Policies* implementPolicyBudget(Severity* prevState);
+        Policies* implementPolicyMorale(Severity* prevState);
         void setStrategy(Strategy* newStrategy);
 
 
@@ -44,9 +48,9 @@ class Government {
         static Government& onlyInstance();
 
         //State methods
-        void handlePeople(bool upOrDown);
-        void handleBudget(bool upOrDown);
-        void handleMorale(bool upOrDown);
+        MaterialOrder* handlePeople(bool upOrDown);
+        MaterialOrder* handleBudget(bool upOrDown);
+        MaterialOrder* handleMorale(bool upOrDown);
         Severity* getBudgetState();
         Severity* getPeopleState();
         Severity* getMoraleState();

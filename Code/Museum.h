@@ -7,7 +7,7 @@ class Museum : public Landmarks {
 
 
 public:
-	float taxBuilding();
+	void taxBuilding() override;
 	Museum();
 	void createBuildingResource() override;
 };

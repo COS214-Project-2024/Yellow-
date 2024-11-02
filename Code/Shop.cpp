@@ -4,7 +4,7 @@ Shop::Shop() : Commercial("Shop")
 {
 }
 
-float Shop::taxBuilding()
+void Shop::taxBuilding()
 {
     // TODO - implement Shop::taxBuilding
 	throw "Not yet implemented";

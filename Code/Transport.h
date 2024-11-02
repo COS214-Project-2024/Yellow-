@@ -1,13 +1,18 @@
 #ifndef TRANSPORT_H
 #define TRANSPORT_H
 
-class Transport {
+#include "Policies.h"
+#include "Department.h"
 
-private:
-	int successor;
+class Transport : public Department{
 
-public:
-	void handle();
+    private:
+    Department* successor;
+    RandomUtil* randomVal;
+
+    public:
+        MaterialOrder* handle(Policies* policy);
+
 };
 
 #endif

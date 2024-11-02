@@ -5,6 +5,7 @@ class WasteManagement : public Utilities {
 public:
     WasteManagement();
     void createResource() override;
+    void setIcon() override;
 };
 
 #endif

@@ -15,8 +15,6 @@ class Budget {
         void setSeverity(Severity* sev);
         void handleSeverity(bool upOrDown);
         Severity* getState();
-
-        void increaseTaxes();
 };
 
 #endif

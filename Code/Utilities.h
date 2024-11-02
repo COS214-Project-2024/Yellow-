@@ -9,8 +9,9 @@ class Utilities : public Buildings {
 public:
 	Utilities(string cellType);
 	void acceptVisitor(Visitor* v);
-	virtual float taxBuilding();
+	virtual void taxBuilding();
 	virtual void createResource() = 0;
+	virtual void setIcon();
 };
 
 #endif

@@ -5,8 +5,9 @@ class Office : public Commercial {
 
 
 public:
-	float taxBuilding();
+	void taxBuilding();
 	Office();
+	void setIcon() override;
 };
 
 #endif

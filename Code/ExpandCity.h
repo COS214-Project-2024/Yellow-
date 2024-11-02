@@ -6,7 +6,7 @@
 class ExpandCity : public Strategy {
 
     public:
-        string implementPolicy(string stateType, string stateColour) override;
+        Policies* implementPolicy(string stateType, string prevStateColour, string currStateColour) override;
 
 };
 
