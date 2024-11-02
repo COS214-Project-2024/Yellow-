@@ -3,7 +3,7 @@
 Cell* ResidentialFactory::createHouse(vector<Coordinate> coordinates) {
     if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
 	    return nullptr;
-    Cell* cell = new House();
+    House* cell = new House();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -11,7 +11,7 @@ Cell* ResidentialFactory::createHouse(vector<Coordinate> coordinates) {
 Cell* ResidentialFactory::createApartment(vector<Coordinate> coordinates) { 
     if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
         return nullptr;
-    Cell* cell = new Apartment();
+    Apartment* cell = new Apartment();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -19,7 +19,7 @@ Cell* ResidentialFactory::createApartment(vector<Coordinate> coordinates) {
 Cell* ResidentialFactory::createComplex(vector<Coordinate> coordinates) {
     if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
         return nullptr;
-    Cell* cell = new Complex();
+    Complex* cell = new Complex();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -28,7 +28,7 @@ Cell *ResidentialFactory::createHouseHold(vector<Coordinate> coordinates)
 {
     if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
         return nullptr;
-    Cell* cell = new HouseHold();
+    HouseHold* cell = new HouseHold();
     cell->setCoordinates(coordinates);
     return cell;
 }

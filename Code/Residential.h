@@ -2,7 +2,6 @@
 #define RESIDENTIAL_H
 class Visitor;
 #include "Buildings.h"
-class Citizen;
 class Residential : public Buildings {
 
 protected:

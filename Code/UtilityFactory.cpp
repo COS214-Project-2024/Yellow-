@@ -44,8 +44,9 @@ Cell *UtilityFactory::createWaterPlant(vector<Coordinate> coordinates)
 {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-    Cell* res = new WasteManagement();
+    WaterPlant* res = new WaterPlant();
     res->setCoordinates(coordinates);
+    res->setProductionRate(55);
     return res;
 }
 
@@ -53,9 +54,9 @@ Cell *UtilityFactory::createPowerPlant(vector<Coordinate> coordinates)
 {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-    Cell* res = new PowerPlant();
+    PowerPlant* res = new PowerPlant();
     res->setCoordinates(coordinates);
-    res->setProductionRate(45);
+    res->setProductionRate(55);
     return res;
 }
 
@@ -63,8 +64,9 @@ Cell *UtilityFactory::createWastePlant(vector<Coordinate> coordinates)
 {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-    Cell* res = new WasteManagement();
+    WasteManagement* res = new WasteManagement();
     res->setCoordinates(coordinates);
+    res->setProductionRate(55);
     return res;;
 }
 

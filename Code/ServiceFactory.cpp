@@ -3,7 +3,7 @@
 Cell* ServiceFactory::createHospital(vector<Coordinate> coordinates) {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new Hospital();
+	Hospital* cell = new Hospital();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -11,7 +11,7 @@ Cell* ServiceFactory::createHospital(vector<Coordinate> coordinates) {
 Cell* ServiceFactory::createTownHall(vector<Coordinate> coordinates) {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new TownHall();
+	TownHall* cell = new TownHall();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -31,7 +31,7 @@ Cell* ServiceFactory::createWastePlant(vector<Coordinate> coordinates) {
 Cell* ServiceFactory::createSchool(vector<Coordinate> coordinates) {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new School();
+	School* cell = new School();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -39,7 +39,7 @@ Cell* ServiceFactory::createSchool(vector<Coordinate> coordinates) {
 Cell* ServiceFactory::createTrainStation(vector<Coordinate> coordinates) {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new TrainStation();
+	TrainStation* cell = new TrainStation();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -47,7 +47,7 @@ Cell* ServiceFactory::createTrainStation(vector<Coordinate> coordinates) {
 Cell* ServiceFactory::createAirport(vector<Coordinate> coordinates) {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new Airport();
+	Airport* cell = new Airport();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -55,7 +55,7 @@ Cell* ServiceFactory::createAirport(vector<Coordinate> coordinates) {
 Cell* ServiceFactory::createPoliceStation(vector<Coordinate> coordinates) {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new PoliceStation();
+	PoliceStation* cell = new PoliceStation();
     cell->setCoordinates(coordinates);
     return cell;
 }
