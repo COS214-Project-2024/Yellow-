@@ -26,3 +26,8 @@ void Road::removeBuilding(Cell *building) {
         }
     }
 }
+
+Cell *Road::clone() {
+    Cell* newRoad = road();
+    return newRoad;
+}

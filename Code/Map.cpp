@@ -187,3 +187,26 @@ vector<Coordinate> Map::returnFreeCoords() {
     }
     return freeCoords;
 }
+
+Map::Map(const Map &other) {
+    map.resize(other.map.size());
+    for (size_t i = 0; i < other.map.size(); ++i) {
+        map[i].resize(other.map[i].size());
+        for (size_t j = 0; j < other.map[i].size(); ++j) {
+            map[i][j] = other.map[i][j]->clone();
+        }
+    }
+
+    distanceMatrix = other.distanceMatrix;
+    pos.resize(other.pos.size());
+    for (size_t i = 0; i < other.pos.size(); ++i) {
+        pos[i] = other.pos[i]->clone();
+    }
+
+    buildings.resize(other.buildings.size());
+    for (size_t i = 0; i < other.buildings.size(); ++i) {
+        buildings[i] = other.buildings[i]->clone();
+    }
+}
+
+

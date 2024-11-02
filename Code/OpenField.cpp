@@ -10,3 +10,8 @@ OpenField::OpenField() {
 void OpenField::setIcon() {
     this->icon = "F";
 }
+
+Cell *OpenField::clone() {
+    Cell* newField = OpenField();
+    return newField;
+}

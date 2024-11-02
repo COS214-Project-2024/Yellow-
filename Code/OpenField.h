@@ -10,6 +10,7 @@ class OpenField : public Cell{
 public:
     OpenField();
     void setIcon() override;
+    Cell * clone() override;
 };
 
 

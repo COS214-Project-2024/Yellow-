@@ -13,6 +13,7 @@ public:
     void setIcon() override;
     void addBuilding(Cell* building);
     void removeBuilding(Cell* building);
+    Cell * clone() override;
 };
 
 #endif

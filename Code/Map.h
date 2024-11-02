@@ -24,9 +24,10 @@ private:
    bool isInBounds(int r, int c);
    void removeFromMatrix(Cell* object);
    int findIndex(Cell* object);
-
+    void setRoadConnections();
 
 public:
+    Map(const Map& other);
     Map(vector<vector<Cell*>> map, vector<vector<int>> distanceMatrix, vector<Cell*> pos);
     vector<Coordinate> returnFreeCoords();
     Map();
