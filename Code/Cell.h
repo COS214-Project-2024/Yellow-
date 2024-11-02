@@ -20,7 +20,7 @@ public:
     virtual void setIcon() = 0;
     void setCellType(string str);
     virtual ~Cell();
-    //virtual Cell* clone() = 0;
+    virtual Cell* clone() = 0;
 };
 
 

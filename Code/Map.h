@@ -18,7 +18,6 @@ private:
    vector<Cell*> pos;
    vector<Cell*> buildings;
    //TODO: deepCopy
-   //TODO: return free coordinates
    //TODO: aneurysm
    void addToMatrix(Cell* object);
    vector<Cell*> findBorderRoads(Cell* building);

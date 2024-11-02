@@ -23,3 +23,7 @@ void Cell::setCoordinates(vector<Coordinate> newCoordinates) {
 void Cell::setCellType(string str) {
     this->type = str;
 }
+
+Cell * Cell::clone() {
+
+}
