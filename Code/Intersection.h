@@ -4,10 +4,14 @@
 
 #ifndef CODE_INTERSECTION_H
 #define CODE_INTERSECTION_H
+#include "Cell.h"
+#include "Road.h"
+#include <vector>
+#include <map>
 
-
-class Intersection {
-
+class Intersection : public Cell{
+protected:
+    vector<Cell*> intersections;
 };
 
 

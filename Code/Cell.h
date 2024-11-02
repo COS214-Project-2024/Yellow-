@@ -6,7 +6,7 @@
 #include <vector>
 using namespace std;
 class Cell {
-private:
+protected:
     string type;
     vector<Coordinate> coordinates = vector<Coordinate>();//range of spots on map this object occupies
     char icon;

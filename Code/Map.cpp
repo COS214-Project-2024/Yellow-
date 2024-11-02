@@ -9,6 +9,16 @@ Map::Map(vector<vector<Cell*>> map, vector<vector<int>> distanceMatrix, vector<C
 Map::Map(){
     map = vector<vector<Cell*>>();
     distanceMatrix = vector<vector<int>>();
+
+    int rows = 200;
+    int cols = 200;
+
+    map.resize(rows, vector<Cell*>(cols, nullptr));
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            map[i][j] = new OpenField();
+        }
+    }
 }
 
 void Map::addNode(Cell *object, int x, int y, int height, int width) {
@@ -136,4 +146,28 @@ vector<Cell*> Map::findBorderRoads(Cell* building) {
 
 bool Map::isInBounds(int r, int c) {
     return r >= 0 && r < map.size() && c >= 0 && c < map[0].size();
+}
+
+void Map::removeFromMatrix(Cell *object) {
+
+}
+
+int Map::retrieveDistance(Cell *res, Cell *job) {
+    int resIndex = findIndex(res);
+    int jobIndex = findIndex(job);
+    if (resIndex >= 0 && resIndex < distanceMatrix.size() &&
+        jobIndex >= 0 && jobIndex < distanceMatrix[resIndex].size()) {
+        int result = distanceMatrix[resIndex][jobIndex];
+        return result;
+    } else {
+        return -1;
+    }
+}
+
+int Map::findIndex(Cell *object) {
+    for (int K = 0; K < pos.size(); ++K){
+        if (pos[K] == object){
+            return K;
+        }
+    }
 }
