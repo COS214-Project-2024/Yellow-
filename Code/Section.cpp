@@ -21,3 +21,7 @@ float Section::getMoney()
 {
     return 0.0f;
 }
+
+void Section::setMoney(float newAmount)
+{
+}

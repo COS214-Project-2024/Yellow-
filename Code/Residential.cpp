@@ -36,3 +36,7 @@ void Residential::addCitizenToBuilding(Citizen *newCitizen)
 void Residential::createBuildingResource()
 {
 }
+
+Residential::~Residential()
+{
+}

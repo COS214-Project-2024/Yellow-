@@ -13,6 +13,7 @@ public:
     Cell * clone() override;
     void createBuildingResource() override;
     float getMoney() override;
+    void setMoney(float newAmount) override;
 };
 
 

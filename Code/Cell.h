@@ -27,6 +27,7 @@ public:
     virtual void createBuildingResource() = 0;
     virtual void taxBuilding();
     virtual float getMoney() = 0;
+    virtual void setMoney(float newAmount) = 0;
 };
 
 

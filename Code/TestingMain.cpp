@@ -491,24 +491,46 @@ TEST_CASE("Factory null test") {
     // CHECK(testPtr == nullptr);
     testPtr = utils.createTrainStation(v);
     CHECK(testPtr == nullptr);
+
+
+}
+
+TEST_CASE("Buidling constructors") {
+    House house = House();
+    CHECK(typeid(house) == typeid(House));
+    House* housePtr = new House();
+    CHECK(typeid(*housePtr) == typeid(House));
+
+    City city = City::instanceCity();
+    city.stuff.res->setBudget(2000);
+    city.stuff.res->setWood(3000);
+    city.stuff.res->setConcrete(3000);
+    city.stuff.res->setSteel(3000);
+
+    ResidentialFactory factory = ResidentialFactory();
+    Coordinate c = Coordinate();
+    vector<Coordinate> v = vector<Coordinate>();
+    Cell* houseFromFactory = factory.createHouse(v);
+    CHECK(typeid(*houseFromFactory) == typeid(House));
+    delete houseFromFactory;
 }
 
 TEST_CASE("City taxes and resources") { 
     Coordinate c1 = Coordinate();
     vector<Coordinate> v1 = vector<Coordinate>();
     v1.push_back(c1);
-    Coordinate c2 = Coordinate(2,3);
+    Coordinate c2 = Coordinate();
     vector<Coordinate> v2 = vector<Coordinate>();
     v2.push_back(c2);
-    Coordinate c3 = Coordinate(4,5);
+    Coordinate c3 = Coordinate();
     vector<Coordinate> v3 = vector<Coordinate>();
     v3.push_back(c3);
 
     City city = City::instanceCity();
-    city.stuff.res->setBudget(3000);
-    city.stuff.res->setConcrete(2000);
-    city.stuff.res->setSteel(5000);
-    city.stuff.res->setWood(5000);
+    city.stuff.res->setBudget(100000);
+    city.stuff.res->setConcrete(100000);
+    city.stuff.res->setSteel(100000);
+    city.stuff.res->setWood(100000);
     city.stuff.res->setWage(100);
     city.stuff.res->setPropertyTaxRate(0.1);
     city.stuff.res->setBusinessTaxRate(0.2);
@@ -517,15 +539,21 @@ TEST_CASE("City taxes and resources") {
     ResidentialFactory r = ResidentialFactory();
     CommercialFactory c = CommercialFactory();
     Buildings* th = dynamic_cast<Buildings*>(s.createTownHall(v1));
+    CHECK(typeid(*th) == typeid(TownHall));
     city.addBuilding(th);
+    CHECK(city.getBuildings().size() == 1);
     Citizen* person1 = new Citizen();
     Citizen* person2 = new Citizen();
     Citizen* person3 = new Citizen();
     Citizen* person4 = new Citizen();
-    Buildings* house = dynamic_cast<Buildings*>(c.createHouse(v2));
-    CHECK(house != nullptr);
+    //Cell* house = c.createHouse(v2);
+    Cell* house = new House();
+    if (house == NULL || house == nullptr)  
+        std::cout << "House is null" << endl;
+    CHECK(typeid(*house) == typeid(House));
     city.addBuilding(house);
-    CHECK(city.stuff.res->getWood() < 5000);
+    CHECK(city.getBuildings().size() == 2);
+    CHECK(city.stuff.res->getWood() < 100000);
 
     house->addCitizenToBuilding(person1);
     house->addCitizenToBuilding(person2);

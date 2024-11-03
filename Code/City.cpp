@@ -4,7 +4,7 @@
 City::City()
 {
 	Government::onlyInstance();
-	buildings = vector<Section*>();
+	buildings = vector<Buildings*>();
 }
 
 City &City::instanceCity()
@@ -71,13 +71,15 @@ void City::dealWithPolicies()
 
 void City::addBuilding(Cell *newBuilding)
 {
-	Section* b = dynamic_cast<Section*>(newBuilding);
+	if (newBuilding == nullptr)
+		return;
+	Buildings* b = dynamic_cast<Buildings*>(newBuilding);
 	if (b == nullptr) 
 		return;
 	buildings.push_back(b);
 }
 
-vector<Section *> City::getBuildings()
+vector<Buildings *> City::getBuildings()
 {
     return buildings;
 }

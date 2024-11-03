@@ -28,6 +28,7 @@ public:
 	virtual void createBuildingResource() = 0;
 
 	float getMoney() override;
+	void setMoney(float newAmount) override;
 };
 
 #endif
