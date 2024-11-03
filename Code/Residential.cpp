@@ -4,6 +4,8 @@ Residential::Residential(string cellType) : Buildings(cellType) {}
 
 void Residential::taxBuilding()
 {
+    if (buildingMoney == 0)
+        return;
     float tax = buildingMoney * City::instanceCity().stuff.res->getPropertyTaxRate() + buildingMoney * City::instanceCity().stuff.res->getIncomeTaxRate();
     buildingMoney -= tax;
     float cityMoney = City::instanceCity().stuff.res->getBudget();

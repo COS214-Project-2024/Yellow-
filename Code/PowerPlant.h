@@ -6,8 +6,6 @@ class PowerPlant : public Utilities {
         PowerPlant();
 
         void createBuildingResource() override;
-
-        void payEmployees() override;
     
         void addCitizenToBuilding(Citizen* newCitizen);
         

@@ -10,10 +10,6 @@ void PowerPlant::createBuildingResource()
     c.stuff.res->setEnergy(c.stuff.res->getEnergy() + 150); // + any number - 150 chosen at random
 }
 
-void PowerPlant::payEmployees()
-{
-}
-
 void PowerPlant::addCitizenToBuilding(Citizen *newCitizen)
 {
 }

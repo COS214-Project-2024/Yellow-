@@ -6,6 +6,8 @@ Service::Service(string cellType) : Buildings(cellType)
 
 void Service::taxBuilding()
 {
+    if (buildingMoney == 0)
+        return;
 	float tax = buildingMoney * City::instanceCity().stuff.res->getPropertyTaxRate();
     buildingMoney -= tax;
     float cityMoney = City::instanceCity().stuff.res->getBudget();
