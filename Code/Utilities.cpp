@@ -1,6 +1,9 @@
 #include "Utilities.h"
-
-Utilities::Utilities(string cellType) : Buildings(cellType) {}
+#include "Citizen.h"
+Utilities::Utilities(string cellType) : Buildings(cellType) 
+{
+    
+}
 
 void Utilities::acceptVisitor(Visitor *v)
 {
@@ -27,4 +30,15 @@ void Utilities::setProductionRate(int newRate)
 
 void Utilities::payEmployees()
 {
+    if (dependentCitizens.size() == 0) 
+        return;
+        
+    float wage = City::instanceCity().stuff.res->getWage();
+    City::instanceCity().stuff.res->setBudget(wage * dependentCitizens.size());
+    buildingMoney += wage * City::instanceCity().stuff.res->getPropertyTaxRate() * dependentCitizens.size();
+    wage = wage - wage * City::instanceCity().stuff.res->getPropertyTaxRate();
+    buildingMoney -= wage * dependentCitizens.size();
+    for (Citizen* citizen : dependentCitizens) {
+        citizen->setMoney(citizen->getMoney() + wage);
+    }
 }

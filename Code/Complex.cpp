@@ -2,6 +2,7 @@
 
 Complex::Complex() : Residential("Complex")
 {
+    maxCitizens = 15;
 }
 
 Cell *Complex::clone()

@@ -11,8 +11,6 @@ public:
 	
 	void taxBuilding() override;
 
-	void payEmployees() override;
-
 	void acceptVisitor(Visitor* v);
 
 	virtual void createBuildingResource() = 0;

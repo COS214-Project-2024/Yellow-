@@ -29,7 +29,7 @@ public:
 
 	void acceptVisitor(Visitor* v);
 
-	virtual void taxBuilding() = 0;
+	//virtual void taxBuilding() = 0;
 
 	virtual void payEmployees() = 0;
 

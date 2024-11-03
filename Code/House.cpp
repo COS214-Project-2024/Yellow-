@@ -2,6 +2,7 @@
 
 House::House() : Residential("House")
 {
+    maxCitizens = 10;
 }
 
 void House::taxBuilding()

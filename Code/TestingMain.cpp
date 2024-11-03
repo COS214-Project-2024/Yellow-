@@ -5,6 +5,7 @@
 #include "ResidentialFactory.h"
 #include "CommercialFactory.h"
 #include "ServiceFactory.h"
+#include "UtilityFactory.h"
 #include "Block.h"
 #include "Visitor.h"
 #include "Section.h"
@@ -32,83 +33,6 @@
 #include "Observer.h"
 #include "HappyObserver.h"
 #include <typeinfo>
-
-/*TEST_CASE("Factory method") {
-    IndustrialFactory i = IndustrialFactory();
-    Industrial* p = i.createForestry();
-    delete p;
-    p = nullptr;
-    p = i.createSteelFactory();
-    delete p;
-    p = nullptr;
-    p = i.createForestry();
-    delete p;
-    p = nullptr;
-    p = i.createConcreteFactory();
-    delete p;
-    p = nullptr;
-
-    LandmarkFactory l = LandmarkFactory();
-    Landmarks* park = l.createPark();
-    delete park;
-    park = nullptr;
-    park = l.createMuseum();
-    delete park;
-    park = nullptr;
-
-    ServiceFactory s = ServiceFactory();
-
-    Service* serv = s.createAirport();
-    delete serv;
-    serv = nullptr;
-    serv = s.createHospital();
-    delete serv;
-    serv = nullptr;
-    serv = s.createPoliceStation();
-    delete serv;
-    serv = nullptr;
-    serv = s.createSchool();
-    delete serv;
-    serv = nullptr;
-    serv = s.createTownHall();
-    delete serv;
-    serv = nullptr;
-    serv = s.createTrainStation();
-    delete serv;
-    serv = nullptr;
-
-    Utilities* utls = s.createPowerPlant();
-    delete utls;
-    utls = nullptr;
-    utls = s.createWastePlant();
-    delete utls;
-    utls = nullptr;
-    utls = s.createWaterPlant();
-    delete utls;
-    utls = nullptr;
-
-    ResidentialFactory r = ResidentialFactory();
-    Residential* house = r.createComplex();
-    delete house;
-    house = nullptr;
-    house = r.createApartment();
-    delete house;
-    house = nullptr;
-    house = r.createHouse();
-    delete house;
-    house = nullptr;
-
-    CommercialFactory f = CommercialFactory();
-    Commercial* business = f.createMall();
-    delete business;
-    business = nullptr;
-    business = f.createShop();
-    delete business;
-    business = nullptr;
-    business = f.createOffice();
-    delete business;
-    business = nullptr;
-}*/
 
 TEST_CASE("Composite") {
     Section* test = new Block();
@@ -237,26 +161,31 @@ TEST_CASE("Strategy"){
     CHECK("ExpandCity" == currPolicy->getPolicy());
 }
 
-/*TEST_CASE("Transport") {
+TEST_CASE("Transport") {
     vector<vector<Cell*>> cellMap(5, vector<Cell*>(5, nullptr));
     vector<vector<int>> matrix(5, vector<int>(5, 0));
     vector<Cell*> pos(5, nullptr);
-
+    Coordinate c = Coordinate();
+    vector<Coordinate> v = vector<Coordinate>();
     ServiceFactory s = ServiceFactory();
-
-    Cell* hospital = s.createHospital();
-
+    ResidentialFactory rf = ResidentialFactory();
+    Cell* hospital = s.createHospital(v);
+    Cell* house = rf.createHouse(v);
     Map myMap(cellMap, matrix, pos);
-    myMap.addNode(new Cell("Building 1"), 0, 0, 2, 2);
-    myMap.addNode(new Cell("Building 2"), 3, 3, 2, 2);
+    myMap.addNode(hospital, 0, 0, 2, 2);
+    myMap.addNode(house, 3, 3, 2, 2);
 
     myMap.printMap();
-}*/
+}
 
-/*TEST_CASE("Factory and City integration") {
+TEST_CASE("Factory and City integration") {
+    Coordinate testPosition = Coordinate(1,1);
+
+    vector<Coordinate> testVector = vector<Coordinate>();
+    testVector.push_back(testPosition);
     City city = City::instanceCity();
-    int resources = 2000;
-    float money = 4000;
+    int resources = 4000;
+    float money = 8000;
     city.stuff.res->setConcrete(resources);
     CHECK(city.stuff.res->getConcrete() == resources);
 
@@ -282,7 +211,7 @@ TEST_CASE("Strategy"){
     CHECK(city.stuff.res->getEnergy() == 0);
 
     IndustrialFactory* industrialFactory = new IndustrialFactory();
-    Industrial* cf = industrialFactory->createConcreteFactory();
+    Industrial* cf = dynamic_cast<Industrial*>(industrialFactory->createConcreteFactory(testVector));
     CHECK(typeid(*cf) == typeid(ConcreteFactory));
     resources -= 80;
     money -= 700;
@@ -291,7 +220,7 @@ TEST_CASE("Strategy"){
     CHECK(city.stuff.res->getWood() == resources);
     CHECK(city.stuff.res->getBudget() == money);
 
-    Industrial* forest = industrialFactory->createForestry();
+    Industrial* forest = dynamic_cast<Industrial*>(industrialFactory->createForestry(testVector));
     CHECK(typeid(*forest) == typeid(Forestry));
     resources -= 80;
     money -= 700;
@@ -300,7 +229,7 @@ TEST_CASE("Strategy"){
     CHECK(city.stuff.res->getWood() == resources);
     CHECK(city.stuff.res->getBudget() == money);
 
-    Industrial* sf = industrialFactory->createSteelFactory();
+    Industrial* sf = dynamic_cast<Industrial*>(industrialFactory->createSteelFactory(testVector));
     CHECK(typeid(*sf) == typeid(SteelFactory));
     resources -= 80;
     money -= 700;
@@ -317,10 +246,10 @@ TEST_CASE("Strategy"){
     CHECK(city.stuff.res->getSteel() == resources);
     CHECK(city.stuff.res->getWood() == resources);
 
-    ServiceFactory serviceFactory = ServiceFactory();
+    UtilityFactory utilFactory = UtilityFactory();
 
-    Utilities* power = serviceFactory.createPowerPlant();
-    power->createResource();
+    Cell* power = utilFactory.createPowerPlant(testVector);
+    power->createBuildingResource();
     CHECK(typeid(*power) == typeid(PowerPlant));
     resources -= 80;
     money -= 700;
@@ -330,9 +259,9 @@ TEST_CASE("Strategy"){
     CHECK(city.stuff.res->getBudget() == money);
     CHECK(city.stuff.res->getEnergy() == 150); //change value if value in code is changed
 
-    Utilities* water = serviceFactory.createWaterPlant();
+    Cell* water = utilFactory.createWaterPlant(testVector);
     CHECK(typeid(*water) == typeid(WaterPlant));
-    water->createResource();
+    water->createBuildingResource();
     resources -= 80;
     money -= 700;
     CHECK(city.stuff.res->getConcrete() == resources);
@@ -341,9 +270,9 @@ TEST_CASE("Strategy"){
     CHECK(city.stuff.res->getBudget() == money);
     CHECK(city.stuff.res->getEnergy() == 150);
 
-    Utilities* waste = serviceFactory.createWastePlant();
+    Cell* waste = utilFactory.createWastePlant(testVector);
     CHECK(typeid(*waste) == typeid(WasteManagement));
-    waste->createResource();
+    waste->createBuildingResource();
     resources -= 80;
     money -= 700;
     CHECK(city.stuff.res->getConcrete() == resources);
@@ -353,7 +282,7 @@ TEST_CASE("Strategy"){
     CHECK(city.stuff.res->getMorale() == 1);
 
     LandmarkFactory landmarkFactory = LandmarkFactory();
-    Landmarks* park = landmarkFactory.createPark();
+    Landmarks* park = dynamic_cast<Landmarks*>(landmarkFactory.createPark(testVector));
     CHECK(typeid(*park) == typeid(Park));
     resources -= 150;
     money -= 650;
@@ -364,7 +293,7 @@ TEST_CASE("Strategy"){
     park->createBuildingResource();
     CHECK(city.stuff.res->getMorale() == 2);
 
-    Landmarks* museum = landmarkFactory.createMuseum();
+    Cell* museum = landmarkFactory.createMuseum(testVector);
     CHECK(typeid(*museum) == typeid(Museum));
     resources -= 150;
     money -= 650;
@@ -376,7 +305,7 @@ TEST_CASE("Strategy"){
     CHECK(city.stuff.res->getMorale() == 3);
 
     ResidentialFactory houseFactory = ResidentialFactory();
-    Residential* h = houseFactory.createHouseHold();
+    Cell* h = houseFactory.createHouseHold(testVector);
     CHECK(typeid(*h) == typeid(HouseHold));
 
     delete h;
@@ -400,12 +329,12 @@ TEST_CASE("Strategy"){
     park = nullptr;
     delete museum;
     museum = nullptr;
-}*/
+}
 
 TEST_CASE("Observer") {
     Population population;
-    Citizen* citizen1 = new Citizen(50, nullptr, "Teacher", 100.0f, "123 School Rd");
-    Citizen* citizen2 = new Citizen(90, nullptr, "Engineer", 200.0f, "456 Tech Ave");
+    Citizen* citizen1 = new Citizen(50, nullptr, "Teacher", 100.0f, nullptr);
+    Citizen* citizen2 = new Citizen(90, nullptr, "Engineer", 200.0f, nullptr);
 
     population.addCitizen(citizen1);
     population.addCitizen(citizen2);
@@ -449,4 +378,8 @@ TEST_CASE("Observer") {
     delete citizen1;
     delete citizen2;
     delete happyObserver;
+}
+
+TEST_CASE("Citizen and building integration") {
+    
 }

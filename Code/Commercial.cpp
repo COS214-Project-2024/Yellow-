@@ -1,5 +1,5 @@
 #include "Commercial.h"
-
+#include "Citizen.h"
 Commercial::Commercial(string cellType) : Buildings(cellType) {}
 
 void Commercial::taxBuilding()
@@ -23,5 +23,13 @@ void Commercial::payEmployees()
 {
     if (dependentCitizens.size() == 0)
         return;
-    
+    float wage = City::instanceCity().stuff.res->getWage();
+    City::instanceCity().stuff.res->setBudget(City::instanceCity().stuff.res->getBudget() - 2 * wage * dependentCitizens.size());
+    buildingMoney += 2 * wage * dependentCitizens.size();
+    wage *= 2;
+    wage = wage - wage * City::instanceCity().stuff.res->getPropertyTaxRate() - wage * City::instanceCity().stuff.res->getBusinessTaxRate();
+    buildingMoney -= wage * dependentCitizens.size();
+    for (Citizen* citizen : dependentCitizens) {
+        citizen->setMoney(citizen->getMoney() + wage);
+    }
 }

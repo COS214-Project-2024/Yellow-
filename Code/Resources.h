@@ -15,6 +15,7 @@ private:
 	float propertyTaxRate;
 	float incomeTaxRate;
 	float businessTaxRate;
+	float wage;
 public:
 	Resources();
 	void setConcrete(int newAmount);
@@ -39,6 +40,8 @@ public:
 	float getIncomeTaxRate();
 	void setBusinessTaxRate(float newRate);
 	float getBusinessTaxRate();
+	void setWage(float newWage);
+	float getWage();
 };
 
 #endif

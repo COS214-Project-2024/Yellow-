@@ -5,6 +5,7 @@
 #include "Coordinate.h"
 #include <vector>
 using namespace std;
+class Citizen;
 class Cell {
 protected:
     string type;
@@ -20,11 +21,11 @@ public:
     virtual void setIcon() = 0;
     void setCellType(string str);
     virtual ~Cell();
-    //virtual void addCitizenToBuilding(Citizen* newCitizen) = 0;
+    virtual void addCitizenToBuilding(Citizen* newCitizen);
     virtual Cell* clone() = 0;
-    //virtual void setProductionRate(int newRate) = 0;
-    //virtual void createBuildingResource() = 0;
-    //virtual void taxBuilding() = 0;
+    virtual void setProductionRate(int newRate);
+    virtual void createBuildingResource();
+    virtual void taxBuilding();
 };
 
 

@@ -2,6 +2,7 @@
 
 Apartment::Apartment() : Residential("Apartment")
 {
+    maxCitizens = 5;
 }
 
 void Apartment::setIcon()

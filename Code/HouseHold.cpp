@@ -2,6 +2,7 @@
 
 HouseHold::HouseHold() : Residential("Household")
 {
+    maxCitizens = 10;
 }
 
 Cell *HouseHold::clone()
