@@ -1,13 +1,8 @@
-#ifndef COMMERCIALFACTORY_H
-#define COMMERCIALFACTORY_H
-
 #include "BuildingFactory.h"
 
-class CommercialFactory : public BuildingFactory {
-
-
-public:
-Cell* createHouse(vector<Coordinate> coordinates) override;
+class UtilityFactory : public BuildingFactory {
+    public:
+    Cell* createHouse(vector<Coordinate> coordinates) override;
 
 	Cell* createApartment(vector<Coordinate> coordinates) override;
 
@@ -49,5 +44,3 @@ Cell* createHouse(vector<Coordinate> coordinates) override;
 
 	Cell* createMall(vector<Coordinate> coordinates) override;
 };
-
-#endif

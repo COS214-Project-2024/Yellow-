@@ -1,20 +1,27 @@
 #include "Citizen.h"
 
-
+#include "Cat.h"
+#include "Dog.h"
+#include "Hamster.h"
+#include "Residential.h"
+#include "Snake.h"
 ////////////// Constructors ///////////////
 
 /// Default Constructor
 Citizen::Citizen(){
     happiness = 100;
-	employment = "unemployed";
+	employment = "no job";
 	money = 0;
-    pet = nullptr;
+    businessAddress = nullptr;
+    accommodation = nullptr;
+    petChanceCalculator();
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 /// Variable constructor
-Citizen::Citizen(int happy, Cell* acc, string job, float cash, Cell* addr, Pet* pet)
-        : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr), pet(pet) {
+Citizen::Citizen(int happy, Residential* acc, string job, float cash, Buildings* addr, Pet* pet)
+        : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr) {
+    this->pet = pet;
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
@@ -59,31 +66,57 @@ float Citizen::getMoney() const{
 
 /// Set money
 void Citizen::setMoney(float cash){
-    money = cash;
+    if (accommodation != nullptr)
+        accommodation->setMoney(accommodation->getMoney() + cash);
+    if (accommodation == nullptr) {
+        money = cash;
+        return;
+    }
 }
 
 //////////// Residence /////////////
 
 /// Get residence
-Cell* Citizen::getAccommodation() const{
+Residential* Citizen::getAccommodation() const{
     return accommodation;
 }
 /// Set residence
-void Citizen::setAccommodation(Cell* acc){
+void Citizen::setAccommodation(Residential* acc){
     accommodation = acc;
 }
 
 //////////// Business Address /////////////
 
 // Citizen - Get Business Address
-Cell* Citizen::getBusinessAddress(){
+Buildings* Citizen::getBusinessAddress() const{
     return businessAddress;
 }
 
-void Citizen::setBusinessAddress(Cell* address){
+void Citizen::setBusinessAddress(Buildings* address){
     businessAddress = address;
 }
 
 Citizen* Citizen::procreate() {
 	return new Citizen(*this);
 }
+
+void Citizen::petChanceCalculator() {
+    int weGotAPet = generator.randomVal(0,100);
+
+    if(weGotAPet < 25) {
+        pet = nullptr;
+        return;
+    }
+    if(weGotAPet < 50) {
+        pet = new Dog();
+        return;
+    }
+    if(weGotAPet < 75) {
+        pet = new Cat();
+        return;
+    }
+    if(weGotAPet < 100) {
+        pet = new Hamster();
+    }
+}
+

@@ -46,3 +46,8 @@ vector<Section*> Block::getChildren()
 {
 	return children;
 }
+
+Cell *Block::clone()
+{
+    return nullptr;
+}

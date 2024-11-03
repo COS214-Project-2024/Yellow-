@@ -1,11 +1,17 @@
 #include "Apartment.h"
-
 Apartment::Apartment() : Residential("Apartment")
+{
+    maxCitizens = 5;
+}
+
+void Apartment::setIcon()
 {
 }
 
-float Apartment::taxBuilding()
+Cell *Apartment::clone()
 {
-    // TODO - implement Apartment::taxBuilding
-	throw "Not yet implemented";
+    Cell* c = new Apartment();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
 }
