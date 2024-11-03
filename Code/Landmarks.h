@@ -9,11 +9,19 @@ class Landmarks : public Buildings {
 public:
 	Landmarks(string cellType);
 
-	virtual float taxBuilding() = 0;
+	void taxBuilding() override;
 
 	void acceptVisitor(Visitor* v);
 
-	virtual void createBuildingResource() = 0;
+	virtual void createBuildingResource();
+	
+	virtual void setIcon();
+	
+	void payEmployees() override;
+
+	virtual Cell* clone() = 0;
+
+	void addCitizenToBuilding(Citizen* newCitizen) override;
 };
 
 #endif

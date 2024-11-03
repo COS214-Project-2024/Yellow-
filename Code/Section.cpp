@@ -7,3 +7,21 @@ vector<Section *> Section::getChildren()
     vector<Section*> emptyChild;
     return emptyChild;
 }
+
+void Section::setIcon()
+{
+}
+
+Cell *Section::clone()
+{
+    return nullptr;
+}
+
+void Section::createBuildingResource()
+{
+}
+
+float Section::getMoney()
+{
+    return 0.0f;
+}

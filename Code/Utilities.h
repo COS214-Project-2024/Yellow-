@@ -5,12 +5,18 @@
 
 class Utilities : public Buildings {
 
-
+protected:
+	int productionPerCell;
 public:
 	Utilities(string cellType);
 	void acceptVisitor(Visitor* v);
-	virtual float taxBuilding();
-	virtual void createResource() = 0;
+	virtual void taxBuilding();
+	virtual void createBuildingResource() = 0;
+	virtual void setIcon();
+	virtual Cell* clone() = 0;
+	void setProductionRate(int newRate) override;
+	void payEmployees() override;
+	void addCitizenToBuilding(Citizen* newCitizen) override;
 };
 
 #endif

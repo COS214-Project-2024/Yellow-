@@ -6,7 +6,7 @@ class Complex : public Residential {
 
 public:
 	Complex();
-	float taxBuilding();
+    Cell* clone() override;
 };
 
 #endif
