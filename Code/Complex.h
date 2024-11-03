@@ -6,8 +6,7 @@ class Complex : public Residential {
 
 public:
 	Complex();
-	void taxBuilding();
-	void setIcon() override;
+    Cell* clone() override;
 };
 
 #endif

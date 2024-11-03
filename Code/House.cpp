@@ -2,14 +2,17 @@
 
 House::House() : Residential("House")
 {
-}
-
-void House::taxBuilding()
-{
-    // TODO - implement House::taxBuilding
-	throw "Not yet implemented";
+    maxCitizens = 10;
 }
 
 void House::setIcon()
 {
+}
+
+Cell *House::clone()
+{
+    Cell* c = new House();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
 }

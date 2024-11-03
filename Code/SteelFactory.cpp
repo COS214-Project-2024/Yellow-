@@ -10,5 +10,13 @@ void SteelFactory::createBuildingResource()
         return;
     
     City c = City::instanceCity();
-    c.stuff.res->setSteel(c.stuff.res->getSteel() + 90); // + any number - 90 chosen at random
+    c.stuff.res->setSteel(c.stuff.res->getSteel() + productionPerCell*coordinates.size()); // + any number - 90 chosen at random
+}
+
+Cell *SteelFactory::clone()
+{
+    Cell* c = new SteelFactory();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
 }

@@ -8,6 +8,7 @@ public:
 	Forestry();
 	void createBuildingResource() override;
 	void setIcon() override;
+    Cell* clone() override;
 };
 
 #endif

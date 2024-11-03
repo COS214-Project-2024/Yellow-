@@ -2,23 +2,22 @@
 #define RESIDENTIAL_H
 class Visitor;
 #include "Buildings.h"
-#include <vector>
-class Citizen;
 class Residential : public Buildings {
 
 protected:
 	int numberOfHouseholds;
-	vector<Citizen*> residents;
 public:
 	Residential(string cellType);
-	virtual void taxBuilding() = 0;
+	void taxBuilding() override;
 
 	void acceptVisitor(Visitor* v);
 	virtual void setIcon();
 
-	virtual void payEmployees();
-
-	virtual void addCitizenToBuilding();
+	void payEmployees() override;
+	
+	virtual Cell* clone() = 0;
+	void addCitizenToBuilding(Citizen* newCitizen) override;
+	void createBuildingResource() override;
 };
 
 #endif

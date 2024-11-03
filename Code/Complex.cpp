@@ -2,12 +2,13 @@
 
 Complex::Complex() : Residential("Complex")
 {
+    maxCitizens = 15;
 }
 
-void Complex::taxBuilding()
+Cell *Complex::clone()
 {
-}
-
-void Complex::setIcon()
-{
+    Cell* c = new Complex();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
 }

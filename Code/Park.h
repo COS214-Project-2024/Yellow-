@@ -5,9 +5,9 @@ class Park : public Landmarks {
 
 
 public:
-	void taxBuilding() override;
 	Park();
 	void createBuildingResource() override;
+    Cell* clone() override;
 };
 
 #endif

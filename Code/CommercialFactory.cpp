@@ -3,7 +3,7 @@
 Cell* CommercialFactory::createShop(vector<Coordinate> coordinates) {
     if (useBuildingResources(100,100,100,800,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new Shop();
+	Shop* cell = new Shop();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -11,7 +11,7 @@ Cell* CommercialFactory::createShop(vector<Coordinate> coordinates) {
 Cell* CommercialFactory::createOffice(vector<Coordinate> coordinates) {
     if (useBuildingResources(100,100,100,800,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new Office();
+	Office* cell = new Office();
     cell->setCoordinates(coordinates);
     return cell;
 }
@@ -19,7 +19,7 @@ Cell* CommercialFactory::createOffice(vector<Coordinate> coordinates) {
 Cell* CommercialFactory::createMall(vector<Coordinate> coordinates) {
     if (useBuildingResources(100,100,100,800,coordinates.size()) == false)
         return nullptr;
-	Cell* cell = new Mall();
+	Mall* cell = new Mall();
     cell->setCoordinates(coordinates);
     return cell;
 }

@@ -12,10 +12,12 @@ private:
 	float budget;
     int population;
     int morale;
-	int propertyTaxRate;
-	int incomeTaxRate;
-	int businessTaxRate;
+	float propertyTaxRate;
+	float incomeTaxRate;
+	float businessTaxRate;
+	float wage;
 public:
+	Resources();
 	void setConcrete(int newAmount);
 	int getConcrete();
 	void setSteel(int newAmount);
@@ -32,6 +34,14 @@ public:
 	int getMorale();
 	void setWood(int newAmount);
 	int getWood();
+	void setPropertyTaxRate(float newRate);
+	float getPropertyTaxRate();
+	void setIncomeTaxRate(float newRate);
+	float getIncomeTaxRate();
+	void setBusinessTaxRate(float newRate);
+	float getBusinessTaxRate();
+	void setWage(float newWage);
+	float getWage();
 };
 
 #endif

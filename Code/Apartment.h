@@ -6,8 +6,8 @@ class Apartment : public Residential{
 
 public:
 	Apartment();
-	void taxBuilding();
 	void setIcon() override;
+    Cell* clone() override;
 };
 
 #endif

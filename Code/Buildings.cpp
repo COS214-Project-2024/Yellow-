@@ -15,8 +15,14 @@ void Buildings::setIcon()
 {
 }
 
-Buildings::Buildings(string cellType) : Section(cellType) {
+void Buildings::setProductionRate(int newRate)
+{
+    productionPerCell = newRate;
+}
 
+Buildings::Buildings(string cellType) : Section(cellType)
+{
+    buildingMoney = 0;
 }
 
 float Buildings::getMoney()

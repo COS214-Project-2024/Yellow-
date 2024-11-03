@@ -1,8 +1,10 @@
 #include "City.h"
-
+#include <typeinfo>
+#include "Buildings.h"
 City::City()
 {
 	Government::onlyInstance();
+	buildings = vector<Section*>();
 }
 
 City &City::instanceCity()
@@ -16,7 +18,9 @@ void City::collectResources()
 	//Loop over every building
 	//Check if Industrial
 	//If yes, add to the Resources
-
+	for (Section* building : buildings) {
+		building->createBuildingResource();
+	}
 	
 }
 
@@ -25,6 +29,9 @@ void City::collectTaxes()
 	//Loop over every citizen and Building
 	//If Citizen, collect incomeTax and propretyTax
 	//If building, collect businessTax and propretyTax (skip Service building)
+	for (Section* building : buildings) {
+		building->taxBuilding();
+	}
 }
 
 void City::dealWithResources()
@@ -60,4 +67,17 @@ void City::dealWithPolicies()
 	{
 		Government::onlyInstance().handleMorale(true);
 	}
+}
+
+void City::addBuilding(Cell *newBuilding)
+{
+	Section* b = dynamic_cast<Section*>(newBuilding);
+	if (b == nullptr) 
+		return;
+	buildings.push_back(b);
+}
+
+vector<Section *> City::getBuildings()
+{
+    return buildings;
 }

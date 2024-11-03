@@ -4,6 +4,7 @@ Cell* IndustrialFactory::createForestry(vector<Coordinate> coordinates) {
         return nullptr;
 	Industrial* f = new Forestry();
     f->setCoordinates(coordinates);
+    f->setProductionRate(40);
     return f;
 }
 
@@ -12,13 +13,17 @@ Cell* IndustrialFactory::createSteelFactory(vector<Coordinate> coordinates) {
         return nullptr;
 	Industrial* s = new SteelFactory();
     s->setCoordinates(coordinates);
+    s->setProductionRate(40);
     return s;
 }
 
 Cell* IndustrialFactory::createConcreteFactory(vector<Coordinate> coordinates) {
     if (useBuildingResources(80,80,80,700,coordinates.size()) == false)
         return nullptr;
-	return new ConcreteFactory();
+    ConcreteFactory* c = new ConcreteFactory();
+    c->setCoordinates(coordinates);
+    c->setProductionRate(40);
+    return c;
 }
 
 Cell *IndustrialFactory::createHouse(vector<Coordinate> coordinates)

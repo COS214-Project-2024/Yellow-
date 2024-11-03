@@ -4,7 +4,7 @@
 class HouseHold : public Residential {
 public:
 	HouseHold();
-	void taxBuilding() override;
+    Cell* clone() override;
 private:
 	float houseIncome;
 };

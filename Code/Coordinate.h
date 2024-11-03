@@ -12,7 +12,8 @@ public:
     int y = 0;
     Coordinate();
     Coordinate(int x, int y);
-
+    int getX();
+    int getY();
 };
 
 

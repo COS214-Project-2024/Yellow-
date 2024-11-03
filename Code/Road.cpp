@@ -1,11 +1,11 @@
 #include "Road.h"
-Road::Road() {
+Road::Road() : Cell("Road") {
     setCellType("Road");
-    this->buildings = new vector<Cell*>();
+    this->buildings = vector<Cell*>();
 }
 
 void Road::setIcon() {
-    this->iccon = "R";
+    this->icon = 'R';
 }
 
 void Road::addBuilding(Cell *building) {
@@ -22,13 +22,13 @@ void Road::addBuilding(Cell *building) {
 void Road::removeBuilding(Cell *building) {
     for (int K = 0; K < buildings.size(); ++K){
         if (buildings[K] == building){
-            buildings.erase(K);
+            buildings.erase(buildings.begin() + K);
         }
     }
 }
 
 Cell *Road::clone() {
-    Cell* newRoad = road();
+    Cell* newRoad = new Road();
     return newRoad;
 }
 
@@ -41,6 +41,23 @@ bool Road::contains(Cell *object) {
     return false;
 }
 
+void Road::addCitizenToBuilding(Citizen *newCitizen)
+{
+}
+
+void Road::setProductionRate(int newRate)
+{
+}
+
+void Road::createBuildingResource()
+{
+}
+
+float Road::getMoney()
+{
+    return 0.0f;
+}
+
 bool Road::sameStreet(Cell *building1, Cell *building2) {
-    return (contains(building1 && contains(building2)));
+    return (contains(building1) && contains(building2));
 }

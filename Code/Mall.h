@@ -6,8 +6,8 @@ class Mall : public Commercial {
 
 public:
 	Mall();
-	void taxBuilding() override;
 	void setIcon() override;
+    Cell* clone() override;
 };
 
 #endif

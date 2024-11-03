@@ -3,15 +3,24 @@
 //
 
 #include "OpenField.h"
-OpenField::OpenField() {
+OpenField::OpenField() : Cell("Field") {
     setCellType("Field");
 }
 
 void OpenField::setIcon() {
-    this->icon = "F";
+    this->icon = 'F';
 }
 
 Cell *OpenField::clone() {
-    Cell* newField = OpenField();
+    Cell* newField = new OpenField();
     return newField;
+}
+
+void OpenField::createBuildingResource()
+{
+}
+
+float OpenField::getMoney()
+{
+    return 0.0f;
 }

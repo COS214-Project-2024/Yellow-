@@ -1,8 +1,9 @@
 #ifndef CITIZEN_H
 #define CITIZEN_H
-#include "Residential.h"
 #include "Observer.h"
 #include <string>
+class Buildings;
+class Residential;
 using namespace std;
 
 class Citizen{
@@ -12,10 +13,10 @@ protected:
 	string employment;					// What is the citizen's job?
 private:
 	float money;						// What is the citizen's bank balance?
-	string businessAddress;				// Where does the citizen work?
+	Buildings* businessAddress;				// Where does the citizen work?
 public:
     Citizen();
-    Citizen(int happy, Residential* acc, string job, float cash, string addr);
+    Citizen(int happy, Residential* acc, string job, float cash, Buildings* addr);
     Citizen(const Citizen& other);
     int getHappiness() const;
     void setHappiness(int value);
@@ -25,8 +26,8 @@ public:
     void setEmployment(string job);
     float getMoney() const;
     void setMoney(float cash);
-    string getBusinessAddress();
-    void setBusinessAddress(string address);
+    Buildings* getBusinessAddress();
+    void setBusinessAddress(Buildings* address);
 	Citizen* procreate();
 
 };
