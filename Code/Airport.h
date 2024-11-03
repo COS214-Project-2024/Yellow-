@@ -7,6 +7,8 @@ using namespace std;
 class Airport : public Service{
     public:
         Airport();
+        void setIcon() override;
+        Cell* clone() override;
 private:
     /*
     string destinations1;

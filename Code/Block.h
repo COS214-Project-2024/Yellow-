@@ -27,6 +27,8 @@ public:
 	void acceptVisitor(Visitor* v);
 
 	vector<Section*> getChildren();
+	
+	virtual Cell* clone();
 };
 
 #endif

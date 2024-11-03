@@ -5,6 +5,7 @@
 class TrainStation : public Service{
     public:
     TrainStation();
+    Cell* clone() override;
 private:
     vector<TrainStation*> availableStops;
     vector<int> rideTime;

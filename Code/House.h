@@ -8,7 +8,8 @@ class House : public Residential {
 
 public:
 	House();
-	float taxBuilding();
+	void setIcon() override;
+    Cell* clone() override;
 };
 
 #endif

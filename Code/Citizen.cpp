@@ -1,17 +1,19 @@
 #include "Citizen.h"
-
+#include "Residential.h"
 ////////////// Constructors ///////////////
 
 /// Default Constructor
 Citizen::Citizen(){
     happiness = 100;
-	employment = "unemployed";
+	employment = "no job";
 	money = 0;
+    businessAddress = nullptr;
+    accommodation = nullptr;
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 /// Variable constructor
-Citizen::Citizen(int happy, Residential* acc, string job, float cash, string addr)
+Citizen::Citizen(int happy, Residential* acc, string job, float cash, Buildings* addr)
         : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr) {
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
@@ -67,15 +69,20 @@ float Citizen::getMoney() const{
 
 /// Set money
 void Citizen::setMoney(float cash){
-    money = cash;
+    if (accommodation != nullptr)
+        accommodation->setMoney(accommodation->getMoney() + cash);
+    if (accommodation == nullptr) {
+        money = cash;
+        return;
+    }
 }
 
 // Citizen - Get Business Address
-string Citizen::getBusinessAddress(){
+Buildings* Citizen::getBusinessAddress(){
     return businessAddress;
 }
 
-void Citizen::setBusinessAddress(string address){
+void Citizen::setBusinessAddress(Buildings* address){
     businessAddress = address;
 }
 

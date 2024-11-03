@@ -20,6 +20,14 @@ public:
 	virtual void acceptVisitor(Visitor* v) = 0;
 
 	virtual vector<Section*> getChildren();
+	
+	virtual void setIcon();
+
+	virtual Cell* clone();
+	
+	virtual void createBuildingResource();
+
+	float getMoney() override;
 };
 
 #endif

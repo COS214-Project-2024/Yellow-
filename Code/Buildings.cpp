@@ -11,7 +11,29 @@ Section* Buildings::getSection(int idx)
 
 void Buildings::acceptVisitor(Visitor* v){}
 
-Buildings::Buildings(string cellType) : Section(cellType) {}
+void Buildings::setIcon()
+{
+}
+
+void Buildings::setProductionRate(int newRate)
+{
+    productionPerCell = newRate;
+}
+
+Buildings::Buildings(string cellType) : Section(cellType)
+{
+    buildingMoney = 0;
+}
+
+float Buildings::getMoney()
+{
+    return buildingMoney;
+}
+
+void Buildings::setMoney(float newAmount)
+{
+    buildingMoney = newAmount;
+}
 
 int Buildings::getMaxCitizens()
 {
