@@ -20,5 +20,3 @@ int Coordinate::getX() {
 int Coordinate::getY() {
     return y;
 }
-
-}

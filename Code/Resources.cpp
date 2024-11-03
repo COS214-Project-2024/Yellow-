@@ -105,3 +105,13 @@ float Resources::getBusinessTaxRate()
 {
     return businessTaxRate;
 }
+
+void Resources::setWage(float newWage)
+{
+    wage = newWage;
+}
+
+float Resources::getWage()
+{
+    return wage;
+}
