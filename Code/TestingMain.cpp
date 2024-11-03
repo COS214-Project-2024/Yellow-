@@ -492,3 +492,62 @@ TEST_CASE("Factory null test") {
     testPtr = utils.createTrainStation(v);
     CHECK(testPtr == nullptr);
 }
+
+TEST_CASE("City taxes and resources") { 
+    Coordinate c1 = Coordinate();
+    vector<Coordinate> v1 = vector<Coordinate>();
+    v1.push_back(c1);
+    Coordinate c2 = Coordinate(2,3);
+    vector<Coordinate> v2 = vector<Coordinate>();
+    v2.push_back(c2);
+    Coordinate c3 = Coordinate(4,5);
+    vector<Coordinate> v3 = vector<Coordinate>();
+    v3.push_back(c3);
+
+    City city = City::instanceCity();
+    city.stuff.res->setBudget(3000);
+    city.stuff.res->setConcrete(2000);
+    city.stuff.res->setSteel(5000);
+    city.stuff.res->setWood(5000);
+    city.stuff.res->setWage(100);
+    city.stuff.res->setPropertyTaxRate(0.1);
+    city.stuff.res->setBusinessTaxRate(0.2);
+    city.stuff.res->setIncomeTaxRate(0.1);
+    ServiceFactory s = ServiceFactory();
+    ResidentialFactory r = ResidentialFactory();
+    CommercialFactory c = CommercialFactory();
+    Buildings* th = dynamic_cast<Buildings*>(s.createTownHall(v1));
+    city.addBuilding(th);
+    Citizen* person1 = new Citizen();
+    Citizen* person2 = new Citizen();
+    Citizen* person3 = new Citizen();
+    Citizen* person4 = new Citizen();
+    Buildings* house = dynamic_cast<Buildings*>(c.createHouse(v2));
+    CHECK(house != nullptr);
+    city.addBuilding(house);
+    CHECK(city.stuff.res->getWood() < 5000);
+
+    house->addCitizenToBuilding(person1);
+    house->addCitizenToBuilding(person2);
+    house->addCitizenToBuilding(person3);
+    house->addCitizenToBuilding(person4);
+
+    house->setMoney(0);
+    th->addCitizenToBuilding(person1);
+
+    Buildings* business = dynamic_cast<Buildings*>(c.createMall(v3));
+    business->addCitizenToBuilding(person2);
+    business->addCitizenToBuilding(person3);
+    business->addCitizenToBuilding(person4);
+    city.addBuilding(business);
+    float currBudget = city.stuff.res->getBudget();
+    th->payEmployees();
+    business->payEmployees();
+    
+    CHECK(house->getMoney() != 0);
+    CHECK(currBudget > city.stuff.res->getBudget());
+
+    currBudget = city.stuff.res->getBudget();
+    city.collectTaxes();
+    CHECK(currBudget < city.stuff.res->getBudget());
+}
