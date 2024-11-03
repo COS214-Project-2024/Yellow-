@@ -4,6 +4,7 @@
 #include <vector>
 #include "iostream"
 #include "Save.h"
+#include "HistoryBranch.h"
 
 using namespace std;
 
@@ -12,7 +13,8 @@ friend class SaveAndLoad;
     //attributes
     private:
         vector <Save*> saves;
-
+        // HistoryBranch* saves;
+        
     public:
         //methods
         Saves() {};

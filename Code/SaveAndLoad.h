@@ -4,13 +4,14 @@
 #include "SystemState.h"
 #include "Save.h"
 #include "Saves.h"
+#include "HistoryNode.h"
 
 
 class SaveAndLoad {
 
 private:
 	SystemState* currentSave;
-
+	HistoryNode* currHN; //currentHistoryNode - centralized history node
 	// FOR TESTING
 	static int dummyInt;
 

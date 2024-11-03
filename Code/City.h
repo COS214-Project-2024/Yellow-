@@ -7,6 +7,10 @@
 struct Varibals
 {
 	Resources* res = new Resources();
+
+	// FOR TESTING
+	// Resources* res = nullptr;
+
 };
 
 class City {
