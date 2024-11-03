@@ -7,6 +7,8 @@
 #include "Population.h"
 #include "Map.h"
 #include "MaterialOrder.h"
+#include "Severity.h"
+#include "Green.h"
 #include <vector>
 #include <cmath>
 
@@ -16,6 +18,9 @@ struct Varibals
 	Resources* res;
 	Section* head;
 	Map* map;
+	People* people;
+    Budget* budget;
+    Disatisfaction* dissatisfaction;
 };
 
 class City {

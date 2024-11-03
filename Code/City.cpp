@@ -7,6 +7,9 @@ City::City()
 	prevMoral = 0;
 	prevBudget = 0;
 	prevPopulation = 0;
+	stuff.people = new People(new Green());
+    stuff.budget = new Budget(new Green());
+    stuff.dissatisfaction = new Disatisfaction(new Green());
 }
 
 City &City::instanceCity()
@@ -28,7 +31,11 @@ void City::nextIteration()
 
 void City::collection()
 {
-	
+	//Collect Resources
+
+
+	//Collect Taxes
+	stuff.res->setBudget(stuff.res->getBudget() + stuff.res->getBudget() * (stuff.res->getBusinessTax() + stuff.res->getIncomeTax() + stuff.res->getPropertyTax())/100);
 }
 
 void City::dealWithPolicies()
@@ -40,82 +47,84 @@ void City::dealWithPolicies()
     //Moral
     if (stuff.res->getMorale() - prevMoral < 0) {
         orderMoral = gov.handleMorale(true);
-        if(orderMoral == nullptr){
-            cout << "No new material order" << endl;
-        }
-    } else {
+    } else if (stuff.res->getMorale() - prevMoral > 0) {
         orderMoral = gov.handleMorale(false);
     }
+
+	if(orderMoral == nullptr){
+		cout << "No new material order" << endl;
+	}
 
     //Budget
     if (stuff.res->getBudget() - prevBudget < 0) {
         orderBudget = gov.handleBudget(true);
-        if(orderBudget == nullptr){
-            cout << "No new material order" << endl;
-        }
     } else {
         orderBudget = gov.handleBudget(false);
     }
 
+	if(orderBudget == nullptr){
+		cout << "No new material order" << endl;
+	}
+
     //People
     if (stuff.res->getPopulation() - prevPopulation < 0) {
         orderPopulation = gov.handlePeople(true);
-        if(orderPopulation == nullptr){
-            cout << "No new material order" << endl;
-        }
     } else {
         orderPopulation = gov.handlePeople(false);
     }
 
-	for (auto &material : orderMoral->materials)							
-	{
-		cout << material.first << endl;
-		if (material.first == "Morale")
-		{
-			stuff.res->setMorale(stuff.res->getMorale() + material.second);
-		}
+	if(orderPopulation == nullptr){
+		cout << "No new material order" << endl;
 	}
 
-	for (auto &material : orderBudget->materials)							
+	if (orderMoral) {
+        for (const auto& material : orderMoral->materials) {
+            if (material.first == "Morale") {
+                stuff.res->setMorale(stuff.res->getMorale() + material.second);
+            }
+        }
+    }
+	else
 	{
-		if (material.first == "PropertyTax")
-		{
-			stuff.res->setPropertyTax(stuff.res->getPropertyTax() + material.second);
-			stuff.res->setMorale(stuff.res->getMorale() - 1);
-		}
-
-		if (material.first == "IncomeTax")
-		{
-			stuff.res->setIncomeTax(stuff.res->getIncomeTax() + material.second);
-			stuff.res->setMorale(stuff.res->getMorale() - 1);
-		}
-
-		if (material.first == "BusinessTax")
-		{
-			stuff.res->setBusinessTax(stuff.res->getBusinessTax() + material.second);
-			stuff.res->setMorale(stuff.res->getMorale() - 1);
-		}
+		stuff.res->setMorale(stuff.res->getMorale() - 1);
+		stuff.res->setBudget(stuff.res->getBudget() - 100);
 	}
 
-	for (auto &material : orderPopulation->materials)
+	if (orderBudget) {
+        for (const auto& material : orderBudget->materials) {
+            if (material.first == "PropertyTax") {
+                stuff.res->setPropertyTax(stuff.res->getPropertyTax() + material.second);
+                stuff.res->setMorale(stuff.res->getMorale() - 1);
+            } else if (material.first == "IncomeTax") {
+                stuff.res->setIncomeTax(stuff.res->getIncomeTax() + material.second);
+                stuff.res->setMorale(stuff.res->getMorale() - 1);
+            } else if (material.first == "BusinessTax") {
+                stuff.res->setBusinessTax(stuff.res->getBusinessTax() + material.second);
+                stuff.res->setMorale(stuff.res->getMorale() - 1);
+            }
+        }
+    }
+	else
 	{
-		//Transport
-		if (material.first == "BusStop")
-		{
-			//stuff.map-> addNode(static_cast<Cell*>(serviceFactory->createBus()),0,0,1,1)
-		}
-		
-		if (material.first == "TrainStation")
-		{
-			//stuff.map-> addNode(static_cast<Cell*>(serviceFactory->createTrainStation()),0,0,1,1);
-		}
-		
-		if (material.first == "Morale")
-		{
-			stuff.res->setMorale(stuff.res->getMorale() + material.second);
-		}
-			
-		//Bulding
+		stuff.res->setMorale(stuff.res->getMorale() - 1);
+		stuff.res->setBudget(stuff.res->getBudget() - 100);
+	}
+
+	if (orderPopulation) {
+        for (const auto& material : orderPopulation->materials) {
+            if (material.first == "BusStop") {
+                // Add bus stop logic here if needed
+            } else if (material.first == "TrainStation") {
+                // Add train station logic here if needed
+            } else if (material.first == "Morale") {
+                stuff.res->setMorale(stuff.res->getMorale() + material.second);
+            }
+        }
+    }
+	else
+	{
+		stuff.res->setMorale(stuff.res->getMorale() - 1);
+		stuff.res->setBudget(stuff.res->getBudget() - 100);
 	}
 
 	//Increase or Deacrease population
@@ -130,6 +139,7 @@ void City::dealWithPolicies()
 		stuff.res->setPopulation(stuff.res->getPopulation() + populationAddedOrRemoved);
 	}
 
+	cout << "HHHHHHHHHHHHH: " << stuff.res->getMorale() - prevMoral << endl;
 	prevMoral = stuff.res->getMorale();
     prevBudget = stuff.res->getBudget();
     prevPopulation = stuff.res->getPopulation();
