@@ -433,3 +433,61 @@ TEST_CASE("Citizen and building integration") {
     delete hospital;
     delete house;
 }
+
+TEST_CASE("Factory null test") { 
+    UtilityFactory utils = UtilityFactory();
+    ServiceFactory serv = ServiceFactory();
+    IndustrialFactory ind = IndustrialFactory();
+    LandmarkFactory land = LandmarkFactory();
+    ResidentialFactory res = ResidentialFactory();
+    CommercialFactory comm = CommercialFactory();
+    City city = City::instanceCity();
+    Coordinate testC = Coordinate();
+    vector<Coordinate> v = vector<Coordinate>();
+
+    Cell* testPtr;
+    testPtr = utils.createAirport(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createApartment(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createConcreteFactory(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createComplex(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createHouse(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createHouseHold(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createForestry(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createHospital(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createMall(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createTownHall(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createTrainStation(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createMuseum(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createOffice(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createSchool(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createShop(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createPark(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createSteelFactory(v);
+    CHECK(testPtr == nullptr);
+    testPtr = utils.createPoliceStation(v);
+    CHECK(testPtr == nullptr);
+    // testPtr = utils.createPowerPlant(v);
+    // CHECK(testPtr == nullptr);
+    // testPtr = utils.createWaterPlant(v);
+    // CHECK(testPtr == nullptr);
+    // testPtr = utils.createWastePlant(v);
+    // CHECK(testPtr == nullptr);
+    testPtr = utils.createTrainStation(v);
+    CHECK(testPtr == nullptr);
+}
