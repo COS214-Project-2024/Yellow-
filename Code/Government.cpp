@@ -21,6 +21,7 @@ Policies* Government::implementPolicyMorale(string prevState) {
 }
 
 void Government::setStrategy(Strategy* newStrategy) {
+    delete this->strategy;
     this->strategy = newStrategy;
 }
 
@@ -112,7 +113,7 @@ Government::Government() {
     budgetState = new Budget(new Green());
     disatisfactionState = new Disatisfaction(new Green());
     strategy = new AddPublicTransport();
-    Department * newDepartment = new Transport();
+    Department* newDepartment = new Transport();
     Department* newAmen = new Amenities();
     Department* newLabour = new Labour();
     Department* newFinances = new Finances();

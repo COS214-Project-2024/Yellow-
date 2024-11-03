@@ -48,9 +48,10 @@ void City::dealWithPolicies()
     
     //Moral
     if (stuff.res->getMorale() - prevMoral < 0) {
-        orderMoral = gov.handleMorale(true);
-    } else if (stuff.res->getMorale() - prevMoral >= 0) {
+        gov.setStrategy(new IncreaseWages());
         orderMoral = gov.handleMorale(false);
+    } else if (stuff.res->getMorale() - prevMoral >= 0) {
+        orderMoral = gov.handleMorale(true);
     }
 
 	if(orderMoral == nullptr){
@@ -59,9 +60,11 @@ void City::dealWithPolicies()
 
     //Budget
     if (stuff.res->getBudget() - prevBudget < 0) {
-        orderBudget = gov.handleBudget(true);
-    } else if (stuff.res->getBudget() - prevBudget >= 0){
+        gov.setStrategy(new IncreaseTaxes());
         orderBudget = gov.handleBudget(false);
+    } else if (stuff.res->getBudget() - prevBudget >= 0){
+        gov.setStrategy(new AddPublicTransport());
+        orderBudget = gov.handleBudget(true);
     }
 
 	if(orderBudget == nullptr){
@@ -71,7 +74,9 @@ void City::dealWithPolicies()
     //People
     if (stuff.res->getPopulation() - prevPopulation < 0) {
         orderPopulation = gov.handlePeople(true);
+
     } else if (stuff.res->getPopulation() - prevPopulation >= 0){
+        gov.setStrategy(new ExpandCity());
         orderPopulation = gov.handlePeople(false);
     }
 

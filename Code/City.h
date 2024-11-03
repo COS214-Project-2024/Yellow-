@@ -9,6 +9,10 @@
 #include "MaterialOrder.h"
 #include "Severity.h"
 #include "Green.h"
+#include "IncreaseWages.h"
+#include "IncreaseTaxes.h"
+#include "ExpandCity.h"
+#include "AddPublicTransport.h"
 #include <vector>
 #include <cmath>
 
