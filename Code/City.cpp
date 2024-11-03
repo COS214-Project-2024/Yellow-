@@ -44,6 +44,10 @@ void City::dealWithPolicies()
 	MaterialOrder* orderBudget = nullptr;
 	MaterialOrder* orderPopulation = nullptr;
     
+	prevMoral = stuff.res->getMorale();
+    prevBudget = stuff.res->getBudget();
+    prevPopulation = stuff.res->getPopulation();
+
     //Moral
     if (stuff.res->getMorale() - prevMoral < 0) {
         orderMoral = gov.handleMorale(true);
@@ -58,7 +62,7 @@ void City::dealWithPolicies()
     //Budget
     if (stuff.res->getBudget() - prevBudget < 0) {
         orderBudget = gov.handleBudget(true);
-    } else {
+    } else if (stuff.res->getBudget() - prevBudget > 0){
         orderBudget = gov.handleBudget(false);
     }
 
@@ -69,7 +73,7 @@ void City::dealWithPolicies()
     //People
     if (stuff.res->getPopulation() - prevPopulation < 0) {
         orderPopulation = gov.handlePeople(true);
-    } else {
+    } else if (stuff.res->getPopulation() - prevPopulation > 0){
         orderPopulation = gov.handlePeople(false);
     }
 
@@ -140,7 +144,4 @@ void City::dealWithPolicies()
 	}
 
 	cout << "HHHHHHHHHHHHH: " << stuff.res->getMorale() - prevMoral << endl;
-	prevMoral = stuff.res->getMorale();
-    prevBudget = stuff.res->getBudget();
-    prevPopulation = stuff.res->getPopulation();
 }
