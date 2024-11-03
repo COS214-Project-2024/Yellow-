@@ -4,7 +4,7 @@
 
 class IncomeObserver : public Observer {
 public:
-    int totalIncome;
+    float averageIncome;
     IncomeObserver();
     IncomeObserver(vector<Citizen*> subj);
     void update();

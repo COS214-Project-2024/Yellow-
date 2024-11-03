@@ -2,31 +2,34 @@
 #define CITIZEN_H
 #include "Residential.h"
 #include "Observer.h"
+#include "Pet.h"
 #include <string>
 using namespace std;
 
 class Citizen{
 protected:
 	int happiness;						// How happy is the citizen? (Out of 100)
-	Residential* accommodation;			// Where does the citizen live?					// Cell pointers
 	string employment;					// What is the citizen's job?
-private:
 	float money;						// What is the citizen's bank balance?
-	string businessAddress;				// Where does the citizen work?					// Cell pointers
+	Cell* accommodation;				// Where does the citizen live?					// Cell pointers
+	Cell* businessAddress;				// Where does the citizen work?					// Cell pointers
+	Pet* pet;							// Does the citizen have a pet?
 public:
     Citizen();
-    Citizen(int happy, Residential* acc, string job, float cash, string addr);
+    Citizen(int happy, Cell* acc, string job, float cash, Cell* addr, Pet* pet);
     Citizen(const Citizen& other);
     int getHappiness() const;
     void setHappiness(int value);
-    Residential* getAccommodation() const;
-    void setAccommodation(Residential* acc);
     string getEmployment() const;
     void setEmployment(string job);
     float getMoney() const;
     void setMoney(float cash);
-    string getBusinessAddress();
-    void setBusinessAddress(string address);
+	Cell* getAccommodation() const;
+	void setAccommodation(Cell* acc);
+    Cell* getBusinessAddress();
+    void setBusinessAddress(Cell* address);
+	Pet* getPet() const;
+	void setPet(Pet* pet);
 	Citizen* procreate();
 
 };

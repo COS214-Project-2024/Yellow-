@@ -5,17 +5,21 @@
 using namespace std;
 
 class Pet {
-public:
-    string animalType;
+protected:
     string animalName;
+    string animalType;
     Citizen* owner;
-
+public:
     Pet();
-    Pet(string animalType, string animalName);
-    void setOwner(Citizen* owner);
-    string getAnimalType();
+    Pet(string name, string type);
+    void setAnimalName(string name);
     string getAnimalName();
-    
+    void setAnimalType(string type);
+    string getAnimalType();
+    void setOwner(Citizen* owner);
+    Citizen* getOwner() const;
+    virtual void cuteAction() = 0;
+    virtual ~Pet();
 };
 
 #endif //PET_H

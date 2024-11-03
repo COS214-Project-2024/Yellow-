@@ -8,12 +8,13 @@ Citizen::Citizen(){
     happiness = 100;
 	employment = "unemployed";
 	money = 0;
+    pet = nullptr;
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 /// Variable constructor
-Citizen::Citizen(int happy, Residential* acc, string job, float cash, string addr)
-        : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr) {
+Citizen::Citizen(int happy, Cell* acc, string job, float cash, Cell* addr, Pet* pet)
+        : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr), pet(pet) {
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
@@ -22,6 +23,7 @@ Citizen::Citizen(const Citizen& other){
     happiness = other.happiness;
 	employment = other.employment;
 	money = other.getMoney();
+    pet = other.pet;
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
@@ -34,17 +36,6 @@ int Citizen::getHappiness() const {
 /// Set happiness
 void Citizen::setHappiness(int value) {
     happiness = value;
-}
-
-//////////// Residence /////////////
-
-/// Get residence
-Residential* Citizen::getAccommodation() const{
-    return accommodation;
-}
-/// Set residence
-void Citizen::setAccommodation(Residential* acc){
-    accommodation = acc;
 }
 
 //////////// Employment /////////////
@@ -71,12 +62,25 @@ void Citizen::setMoney(float cash){
     money = cash;
 }
 
+//////////// Residence /////////////
+
+/// Get residence
+Cell* Citizen::getAccommodation() const{
+    return accommodation;
+}
+/// Set residence
+void Citizen::setAccommodation(Cell* acc){
+    accommodation = acc;
+}
+
+//////////// Business Address /////////////
+
 // Citizen - Get Business Address
-string Citizen::getBusinessAddress(){
+Cell* Citizen::getBusinessAddress(){
     return businessAddress;
 }
 
-void Citizen::setBusinessAddress(string address){
+void Citizen::setBusinessAddress(Cell* address){
     businessAddress = address;
 }
 

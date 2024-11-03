@@ -16,23 +16,21 @@ void IncomeObserver::update() {
         return;
     }
 
-    float totalHappiness = 0;
+    float totalIncome = 0;
     int citizenCount = 0;
 
-    // Calculate the total happiness
     for (Citizen* cit : listOfSubjects) {
-        if (cit) {  // Ensure the pointer is valid
-            totalHappiness += cit->getHappiness();
+        if (cit) {
+            totalIncome += cit->getMoney();
             citizenCount++;
         }
     }
 
-    // Calculate and print the average happiness
     if (citizenCount > 0) {
-        float averageHappiness = totalHappiness / citizenCount;
-        std::cout << "Observer: Average happiness of citizens: " << averageHappiness << "!" << std::endl;
+        averageIncome = totalIncome / citizenCount;
+        City::instanceCity().stuff.res->setBudget(City::instanceCity().stuff.res->getBudget() + averageIncome);
     } else {
-        std::cout << "Observer: No valid citizens found for happiness calculation." << std::endl;
+        std::cout << "Observer: No valid citizens found for income calculation." << std::endl;
     }
 }
 
