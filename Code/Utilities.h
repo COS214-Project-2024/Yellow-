@@ -16,6 +16,7 @@ public:
 	virtual Cell* clone() = 0;
 	void setProductionRate(int newRate) override;
 	void payEmployees() override;
+	void addCitizenToBuilding(Citizen* newCitizen) override;
 };
 
 #endif

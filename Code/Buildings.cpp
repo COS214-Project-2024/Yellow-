@@ -15,21 +15,15 @@ void Buildings::setIcon()
 {
 }
 
-void Buildings::addCitizenToBuilding(Citizen *newCitizen)
-{
-    if (currentNumberOfCitizens == maxCitizens)
-        return;
-    currentNumberOfCitizens++;
-    dependentCitizens.push_back(newCitizen);
-}
-
 void Buildings::setProductionRate(int newRate)
 {
+    productionPerCell = newRate;
 }
 
-void Buildings::createBuildingResource(){}
-
-Buildings::Buildings(string cellType) : Section(cellType){}
+Buildings::Buildings(string cellType) : Section(cellType)
+{
+    buildingMoney = 0;
+}
 
 float Buildings::getMoney()
 {

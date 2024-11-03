@@ -35,10 +35,10 @@ public:
 
 	virtual void setIcon();
 
-	void addCitizenToBuilding(Citizen* newCitizen);
+	virtual void addCitizenToBuilding(Citizen* newCitizen) = 0;
 	virtual Cell* clone() = 0;
 	virtual void setProductionRate(int newRate);
-	virtual void createBuildingResource();
+	virtual void createBuildingResource() = 0;
 
 };
 

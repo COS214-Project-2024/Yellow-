@@ -8,9 +8,7 @@ class House : public Residential {
 
 public:
 	House();
-	void taxBuilding();
 	void setIcon() override;
-	void addCitizenToBuilding(Citizen* newCitizen) override;
     Cell* clone() override;
 };
 

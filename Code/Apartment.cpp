@@ -1,5 +1,4 @@
 #include "Apartment.h"
-
 Apartment::Apartment() : Residential("Apartment")
 {
     maxCitizens = 5;

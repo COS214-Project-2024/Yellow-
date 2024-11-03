@@ -69,11 +69,12 @@ float Citizen::getMoney() const{
 
 /// Set money
 void Citizen::setMoney(float cash){
+    if (accommodation != nullptr)
+        accommodation->setMoney(accommodation->getMoney() + cash);
     if (accommodation == nullptr) {
         money = cash;
         return;
     }
-    accommodation->setMoney(accommodation->getMoney() + cash);
 }
 
 // Citizen - Get Business Address

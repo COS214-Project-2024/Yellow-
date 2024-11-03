@@ -33,3 +33,16 @@ void Commercial::payEmployees()
         citizen->setMoney(citizen->getMoney() + wage);
     }
 }
+
+void Commercial::addCitizenToBuilding(Citizen *newCitizen)
+{
+    if (currentNumberOfCitizens == maxCitizens)
+        return;
+    currentNumberOfCitizens++;
+    dependentCitizens.push_back(newCitizen);
+    newCitizen->setBusinessAddress(this);
+}
+
+void Commercial::createBuildingResource()
+{
+}

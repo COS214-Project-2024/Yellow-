@@ -22,6 +22,8 @@ public:
 	void setProductionRate(int newRate) override;
 
 	void payEmployees() override;
+
+	void addCitizenToBuilding(Citizen* newCitizen) override;
 };
 
 #endif

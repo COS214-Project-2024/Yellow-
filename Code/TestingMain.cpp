@@ -198,8 +198,8 @@ TEST_CASE("Factory and City integration") {
     city.stuff.res->setBudget(money);
     CHECK(city.stuff.res->getBudget() == money);
 
-    city.stuff.res->setMorale(0);
-    CHECK(city.stuff.res->getMorale() == 0);
+    city.stuff.res->setMorale(1);
+    CHECK(city.stuff.res->getMorale() == 1);
 
     city.stuff.res->setPopulation(10);
     CHECK(city.stuff.res->getPopulation() == 10);
@@ -238,7 +238,7 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getWood() == resources);
     CHECK(city.stuff.res->getBudget() == money);
 
-    resources+=90;
+    resources+=40;
     sf->createBuildingResource();
     cf->createBuildingResource();
     forest->createBuildingResource();
@@ -279,10 +279,11 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getSteel() == resources);
     CHECK(city.stuff.res->getWood() == resources);
     CHECK(city.stuff.res->getBudget() == money);
-    CHECK(city.stuff.res->getMorale() == 1);
+    std::cout << "City morale: " << city.stuff.res->getMorale() << std::endl;
+    CHECK(city.stuff.res->getMorale() == 2);
 
     LandmarkFactory landmarkFactory = LandmarkFactory();
-    Landmarks* park = dynamic_cast<Landmarks*>(landmarkFactory.createPark(testVector));
+    Cell* park = landmarkFactory.createPark(testVector);
     CHECK(typeid(*park) == typeid(Park));
     resources -= 150;
     money -= 650;
@@ -291,7 +292,7 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getWood() == resources);
     CHECK(city.stuff.res->getBudget() == money);
     park->createBuildingResource();
-    CHECK(city.stuff.res->getMorale() == 2);
+    CHECK(city.stuff.res->getMorale() == 3);
 
     Cell* museum = landmarkFactory.createMuseum(testVector);
     CHECK(typeid(*museum) == typeid(Museum));
@@ -302,7 +303,7 @@ TEST_CASE("Factory and City integration") {
     CHECK(city.stuff.res->getWood() == resources);
     CHECK(city.stuff.res->getBudget() == money);
     museum->createBuildingResource();
-    CHECK(city.stuff.res->getMorale() == 3);
+    CHECK(city.stuff.res->getMorale() == 4);
 
     ResidentialFactory houseFactory = ResidentialFactory();
     Cell* h = houseFactory.createHouseHold(testVector);
@@ -381,5 +382,54 @@ TEST_CASE("Observer") {
 }
 
 TEST_CASE("Citizen and building integration") {
-    
+    ResidentialFactory resFactory = ResidentialFactory();
+    ServiceFactory serviceFactory = ServiceFactory();
+    Citizen* person1 = new Citizen();
+    Citizen* person2 = new Citizen();
+    City city = City::instanceCity();
+    city.stuff.res->setBudget(10000);
+    city.stuff.res->setConcrete(7000);
+    city.stuff.res->setWood(7000);
+    city.stuff.res->setSteel(7000);
+    city.stuff.res->setIncomeTaxRate(0.1);
+    city.stuff.res->setPropertyTaxRate(0.1);
+    city.stuff.res->setBusinessTaxRate(0.2);
+    city.stuff.res->setWage(100.0);
+    float wage = 100.0;
+    Coordinate housePosition = Coordinate(1,1);
+    Coordinate workPosition = Coordinate(2,2);
+    vector<Coordinate> houseCoordinate = vector<Coordinate>();
+    houseCoordinate.push_back(housePosition);
+    vector<Coordinate> workCoordinate = vector<Coordinate>();
+    workCoordinate.push_back(workPosition);
+    Residential* house = dynamic_cast<Residential*>(resFactory.createHouse(houseCoordinate));
+    house->addCitizenToBuilding(person1);
+    house->addCitizenToBuilding(person2);
+    CHECK(house->getMoney() == 0);
+
+    Cell* hospital = serviceFactory.createHospital(workCoordinate);
+    hospital->addCitizenToBuilding(person1);
+    hospital->addCitizenToBuilding(person2);
+    CHECK(person1->getAccommodation() == house);
+
+    CHECK(person1->getBusinessAddress() == hospital);
+    CHECK(person2->getBusinessAddress() == hospital);
+    CHECK(house->getMoney() == 0.0);
+    Service* h = dynamic_cast<Service*>(hospital);
+    float budget = City::instanceCity().stuff.res->getBudget();
+    h->payEmployees();
+    CHECK(City::instanceCity().stuff.res->getBudget() < budget);
+    CHECK(house->getMoney() > 0);
+    float currMoneyHouse, currMoneyHospital;
+    currMoneyHouse = house->getMoney();
+    currMoneyHospital = hospital->getMoney();
+    house->taxBuilding();
+    CHECK(house->getMoney() == currMoneyHouse - (currMoneyHouse* City::instanceCity().stuff.res->getPropertyTaxRate() + currMoneyHouse * City::instanceCity().stuff.res->getIncomeTaxRate())); 
+    hospital->taxBuilding();
+    CHECK(hospital->getMoney() == currMoneyHospital -(currMoneyHospital * City::instanceCity().stuff.res->getPropertyTaxRate()));
+
+    delete person1;
+    delete person2;
+    delete hospital;
+    delete house;
 }

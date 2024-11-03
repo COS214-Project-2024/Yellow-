@@ -66,7 +66,7 @@ Cell *UtilityFactory::createWastePlant(vector<Coordinate> coordinates)
         return nullptr;
     WasteManagement* res = new WasteManagement();
     res->setCoordinates(coordinates);
-    res->setProductionRate(55);
+    res->setProductionRate(1);
     return res;;
 }
 

@@ -33,6 +33,15 @@ void Industrial::payEmployees()
     }
 }
 
+void Industrial::addCitizenToBuilding(Citizen *newCitizen)
+{
+    if (currentNumberOfCitizens == maxCitizens)
+        return;
+    currentNumberOfCitizens++;
+    dependentCitizens.push_back(newCitizen);
+    newCitizen->setBusinessAddress(this);
+}
+
 void Industrial::acceptVisitor(Visitor *v)
 {
     v->visitBuilding(this);

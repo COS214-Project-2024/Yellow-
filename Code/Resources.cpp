@@ -3,6 +3,18 @@
 
 Resources::Resources()
 {
+    wood = 0;
+    steel = 0;
+    concrete = 0;
+    morale = 0;
+    budget = 0.0;
+    population = 0;
+    propertyTaxRate = 0;
+    incomeTaxRate = 0.0;
+    wage = 0.0;
+    businessTaxRate = 0.0;
+    water = 0;
+    energy = 0;
 }
 
 void Resources::setConcrete(int newAmount)

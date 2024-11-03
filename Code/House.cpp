@@ -5,19 +5,8 @@ House::House() : Residential("House")
     maxCitizens = 10;
 }
 
-void House::taxBuilding()
-{
-    // TODO - implement House::taxBuilding
-	throw "Not yet implemented";
-}
-
 void House::setIcon()
 {
-}
-
-void House::addCitizenToBuilding(Citizen *newCitizen)
-{
-    dependentCitizens.push_back(newCitizen);
 }
 
 Cell *House::clone()

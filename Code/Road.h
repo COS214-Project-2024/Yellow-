@@ -18,6 +18,8 @@ public:
     bool contains(Cell* object);
     void addCitizenToBuilding(Citizen* newCitizen) override;
     void setProductionRate(int newRate) override;
+    void createBuildingResource() override;
+    float getMoney() override;
 };
 
 #endif

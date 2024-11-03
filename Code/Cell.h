@@ -24,8 +24,9 @@ public:
     virtual void addCitizenToBuilding(Citizen* newCitizen);
     virtual Cell* clone() = 0;
     virtual void setProductionRate(int newRate);
-    virtual void createBuildingResource();
+    virtual void createBuildingResource() = 0;
     virtual void taxBuilding();
+    virtual float getMoney() = 0;
 };
 
 

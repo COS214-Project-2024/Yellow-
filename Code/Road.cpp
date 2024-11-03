@@ -48,3 +48,12 @@ void Road::addCitizenToBuilding(Citizen *newCitizen)
 void Road::setProductionRate(int newRate)
 {
 }
+
+void Road::createBuildingResource()
+{
+}
+
+float Road::getMoney()
+{
+    return 0.0f;
+}

@@ -39,3 +39,12 @@ void Service::payEmployees()
         citizen->setMoney(citizen->getMoney() + wage);
     }
 }
+
+void Service::addCitizenToBuilding(Citizen *newCitizen)
+{
+    if (currentNumberOfCitizens == maxCitizens)
+        return;
+    currentNumberOfCitizens++;
+    dependentCitizens.push_back(newCitizen);
+    newCitizen->setBusinessAddress(this);
+}

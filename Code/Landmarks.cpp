@@ -15,6 +15,12 @@ void Landmarks::acceptVisitor(Visitor *v)
     v->visitBuilding(this);
 }
 
+void Landmarks::createBuildingResource()
+{
+	City city = City::instanceCity();
+	city.stuff.res->setMorale(city.stuff.res->getMorale() + (productionPerCell*coordinates.size()));
+}
+
 void Landmarks::setIcon()
 {
 }
@@ -32,4 +38,13 @@ void Landmarks::payEmployees()
     for (Citizen* citizen : dependentCitizens) {
         citizen->setMoney(citizen->getMoney() + wage);
     }
+}
+
+void Landmarks::addCitizenToBuilding(Citizen *newCitizen)
+{
+    if (currentNumberOfCitizens == maxCitizens)
+        return;
+    currentNumberOfCitizens++;
+    dependentCitizens.push_back(newCitizen);
+    newCitizen->setBusinessAddress(this);
 }

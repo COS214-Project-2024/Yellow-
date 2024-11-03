@@ -1,5 +1,5 @@
 #include "Residential.h"
-
+#include "Citizen.h"
 Residential::Residential(string cellType) : Buildings(cellType) {}
 
 void Residential::taxBuilding()
@@ -22,4 +22,15 @@ void Residential::setIcon()
 void Residential::payEmployees()
 {
     // do nothing
+}
+void Residential::addCitizenToBuilding(Citizen *newCitizen)
+{
+    if (currentNumberOfCitizens == maxCitizens)
+        return;
+    currentNumberOfCitizens++;
+    dependentCitizens.push_back(newCitizen);
+    newCitizen->setAccommodation(dynamic_cast<Residential*>(this));
+}
+void Residential::createBuildingResource()
+{
 }

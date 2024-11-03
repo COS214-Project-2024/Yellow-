@@ -9,7 +9,7 @@ void Museum::createBuildingResource()
 	if (&City::instanceCity() == nullptr) 
 		return;
 	City city = City::instanceCity();
-	city.stuff.res->setMorale(city.stuff.res->getMorale() + productionPerCell*coordinates.size());
+	city.stuff.res->setMorale(city.stuff.res->getMorale() + (productionPerCell*coordinates.size()));
 }
 
 Cell *Museum::clone()

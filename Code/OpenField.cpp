@@ -15,3 +15,12 @@ Cell *OpenField::clone() {
     Cell* newField = new OpenField();
     return newField;
 }
+
+void OpenField::createBuildingResource()
+{
+}
+
+float OpenField::getMoney()
+{
+    return 0.0f;
+}

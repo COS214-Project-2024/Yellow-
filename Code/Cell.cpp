@@ -40,10 +40,6 @@ void Cell::setProductionRate(int newRate)
 {
 }
 
-void Cell::createBuildingResource()
-{
-}
-
 void Cell::taxBuilding()
 {
 }
