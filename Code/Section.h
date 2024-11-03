@@ -25,7 +25,7 @@ public:
 
 	virtual Cell* clone();
 	
-	virtual void createBuildingResource();
+	virtual void createBuildingResource() = 0;
 
 	float getMoney() override;
 };

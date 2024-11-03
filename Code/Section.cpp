@@ -17,10 +17,6 @@ Cell *Section::clone()
     return nullptr;
 }
 
-void Section::createBuildingResource()
-{
-}
-
 float Section::getMoney()
 {
     return 0.0f;

@@ -4,7 +4,7 @@
 City::City()
 {
 	Government::onlyInstance();
-	buildings = vector<Buildings*>();
+	buildings = vector<Section*>();
 }
 
 City &City::instanceCity()
@@ -18,7 +18,7 @@ void City::collectResources()
 	//Loop over every building
 	//Check if Industrial
 	//If yes, add to the Resources
-	for (Buildings* building : buildings) {
+	for (Section* building : buildings) {
 		building->createBuildingResource();
 	}
 	
@@ -29,7 +29,7 @@ void City::collectTaxes()
 	//Loop over every citizen and Building
 	//If Citizen, collect incomeTax and propretyTax
 	//If building, collect businessTax and propretyTax (skip Service building)
-	for (Buildings* building : buildings) {
+	for (Section* building : buildings) {
 		building->taxBuilding();
 	}
 }
@@ -71,13 +71,13 @@ void City::dealWithPolicies()
 
 void City::addBuilding(Cell *newBuilding)
 {
-	Buildings* b = dynamic_cast<Buildings*>(newBuilding);
+	Section* b = dynamic_cast<Section*>(newBuilding);
 	if (b == nullptr) 
 		return;
 	buildings.push_back(b);
 }
 
-vector<Buildings *> City::getBuildings()
+vector<Section *> City::getBuildings()
 {
     return buildings;
 }

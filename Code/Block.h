@@ -29,6 +29,8 @@ public:
 	vector<Section*> getChildren();
 	
 	virtual Cell* clone();
+	
+	void createBuildingResource() override;
 };
 
 #endif

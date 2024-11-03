@@ -3,7 +3,8 @@
 #include <vector>
 #include "Resources.h"
 #include "Government.h"
-class Buildings;
+class Section;
+class Cell;
 struct Varibals
 {
 	Resources* res = new Resources();
@@ -11,7 +12,7 @@ struct Varibals
 
 class City {
 protected:
-	vector<Buildings*> buildings;
+	vector<Section*> buildings;
 public:
 	Varibals stuff;
 	City();
@@ -21,7 +22,7 @@ public:
 	void dealWithResources();
 	void dealWithPolicies();
 	void addBuilding(Cell* newBuilding);
-	vector<Buildings*> getBuildings();
+	vector<Section*> getBuildings();
 };
 
 #endif
