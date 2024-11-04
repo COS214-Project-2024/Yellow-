@@ -1,3 +1,11 @@
+/**
+* @class City
+* @brief Class that represents a city
+* @ingroup Factory
+* @implements City
+*
+* The City class is a concrete factory participant of the Factory design pattern. It is used to create a city.
+*/
 #include "City.h"
 #include <typeinfo>
 #include "Buildings.h"

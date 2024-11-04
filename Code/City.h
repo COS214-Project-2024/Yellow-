@@ -1,3 +1,13 @@
+/**
+ * @file City.h
+ * @author Stefan Muller
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef CITY_H
 #define CITY_H
 #include <vector>

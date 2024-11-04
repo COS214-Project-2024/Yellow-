@@ -1,3 +1,13 @@
+/**
+ * @file CommercialFactory.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef COMMERCIALFACTORY_H
 #define COMMERCIALFACTORY_H
 
