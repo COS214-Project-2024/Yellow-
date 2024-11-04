@@ -298,3 +298,5 @@ void Saves::deleteBranch(string path)
     }
     branch->removeBranch(alpha, this->cursor);
 }
+
+//sorta works so far
