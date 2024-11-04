@@ -1,3 +1,11 @@
+/**
+* @class Yellow
+* @brief A class used to indicate the state of the city
+* @ingroup State
+* @implements Severity
+*
+* The Yellow class is a concrete state participant of the State design pattern. It is used to indicate that the city is in a state of caution.
+*/
 #include "Yellow.h"
 
 string Yellow::getSeverity() {

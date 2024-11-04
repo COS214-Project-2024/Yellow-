@@ -1,3 +1,11 @@
+/**
+* @class Labour
+* @brief Class that represents a Labour department
+* @ingroup Chain of responsibility
+* @implements Department
+*
+* The Labour class is a concrete handler participant of the Chain of Responsibility design pattern. It is used to handle the IncreaseWages policy.
+*/
 #include "Labour.h"
 
 MaterialOrder *Labour::handle(Policies *policy) {

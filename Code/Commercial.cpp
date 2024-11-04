@@ -1,3 +1,11 @@
+/**
+* @class Commercial
+* @brief Class that represents a Commercial building
+* @ingroup Factory
+* @implements Buildings
+*
+* The Commercial class is a concrete factory participant of the Factory design pattern. It is used to create a commercial building.
+*/
 #include "Commercial.h"
 #include "Citizen.h"
 #include "City.h"

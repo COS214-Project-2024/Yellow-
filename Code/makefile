@@ -21,7 +21,7 @@ cov:
 	gcov *.cpp
 
 doxygenCreate:
-	mkdlr docs
+	mkdir docs
 	cd docs/
 	doxygen -g
 
