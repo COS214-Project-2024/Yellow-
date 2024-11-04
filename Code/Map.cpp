@@ -133,14 +133,15 @@ std::vector<std::string> renderBuilding(const std::string& name) {
         firstChar = std::string(1, name[0]);  // 1 character
     }
 
-    // Ensure the firstChar fits into 5 characters with padding
-    // Calculate the total padding required to maintain a width of 9
-    std::string padding(4 - firstChar.size(), ' ');  // 4 spaces for padding (9 total - 4 for borders - firstChar.size())
+    // Calculate padding to center `firstChar` in a 7-character space (leaving borders)
+    int totalPadding = 7 - firstChar.size();  // Total padding needed for 7 characters
+    int leftPadding = totalPadding / 2;       // Divide evenly for left padding
+    int rightPadding = totalPadding - leftPadding;  // Remainder for right padding
 
-    // Add the centered name with calculated padding
-    result.push_back("|" + padding + firstChar + padding + "|");
+    // Construct the centered line
+    result.push_back("|" + std::string(leftPadding, ' ') + firstChar + std::string(rightPadding, ' ') + "|");
 
-    result.push_back("|-------|");  // Adjust the outer box to have a width of 9
+    result.push_back("|-------|");  // Closing box line
     return result;
 }
 

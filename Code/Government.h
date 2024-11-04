@@ -34,11 +34,11 @@ class Government {
     public:
         Government();
         ~Government(){
-            delete peopleState;
-            delete budgetState;
-            delete disatisfactionState;
-            delete strategy;
-            uniqueInstanceGov = nullptr;
+            // delete peopleState;
+            // delete budgetState;
+            // delete disatisfactionState;
+            // delete strategy;
+            // uniqueInstanceGov = nullptr;
         };
 
         //Strategy methods

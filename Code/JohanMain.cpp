@@ -201,7 +201,11 @@ void makeItWork() {
     gameMap.addNode(i.createForestry(v));
 
     // gameMap.addNode(Road());
+    co1 = Coordinate(1, 0);
+    v = vector<Coordinate>();
+    v.push_back(co1);
 
+    // gameMap.addNode()
 
 
     gameMap.printMap();
