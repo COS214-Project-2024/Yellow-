@@ -18,9 +18,7 @@ public:
     OpenField();
     void setIcon() override;
     Cell * clone() override;
-    void createBuildingResource() override;
-    float getMoney() override;
-    void setMoney(float newAmount) override;
+
 };
 
 

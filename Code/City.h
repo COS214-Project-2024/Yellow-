@@ -1,12 +1,12 @@
 /**
  * @file City.h
  * @author Stefan Muller
- * @brief
+ * @brief 
  * @version 0.1
  * @date 2024-10-10
- *
+ * 
  * @copyright Copyright (c) 2024
- *
+ * 
  */
 #ifndef CITY_H
 #define CITY_H
@@ -23,38 +23,37 @@
 #include "IncreaseTaxes.h"
 #include "ExpandCity.h"
 #include "AddPublicTransport.h"
-class Industrial;
 #include <vector>
 #include <cmath>
 
 struct Varibals
 {
-    Population* population;
-    Resources* res;
-    Section* head;
-    People* people;
+	Population* population;
+	Resources* res;
+	Section* head;
+	People* people;
     Budget* budget;
     Disatisfaction* dissatisfaction;
 };
 
 class City {
 
-private:
-    int prevMoral;
-    int prevPopulation;
-    int prevBudget;
-    Government gov;
+	private:
+		int prevMoral;
+		int prevPopulation;
+		int prevBudget;
+		Government gov;
 
-public:
-    Varibals stuff;
-    City();
-    void setHead(Section* head);
-    static City& instanceCity();
-    void nextIteration();
-    void collection();
-    void dealWithPolicies();
+	public:
+		Varibals stuff;
+		City();
+		//City(Section* head);
+		static City& instanceCity();
+		void nextIteration();
+		void collection();
+		void dealWithPolicies();
 
-    void addBuilding(Cell *newBuilding);
+		void addBuilding(Cell *newBuilding);
 };
 
 #endif

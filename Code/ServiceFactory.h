@@ -16,7 +16,7 @@ class ServiceFactory : public BuildingFactory{
 
 public:
 
-    Cell* createHouse(vector<Coordinate> coordinates) override;
+Cell* createHouse(vector<Coordinate> coordinates) override;
 
 	Cell* createApartment(vector<Coordinate> coordinates) override;
 

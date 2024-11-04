@@ -116,33 +116,15 @@ void Map::addToMatrix(Cell* object) {
             row.resize(newSize, 0);
         }
     }
-    pos.push_back(object);
+    pos.resize(pos.size()+1, 0);
 
 }
 
-void Map::djikstrasAneurysm(Cell* object){//roads are just meant to me straight
-    int pos = findIndex(object);
-    double modifier = 2;
-    int dist = 0;
-    int index1, index2;
-    setRoadConnections();
-    Road* road;
+void Map::djikstrasAneurysm(Cell* object){
     if (object->getCellType() == "Road"){
         return;
     }
     vector<Cell*> borderRoads = findBorderRoads(object);
-    for (int K = 0; K < borderRoads.size(); ++K){
-        road = (Road*) findObject(borderRoads[K]->getCoordinates()[0]);
-        for (int i = 0; i < buildings.size(); ++i){
-            if (road->sameStreet(buildings[i], object)){
-                dist = coordDiff(buildings[i], object);
-                index1 = findIndex(buildings[i]);
-                index2 = findIndex(object);
-                distanceMatrix[index1][index2] = dist;
-                distanceMatrix[index2][index1] = dist;
-            }
-        }
-    }
 
 }
 
@@ -251,20 +233,6 @@ void Map::setRoadConnections() {
 
 Cell *Map::findObject(Coordinate coord) {
     return map[coord.x][coord.y];
-}
-
-int Map::coordDiff(Cell *ob1, Cell *ob2) {
-    int diff = 99999;
-    vector<Coordinate> ob1coords = ob1->getCoordinates();
-    vector<Coordinate> ob2coords = ob2->getCoordinates();
-    for (int K = 0; K < ob1coords.size(); ++K){
-        for (int i = 0; i < ob2coords.size(); ++i){
-            if (((ob1coords[K].x - ob2coords[i].x) + (ob1coords[K].y - ob2coords[i].y)) < diff){
-                diff = ((ob1coords[K].x - ob2coords[i].x) + (ob1coords[K].y - ob2coords[i].y));
-            }
-        }
-    }
-    return diff + 2;//plus 2 for moving from building to road
 }
 
 

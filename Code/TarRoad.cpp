@@ -7,6 +7,7 @@
 * The TarRoad class is a concrete factory participant of the Factory design pattern. It is used to create a tar road.
 */
 #include "TarRoad.h"
-TarRoad::TarRoad(){
+TarRoad::TarRoad(int cost) {
+    this->cost = cost;
     this->setCellType("Road");
 }

@@ -1,12 +1,12 @@
 /**
  * @file RandomUtil.h
  * @author Saskia Steyn
- * @brief
+ * @brief 
  * @version 0.1
  * @date 2024-10-10
- *
+ * 
  * @copyright Copyright (c) 2024
- *
+ * 
  */
 #ifndef RESOURCES_H
 #define RESOURCES_H
@@ -16,26 +16,26 @@
 class Resources {
 
 private:
-    int concrete;
-    int steel;
-    int wood;
-    int powerGrid;
-    int powerUsage;
-    int waterGrid;
-    int waterUsage;
-    float budget;
+	int concrete;
+	int steel;
+	int wood;
+	int powerGrid;
+	int powerUsage;
+	int waterGrid;
+	int waterUsage;
+	float budget;
     int population;
     int morale;
-    float propertyTaxRate;
-    float incomeTaxRate;
-    float businessTaxRate;
-    float wage;
+	float propertyTaxRate;
+	float incomeTaxRate;
+	float businessTaxRate;
+	float wage;
 public:
 
     Resources();
     void printResources();
 
-    // Setters
+	// Setters
     void setConcrete(int newValue);
     void setSteel(int newValue);
     void setWood(int newValue);
@@ -49,7 +49,7 @@ public:
     void setBusinessTaxRate(float newRate);
     void setPropertyTaxRate(float newRate);
     void setIncomeTaxRate(float newRate);
-    void setWage(float newWage);
+	void setWage(float newWage);
 
     // Getters
     int getConcrete() const;
@@ -65,8 +65,8 @@ public:
     int getBusinessTax() const;
     float getPropertyTaxRate() const;
     float getIncomeTaxRate() const;
-    float getBusinessTaxRate() const;
-    float getWage() const;
+	float getBusinessTaxRate() const;
+	float getWage() const;
 };
 
 #endif

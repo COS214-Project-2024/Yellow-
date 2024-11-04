@@ -13,7 +13,6 @@
 #include <iostream>
 #include "Section.h"
 #include "City.h"
-#include "Resources.h"
 class Citizen;
 class Buildings : public Section {
 
@@ -26,9 +25,9 @@ protected:
 public:
 	Buildings(string cellType);
 
-	float getMoney() override;
+	float getMoney();
 
-	void setMoney(float newAmount) override;
+	void setMoney(float newAmount);
 	
 	int getMaxCitizens();
 

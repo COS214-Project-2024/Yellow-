@@ -10,7 +10,6 @@
  */
 #ifndef BUILDINGFACTORY_H
 #define BUILDINGFACTORY_H
-#include "Cell.h"
 #include "WasteManagement.h"
 #include "WaterPlant.h"
 #include "House.h"
@@ -34,10 +33,10 @@
 #include "HouseHold.h"
 #include "City.h"
 #include "Coordinate.h"
-#include "CellFactory.h"
+
 #include <vector>
 
-class BuildingFactory : public CellFactory{
+class BuildingFactory {
 
 
 protected:

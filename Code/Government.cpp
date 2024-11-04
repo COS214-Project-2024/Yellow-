@@ -117,16 +117,16 @@ void Government::setMoraleState(Disatisfaction *morale) {
 }
 
 Government::Government() {
-//    peopleState = new People(new Green());
-//    budgetState = new Budget(new Green());
-//    disatisfactionState = new Disatisfaction(new Green());
-//    strategy = new AddPublicTransport();
-//    Department* newDepartment = new Transport();
-//    Department* newAmen = new Amenities();
-//    Department* newLabour = new Labour();
-//    Department* newFinances = new Finances();
-//    newDepartment->setSuccessor(newAmen);
-//    newAmen->setSuccessor(newLabour);
-//    newLabour->setSuccessor(newFinances);
-//    department = newDepartment;
+    peopleState = new People(new Green());
+    budgetState = new Budget(new Green());
+    disatisfactionState = new Disatisfaction(new Green());
+    strategy = new AddPublicTransport();
+    Department* newDepartment = new Transport();
+    Department* newAmen = new Amenities();
+    Department* newLabour = new Labour();
+    Department* newFinances = new Finances();
+    newDepartment->setSuccessor(newAmen);
+    newAmen->setSuccessor(newLabour);
+    newLabour->setSuccessor(newFinances);
+    department = newDepartment;
 }

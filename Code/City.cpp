@@ -11,19 +11,6 @@
 #include "Buildings.h"
 City::City()
 {
-    stuff.res = new Resources();
-    gov = Government::onlyInstance();
-    prevMoral = 0;
-    prevBudget = 0;
-    prevPopulation = 0;
-    stuff.people = new People(new Green());
-    stuff.budget = new Budget(new Green());
-    stuff.dissatisfaction = new Disatisfaction(new Green());
-}
-
-void City::setHead(Section* head)
-{
-    this->stuff.head = head;
 	stuff.res = new Resources();
 	gov = Government::onlyInstance();
 	prevMoral = 0;
@@ -37,18 +24,11 @@ void City::setHead(Section* head)
 City &City::instanceCity()
 {
     static City onlyInstance;
-    return onlyInstance;
+ 	return onlyInstance;
 }
 
 void City::nextIteration()
 {
-    if (stuff.res == nullptr) {
-        std::cerr << "Resources not initialized!" << std::endl;
-        return;
-    }
-    collection();
-    dealWithPolicies();
-    stuff.res->printResources();
 	if (stuff.res == nullptr) {
         std::cerr << "Resources not initialized!" << std::endl;
         return;
@@ -60,30 +40,21 @@ void City::nextIteration()
 
 void City::collection()
 {
-    vector<Section*> building = stuff.head->getChildren();
-    for(Section* build : building)
-    {
-        if (typeid(build) == typeid(Industrial*))
-        {
-            build->createBuildingResource();
-            build->taxBuilding();
-        }
-    }
 	//Collect Resources
 
 
 	//Collect Taxes
 	//stuff.res->setMorale(stuff.res->getMorale() +50);
-
+	
 	stuff.res->setBudget(stuff.res->getBudget() + stuff.res->getBudget() * (stuff.res->getBusinessTaxRate() + stuff.res->getIncomeTaxRate() + stuff.res->getPropertyTaxRate())/100);
 }
 
 void City::dealWithPolicies()
 {
-    MaterialOrder* orderMoral = nullptr;
-    MaterialOrder* orderBudget = nullptr;
-    MaterialOrder* orderPopulation = nullptr;
-
+	MaterialOrder* orderMoral = nullptr;
+	MaterialOrder* orderBudget = nullptr;
+	MaterialOrder* orderPopulation = nullptr;
+    
     //Moral
     if (stuff.res->getMorale() - prevMoral < 0) {
         gov.setStrategy(new IncreaseWages());
@@ -92,9 +63,9 @@ void City::dealWithPolicies()
         orderMoral = gov.handleMorale(true);
     }
 
-    if(orderMoral == nullptr){
-        cout << "No new material order" << endl;
-    }
+	if(orderMoral == nullptr){
+		cout << "No new material order" << endl;
+	}
 
     //Budget
     if (stuff.res->getBudget() - prevBudget < 0) {
@@ -105,9 +76,9 @@ void City::dealWithPolicies()
         orderBudget = gov.handleBudget(true);
     }
 
-    if(orderBudget == nullptr){
-        cout << "No new material order" << endl;
-    }
+	if(orderBudget == nullptr){
+		cout << "No new material order" << endl;
+	}
 
     //People
     if (stuff.res->getPopulation() - prevPopulation < 0) {
@@ -118,11 +89,11 @@ void City::dealWithPolicies()
         orderPopulation = gov.handlePeople(false);
     }
 
-    if(orderPopulation == nullptr){
-        cout << "No new material order" << endl;
-    }
+	if(orderPopulation == nullptr){
+		cout << "No new material order" << endl;
+	}
 
-    if (orderMoral) {
+	if (orderMoral) {
         for (const auto& material : orderMoral->materials) {
             if (material.first == "Morale") {
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
@@ -130,7 +101,7 @@ void City::dealWithPolicies()
         }
     }
 
-    if (orderBudget) {
+	if (orderBudget) {
         for (const auto& material : orderBudget->materials) {
             if (material.first == "PropertyTax") {
                 stuff.res->setPropertyTaxRate(stuff.res->getPropertyTaxRate() + material.second);
@@ -145,7 +116,7 @@ void City::dealWithPolicies()
         }
     }
 
-    if (orderPopulation) {
+	if (orderPopulation) {
         for (const auto& material : orderPopulation->materials) {
             if (material.first == "BusStop") {
                 // Add bus stop logic here if needed
@@ -157,19 +128,19 @@ void City::dealWithPolicies()
         }
     }
 
-    prevMoral = stuff.res->getMorale();
+	prevMoral = stuff.res->getMorale();
     prevBudget = stuff.res->getBudget();
     prevPopulation = stuff.res->getPopulation();
 
-    //Increase or Deacrease population
-    int populationAddedOrRemoved = floor(stuff.res->getPopulation()*(stuff.res->getMorale()/100.0));
+	//Increase or Deacrease population
+	int populationAddedOrRemoved = floor(stuff.res->getPopulation()*(stuff.res->getMorale()/100.0));
 
-    if (stuff.res->getMorale() <= 50)
-    {
-        stuff.res->setPopulation(stuff.res->getPopulation() - populationAddedOrRemoved);
-    }
-    else
-    {
-        stuff.res->setPopulation(stuff.res->getPopulation() + populationAddedOrRemoved);
-    }
+	if (stuff.res->getMorale() <= 50)
+	{
+		stuff.res->setPopulation(stuff.res->getPopulation() - populationAddedOrRemoved);
+	}
+	else
+	{
+		stuff.res->setPopulation(stuff.res->getPopulation() + populationAddedOrRemoved);
+	}
 }
