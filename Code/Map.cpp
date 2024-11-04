@@ -59,49 +59,6 @@ void Map::addNode(Cell *object, int x, int y, int height, int width) {
 
 }
 
-vector<string> handleColumns(const string& type, Cell *cell) {
-    // Find min and max y values for height
-    int minY = cell->getCoordinates()[0].y, maxY = cell->getCoordinates()[0].y;
-    for (const auto& coord : cell->getCoordinates()) {
-        minY = min(minY, coord.y);
-        maxY = max(maxY, coord.y);
-    }
-
-    // Determine height (height = range + 4)
-    int height = (minY == maxY) ? 1 : maxY - minY;
-    height += 4;
-
-    // Find min and max x values for width
-    int minX = cell->getCoordinates()[0].x, maxX = cell->getCoordinates()[0].x;
-    for (const auto& coord : cell->getCoordinates()) {
-        minX = min(minX, coord.x);
-        maxX = max(maxX, coord.x);
-    }
-
-    // Determine width (width = range + 4)
-    int width = maxX - minX + 4;
-
-    // Initialize string array with spaces
-    vector<string> box(height, string(width, ' '));
-
-    // Top and bottom border
-    box[0] = string(width, '-');
-    box[height - 1] = string(width, '-');
-
-    // Left and right borders
-    for (int i = 1; i < height - 1; ++i) {
-        box[i][0] = '|';
-        box[i][width - 1] = '|';
-    }
-
-    // Insert the type in the middle row
-    int middleRow = height / 2;
-    int typeStart = (width - type.length()) / 2;
-    box[middleRow].replace(typeStart, type.length(), type);
-
-    return box;
-}
-
 // Function to render a building with the name displayed in the middle
 std::vector<std::string> renderBuilding(const std::string& name) {
     std::vector<std::string> result;
@@ -382,4 +339,6 @@ Cell *Map::findObject(Coordinate coord) {
     return map[coord.x][coord.y];
 }
 
-
+vector<vector<Cell *>> Map::getMap() {
+    return map;
+}

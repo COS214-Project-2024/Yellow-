@@ -20,7 +20,7 @@ class PowerPlant : public Utilities {
     
         void addCitizenToBuilding(Citizen* newCitizen);
         
-        Cell* clone() override;
+        Cell* clone();
 };
 
 #endif

@@ -8,6 +8,7 @@
 */
 #include "Service.h"
 #include "Citizen.h"
+#include "City.h"
 Service::Service(string cellType) : Buildings(cellType)
 {
 }

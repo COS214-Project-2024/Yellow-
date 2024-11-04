@@ -17,7 +17,7 @@ class Office : public Commercial {
 public:
 	Office();
 	void setIcon() override;
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

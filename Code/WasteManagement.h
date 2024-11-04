@@ -17,7 +17,7 @@ public:
     WasteManagement();
     void createBuildingResource() override;
     void setIcon() override;
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

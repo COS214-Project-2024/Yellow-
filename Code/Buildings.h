@@ -12,7 +12,6 @@
 #define BUILDINGS_H
 #include <iostream>
 #include "Section.h"
-#include "City.h"
 class Citizen;
 class Buildings : public Section {
 
@@ -31,7 +30,7 @@ public:
 	
 	int getMaxCitizens();
 
-	void addSection(Section* section);
+	void addSection(Cell* section);
 
 	void removeSection(int idx);
 
@@ -39,7 +38,7 @@ public:
 
 	void acceptVisitor(Visitor* v);
 
-	//virtual void taxBuilding() = 0;
+	virtual void taxBuilding() = 0;
 
 	virtual void payEmployees() = 0;
 
