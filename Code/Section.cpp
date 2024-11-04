@@ -19,4 +19,5 @@ float Section::getMoney()
 
 void Section::setMoney(float newAmount)
 {
+    
 }

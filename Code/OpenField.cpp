@@ -12,8 +12,8 @@ void OpenField::setIcon() {
 }
 
 Cell *OpenField::clone() {
-    Cell* newField = new OpenField();
-    return newField;
+    //Cell* newField = new OpenField();
+    //return newField;
 }
 
 void OpenField::createBuildingResource()
@@ -23,8 +23,4 @@ void OpenField::createBuildingResource()
 float OpenField::getMoney()
 {
     return 0.0f;
-}
-
-void OpenField::setMoney(float newAmount)
-{
 }

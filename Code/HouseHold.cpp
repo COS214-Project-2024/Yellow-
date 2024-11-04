@@ -12,7 +12,3 @@ Cell *HouseHold::clone()
     c->setCoordinates(this->getCoordinates());
     return c;
 }
-
-void HouseHold::setIcon()
-{
-}

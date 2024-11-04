@@ -28,8 +28,8 @@ void Road::removeBuilding(Cell *building) {
 }
 
 Cell *Road::clone() {
-    Cell* newRoad = new Road();
-    return newRoad;
+    //Cell* newRoad = new Road();
+    //return newRoad;
 }
 
 bool Road::contains(Cell *object) {
@@ -56,8 +56,4 @@ void Road::createBuildingResource()
 float Road::getMoney()
 {
     return 0.0f;
-}
-
-void Road::setMoney(float newAmount)
-{
 }

@@ -13,7 +13,7 @@
 #include "IncreaseTaxes.h"
 #include "ExpandCity.h"
 #include "AddPublicTransport.h"
-#include "Industrial.h"
+class Industrial;
 #include <vector>
 #include <cmath>
 

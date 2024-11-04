@@ -12,7 +12,7 @@ Resources::Resources()
     waterUsage = 150;
 	budget = 10000;
     population = 10;
-    morale = 60;
+    morale = 50;
     businessTaxRate = 5.0;
     propertyTaxRate = 7.0;
     incomeTaxRate = 10.0;
