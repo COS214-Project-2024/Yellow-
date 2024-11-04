@@ -1,3 +1,13 @@
+/**
+ * @file Residential.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef RESIDENTIAL_H
 #define RESIDENTIAL_H
 class Visitor;
@@ -18,6 +28,7 @@ public:
 	virtual Cell* clone() = 0;
 	void addCitizenToBuilding(Citizen* newCitizen) override;
 	void createBuildingResource() override;
+	virtual ~Residential();
 };
 
 #endif

@@ -1,3 +1,13 @@
+/**
+ * @file ServiceFactory.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-11-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef SERVICEFACTORY_H
 #define SERVICEFACTORY_H
 #include "BuildingFactory.h"

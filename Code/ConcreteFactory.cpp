@@ -1,3 +1,11 @@
+/**
+* @class ConcreteFactory
+* @brief A class that represents a concrete factory.
+* @ingroup Factory
+* @implements Industrial
+*
+* The ConcreteFactory class is a concrete factory participant of the Factory design pattern. It is used to create a concrete factory building.
+*/
 #include "ConcreteFactory.h"
 
 ConcreteFactory::ConcreteFactory() : Industrial("ConcreteFactory")

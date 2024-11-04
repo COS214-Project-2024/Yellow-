@@ -1,8 +1,19 @@
+/**
+ * @file Buildings.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
 #include <iostream>
 #include "Section.h"
 #include "City.h"
+#include "Resources.h"
 class Citizen;
 class Buildings : public Section {
 
@@ -15,9 +26,9 @@ protected:
 public:
 	Buildings(string cellType);
 
-	float getMoney();
+	float getMoney() override;
 
-	void setMoney(float newAmount);
+	void setMoney(float newAmount) override;
 	
 	int getMaxCitizens();
 
@@ -39,6 +50,7 @@ public:
 	virtual Cell* clone() = 0;
 	virtual void setProductionRate(int newRate);
 	virtual void createBuildingResource() = 0;
+	virtual ~Buildings();
 
 };
 

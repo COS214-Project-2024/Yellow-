@@ -1,3 +1,11 @@
+/**
+* @class City
+* @brief Class that represents a city
+* @ingroup Factory
+* @implements City
+*
+* The City class is a concrete factory participant of the Factory design pattern. It is used to create a city.
+*/
 #include "City.h"
 #include <typeinfo>
 #include "Buildings.h"
@@ -16,6 +24,14 @@ City::City()
 void City::setHead(Section* head)
 {
     this->stuff.head = head;
+	stuff.res = new Resources();
+	gov = Government::onlyInstance();
+	prevMoral = 0;
+	prevBudget = 0;
+	prevPopulation = 0;
+	stuff.people = new People(new Green());
+    stuff.budget = new Budget(new Green());
+    stuff.dissatisfaction = new Disatisfaction(new Green());
 }
 
 City &City::instanceCity()
@@ -33,6 +49,13 @@ void City::nextIteration()
     collection();
     dealWithPolicies();
     stuff.res->printResources();
+	if (stuff.res == nullptr) {
+        std::cerr << "Resources not initialized!" << std::endl;
+        return;
+    }
+	collection();
+	dealWithPolicies();
+    stuff.res->printResources();
 }
 
 void City::collection()
@@ -46,6 +69,13 @@ void City::collection()
             build->taxBuilding();
         }
     }
+	//Collect Resources
+
+
+	//Collect Taxes
+	//stuff.res->setMorale(stuff.res->getMorale() +50);
+
+	stuff.res->setBudget(stuff.res->getBudget() + stuff.res->getBudget() * (stuff.res->getBusinessTaxRate() + stuff.res->getIncomeTaxRate() + stuff.res->getPropertyTaxRate())/100);
 }
 
 void City::dealWithPolicies()

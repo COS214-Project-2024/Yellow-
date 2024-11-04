@@ -1,3 +1,11 @@
+/**
+* @class Park
+* @brief Class that represents a Park building
+* @ingroup Factory
+* @implements Landmarks factory
+*
+* The Park class is a concrete factory participant of the Factory design pattern. It is used to create a park building.
+*/
 #include "Park.h"
 
 Park::Park() : Landmarks("Park")

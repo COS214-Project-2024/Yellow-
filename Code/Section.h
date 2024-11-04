@@ -1,3 +1,13 @@
+/**
+ * @file Section.h
+ * @author Stefan Muller
+ * @brief 
+ * @version 0.1
+ * @date 2024-11-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef SECTION_H
 #define SECTION_H
 
@@ -28,6 +38,7 @@ public:
 	virtual void createBuildingResource() = 0;
 
 	float getMoney() override;
+	void setMoney(float newAmount) override;
 };
 
 #endif

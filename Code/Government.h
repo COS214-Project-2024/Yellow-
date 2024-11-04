@@ -1,3 +1,11 @@
+/**
+* @class Government
+* @brief Class that represents the government of the city
+* @ingroup State, Strategy, Command, Chain of Responsibility
+* @implements Department
+*
+* The Government class is a concrete handler participant of the Chain of Responsibility design pattern. It is used to handle the policies of the city.
+*/
 #ifndef GOVERNMENT_H
 #define GOVERNMENT_H
 
@@ -9,6 +17,11 @@
 #include "MaterialOrder.h"
 #include "Policies.h"
 #include "Department.h"
+#include "AddPublicTransport.h"
+#include "Transport.h"
+#include "Labour.h"
+#include "Amenities.h"
+#include "Finances.h"
 
 #include <iostream>
 #include <typeinfo>
@@ -25,7 +38,7 @@ class Government {
         Department* department;
 
     protected:
-        Government(){};
+        Government();
 
     public:
         friend class City;
@@ -38,10 +51,10 @@ class Government {
         };
 
         //Strategy methods
-        Policies* implementPolicy(string stateType, Severity* prevState, Severity* currState);
-        Policies* implementPolicyPeople(Severity* prevState);
-        Policies* implementPolicyBudget(Severity* prevState);
-        Policies* implementPolicyMorale(Severity* prevState);
+        Policies* implementPolicy(string stateType, string prevState, string currState);
+        Policies* implementPolicyPeople(string prevState);
+        Policies* implementPolicyBudget(string prevState);
+        Policies* implementPolicyMorale(string prevState);
         void setStrategy(Strategy* newStrategy);
 
 

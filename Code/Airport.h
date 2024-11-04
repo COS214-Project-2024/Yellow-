@@ -1,7 +1,16 @@
+/**
+ * @file Airport.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef AIRPORT_H
 #define AIRPORT_H
 #include <vector>
-#include "Plane.h"
 #include "Service.h"
 using namespace std;
 class Airport : public Service{
@@ -17,7 +26,6 @@ private:
     */
     //    //not sure we need this
 
-    vector<Plane*> planes;
     vector<Airport*> availableStops;
     vector<int> flyTime;
     //each flyTime index corresponds with availableStops index to indicate
