@@ -6,11 +6,10 @@
 #define CODE_CELLFACTORY_H
 
 
-
 class CellFactory {
-
+public:
+    bool useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget, int cellCount);
 };
-
 
 
 #endif //CODE_CELLFACTORY_H

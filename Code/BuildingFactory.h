@@ -23,10 +23,10 @@
 #include "HouseHold.h"
 #include "City.h"
 #include "Coordinate.h"
-
+#include "CellFactory.h"
 #include <vector>
 
-class BuildingFactory {
+class BuildingFactory : public CellFactory{
 
 
 protected:

@@ -20,7 +20,7 @@ public:
     void setProductionRate(int newRate) override;
     void createBuildingResource() override;
     float getMoney() override;
-    bool sameStreet(Cell* building1, Cell* buuilding2);
+    bool sameStreet(Cell* building1, Cell* building2);
 };
 
 #endif

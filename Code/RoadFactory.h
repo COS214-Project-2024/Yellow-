@@ -4,13 +4,14 @@
 
 #ifndef CODE_ROADFACTORY_H
 #define CODE_ROADFACTORY_H
+#include "CellFactory.h"
+#include "Road.h"
+class RoadFactory : CellFactory{
+public:
+    Cell* createRoad(vector<Coordinate> coordinates) override;
 
-
-
-class RoadFactory {
 
 };
-
 
 
 #endif //CODE_ROADFACTORY_H
