@@ -39,6 +39,7 @@ public:
 	virtual Cell* clone() = 0;
 	virtual void setProductionRate(int newRate);
 	virtual void createBuildingResource() = 0;
+	virtual ~Buildings();
 
 };
 
