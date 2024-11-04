@@ -1,21 +1,11 @@
 #include "Pet.h"
 
 Pet::Pet() {
-    this->animalName = "unknown";
     this->animalType = "unidentified creature";
 }
 
-Pet::Pet(string name, string type) {
-    this->animalName = name;
-    this->animalType = type;
-}
-
-void Pet::setAnimalName(string name) {
-    this->animalName = name;
-}
-
-string Pet::getAnimalName() {
-    return this->animalName;
+Pet::Pet(Citizen* owner) {
+    this->owner = owner;
 }
 
 void Pet::setAnimalType(string type) {

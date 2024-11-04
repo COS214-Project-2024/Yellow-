@@ -5,7 +5,9 @@ Hamster::Hamster() {
     this->animalType = "hamster";
 }
 
-Hamster::Hamster(string name, string type) : Pet(name, type){}
+Hamster::Hamster(Citizen* owner) : Pet(owner) {
+    this->animalType = "hamster";
+}
 
 void Hamster::cuteAction() {
     std::cout << "Squeak! :o" << std::endl;

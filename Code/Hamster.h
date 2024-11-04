@@ -5,7 +5,7 @@
 class Hamster : public Pet{
 public:
     Hamster();
-    Hamster(string name, string type);
+    Hamster(Citizen* owner);
     void cuteAction();
     ~Hamster();
 };

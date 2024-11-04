@@ -5,13 +5,13 @@ IncomeObserver::IncomeObserver() {
     observationType = "income";
 }
 
-IncomeObserver::IncomeObserver(vector<Citizen*> subj) {
-    listOfSubjects = subj;
+IncomeObserver::IncomeObserver(Population* subj) {
+    this->subject = subj;
     observationType = "income";
 }
 
 void IncomeObserver::update() {
-    if (listOfSubjects.empty()) {
+    if (subject->listOfCitizens.empty()) {
         std::cout << "No citizens to observe." << std::endl;
         return;
     }
@@ -19,7 +19,7 @@ void IncomeObserver::update() {
     float totalIncome = 0;
     int citizenCount = 0;
 
-    for (Citizen* cit : listOfSubjects) {
+    for (Citizen* cit : subject->listOfCitizens) {
         if (cit) {
             totalIncome += cit->getMoney();
             citizenCount++;

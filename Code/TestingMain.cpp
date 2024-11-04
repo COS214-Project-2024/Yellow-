@@ -424,7 +424,7 @@ TEST_CASE("Citizen and building integration") {
     // currMoneyHouse = house->getMoney();
     // currMoneyHospital = hospital->getMoney();
     // house->taxBuilding();
-    // CHECK(house->getMoney() == currMoneyHouse - (currMoneyHouse* City::instanceCity().stuff.res->getPropertyTaxRate() + currMoneyHouse * City::instanceCity().stuff.res->getIncomeTaxRate())); 
+    // CHECK(house->getMoney() == currMoneyHouse - (currMoneyHouse* City::instanceCity().stuff.res->getPropertyTaxRate() + currMoneyHouse * City::instanceCity().stuff.res->getIncomeTaxRate()));
     // hospital->taxBuilding();
     // CHECK(hospital->getMoney() == currMoneyHospital -(currMoneyHospital * City::instanceCity().stuff.res->getPropertyTaxRate()));
 
@@ -434,7 +434,7 @@ TEST_CASE("Citizen and building integration") {
     delete house;
 }
 
-TEST_CASE("Factory null test") { 
+TEST_CASE("Factory null test") {
     UtilityFactory utils = UtilityFactory();
     ServiceFactory serv = ServiceFactory();
     IndustrialFactory ind = IndustrialFactory();

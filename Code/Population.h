@@ -2,28 +2,31 @@
 #define POPULATION_H
 #include "Observer.h"
 #include "Visitor.h"
-#include "Citizen.h"
 #include <string>
 #include <vector>
 class Observer;
 using namespace std;
 
 class Population {
-private:
-	int averageHappiness;
-    vector<Observer*> observerList;
-	vector<Citizen*> listOfCitizens;
+protected:
+    vector<Observer*> observerList;						// The Observer list
 public:
-    Population();
+	// Observer stuff
+	static vector<Citizen*> listOfCitizens;			// State (All citizens)
+
+	// General Population stuff
+    Population();										// Default constructor - does nothing
+
+	// Observer stuff
 	void attach(Observer* obs);
 	void detach(Observer* obs);
-	vector<Observer*> getObservers();
 	void notify();
-	// void setSelfObserver(Observer* obs);
-    void addCitizen(Citizen* citizen);
-	void allProcreate();
-	vector<Citizen*> getCitizens();
-	void acceptVisitor(Visitor* v);
+	vector<Observer*> getObservers();
+
+	virtual vector<Citizen*> getCitizens() = 0;			// getState (Observer's access to the list of citizens)
+	virtual void setCitizens(Citizen*) = 0;             // setState
 };
+
+
 
 #endif

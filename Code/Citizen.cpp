@@ -1,37 +1,50 @@
 #include "Citizen.h"
-
 #include "Cat.h"
 #include "Dog.h"
 #include "Hamster.h"
+#include "Population.h"
 #include "Residential.h"
-#include "Snake.h"
-////////////// Constructors ///////////////
+
+//////////////////////// Constructors ////////////////////////
 
 /// Default Constructor
 Citizen::Citizen(){
-    happiness = 100;
+    identityNum = ++identityNumbers;
+    happiness = 50;
 	employment = "no job";
 	money = 0;
+    petChanceCalculator();
     businessAddress = nullptr;
     accommodation = nullptr;
-    petChanceCalculator();
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 /// Variable constructor
-Citizen::Citizen(int happy, Residential* acc, string job, float cash, Buildings* addr, Pet* pet)
-        : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr) {
-    this->pet = pet;
+Citizen::Citizen(int happy, string job, float cash,  Pet* pet, Residential* acc,  Buildings* addr){
+    identityNum = ++identityNumbers;
+
+    this->happiness = happy;
+    this->employment = job;
+    this->money = cash;
+    petChanceCalculator();
+    this->accommodation = acc;
+    this->businessAddress = addr;
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 /// Copy Constructor
 Citizen::Citizen(const Citizen& other){
-    happiness = other.happiness;
-	employment = other.employment;
-	money = other.getMoney();
-    pet = other.pet;
+    identityNum = ++identityNumbers;
+
+    this->happiness = other.happiness;
+	this->employment = other.employment;
+	this->money = other.getMoney();
     std::cout << "A new Citizen has entered the city." << std::endl;
+}
+
+//////////////////////// Prorotype ////////////////////////
+CitizenPrototype* Citizen::procreate() {
+    return new Citizen(*this);
 }
 
 ////////////// Happiness ///////////////
@@ -96,10 +109,6 @@ void Citizen::setBusinessAddress(Buildings* address){
     businessAddress = address;
 }
 
-Citizen* Citizen::procreate() {
-	return new Citizen(*this);
-}
-
 void Citizen::petChanceCalculator() {
     int weGotAPet = generator.randomVal(0,100);
 
@@ -108,15 +117,14 @@ void Citizen::petChanceCalculator() {
         return;
     }
     if(weGotAPet < 50) {
-        pet = new Dog();
+        pet = new Dog(this);
         return;
     }
     if(weGotAPet < 75) {
-        pet = new Cat();
+        pet = new Cat(this);
         return;
     }
     if(weGotAPet < 100) {
-        pet = new Hamster();
+        pet = new Hamster(this);
     }
 }
-

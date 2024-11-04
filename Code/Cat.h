@@ -5,7 +5,7 @@
 class Cat : public Pet{
 public:
     Cat();
-    Cat(string name, string type);
+    Cat(Citizen* owner);
     void cuteAction();
     ~Cat();
 };

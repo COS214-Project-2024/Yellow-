@@ -6,14 +6,11 @@ using namespace std;
 
 class Pet {
 protected:
-    string animalName;
     string animalType;
     Citizen* owner;
 public:
     Pet();
-    Pet(string name, string type);
-    void setAnimalName(string name);
-    string getAnimalName();
+    Pet(Citizen* owner);
     void setAnimalType(string type);
     string getAnimalType();
     void setOwner(Citizen* owner);

@@ -5,7 +5,9 @@ Dog::Dog() {
     this->animalType = "dog";
 }
 
-Dog::Dog(string name, string type) : Pet(name, type){}
+Dog::Dog(Citizen* owner) : Pet(owner) {
+    this->animalType = "dog";
+}
 
 void Dog::cuteAction() {
     std::cout << "Woof! :)" << std::endl;

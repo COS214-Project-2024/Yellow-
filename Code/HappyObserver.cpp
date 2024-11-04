@@ -1,17 +1,19 @@
 #include "HappyObserver.h"
 #include <iostream>
 
+#include "Population.h"
+
 HappyObserver::HappyObserver() {
 	observationType = "happiness";
 }
 
-HappyObserver::HappyObserver(vector<Citizen*> subj) {
-	listOfSubjects = subj;
+HappyObserver::HappyObserver(Population* subj) {
+	this->subject = subj;
 	observationType = "happiness";
 }
 
 void HappyObserver::update() {
-	if (listOfSubjects.empty()) {
+	if (subject->listOfCitizens.empty()) {
 		std::cout << "There are no citizens to observe." << std::endl;
 		return;
 	}
@@ -19,7 +21,7 @@ void HappyObserver::update() {
 	int citizenCount = 0;
 	float totalHappiness = 0;
 
-	for (Citizen* cit : listOfSubjects) {
+	for (Citizen* cit : subject->listOfCitizens) {
 		if (cit) {
 			totalHappiness += cit->getHappiness();
 			citizenCount++;
@@ -29,7 +31,6 @@ void HappyObserver::update() {
 	if (citizenCount > 0) {
 		averageHappiness = totalHappiness / citizenCount;
 		City::instanceCity().stuff.res->setMorale(averageHappiness);
-		// std::cout << "Observer: Average happiness of citizens: " << averageHappiness << "!" << std::endl;
 	} else {
 		std::cout << "Observer: No valid citizens found for happiness calculation." << std::endl;
 	}
