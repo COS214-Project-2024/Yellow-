@@ -26,11 +26,6 @@ public:
     void removeBuilding(Cell* building);
     Cell * clone();
     bool contains(Cell* object);
-    void addCitizenToBuilding(Citizen* newCitizen);
-    void setProductionRate(int newRate);
-    void createBuildingResource();
-    float getMoney();
-    void setMoney(float newAmount);
 };
 
 #endif

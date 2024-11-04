@@ -53,7 +53,7 @@ class City {
 		void collection();
 		void dealWithPolicies();
 
-		void addBuilding(Cell *newBuilding);
+		//void addBuilding(Cell *newBuilding);
 };
 
 #endif

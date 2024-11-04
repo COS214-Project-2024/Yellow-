@@ -20,3 +20,7 @@ Cell *Complex::clone()
     c->setCoordinates(this->getCoordinates());
     return c;
 }
+
+void Complex::setIcon()
+{
+}

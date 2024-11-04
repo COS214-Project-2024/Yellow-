@@ -36,6 +36,12 @@ Cell::~Cell()
 {
 }
 
-void Cell::addCitizenToBuilding(Citizen *newCitizen)
-{
+
+
+Cell * Cell::clone() {
+
 }
+
+
+
+

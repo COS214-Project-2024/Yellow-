@@ -13,7 +13,6 @@
 
 #include <vector>
 #include "Section.h"
-class City;
 class Citizen;
 
 class Buildings : public Section {
@@ -27,23 +26,32 @@ protected:
 public:
     Buildings(std::string cellType);
 
-    float getMoney() override;
-    void setMoney(float newAmount) override;
+	float getMoney();
 
-    int getMaxCitizens();
-    void addSection(Cell* section);
-    void removeSection(int idx);
-    Cell* getSection(int idx);
-    void acceptVisitor(Visitor* v);
+	void setMoney(float newAmount);
+	
+	int getMaxCitizens();
 
-    virtual void taxBuilding() = 0;
-    virtual void payEmployees() = 0;
-    virtual void setIcon();
-    virtual void addCitizenToBuilding(Citizen* newCitizen) = 0;
-    virtual Cell* clone() = 0;
-    virtual void setProductionRate(int newRate);
-    virtual void createBuildingResource() = 0;
-    virtual ~Buildings();
+	void addSection(Cell* section);
+
+	void removeSection(int idx);
+
+	Cell* getSection(int idx);
+
+	void acceptVisitor(Visitor* v);
+
+	virtual void taxBuilding() = 0;
+
+	virtual void payEmployees() = 0;
+
+	virtual void setIcon();
+
+	virtual void addCitizenToBuilding(Citizen* newCitizen) = 0;
+	virtual Cell* clone() = 0;
+	virtual void setProductionRate(int newRate);
+	virtual void createBuildingResource() = 0;
+	virtual ~Buildings();
+
 };
 
 #endif // BUILDINGS_H

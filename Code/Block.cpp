@@ -20,7 +20,8 @@ Block::~Block()
 void Block::addSection(Cell *section)
 {
 	 if (typeid(Block*) == typeid(section)) {
-        const auto& blockChildren = section->getChildren();
+		Block* s = dynamic_cast<Block*>(section);
+        const auto& blockChildren = s->getChildren();
         for (Cell* child : blockChildren)
 		{
 			this->addSection(child);
@@ -46,6 +47,7 @@ Cell* Block::getSection(int idx){
 void Block::acceptVisitor(Visitor* v) {
 	for (Cell* sec : children)
 	{
+		//v->visitBuilding(sec);
 		//v->visitBuilding(sec);
 	}
 }

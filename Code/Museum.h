@@ -20,7 +20,7 @@ class Museum : public Landmarks {
 public:
 	Museum();
 	void createBuildingResource() override;
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

@@ -18,7 +18,7 @@ class Park : public Landmarks {
 public:
 	Park();
 	void createBuildingResource() override;
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

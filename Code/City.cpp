@@ -9,11 +9,12 @@
 #include "City.h"
 #include <typeinfo>
 #include "Buildings.h"
-#include "ServiceFactory.h";
-#include "ResidentialFactory.h";
-#include "IndustrialFactory.h";
-#include "CommercialFactory.h";
-#include "LandmarkFactory.h";
+#include "ServiceFactory.h"
+#include "UtilityFactory.h"
+#include "LandmarkFactory.h" 
+#include "ResidentialFactory.h"
+#include "IndustrialFactory.h"
+#include "CommercialFactory.h"
 City::City()
 {
 	stuff.res = new Resources();
@@ -50,10 +51,11 @@ void City::collection()
     vector<Cell*> building = stuff.head->getChildren();
     for(Cell* build : building)
     {
-        if (build)
+        Buildings* b = dynamic_cast<Buildings*>(build);
+        if (b)
         {
-            build->createBuildingResource();
-            build->taxBuilding();
+            b->createBuildingResource();
+            b->taxBuilding();
         }
     }
 }
