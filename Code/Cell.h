@@ -23,9 +23,10 @@ public:
     virtual ~Cell();
     virtual void addCitizenToBuilding(Citizen* newCitizen);
     virtual Cell* clone() = 0;
-    virtual void setProductionRate(int newRate);
+    virtual void setProductionRate(int newRate) = 0;
     virtual void createBuildingResource() = 0;
-    virtual void taxBuilding();
+    virtual void taxBuilding()=0;
+	virtual void payEmployees()=0;
     virtual float getMoney() = 0;
     virtual void setMoney(float newAmount) = 0;
 };

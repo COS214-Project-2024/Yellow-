@@ -23,12 +23,12 @@ public:
 	
 	virtual void setIcon();
 
-	virtual Cell* clone();
+	virtual Cell* clone() = 0;
 	
 	virtual void createBuildingResource() = 0;
 
-	float getMoney() override;
-	void setMoney(float newAmount) override;
+	virtual float getMoney();
+	virtual void setMoney(float newAmount);
 };
 
 #endif

@@ -1,5 +1,6 @@
 #include "Commercial.h"
 #include "Citizen.h"
+#include "City.h"
 Commercial::Commercial(string cellType) : Buildings(cellType) {}
 
 void Commercial::taxBuilding()

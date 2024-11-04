@@ -7,7 +7,7 @@ class SteelFactory : public Industrial {
 
 public:
 	SteelFactory();
-	void createBuildingResource() override;
+	void createBuildingResource();
     Cell* clone() override;
 };
 

@@ -12,11 +12,6 @@ void Section::setIcon()
 {
 }
 
-Cell *Section::clone()
-{
-    return nullptr;
-}
-
 float Section::getMoney()
 {
     return 0.0f;

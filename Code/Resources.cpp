@@ -156,6 +156,11 @@ int Resources::getMorale() const
     return morale; 
 }
 
+int Resources::getBusinessTax() const
+{
+    return businessTaxRate;
+}
+
 float Resources::getPropertyTaxRate() const
 {
     return propertyTaxRate;

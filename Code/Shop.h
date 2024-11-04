@@ -6,7 +6,7 @@ class Shop : public Commercial {
 
 public:
 	Shop();
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

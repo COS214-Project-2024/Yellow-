@@ -2,28 +2,21 @@
 #define INDUSTRIAL_H
 
 #include "Buildings.h"
-#include "Visitor.h"
+
+class Visitor;
 
 class Industrial : public Buildings {
-	
 public:
-	Industrial(string cellType);
-	
-	void taxBuilding() override;
+    void setProductionRate(int newRate);
+    Industrial(std::string cellType);
 
-	void acceptVisitor(Visitor* v);
-
-	virtual void createBuildingResource() = 0;
-
-	virtual void setIcon();
-
-	virtual Cell* clone() = 0;
-
-	void setProductionRate(int newRate) override;
-
-	void payEmployees() override;
-
-	void addCitizenToBuilding(Citizen* newCitizen) override;
+    void taxBuilding();
+    void acceptVisitor(Visitor* v);
+    virtual void createBuildingResource() = 0;
+    virtual void setIcon();
+    virtual Cell* clone() = 0;
+    void payEmployees();
+    void addCitizenToBuilding(Citizen* newCitizen);
 };
 
-#endif
+#endif // INDUSTRIAL_H
