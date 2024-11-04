@@ -2,7 +2,6 @@
 // Created by sjvr0 on 2024/10/22.
 //
 #include "TarRoad.h"
-TarRoad::TarRoad(int cost) {
-    this->cost = cost;
+TarRoad::TarRoad(){
     this->setCellType("Road");
 }

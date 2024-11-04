@@ -3,7 +3,7 @@
 #include "Road.h"
 class TarRoad : public Road{
 public:
-    TarRoad(int cost);
+    TarRoad();
 };
 
 #endif
