@@ -8,6 +8,7 @@
 */
 #include "Utilities.h"
 #include "Citizen.h"
+#include "City.h"
 Utilities::Utilities(string cellType) : Buildings(cellType) 
 {
     

@@ -9,6 +9,11 @@
 #include "City.h"
 #include <typeinfo>
 #include "Buildings.h"
+#include "ServiceFactory.h";
+#include "ResidentialFactory.h";
+#include "IndustrialFactory.h";
+#include "CommercialFactory.h";
+#include "LandmarkFactory.h";
 City::City()
 {
 	stuff.res = new Resources();

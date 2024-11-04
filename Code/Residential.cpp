@@ -8,6 +8,7 @@
 */
 #include "Residential.h"
 #include "Citizen.h"
+#include "City.h"
 Residential::Residential(string cellType) : Buildings(cellType) {}
 
 void Residential::taxBuilding()

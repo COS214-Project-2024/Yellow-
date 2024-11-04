@@ -8,6 +8,7 @@
 */
 #include "Landmarks.h"
 #include "Citizen.h"
+#include "City.h"
 Landmarks::Landmarks(string cellType) : Buildings(cellType) {}
 
 void Landmarks::taxBuilding()
