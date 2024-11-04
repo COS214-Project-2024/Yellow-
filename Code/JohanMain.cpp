@@ -1,10 +1,16 @@
 #include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <sstream>
 
 #include "City.h"
 #include "ServiceFactory.h"
 #include "ResidentialFactory.h"
 #include "CommercialFactory.h"
+#include "IndustrialFactory.h"
 #include "Map.h"
+#include "TarRoad.h"
 
 using namespace std;
 
@@ -24,6 +30,9 @@ void makeItWork() {
     ServiceFactory s = ServiceFactory();
     ResidentialFactory r = ResidentialFactory();
     CommercialFactory c = CommercialFactory();
+    IndustrialFactory i = IndustrialFactory();
+
+
     Map gameMap = Map();
 
     Coordinate co1 = Coordinate(0, 0);
@@ -34,8 +43,8 @@ void makeItWork() {
     v.push_back(co1);
 
     // Apartment at <0, 0>
-    city.addBuilding(r.createApartment(v));
-    gameMap.addNode(city.getBuildings()[0]);
+    // city.addBuilding(r.createApartment(v));
+    gameMap.addNode(r.createApartment(v));
 
     co1 = Coordinate(5, 5);
     co2 = Coordinate(5, 6);
@@ -48,8 +57,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Town Hall from <5, 5> to <6, 6>
-    city.addBuilding(s.createTownHall(v));
-    gameMap.addNode(city.getBuildings()[1]);
+    // city.addBuilding(s.createTownHall(v));
+    gameMap.addNode(s.createTownHall(v));
 
     co1 = Coordinate(2, 3);
     co2 = Coordinate(2, 4);
@@ -62,8 +71,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // School from <2, 3> to <3, 4>
-    city.addBuilding(s.createSchool(v));
-    gameMap.addNode(city.getBuildings()[2]);
+    // city.addBuilding(s.createSchool(v));
+    gameMap.addNode(s.createSchool(v));
 
     co1 = Coordinate(2, 5);
     co2 = Coordinate(2, 6);
@@ -76,8 +85,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Mall from <2, 5> to <3, 6>
-    city.addBuilding(c.createMall(v));
-    gameMap.addNode(city.getBuildings()[3]);
+    // city.addBuilding(c.createMall(v));
+    gameMap.addNode(c.createMall(v));
 
     co1 = Coordinate(2, 7);
     co2 = Coordinate(2, 8);
@@ -90,8 +99,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Police Station from <2, 7> to <3, 8>
-    city.addBuilding(s.createPoliceStation(v));
-    gameMap.addNode(city.getBuildings()[4]);
+    // city.addBuilding(s.createPoliceStation(v));
+    gameMap.addNode(s.createPoliceStation(v));
 
     co1 = Coordinate(2, 9);
     co2 = Coordinate(2, 10);
@@ -104,8 +113,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Hospital from <2, 9> to <3, 10>
-    city.addBuilding(s.createHospital(v));
-    gameMap.addNode(city.getBuildings()[5]);
+    // city.addBuilding(s.createHospital(v));
+    gameMap.addNode(s.createHospital(v));
 
     co1 = Coordinate(0, 13);
     co2 = Coordinate(0, 14);
@@ -118,8 +127,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Train Station from <0, 13> to <1, 14>
-    city.addBuilding(s.createTrainStation(v));
-    gameMap.addNode(city.getBuildings()[6]);
+    // city.addBuilding(s.createTrainStation(v));
+    gameMap.addNode(s.createTrainStation(v));
 
     co1 = Coordinate(0, 15);
     co2 = Coordinate(0, 16);
@@ -132,8 +141,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Airport from <0, 15> to <1, 16>
-    city.addBuilding(s.createAirport(v));
-    gameMap.addNode(city.getBuildings()[7]);
+    // city.addBuilding(s.createAirport(v));
+    gameMap.addNode(s.createAirport(v));
 
     co1 = Coordinate(10, 13);
     co2 = Coordinate(10, 14);
@@ -146,8 +155,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Concrete Factory at <10, 13> to <11, 14>
-    city.addBuilding(s.createConcreteFactory(v));
-    gameMap.addNode(city.getBuildings()[8]);
+    // city.addBuilding(s.createConcreteFactory(v));
+    gameMap.addNode(i.createConcreteFactory(v));
 
     co1 = Coordinate(10, 15);
     co2 = Coordinate(10, 16);
@@ -160,8 +169,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Train Station at <10, 15> to <11, 16>
-    city.addBuilding(s.createTrainStation(v));
-    gameMap.addNode(city.getBuildings()[9]);
+    // city.addBuilding(s.createTrainStation(v));
+    gameMap.addNode(s.createTrainStation(v));
 
     co1 = Coordinate(12, 13);
     co2 = Coordinate(13, 14);
@@ -174,8 +183,8 @@ void makeItWork() {
     v.push_back(co4);
 
     // Steel Factory at <12, 13> to <13, 14>
-    city.addBuilding(s.createSteelFactory(v));
-    gameMap.addNode(city.getBuildings()[10]);
+    // city.addBuilding(s.createSteelFactory(v));
+    gameMap.addNode(i.createSteelFactory(v));
 
     co1 = Coordinate(12, 15);
     co2 = Coordinate(13, 16);
@@ -188,8 +197,12 @@ void makeItWork() {
     v.push_back(co4);
 
     // Forestry at <12, 15> to <13, 16>
-    city.addBuilding(s.createForestry(v));
-    gameMap.addNode(city.getBuildings()[11]);
+    // city.addBuilding(s.createForestry(v));
+    gameMap.addNode(i.createForestry(v));
+
+    // gameMap.addNode(Road());
+
+
 
     gameMap.printMap();
 }
