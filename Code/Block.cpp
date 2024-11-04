@@ -1,3 +1,11 @@
+/**
+* @class Block
+* @brief A class that represents a block of buildings.
+* @ingroup Composite
+* @implements Section
+*
+* The Block class is a composite participant of the Composite design pattern. It is used to represent a block of buildings.
+*/
 #include "Block.h"
 
 Block::Block() : Section("Block") //review
