@@ -307,10 +307,24 @@ CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/ConcreteFactory.cpp" -o CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.s
 
+CMakeFiles/ClionProject.dir/Coordinate.cpp.o: CMakeFiles/ClionProject.dir/flags.make
+CMakeFiles/ClionProject.dir/Coordinate.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Coordinate.cpp
+CMakeFiles/ClionProject.dir/Coordinate.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ClionProject.dir/Coordinate.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Coordinate.cpp.o -MF CMakeFiles/ClionProject.dir/Coordinate.cpp.o.d -o CMakeFiles/ClionProject.dir/Coordinate.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Coordinate.cpp"
+
+CMakeFiles/ClionProject.dir/Coordinate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Coordinate.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Coordinate.cpp" > CMakeFiles/ClionProject.dir/Coordinate.cpp.i
+
+CMakeFiles/ClionProject.dir/Coordinate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Coordinate.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Coordinate.cpp" -o CMakeFiles/ClionProject.dir/Coordinate.cpp.s
+
 CMakeFiles/ClionProject.dir/DemoMain.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/DemoMain.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/DemoMain.cpp
 CMakeFiles/ClionProject.dir/DemoMain.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ClionProject.dir/DemoMain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ClionProject.dir/DemoMain.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/DemoMain.cpp.o -MF CMakeFiles/ClionProject.dir/DemoMain.cpp.o.d -o CMakeFiles/ClionProject.dir/DemoMain.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/DemoMain.cpp"
 
 CMakeFiles/ClionProject.dir/DemoMain.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/ClionProject.dir/DemoMain.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Department.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Department.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Department.cpp
 CMakeFiles/ClionProject.dir/Department.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ClionProject.dir/Department.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ClionProject.dir/Department.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Department.cpp.o -MF CMakeFiles/ClionProject.dir/Department.cpp.o.d -o CMakeFiles/ClionProject.dir/Department.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Department.cpp"
 
 CMakeFiles/ClionProject.dir/Department.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/ClionProject.dir/Department.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Disatisfaction.cpp
 CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o -MF CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o.d -o CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Disatisfaction.cpp"
 
 CMakeFiles/ClionProject.dir/Disatisfaction.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/ClionProject.dir/Disatisfaction.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/ExpandCity.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/ExpandCity.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/ExpandCity.cpp
 CMakeFiles/ClionProject.dir/ExpandCity.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ClionProject.dir/ExpandCity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ClionProject.dir/ExpandCity.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ExpandCity.cpp.o -MF CMakeFiles/ClionProject.dir/ExpandCity.cpp.o.d -o CMakeFiles/ClionProject.dir/ExpandCity.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/ExpandCity.cpp"
 
 CMakeFiles/ClionProject.dir/ExpandCity.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/ClionProject.dir/ExpandCity.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Finances.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Finances.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Finances.cpp
 CMakeFiles/ClionProject.dir/Finances.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ClionProject.dir/Finances.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ClionProject.dir/Finances.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Finances.cpp.o -MF CMakeFiles/ClionProject.dir/Finances.cpp.o.d -o CMakeFiles/ClionProject.dir/Finances.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Finances.cpp"
 
 CMakeFiles/ClionProject.dir/Finances.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/ClionProject.dir/Finances.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Forestry.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Forestry.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Forestry.cpp
 CMakeFiles/ClionProject.dir/Forestry.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ClionProject.dir/Forestry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ClionProject.dir/Forestry.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Forestry.cpp.o -MF CMakeFiles/ClionProject.dir/Forestry.cpp.o.d -o CMakeFiles/ClionProject.dir/Forestry.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Forestry.cpp"
 
 CMakeFiles/ClionProject.dir/Forestry.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/ClionProject.dir/Forestry.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/FrontEnd.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/FrontEnd.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/FrontEnd.cpp
 CMakeFiles/ClionProject.dir/FrontEnd.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ClionProject.dir/FrontEnd.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ClionProject.dir/FrontEnd.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/FrontEnd.cpp.o -MF CMakeFiles/ClionProject.dir/FrontEnd.cpp.o.d -o CMakeFiles/ClionProject.dir/FrontEnd.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/FrontEnd.cpp"
 
 CMakeFiles/ClionProject.dir/FrontEnd.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/ClionProject.dir/FrontEnd.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Government.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Government.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Government.cpp
 CMakeFiles/ClionProject.dir/Government.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ClionProject.dir/Government.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ClionProject.dir/Government.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Government.cpp.o -MF CMakeFiles/ClionProject.dir/Government.cpp.o.d -o CMakeFiles/ClionProject.dir/Government.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Government.cpp"
 
 CMakeFiles/ClionProject.dir/Government.cpp.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/ClionProject.dir/Government.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Green.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Green.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Green.cpp
 CMakeFiles/ClionProject.dir/Green.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ClionProject.dir/Green.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ClionProject.dir/Green.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Green.cpp.o -MF CMakeFiles/ClionProject.dir/Green.cpp.o.d -o CMakeFiles/ClionProject.dir/Green.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Green.cpp"
 
 CMakeFiles/ClionProject.dir/Green.cpp.i: cmake_force
@@ -436,7 +450,7 @@ CMakeFiles/ClionProject.dir/Green.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/HappyObserver.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/HappyObserver.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/HappyObserver.cpp
 CMakeFiles/ClionProject.dir/HappyObserver.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ClionProject.dir/HappyObserver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ClionProject.dir/HappyObserver.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/HappyObserver.cpp.o -MF CMakeFiles/ClionProject.dir/HappyObserver.cpp.o.d -o CMakeFiles/ClionProject.dir/HappyObserver.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/HappyObserver.cpp"
 
 CMakeFiles/ClionProject.dir/HappyObserver.cpp.i: cmake_force
@@ -450,7 +464,7 @@ CMakeFiles/ClionProject.dir/HappyObserver.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/HistoryBranch.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/HistoryBranch.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/HistoryBranch.cpp
 CMakeFiles/ClionProject.dir/HistoryBranch.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ClionProject.dir/HistoryBranch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ClionProject.dir/HistoryBranch.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/HistoryBranch.cpp.o -MF CMakeFiles/ClionProject.dir/HistoryBranch.cpp.o.d -o CMakeFiles/ClionProject.dir/HistoryBranch.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/HistoryBranch.cpp"
 
 CMakeFiles/ClionProject.dir/HistoryBranch.cpp.i: cmake_force
@@ -464,7 +478,7 @@ CMakeFiles/ClionProject.dir/HistoryBranch.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/HistoryNode.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/HistoryNode.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/HistoryNode.cpp
 CMakeFiles/ClionProject.dir/HistoryNode.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ClionProject.dir/HistoryNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ClionProject.dir/HistoryNode.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/HistoryNode.cpp.o -MF CMakeFiles/ClionProject.dir/HistoryNode.cpp.o.d -o CMakeFiles/ClionProject.dir/HistoryNode.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/HistoryNode.cpp"
 
 CMakeFiles/ClionProject.dir/HistoryNode.cpp.i: cmake_force
@@ -478,7 +492,7 @@ CMakeFiles/ClionProject.dir/HistoryNode.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Hospital.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Hospital.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Hospital.cpp
 CMakeFiles/ClionProject.dir/Hospital.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ClionProject.dir/Hospital.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ClionProject.dir/Hospital.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Hospital.cpp.o -MF CMakeFiles/ClionProject.dir/Hospital.cpp.o.d -o CMakeFiles/ClionProject.dir/Hospital.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Hospital.cpp"
 
 CMakeFiles/ClionProject.dir/Hospital.cpp.i: cmake_force
@@ -492,7 +506,7 @@ CMakeFiles/ClionProject.dir/Hospital.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/House.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/House.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/House.cpp
 CMakeFiles/ClionProject.dir/House.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ClionProject.dir/House.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ClionProject.dir/House.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/House.cpp.o -MF CMakeFiles/ClionProject.dir/House.cpp.o.d -o CMakeFiles/ClionProject.dir/House.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/House.cpp"
 
 CMakeFiles/ClionProject.dir/House.cpp.i: cmake_force
@@ -506,7 +520,7 @@ CMakeFiles/ClionProject.dir/House.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/HouseHold.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/HouseHold.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/HouseHold.cpp
 CMakeFiles/ClionProject.dir/HouseHold.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ClionProject.dir/HouseHold.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ClionProject.dir/HouseHold.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/HouseHold.cpp.o -MF CMakeFiles/ClionProject.dir/HouseHold.cpp.o.d -o CMakeFiles/ClionProject.dir/HouseHold.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/HouseHold.cpp"
 
 CMakeFiles/ClionProject.dir/HouseHold.cpp.i: cmake_force
@@ -520,7 +534,7 @@ CMakeFiles/ClionProject.dir/HouseHold.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/IncreaseTaxes.cpp
 CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o -MF CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o.d -o CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/IncreaseTaxes.cpp"
 
 CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.i: cmake_force
@@ -534,7 +548,7 @@ CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/IncreaseWages.cpp
 CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o -MF CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o.d -o CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/IncreaseWages.cpp"
 
 CMakeFiles/ClionProject.dir/IncreaseWages.cpp.i: cmake_force
@@ -548,7 +562,7 @@ CMakeFiles/ClionProject.dir/IncreaseWages.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Industrial.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Industrial.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Industrial.cpp
 CMakeFiles/ClionProject.dir/Industrial.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ClionProject.dir/Industrial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ClionProject.dir/Industrial.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Industrial.cpp.o -MF CMakeFiles/ClionProject.dir/Industrial.cpp.o.d -o CMakeFiles/ClionProject.dir/Industrial.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Industrial.cpp"
 
 CMakeFiles/ClionProject.dir/Industrial.cpp.i: cmake_force
@@ -562,7 +576,7 @@ CMakeFiles/ClionProject.dir/Industrial.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/IndustrialFactory.cpp
 CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o -MF CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/IndustrialFactory.cpp"
 
 CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.i: cmake_force
@@ -573,10 +587,24 @@ CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/IndustrialFactory.cpp" -o CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.s
 
+CMakeFiles/ClionProject.dir/Intersection.cpp.o: CMakeFiles/ClionProject.dir/flags.make
+CMakeFiles/ClionProject.dir/Intersection.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Intersection.cpp
+CMakeFiles/ClionProject.dir/Intersection.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/ClionProject.dir/Intersection.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Intersection.cpp.o -MF CMakeFiles/ClionProject.dir/Intersection.cpp.o.d -o CMakeFiles/ClionProject.dir/Intersection.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Intersection.cpp"
+
+CMakeFiles/ClionProject.dir/Intersection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Intersection.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Intersection.cpp" > CMakeFiles/ClionProject.dir/Intersection.cpp.i
+
+CMakeFiles/ClionProject.dir/Intersection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Intersection.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Intersection.cpp" -o CMakeFiles/ClionProject.dir/Intersection.cpp.s
+
 CMakeFiles/ClionProject.dir/Labour.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Labour.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Labour.cpp
 CMakeFiles/ClionProject.dir/Labour.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/ClionProject.dir/Labour.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/ClionProject.dir/Labour.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Labour.cpp.o -MF CMakeFiles/ClionProject.dir/Labour.cpp.o.d -o CMakeFiles/ClionProject.dir/Labour.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Labour.cpp"
 
 CMakeFiles/ClionProject.dir/Labour.cpp.i: cmake_force
@@ -590,7 +618,7 @@ CMakeFiles/ClionProject.dir/Labour.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/LandmarkFactory.cpp
 CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o -MF CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/LandmarkFactory.cpp"
 
 CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.i: cmake_force
@@ -604,7 +632,7 @@ CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Landmarks.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Landmarks.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Landmarks.cpp
 CMakeFiles/ClionProject.dir/Landmarks.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/ClionProject.dir/Landmarks.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/ClionProject.dir/Landmarks.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Landmarks.cpp.o -MF CMakeFiles/ClionProject.dir/Landmarks.cpp.o.d -o CMakeFiles/ClionProject.dir/Landmarks.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Landmarks.cpp"
 
 CMakeFiles/ClionProject.dir/Landmarks.cpp.i: cmake_force
@@ -618,7 +646,7 @@ CMakeFiles/ClionProject.dir/Landmarks.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Mall.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Mall.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Mall.cpp
 CMakeFiles/ClionProject.dir/Mall.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/ClionProject.dir/Mall.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/ClionProject.dir/Mall.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Mall.cpp.o -MF CMakeFiles/ClionProject.dir/Mall.cpp.o.d -o CMakeFiles/ClionProject.dir/Mall.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Mall.cpp"
 
 CMakeFiles/ClionProject.dir/Mall.cpp.i: cmake_force
@@ -632,7 +660,7 @@ CMakeFiles/ClionProject.dir/Mall.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Map.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Map.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Map.cpp
 CMakeFiles/ClionProject.dir/Map.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/ClionProject.dir/Map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/ClionProject.dir/Map.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Map.cpp.o -MF CMakeFiles/ClionProject.dir/Map.cpp.o.d -o CMakeFiles/ClionProject.dir/Map.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Map.cpp"
 
 CMakeFiles/ClionProject.dir/Map.cpp.i: cmake_force
@@ -646,7 +674,7 @@ CMakeFiles/ClionProject.dir/Map.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/MaterialOrder.cpp
 CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o -MF CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o.d -o CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/MaterialOrder.cpp"
 
 CMakeFiles/ClionProject.dir/MaterialOrder.cpp.i: cmake_force
@@ -660,7 +688,7 @@ CMakeFiles/ClionProject.dir/MaterialOrder.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Museum.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Museum.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Museum.cpp
 CMakeFiles/ClionProject.dir/Museum.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/ClionProject.dir/Museum.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/ClionProject.dir/Museum.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Museum.cpp.o -MF CMakeFiles/ClionProject.dir/Museum.cpp.o.d -o CMakeFiles/ClionProject.dir/Museum.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Museum.cpp"
 
 CMakeFiles/ClionProject.dir/Museum.cpp.i: cmake_force
@@ -674,7 +702,7 @@ CMakeFiles/ClionProject.dir/Museum.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Observer.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Observer.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Observer.cpp
 CMakeFiles/ClionProject.dir/Observer.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/ClionProject.dir/Observer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/ClionProject.dir/Observer.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Observer.cpp.o -MF CMakeFiles/ClionProject.dir/Observer.cpp.o.d -o CMakeFiles/ClionProject.dir/Observer.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Observer.cpp"
 
 CMakeFiles/ClionProject.dir/Observer.cpp.i: cmake_force
@@ -688,7 +716,7 @@ CMakeFiles/ClionProject.dir/Observer.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Office.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Office.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Office.cpp
 CMakeFiles/ClionProject.dir/Office.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/ClionProject.dir/Office.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/ClionProject.dir/Office.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Office.cpp.o -MF CMakeFiles/ClionProject.dir/Office.cpp.o.d -o CMakeFiles/ClionProject.dir/Office.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Office.cpp"
 
 CMakeFiles/ClionProject.dir/Office.cpp.i: cmake_force
@@ -699,10 +727,24 @@ CMakeFiles/ClionProject.dir/Office.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Office.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Office.cpp" -o CMakeFiles/ClionProject.dir/Office.cpp.s
 
+CMakeFiles/ClionProject.dir/OpenField.cpp.o: CMakeFiles/ClionProject.dir/flags.make
+CMakeFiles/ClionProject.dir/OpenField.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/OpenField.cpp
+CMakeFiles/ClionProject.dir/OpenField.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/ClionProject.dir/OpenField.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/OpenField.cpp.o -MF CMakeFiles/ClionProject.dir/OpenField.cpp.o.d -o CMakeFiles/ClionProject.dir/OpenField.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/OpenField.cpp"
+
+CMakeFiles/ClionProject.dir/OpenField.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/OpenField.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/OpenField.cpp" > CMakeFiles/ClionProject.dir/OpenField.cpp.i
+
+CMakeFiles/ClionProject.dir/OpenField.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/OpenField.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/OpenField.cpp" -o CMakeFiles/ClionProject.dir/OpenField.cpp.s
+
 CMakeFiles/ClionProject.dir/Park.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Park.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Park.cpp
 CMakeFiles/ClionProject.dir/Park.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/ClionProject.dir/Park.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/ClionProject.dir/Park.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Park.cpp.o -MF CMakeFiles/ClionProject.dir/Park.cpp.o.d -o CMakeFiles/ClionProject.dir/Park.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Park.cpp"
 
 CMakeFiles/ClionProject.dir/Park.cpp.i: cmake_force
@@ -716,7 +758,7 @@ CMakeFiles/ClionProject.dir/Park.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/People.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/People.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/People.cpp
 CMakeFiles/ClionProject.dir/People.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/ClionProject.dir/People.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/ClionProject.dir/People.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/People.cpp.o -MF CMakeFiles/ClionProject.dir/People.cpp.o.d -o CMakeFiles/ClionProject.dir/People.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/People.cpp"
 
 CMakeFiles/ClionProject.dir/People.cpp.i: cmake_force
@@ -730,7 +772,7 @@ CMakeFiles/ClionProject.dir/People.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/PoliceStation.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/PoliceStation.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/PoliceStation.cpp
 CMakeFiles/ClionProject.dir/PoliceStation.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/ClionProject.dir/PoliceStation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/ClionProject.dir/PoliceStation.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/PoliceStation.cpp.o -MF CMakeFiles/ClionProject.dir/PoliceStation.cpp.o.d -o CMakeFiles/ClionProject.dir/PoliceStation.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/PoliceStation.cpp"
 
 CMakeFiles/ClionProject.dir/PoliceStation.cpp.i: cmake_force
@@ -744,7 +786,7 @@ CMakeFiles/ClionProject.dir/PoliceStation.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Policies.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Policies.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Policies.cpp
 CMakeFiles/ClionProject.dir/Policies.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/ClionProject.dir/Policies.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/ClionProject.dir/Policies.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Policies.cpp.o -MF CMakeFiles/ClionProject.dir/Policies.cpp.o.d -o CMakeFiles/ClionProject.dir/Policies.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Policies.cpp"
 
 CMakeFiles/ClionProject.dir/Policies.cpp.i: cmake_force
@@ -758,7 +800,7 @@ CMakeFiles/ClionProject.dir/Policies.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Population.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Population.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Population.cpp
 CMakeFiles/ClionProject.dir/Population.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/ClionProject.dir/Population.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/ClionProject.dir/Population.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Population.cpp.o -MF CMakeFiles/ClionProject.dir/Population.cpp.o.d -o CMakeFiles/ClionProject.dir/Population.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Population.cpp"
 
 CMakeFiles/ClionProject.dir/Population.cpp.i: cmake_force
@@ -772,7 +814,7 @@ CMakeFiles/ClionProject.dir/Population.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/PowerPlant.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/PowerPlant.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/PowerPlant.cpp
 CMakeFiles/ClionProject.dir/PowerPlant.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/ClionProject.dir/PowerPlant.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/ClionProject.dir/PowerPlant.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/PowerPlant.cpp.o -MF CMakeFiles/ClionProject.dir/PowerPlant.cpp.o.d -o CMakeFiles/ClionProject.dir/PowerPlant.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/PowerPlant.cpp"
 
 CMakeFiles/ClionProject.dir/PowerPlant.cpp.i: cmake_force
@@ -786,7 +828,7 @@ CMakeFiles/ClionProject.dir/PowerPlant.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/RandomUtil.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/RandomUtil.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/RandomUtil.cpp
 CMakeFiles/ClionProject.dir/RandomUtil.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/ClionProject.dir/RandomUtil.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/ClionProject.dir/RandomUtil.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/RandomUtil.cpp.o -MF CMakeFiles/ClionProject.dir/RandomUtil.cpp.o.d -o CMakeFiles/ClionProject.dir/RandomUtil.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/RandomUtil.cpp"
 
 CMakeFiles/ClionProject.dir/RandomUtil.cpp.i: cmake_force
@@ -800,7 +842,7 @@ CMakeFiles/ClionProject.dir/RandomUtil.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Red.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Red.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Red.cpp
 CMakeFiles/ClionProject.dir/Red.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/ClionProject.dir/Red.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/ClionProject.dir/Red.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Red.cpp.o -MF CMakeFiles/ClionProject.dir/Red.cpp.o.d -o CMakeFiles/ClionProject.dir/Red.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Red.cpp"
 
 CMakeFiles/ClionProject.dir/Red.cpp.i: cmake_force
@@ -814,7 +856,7 @@ CMakeFiles/ClionProject.dir/Red.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Residential.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Residential.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Residential.cpp
 CMakeFiles/ClionProject.dir/Residential.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/ClionProject.dir/Residential.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/ClionProject.dir/Residential.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Residential.cpp.o -MF CMakeFiles/ClionProject.dir/Residential.cpp.o.d -o CMakeFiles/ClionProject.dir/Residential.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Residential.cpp"
 
 CMakeFiles/ClionProject.dir/Residential.cpp.i: cmake_force
@@ -828,7 +870,7 @@ CMakeFiles/ClionProject.dir/Residential.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/ResidentialFactory.cpp
 CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o -MF CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/ResidentialFactory.cpp"
 
 CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.i: cmake_force
@@ -842,7 +884,7 @@ CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Resources.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Resources.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Resources.cpp
 CMakeFiles/ClionProject.dir/Resources.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/ClionProject.dir/Resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/ClionProject.dir/Resources.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Resources.cpp.o -MF CMakeFiles/ClionProject.dir/Resources.cpp.o.d -o CMakeFiles/ClionProject.dir/Resources.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Resources.cpp"
 
 CMakeFiles/ClionProject.dir/Resources.cpp.i: cmake_force
@@ -853,10 +895,24 @@ CMakeFiles/ClionProject.dir/Resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Resources.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Resources.cpp" -o CMakeFiles/ClionProject.dir/Resources.cpp.s
 
+CMakeFiles/ClionProject.dir/Road.cpp.o: CMakeFiles/ClionProject.dir/flags.make
+CMakeFiles/ClionProject.dir/Road.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Road.cpp
+CMakeFiles/ClionProject.dir/Road.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/ClionProject.dir/Road.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Road.cpp.o -MF CMakeFiles/ClionProject.dir/Road.cpp.o.d -o CMakeFiles/ClionProject.dir/Road.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Road.cpp"
+
+CMakeFiles/ClionProject.dir/Road.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Road.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Road.cpp" > CMakeFiles/ClionProject.dir/Road.cpp.i
+
+CMakeFiles/ClionProject.dir/Road.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Road.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Road.cpp" -o CMakeFiles/ClionProject.dir/Road.cpp.s
+
 CMakeFiles/ClionProject.dir/Save.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Save.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Save.cpp
 CMakeFiles/ClionProject.dir/Save.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/ClionProject.dir/Save.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/ClionProject.dir/Save.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Save.cpp.o -MF CMakeFiles/ClionProject.dir/Save.cpp.o.d -o CMakeFiles/ClionProject.dir/Save.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Save.cpp"
 
 CMakeFiles/ClionProject.dir/Save.cpp.i: cmake_force
@@ -870,7 +926,7 @@ CMakeFiles/ClionProject.dir/Save.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/SaveAndLoad.cpp
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o -MF CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o.d -o CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/SaveAndLoad.cpp"
 
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.i: cmake_force
@@ -884,7 +940,7 @@ CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Saves.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Saves.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Saves.cpp
 CMakeFiles/ClionProject.dir/Saves.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/ClionProject.dir/Saves.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/ClionProject.dir/Saves.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Saves.cpp.o -MF CMakeFiles/ClionProject.dir/Saves.cpp.o.d -o CMakeFiles/ClionProject.dir/Saves.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Saves.cpp"
 
 CMakeFiles/ClionProject.dir/Saves.cpp.i: cmake_force
@@ -898,7 +954,7 @@ CMakeFiles/ClionProject.dir/Saves.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/School.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/School.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/School.cpp
 CMakeFiles/ClionProject.dir/School.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/ClionProject.dir/School.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/ClionProject.dir/School.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/School.cpp.o -MF CMakeFiles/ClionProject.dir/School.cpp.o.d -o CMakeFiles/ClionProject.dir/School.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/School.cpp"
 
 CMakeFiles/ClionProject.dir/School.cpp.i: cmake_force
@@ -912,7 +968,7 @@ CMakeFiles/ClionProject.dir/School.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Section.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Section.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Section.cpp
 CMakeFiles/ClionProject.dir/Section.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/ClionProject.dir/Section.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/ClionProject.dir/Section.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Section.cpp.o -MF CMakeFiles/ClionProject.dir/Section.cpp.o.d -o CMakeFiles/ClionProject.dir/Section.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Section.cpp"
 
 CMakeFiles/ClionProject.dir/Section.cpp.i: cmake_force
@@ -926,7 +982,7 @@ CMakeFiles/ClionProject.dir/Section.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Service.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Service.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Service.cpp
 CMakeFiles/ClionProject.dir/Service.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/ClionProject.dir/Service.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/ClionProject.dir/Service.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Service.cpp.o -MF CMakeFiles/ClionProject.dir/Service.cpp.o.d -o CMakeFiles/ClionProject.dir/Service.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Service.cpp"
 
 CMakeFiles/ClionProject.dir/Service.cpp.i: cmake_force
@@ -940,7 +996,7 @@ CMakeFiles/ClionProject.dir/Service.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/ServiceFactory.cpp
 CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o -MF CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/ServiceFactory.cpp"
 
 CMakeFiles/ClionProject.dir/ServiceFactory.cpp.i: cmake_force
@@ -954,7 +1010,7 @@ CMakeFiles/ClionProject.dir/ServiceFactory.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Shop.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Shop.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Shop.cpp
 CMakeFiles/ClionProject.dir/Shop.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/ClionProject.dir/Shop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/ClionProject.dir/Shop.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Shop.cpp.o -MF CMakeFiles/ClionProject.dir/Shop.cpp.o.d -o CMakeFiles/ClionProject.dir/Shop.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Shop.cpp"
 
 CMakeFiles/ClionProject.dir/Shop.cpp.i: cmake_force
@@ -968,7 +1024,7 @@ CMakeFiles/ClionProject.dir/Shop.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/SteelFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/SteelFactory.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/SteelFactory.cpp
 CMakeFiles/ClionProject.dir/SteelFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/ClionProject.dir/SteelFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/ClionProject.dir/SteelFactory.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/SteelFactory.cpp.o -MF CMakeFiles/ClionProject.dir/SteelFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/SteelFactory.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/SteelFactory.cpp"
 
 CMakeFiles/ClionProject.dir/SteelFactory.cpp.i: cmake_force
@@ -982,7 +1038,7 @@ CMakeFiles/ClionProject.dir/SteelFactory.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Strategy.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Strategy.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Strategy.cpp
 CMakeFiles/ClionProject.dir/Strategy.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/ClionProject.dir/Strategy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/ClionProject.dir/Strategy.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Strategy.cpp.o -MF CMakeFiles/ClionProject.dir/Strategy.cpp.o.d -o CMakeFiles/ClionProject.dir/Strategy.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Strategy.cpp"
 
 CMakeFiles/ClionProject.dir/Strategy.cpp.i: cmake_force
@@ -996,7 +1052,7 @@ CMakeFiles/ClionProject.dir/Strategy.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/TarRoad.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/TarRoad.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/TarRoad.cpp
 CMakeFiles/ClionProject.dir/TarRoad.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/ClionProject.dir/TarRoad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/ClionProject.dir/TarRoad.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TarRoad.cpp.o -MF CMakeFiles/ClionProject.dir/TarRoad.cpp.o.d -o CMakeFiles/ClionProject.dir/TarRoad.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/TarRoad.cpp"
 
 CMakeFiles/ClionProject.dir/TarRoad.cpp.i: cmake_force
@@ -1010,7 +1066,7 @@ CMakeFiles/ClionProject.dir/TarRoad.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/TestingMain.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/TestingMain.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/TestingMain.cpp
 CMakeFiles/ClionProject.dir/TestingMain.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/ClionProject.dir/TestingMain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/ClionProject.dir/TestingMain.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TestingMain.cpp.o -MF CMakeFiles/ClionProject.dir/TestingMain.cpp.o.d -o CMakeFiles/ClionProject.dir/TestingMain.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/TestingMain.cpp"
 
 CMakeFiles/ClionProject.dir/TestingMain.cpp.i: cmake_force
@@ -1024,7 +1080,7 @@ CMakeFiles/ClionProject.dir/TestingMain.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/TownHall.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/TownHall.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/TownHall.cpp
 CMakeFiles/ClionProject.dir/TownHall.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/ClionProject.dir/TownHall.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/ClionProject.dir/TownHall.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TownHall.cpp.o -MF CMakeFiles/ClionProject.dir/TownHall.cpp.o.d -o CMakeFiles/ClionProject.dir/TownHall.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/TownHall.cpp"
 
 CMakeFiles/ClionProject.dir/TownHall.cpp.i: cmake_force
@@ -1038,7 +1094,7 @@ CMakeFiles/ClionProject.dir/TownHall.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/TrainStation.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/TrainStation.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/TrainStation.cpp
 CMakeFiles/ClionProject.dir/TrainStation.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/ClionProject.dir/TrainStation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/ClionProject.dir/TrainStation.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TrainStation.cpp.o -MF CMakeFiles/ClionProject.dir/TrainStation.cpp.o.d -o CMakeFiles/ClionProject.dir/TrainStation.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/TrainStation.cpp"
 
 CMakeFiles/ClionProject.dir/TrainStation.cpp.i: cmake_force
@@ -1052,7 +1108,7 @@ CMakeFiles/ClionProject.dir/TrainStation.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Transport.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Transport.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Transport.cpp
 CMakeFiles/ClionProject.dir/Transport.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/ClionProject.dir/Transport.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/ClionProject.dir/Transport.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Transport.cpp.o -MF CMakeFiles/ClionProject.dir/Transport.cpp.o.d -o CMakeFiles/ClionProject.dir/Transport.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Transport.cpp"
 
 CMakeFiles/ClionProject.dir/Transport.cpp.i: cmake_force
@@ -1066,7 +1122,7 @@ CMakeFiles/ClionProject.dir/Transport.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Utilities.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Utilities.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Utilities.cpp
 CMakeFiles/ClionProject.dir/Utilities.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/ClionProject.dir/Utilities.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/ClionProject.dir/Utilities.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Utilities.cpp.o -MF CMakeFiles/ClionProject.dir/Utilities.cpp.o.d -o CMakeFiles/ClionProject.dir/Utilities.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Utilities.cpp"
 
 CMakeFiles/ClionProject.dir/Utilities.cpp.i: cmake_force
@@ -1077,10 +1133,24 @@ CMakeFiles/ClionProject.dir/Utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Utilities.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Utilities.cpp" -o CMakeFiles/ClionProject.dir/Utilities.cpp.s
 
+CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
+CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/UtilityFactory.cpp
+CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o -MF CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/UtilityFactory.cpp"
+
+CMakeFiles/ClionProject.dir/UtilityFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/UtilityFactory.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/UtilityFactory.cpp" > CMakeFiles/ClionProject.dir/UtilityFactory.cpp.i
+
+CMakeFiles/ClionProject.dir/UtilityFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/UtilityFactory.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/UtilityFactory.cpp" -o CMakeFiles/ClionProject.dir/UtilityFactory.cpp.s
+
 CMakeFiles/ClionProject.dir/Vehicle.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Vehicle.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Vehicle.cpp
 CMakeFiles/ClionProject.dir/Vehicle.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/ClionProject.dir/Vehicle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/ClionProject.dir/Vehicle.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Vehicle.cpp.o -MF CMakeFiles/ClionProject.dir/Vehicle.cpp.o.d -o CMakeFiles/ClionProject.dir/Vehicle.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Vehicle.cpp"
 
 CMakeFiles/ClionProject.dir/Vehicle.cpp.i: cmake_force
@@ -1094,7 +1164,7 @@ CMakeFiles/ClionProject.dir/Vehicle.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/WasteManagement.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/WasteManagement.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/WasteManagement.cpp
 CMakeFiles/ClionProject.dir/WasteManagement.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/ClionProject.dir/WasteManagement.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/ClionProject.dir/WasteManagement.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/WasteManagement.cpp.o -MF CMakeFiles/ClionProject.dir/WasteManagement.cpp.o.d -o CMakeFiles/ClionProject.dir/WasteManagement.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/WasteManagement.cpp"
 
 CMakeFiles/ClionProject.dir/WasteManagement.cpp.i: cmake_force
@@ -1108,7 +1178,7 @@ CMakeFiles/ClionProject.dir/WasteManagement.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/WaterPlant.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/WaterPlant.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/WaterPlant.cpp
 CMakeFiles/ClionProject.dir/WaterPlant.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/ClionProject.dir/WaterPlant.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/ClionProject.dir/WaterPlant.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/WaterPlant.cpp.o -MF CMakeFiles/ClionProject.dir/WaterPlant.cpp.o.d -o CMakeFiles/ClionProject.dir/WaterPlant.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/WaterPlant.cpp"
 
 CMakeFiles/ClionProject.dir/WaterPlant.cpp.i: cmake_force
@@ -1122,7 +1192,7 @@ CMakeFiles/ClionProject.dir/WaterPlant.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/Yellow.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/Yellow.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Yellow.cpp
 CMakeFiles/ClionProject.dir/Yellow.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/ClionProject.dir/Yellow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/ClionProject.dir/Yellow.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Yellow.cpp.o -MF CMakeFiles/ClionProject.dir/Yellow.cpp.o.d -o CMakeFiles/ClionProject.dir/Yellow.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Yellow.cpp"
 
 CMakeFiles/ClionProject.dir/Yellow.cpp.i: cmake_force
@@ -1136,7 +1206,7 @@ CMakeFiles/ClionProject.dir/Yellow.cpp.s: cmake_force
 CMakeFiles/ClionProject.dir/main.cpp.o: CMakeFiles/ClionProject.dir/flags.make
 CMakeFiles/ClionProject.dir/main.cpp.o: /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/main.cpp
 CMakeFiles/ClionProject.dir/main.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/ClionProject.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/ClionProject.dir/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/main.cpp.o -MF CMakeFiles/ClionProject.dir/main.cpp.o.d -o CMakeFiles/ClionProject.dir/main.cpp.o -c "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/main.cpp"
 
 CMakeFiles/ClionProject.dir/main.cpp.i: cmake_force
@@ -1166,6 +1236,7 @@ ClionProject_OBJECTS = \
 "CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o" \
 "CMakeFiles/ClionProject.dir/Complex.cpp.o" \
 "CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o" \
+"CMakeFiles/ClionProject.dir/Coordinate.cpp.o" \
 "CMakeFiles/ClionProject.dir/DemoMain.cpp.o" \
 "CMakeFiles/ClionProject.dir/Department.cpp.o" \
 "CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o" \
@@ -1185,6 +1256,7 @@ ClionProject_OBJECTS = \
 "CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o" \
 "CMakeFiles/ClionProject.dir/Industrial.cpp.o" \
 "CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o" \
+"CMakeFiles/ClionProject.dir/Intersection.cpp.o" \
 "CMakeFiles/ClionProject.dir/Labour.cpp.o" \
 "CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o" \
 "CMakeFiles/ClionProject.dir/Landmarks.cpp.o" \
@@ -1194,6 +1266,7 @@ ClionProject_OBJECTS = \
 "CMakeFiles/ClionProject.dir/Museum.cpp.o" \
 "CMakeFiles/ClionProject.dir/Observer.cpp.o" \
 "CMakeFiles/ClionProject.dir/Office.cpp.o" \
+"CMakeFiles/ClionProject.dir/OpenField.cpp.o" \
 "CMakeFiles/ClionProject.dir/Park.cpp.o" \
 "CMakeFiles/ClionProject.dir/People.cpp.o" \
 "CMakeFiles/ClionProject.dir/PoliceStation.cpp.o" \
@@ -1205,6 +1278,7 @@ ClionProject_OBJECTS = \
 "CMakeFiles/ClionProject.dir/Residential.cpp.o" \
 "CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o" \
 "CMakeFiles/ClionProject.dir/Resources.cpp.o" \
+"CMakeFiles/ClionProject.dir/Road.cpp.o" \
 "CMakeFiles/ClionProject.dir/Save.cpp.o" \
 "CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o" \
 "CMakeFiles/ClionProject.dir/Saves.cpp.o" \
@@ -1221,6 +1295,7 @@ ClionProject_OBJECTS = \
 "CMakeFiles/ClionProject.dir/TrainStation.cpp.o" \
 "CMakeFiles/ClionProject.dir/Transport.cpp.o" \
 "CMakeFiles/ClionProject.dir/Utilities.cpp.o" \
+"CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o" \
 "CMakeFiles/ClionProject.dir/Vehicle.cpp.o" \
 "CMakeFiles/ClionProject.dir/WasteManagement.cpp.o" \
 "CMakeFiles/ClionProject.dir/WaterPlant.cpp.o" \
@@ -1247,6 +1322,7 @@ ClionProject: CMakeFiles/ClionProject.dir/Commercial.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Complex.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o
+ClionProject: CMakeFiles/ClionProject.dir/Coordinate.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/DemoMain.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Department.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o
@@ -1266,6 +1342,7 @@ ClionProject: CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Industrial.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o
+ClionProject: CMakeFiles/ClionProject.dir/Intersection.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Labour.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Landmarks.cpp.o
@@ -1275,6 +1352,7 @@ ClionProject: CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Museum.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Observer.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Office.cpp.o
+ClionProject: CMakeFiles/ClionProject.dir/OpenField.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Park.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/People.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/PoliceStation.cpp.o
@@ -1286,6 +1364,7 @@ ClionProject: CMakeFiles/ClionProject.dir/Red.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Residential.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Resources.cpp.o
+ClionProject: CMakeFiles/ClionProject.dir/Road.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Save.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Saves.cpp.o
@@ -1302,6 +1381,7 @@ ClionProject: CMakeFiles/ClionProject.dir/TownHall.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/TrainStation.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Transport.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Utilities.cpp.o
+ClionProject: CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Vehicle.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/WasteManagement.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/WaterPlant.cpp.o
@@ -1314,7 +1394,7 @@ ClionProject: _deps/ftxui-build/libftxui-component.a
 ClionProject: _deps/ftxui-build/libftxui-dom.a
 ClionProject: _deps/ftxui-build/libftxui-screen.a
 ClionProject: CMakeFiles/ClionProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_78) "Linking CXX executable ClionProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_83) "Linking CXX executable ClionProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClionProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

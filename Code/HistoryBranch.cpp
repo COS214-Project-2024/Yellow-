@@ -73,7 +73,7 @@ void HistoryBranch::setBranchID(string branchID)
     this->branchID = branchID;
 }
 
-void HistoryBranch::startAltHistory(Varibals *cityData)
+void HistoryBranch::startAltHistory(Save *cityData)
 {
     if (this->current != nullptr)
     {
@@ -87,7 +87,7 @@ void HistoryBranch::startAltHistory(Varibals *cityData)
         newBranch->getHead()->setPrevious(this->current);
 
         // Set the ID of the branch to numberOfBranchPointNode.alternatives.size() + 1
-        newBranch->setBranchID(this->current->generateAltBranchID());
+        newBranch->setBranchID(generateAltBranchID(this->current));
 
         // Set the ID of the new node to branchID.1.
         newBranch->getHead()->setName("1");
@@ -105,6 +105,65 @@ void HistoryBranch::startAltHistory(Varibals *cityData)
             std::cout << "Parent branch ID: " << branch->getParentBranch()->getBranchID() << std::endl;
         }
     }
+}
+
+void HistoryBranch::removeBranch(string letter)
+{
+    // Check if the current node has alternatives
+    if (this->current->getAlternatives().empty())
+    {
+        return;
+    }
+
+    // Find the branch to remove
+    HistoryBranch *branchToRemove = nullptr;
+    for (HistoryBranch *branch : this->current->getAlternatives())
+    {
+        if (branch->getBranchAlpha() == letter)
+        {
+            branchToRemove = branch;
+            break;
+        }
+    }
+
+    // Check if the branch was found
+    if (branchToRemove == nullptr)
+    {
+        return;
+    }
+
+    // Remove the branch from the alternatives vector
+    for (auto it = this->current->getAlternativesByRef().begin(); it != this->current->getAlternativesByRef().end(); ++it)
+    {
+        if (*it == branchToRemove)
+        {
+            this->current->getAlternativesByRef().erase(it);
+            break;
+        }
+    }
+
+    // Delete the branch
+    delete branchToRemove;
+}
+
+string HistoryBranch::getBranchAlpha(){
+    string branchNumber = "";
+    branchNumber = this->branchID.substr(this->branchID.find("_"), this->branchID.size());
+    return branchNumber;
+}
+
+string HistoryBranch::generateAltBranchID(HistoryNode* branchPointNode)
+{
+    int count = branchPointNode->getAlternatives().size() - 1;
+    string altIdentifier;
+
+    while (count >= 0)
+    {
+        altIdentifier.insert(altIdentifier.begin(), 'a' + (count % 26));
+        count = count / 26 - 1; // Decrement count correctly to handle the next character
+    }
+
+    return branchPointNode->getName() + "_" + altIdentifier;
 }
 
 void HistoryBranch::addToAllBranchPoints(HistoryNode *branchPoint)
@@ -140,7 +199,7 @@ vector<HistoryNode *> HistoryBranch::getAllBranchPoints() const
     return this->allBranchPoints;
 }
 
-void HistoryBranch::addNode(Varibals *cityData)
+void HistoryBranch::addNode(Save *cityData)
 {
     string name = "";
     if (this->head == nullptr)

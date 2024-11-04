@@ -1,11 +1,11 @@
-#include "Save.h"
+// #include "Save.h"
 
-SystemState* Save::getSystemState() {
-	return systemState;
-}
+// Varibals* Save::getSystemState() {
+// 	return systemState;
+// }
 
-void Save::setSystemState(SystemState *sState)
-{
-	this->systemState = sState;
-}
+// void Save::setSystemState(Varibals *sState)
+// {
+// 	this->systemState = sState;
+// }
 

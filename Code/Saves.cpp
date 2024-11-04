@@ -1,29 +1,17 @@
 #include "Saves.h"
+#include <iostream>
 
-void Saves::storeSave(Save* save){
-    saves.push_back(save);
+using namespace std;
+
+Saves::Saves()
+{
+    this->currentBranchPath = "M";
+    this->historyTree = new HistoryBranch();
+    this->cursor = this->historyTree->getHead();
 }
 
-Save* Saves::getSave(int index){
-    if (this->saves.size() <= 0) {
-        throw "No saves available";
-        return nullptr;
-    }
-
-    if (index < 0 || index >= this->saves.size()) {
-        throw "Invalid save number";
-        return nullptr;
-    }
-
-    Save* save = this->saves[index];
-    return save;
+Saves::~Saves()
+{
+    delete this->historyTree;
 }
 
-
-void Saves::printAllSaves() {
-    for (size_t i = 0; i < saves.size(); ++i)
-    {
-        cout << "Save " << i << ": ";
-        saves[i]->getSystemState()->printState();
-    }
-}

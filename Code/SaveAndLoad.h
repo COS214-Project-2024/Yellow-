@@ -1,35 +1,32 @@
-#ifndef SAVEANDLOAD_H
-#define SAVEANDLOAD_H
+// #ifndef SAVEANDLOAD_H
+// #define SAVEANDLOAD_H
 
-#include "SystemState.h"
-#include "Save.h"
-#include "Saves.h"
-#include "HistoryNode.h"
+// #include "Saves.h"
+// #include "HistoryBranch.h"
+// #include "HistoryNode.h"
+// #include "City.h"
+// #include <string>
 
+// class SaveAndLoad
+// {
+// private:
+// 	HistoryBranch *historyBranch;
+// 	HistoryNode *centralisedPointer;
+// 	string currentBranchPath; //example: M.3_a.2_b.21_ab;
+// 	Saves *saves;
 
-class SaveAndLoad {
+// public:
+// 	SaveAndLoad();
+// 	~SaveAndLoad();
+// 	void saveState();
+// 	void startAltHistory();
+// 	void loadState();
+// 	void removeNode();
+// 	void moveForward();
+// 	void moveBack();
+// 	void selectBranch(string branchPath);
+// 	void printCurrentBranch();
+// 	void printAllBranchPoints();
+// };
 
-private:
-	SystemState* currentSave;
-	HistoryNode* currHN; //currentHistoryNode - centralized history node
-	// FOR TESTING
-	static int dummyInt;
-
-public:
-	Save* createSave();
-
-	// void SaveSystem(Save *save);
-	void saveSystem(Saves *saves);
-	void loadSystem(int saveNum, Saves *saves);
-	SystemState* getCurrentSystemState();
-	// FOR TESTING
-	SaveAndLoad();
-	void printCurrentSave();
-};
-
-#endif
-
-/*Visual Paradigm Changes:
-	+ saveSystem(Saves* saves) : void
-	+ loadSystem(saveNum : int, Saves *saves) : void
-*/
+// #endif // SAVEANDLOAD_H

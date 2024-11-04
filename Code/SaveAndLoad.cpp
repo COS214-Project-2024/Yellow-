@@ -1,48 +1,24 @@
-#include "SaveAndLoad.h"
+// #include "SaveAndLoad.h"
+// #include <iostream>
+// #include <sstream>
 
-int SaveAndLoad::dummyInt = 0;
+// using namespace std;
 
-Save* SaveAndLoad::createSave() {
-	//create memento
-		//memento is Save with SystemState in it.
-	SystemState* currentState = new SystemState();
+// SaveAndLoad::SaveAndLoad()
+// {
+// 	this->historyBranch = nullptr;
+// 	this->saves = new Saves();
+// 	this->centralisedPointer = nullptr;
+// 	this->currentBranchPath = "M";
+// }
 
-	//FOR TESTING
-	currentState->dummyInt = dummyInt;
-	currentState->dummyString = "Testing_" + to_string(dummyInt);
-	dummyInt++;
+// SaveAndLoad::~SaveAndLoad()
+// {
+// 	delete this->saves;
+// }
 
-	Save* save = new Save();
-	save->setSystemState(currentState);
-
-	return save;
-}
-
-void SaveAndLoad::saveSystem(Saves* saves) {
-	Save* save = createSave();
-	saves->storeSave(save);
-}
-
-void SaveAndLoad::loadSystem(int saveNum, Saves *saves) {
-	Save* save = saves->getSave(saveNum);
-	currentSave = save->getSystemState();
-}
-
-SystemState* SaveAndLoad::getCurrentSystemState() {
-	return currentSave;
-}
-
-void SaveAndLoad::printCurrentSave()
-{
-	if (currentSave) {
-		currentSave->printState();
-	}
-	else {
-		cout << "No current save loaded." << endl;
-	}
-}
-
-SaveAndLoad::SaveAndLoad() {
-	currentSave = nullptr;
-	dummyInt = 0;
-}
+// void SaveAndLoad::saveState()
+// {
+// 	// Save the current state of the system
+// 	this->saves->Save();
+// }

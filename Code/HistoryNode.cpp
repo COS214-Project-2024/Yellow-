@@ -8,7 +8,7 @@ HistoryNode::HistoryNode() {
     this->cityData = nullptr;
 }
 
-HistoryNode::HistoryNode(string name, Varibals* cityData) {
+HistoryNode::HistoryNode(string name, Save* cityData) {
     this->name = name;
     this->previous = nullptr;
     this->next = nullptr;
@@ -68,19 +68,6 @@ void HistoryNode::addAltHistory(HistoryBranch* branch) {
     branch->getHead()->setPrevious(this);
 }
 
-string HistoryNode::generateAltBranchID()
-{
-    int count = this->alternatives.size()-1;
-    string altIdentifier;
-
-    while (count >= 0)
-    {
-        altIdentifier.insert(altIdentifier.begin(), 'a' + (count % 26));
-        count = count / 26 - 1; // Decrement count correctly to handle the next character
-    }
-
-    return this->name + altIdentifier;
-}
 
 HistoryNode* HistoryNode::getNext() {
     return this->next;
@@ -104,10 +91,10 @@ void HistoryNode::setAlternatives(vector<HistoryBranch *> newAlternatives)
     alternatives = newAlternatives;
 }
 
-void HistoryNode::setData (Varibals* cityData) {
+void HistoryNode::setData (Save* cityData) {
     this->cityData = cityData;
 }
 
-Varibals* HistoryNode::getData() {
+Save* HistoryNode::getData() {
     return this->cityData;
 }

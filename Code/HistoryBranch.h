@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <string>
-#include "City.h"
+#include "Save.h"
 
 class HistoryNode; // Forward declaration
 
@@ -31,9 +31,12 @@ class HistoryBranch{
         string getBranchID();
         void setBranchID(string branchID);
         void setCurrent(string path);
-        void addNode(Varibals *cityData);
-        void startAltHistory(Varibals *cityData);
-        void addToAllBranchPoints(HistoryNode* branchPoint);
+        void addNode(Save *cityData);
+        void startAltHistory(Save *cityData);
+        void removeBranch(string letter);
+        string getBranchAlpha();
+        string generateAltBranchID(HistoryNode* branchPointNode);
+        void addToAllBranchPoints(HistoryNode *branchPoint);
         vector <HistoryNode*> getAllBranchPoints() const;
         void removeFromAllBranchPoints(HistoryNode *branchPoint);
         string generateAlternativeName(const string &branchRootName, int count);

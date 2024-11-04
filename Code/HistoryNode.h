@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <string>
-#include "City.h"
+#include "Save.h"
 
 class HistoryBranch; // Forward declaration
 
@@ -14,12 +14,12 @@ class HistoryNode {
         HistoryNode* previous;
         HistoryNode* next;
         vector <HistoryBranch*> alternatives;
-        Varibals* cityData;
+        Save* cityData;
         string name;
 
     public:
         HistoryNode(); //default constructor
-        HistoryNode(string name, Varibals *cityData); //constructor
+        HistoryNode(string name, Save *cityData); //constructor
         HistoryNode(HistoryNode* other); //copy constructor
         ~HistoryNode();
         void setName(string name);
@@ -28,14 +28,13 @@ class HistoryNode {
         HistoryNode* getPrevious();
         void startAltHistory(HistoryBranch *branch);
         void addAltHistory(HistoryBranch* branch);
-        string generateAltBranchID();
         HistoryNode *getNext();
         void setNext(HistoryNode* next);
         vector <HistoryBranch*> getAlternatives();
         std::vector<HistoryBranch *> &getAlternativesByRef();
         void setAlternatives(vector<HistoryBranch *> newAlternatives);
-        void setData(Varibals *cityData);
-        Varibals* getData();
+        void setData(Save *cityData);
+        Save* getData();
 
     
 };

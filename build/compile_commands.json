@@ -103,6 +103,12 @@
 },
 {
   "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
+  "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/Coordinate.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Coordinate.cpp\"",
+  "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Coordinate.cpp",
+  "output": "CMakeFiles/ClionProject.dir/Coordinate.cpp.o"
+},
+{
+  "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
   "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/DemoMain.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/DemoMain.cpp\"",
   "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/DemoMain.cpp",
   "output": "CMakeFiles/ClionProject.dir/DemoMain.cpp.o"
@@ -217,6 +223,12 @@
 },
 {
   "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
+  "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/Intersection.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Intersection.cpp\"",
+  "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Intersection.cpp",
+  "output": "CMakeFiles/ClionProject.dir/Intersection.cpp.o"
+},
+{
+  "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
   "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/Labour.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Labour.cpp\"",
   "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Labour.cpp",
   "output": "CMakeFiles/ClionProject.dir/Labour.cpp.o"
@@ -268,6 +280,12 @@
   "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/Office.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Office.cpp\"",
   "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Office.cpp",
   "output": "CMakeFiles/ClionProject.dir/Office.cpp.o"
+},
+{
+  "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
+  "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/OpenField.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/OpenField.cpp\"",
+  "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/OpenField.cpp",
+  "output": "CMakeFiles/ClionProject.dir/OpenField.cpp.o"
 },
 {
   "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
@@ -334,6 +352,12 @@
   "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/Resources.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Resources.cpp\"",
   "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Resources.cpp",
   "output": "CMakeFiles/ClionProject.dir/Resources.cpp.o"
+},
+{
+  "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
+  "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/Road.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Road.cpp\"",
+  "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Road.cpp",
+  "output": "CMakeFiles/ClionProject.dir/Road.cpp.o"
 },
 {
   "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
@@ -430,6 +454,12 @@
   "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/Utilities.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Utilities.cpp\"",
   "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/Utilities.cpp",
   "output": "CMakeFiles/ClionProject.dir/Utilities.cpp.o"
+},
+{
+  "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",
+  "command": "/usr/bin/g++  -isystem \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-src/include\" -g -std=gnu++23 -o CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o -c \"/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/UtilityFactory.cpp\"",
+  "file": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/UtilityFactory.cpp",
+  "output": "CMakeFiles/ClionProject.dir/UtilityFactory.cpp.o"
 },
 {
   "directory": "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build",

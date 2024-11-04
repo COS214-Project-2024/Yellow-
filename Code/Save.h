@@ -2,24 +2,21 @@
 #define SAVE_H
 
 #include "SystemState.h"
+#include "City.h"
+#include "Map.h"
 
 class Save {
 
 private:
-	SystemState* systemState;
+    Map* map;
+	Varibals* systemState;
 
 public:
-	SystemState *getSystemState();
+	Varibals* getSystemState();
+	void setSystemState(Varibals *sState);
 
-	void setSystemState(SystemState *sState);
+    Map* getMap();
+    void setMap(Map *map);
 };
 
 #endif
-
-
-/*
-Visual Paradigm Changes:
-	+ getSave() : SystemState*
-	+ setSave(sState : SystemState*) : void
-
-*/
