@@ -19,7 +19,7 @@ public:
 	Forestry();
 	void createBuildingResource() override;
 	void setIcon() override;
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

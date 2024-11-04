@@ -19,7 +19,7 @@ class House : public Residential {
 public:
 	House();
 	void setIcon() override;
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

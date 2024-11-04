@@ -14,7 +14,7 @@
 class TownHall : public Service {
 public:
     TownHall();
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

@@ -17,7 +17,7 @@ class Airport : public Service{
     public:
         Airport();
         void setIcon() override;
-        Cell* clone() override;
+        Cell* clone();
 private:
     /*
     string destinations1;
