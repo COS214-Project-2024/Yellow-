@@ -23,7 +23,7 @@ void Resources::printResources()
     cout << "Population: " << population << endl;
     cout << "Budget: " << budget << endl;
     cout << "Moral: " << morale << "/100" << endl;
-    cout << "Concrete: " << concrete << endl;
+    cout << "Concrete: " << getConcrete() << endl;
     cout << "Steel: " << steel << endl;
     cout << "Wood: " << wood << endl;
     cout << "Power: " << powerUsage << "/" << powerGrid << endl;
@@ -106,77 +106,77 @@ void Resources::setWage(float newWage)
 }
 
 // Getters
-int Resources::getConcrete() const 
+int Resources::getConcrete() 
 { 
     return concrete; 
 }
 
-int Resources::getSteel() const 
+int Resources::getSteel() 
 { 
     return steel; 
 }
 
-int Resources::getWood() const 
+int Resources::getWood() 
 { 
     return wood; 
 }
 
-int Resources::getPowerGrid() const 
+int Resources::getPowerGrid() 
 { 
     return powerGrid; 
 }
 
-int Resources::getPowerUsage() const 
+int Resources::getPowerUsage() 
 { 
     return powerUsage; 
 }
 
-int Resources::getWaterGrid() const 
+int Resources::getWaterGrid() 
 { 
     return waterGrid; 
 }
 
-int Resources::getWaterUsage() const 
+int Resources::getWaterUsage() 
 { 
     return waterUsage; 
 }
 
-float Resources::getBudget() const 
+float Resources::getBudget() 
 { 
     return budget; 
 }
 
-int Resources::getPopulation() const 
+int Resources::getPopulation() 
 { 
     return population; 
 }
 
-int Resources::getMorale() const 
+int Resources::getMorale() 
 { 
     return morale; 
 }
 
-int Resources::getBusinessTax() const
+int Resources::getBusinessTax()
 {
     return businessTaxRate;
 }
 
-float Resources::getPropertyTaxRate() const
+float Resources::getPropertyTaxRate()
 {
     return propertyTaxRate;
 }
 
-float Resources::getIncomeTaxRate() const
+float Resources::getIncomeTaxRate()
 {
     return incomeTaxRate;
 }
 
-float Resources::getBusinessTaxRate() const
+float Resources::getBusinessTaxRate()
 {
     return businessTaxRate;
 }
 
-float Resources::getWage() const
+float Resources::getWage()
 {
     return wage;
 }
