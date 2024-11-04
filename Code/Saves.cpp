@@ -1,7 +1,6 @@
 #include "Saves.h"
 #include <iostream>
-//*.gcda
-//*.gcno
+
 using namespace std;
 
 Saves::Saves()

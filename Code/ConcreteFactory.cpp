@@ -15,7 +15,8 @@ ConcreteFactory::ConcreteFactory() : Industrial("ConcreteFactory")
 void ConcreteFactory::createBuildingResource()
 {
     City c = City::instanceCity();
-    c.stuff.res->setConcrete(c.stuff.res->getConcrete() + productionPerCell*coordinates.size()); // + any number - 90 chosen at random
+    int oldAmount = c.stuff.res->getConcrete();
+    c.stuff.res->setConcrete(oldAmount + productionPerCell*coordinates.size()); // + any number - 90 chosen at random
 }
 
 void ConcreteFactory::setIcon()

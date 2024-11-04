@@ -42,12 +42,13 @@ class Government {
     public:
         Government();
         ~Government(){
-            delete peopleState;
-            delete budgetState;
-            delete disatisfactionState;
-            delete strategy;
-            uniqueInstanceGov = nullptr;
+            // delete peopleState;
+            // delete budgetState;
+            // delete disatisfactionState;
+            // delete strategy;
+            // uniqueInstanceGov = nullptr;
         };
+        friend class City;
 
         //Strategy methods
         Policies* implementPolicy(string stateType, string prevState, string currState);

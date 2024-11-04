@@ -3,6 +3,7 @@ cmake-build-debug/
 main.cpp
 Main.cpp
 .vscode/
+CMakeLists.txt
 Main.h
 main.h
 Main.cpp/
