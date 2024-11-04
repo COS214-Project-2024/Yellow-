@@ -16,10 +16,10 @@ private:
 	float budget;
     int population;
     int morale;
-	int businessTax;
-	int propertyTax;
-	int incomeTax;
-
+	float propertyTaxRate;
+	float incomeTaxRate;
+	float businessTaxRate;
+	float wage;
 public:
 
     Resources();
@@ -36,9 +36,10 @@ public:
     void setBudget(float newValue);
     void setPopulation(int newValue);
     void setMorale(int newValue);
-    void setBusinessTax(int newValue);
-    void setPropertyTax(int newValue);
-    void setIncomeTax(int newValue);
+    void setBusinessTaxRate(float newRate);
+    void setPropertyTaxRate(float newRate);
+    void setIncomeTaxRate(float newRate);
+	void setWage(float newWage);
 
     // Getters
     int getConcrete() const;
@@ -52,8 +53,10 @@ public:
     int getPopulation() const;
     int getMorale() const;
     int getBusinessTax() const;
-    int getPropertyTax() const;
-    int getIncomeTax() const;
+    float getPropertyTaxRate() const;
+    float getIncomeTaxRate() const;
+	float getBusinessTaxRate() const;
+	float getWage() const;
 };
 
 #endif

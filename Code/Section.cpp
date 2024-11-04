@@ -8,7 +8,20 @@ vector<Section *> Section::getChildren()
     return emptyChild;
 }
 
-Section::~Section()
+void Section::setIcon()
 {
-    
+}
+
+Cell *Section::clone()
+{
+    return nullptr;
+}
+
+float Section::getMoney()
+{
+    return 0.0f;
+}
+
+void Section::setMoney(float newAmount)
+{
 }

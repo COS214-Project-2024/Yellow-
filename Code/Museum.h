@@ -8,9 +8,9 @@ class Museum : public Landmarks {
 
 
 public:
-	float taxBuilding();
 	Museum();
 	void createBuildingResource() override;
+    Cell* clone() override;
 };
 
 #endif

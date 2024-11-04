@@ -7,8 +7,8 @@ class SteelFactory : public Industrial {
 
 public:
 	SteelFactory();
-	float taxBuilding();
 	void createBuildingResource() override;
+    Cell* clone() override;
 };
 
 #endif

@@ -7,8 +7,9 @@ class Forestry : public Industrial {
 
 public:
 	Forestry();
-	float taxBuilding();
 	void createBuildingResource() override;
+	void setIcon() override;
+    Cell* clone() override;
 };
 
 #endif

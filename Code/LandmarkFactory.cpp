@@ -1,108 +1,116 @@
 #include "LandmarkFactory.h"
 
-Landmarks* LandmarkFactory::createPark() {
-    if (useBuildingResources(150,150,150,650))
-	    return new Park();
-    return nullptr;
+Cell* LandmarkFactory::createPark(vector<Coordinate> coordinates) {
+    int cells = coordinates.size();
+    if (useBuildingResources(150,150,150,650,cells) == false)
+        return nullptr;
+    Park* p = new Park();
+    p->setCoordinates(coordinates);
+    p->setProductionRate(1);
+    return p;
 }
 
-Landmarks* LandmarkFactory::createMuseum() {
-    if (useBuildingResources(150,150,150,650))
-	    return new Museum();
-    return nullptr;
+Cell* LandmarkFactory::createMuseum(vector<Coordinate> coordinates) {
+    int cells = coordinates.size();
+    if (useBuildingResources(150,150,150,650,cells) == false)
+        return nullptr;
+    Museum* m = new Museum();
+    m->setCoordinates(coordinates);
+    m->setProductionRate(1);
+    return m;
 }
 
-Service *LandmarkFactory::createHospital()
+Cell *LandmarkFactory::createHospital(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *LandmarkFactory::createTownHall()
+Cell *LandmarkFactory::createTownHall(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Utilities *LandmarkFactory::createWaterPlant()
+Cell *LandmarkFactory::createWaterPlant(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Utilities *LandmarkFactory::createPowerPlant()
+Cell *LandmarkFactory::createPowerPlant(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Utilities *LandmarkFactory::createWastePlant()
+Cell *LandmarkFactory::createWastePlant(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *LandmarkFactory::createSchool()
+Cell *LandmarkFactory::createSchool(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *LandmarkFactory::createTrainStation()
+Cell *LandmarkFactory::createTrainStation(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *LandmarkFactory::createAirport()
+Cell *LandmarkFactory::createAirport(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Service *LandmarkFactory::createPoliceStation()
+Cell *LandmarkFactory::createPoliceStation(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *LandmarkFactory::createHouse()
+Cell *LandmarkFactory::createHouse(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *LandmarkFactory::createApartment()
+Cell *LandmarkFactory::createApartment(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *LandmarkFactory::createComplex()
+Cell *LandmarkFactory::createComplex(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Residential *LandmarkFactory::createHouseHold()
+Cell *LandmarkFactory::createHouseHold(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Industrial *LandmarkFactory::createForestry()
+Cell *LandmarkFactory::createForestry(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Industrial *LandmarkFactory::createSteelFactory()
+Cell *LandmarkFactory::createSteelFactory(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Industrial *LandmarkFactory::createConcreteFactory()
+Cell *LandmarkFactory::createConcreteFactory(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *LandmarkFactory::createShop()
+Cell *LandmarkFactory::createShop(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *LandmarkFactory::createOffice()
+Cell *LandmarkFactory::createOffice(vector<Coordinate> coordinates)
 {
     return nullptr;
 }
 
-Commercial *LandmarkFactory::createMall()
+Cell *LandmarkFactory::createMall(vector<Coordinate> coordinates)
 {
     return nullptr;
 }

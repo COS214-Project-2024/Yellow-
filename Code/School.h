@@ -4,6 +4,7 @@
 class School : public Service {
     public:
         School();
+        Cell* clone() override;
 };
 
 #endif

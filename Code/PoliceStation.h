@@ -4,6 +4,7 @@
 class PoliceStation : public Service {
     public:
     PoliceStation();
+    Cell* clone() override;
 };
 
 #endif

@@ -13,9 +13,9 @@ Resources::Resources()
 	budget = 10000;
     population = 10;
     morale = 60;
-    businessTax = 5;
-    propertyTax = 7;
-    incomeTax = 10;
+    businessTaxRate = 5.0;
+    propertyTaxRate = 7.0;
+    incomeTaxRate = 10.0;
 }
 
 void Resources::printResources()
@@ -28,9 +28,9 @@ void Resources::printResources()
     cout << "Wood: " << wood << endl;
     cout << "Power: " << powerUsage << "/" << powerGrid << endl;
     cout << "Water: " << waterUsage << "/" << waterGrid << endl;
-    cout << "Business Tax: " << businessTax << "%" << endl;
-    cout << "Property Tax: " << propertyTax << "%" << endl;
-    cout << "Income Tax: " << incomeTax << "%" << endl;
+    cout << "Business Tax: " << businessTaxRate << "%" << endl;
+    cout << "Property Tax: " << propertyTaxRate << "%" << endl;
+    cout << "Income Tax: " << incomeTaxRate << "%" << endl;
     cout << "====================================" << endl;
 }
 
@@ -85,21 +85,25 @@ void Resources::setMorale(int newValue)
     morale = min(newValue, 100);
 }
 
-void Resources::setBusinessTax(int newValue) 
-{ 
-    businessTax = newValue; 
+void Resources::setPropertyTaxRate(float newRate)
+{
+    propertyTaxRate = newRate;
 }
 
-void Resources::setPropertyTax(int newValue) 
-{ 
-    propertyTax = newValue; 
+void Resources::setIncomeTaxRate(float newRate)
+{
+    incomeTaxRate = newRate;
 }
 
-void Resources::setIncomeTax(int newValue) 
-{ 
-    incomeTax = newValue; 
+void Resources::setBusinessTaxRate(float newRate)
+{
+    businessTaxRate = newRate;
 }
 
+void Resources::setWage(float newWage)
+{
+    wage = newWage;
+}
 
 // Getters
 int Resources::getConcrete() const 
@@ -152,18 +156,22 @@ int Resources::getMorale() const
     return morale; 
 }
 
-int Resources::getBusinessTax() const 
-{ 
-    return businessTax; 
+float Resources::getPropertyTaxRate() const
+{
+    return propertyTaxRate;
 }
 
-int Resources::getPropertyTax() const 
-{ 
-    return propertyTax; 
+float Resources::getIncomeTaxRate() const
+{
+    return incomeTaxRate;
 }
 
-int Resources::getIncomeTax() const 
-{ 
-    return incomeTax; 
+float Resources::getBusinessTaxRate() const
+{
+    return businessTaxRate;
 }
 
+float Resources::getWage() const
+{
+    return wage;
+}

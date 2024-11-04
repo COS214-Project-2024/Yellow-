@@ -2,9 +2,17 @@
 
 HouseHold::HouseHold() : Residential("Household")
 {
+    maxCitizens = 10;
 }
 
-float HouseHold::taxBuilding()
+Cell *HouseHold::clone()
 {
-    return 0.0f;
+    Cell* c = new HouseHold();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}
+
+void HouseHold::setIcon()
+{
 }

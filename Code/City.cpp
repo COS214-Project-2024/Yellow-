@@ -1,5 +1,6 @@
 #include "City.h"
-
+#include <typeinfo>
+#include "Buildings.h"
 City::City()
 {
 	stuff.res = new Resources();
@@ -37,7 +38,7 @@ void City::collection()
 	//Collect Taxes
 	//stuff.res->setMorale(stuff.res->getMorale() +50);
 	
-	stuff.res->setBudget(stuff.res->getBudget() + stuff.res->getBudget() * (stuff.res->getBusinessTax() + stuff.res->getIncomeTax() + stuff.res->getPropertyTax())/100);
+	stuff.res->setBudget(stuff.res->getBudget() + stuff.res->getBudget() * (stuff.res->getBusinessTaxRate() + stuff.res->getIncomeTaxRate() + stuff.res->getPropertyTaxRate())/100);
 }
 
 void City::dealWithPolicies()
@@ -95,13 +96,13 @@ void City::dealWithPolicies()
 	if (orderBudget) {
         for (const auto& material : orderBudget->materials) {
             if (material.first == "PropertyTax") {
-                stuff.res->setPropertyTax(stuff.res->getPropertyTax() + material.second);
+                stuff.res->setPropertyTaxRate(stuff.res->getPropertyTaxRate() + material.second);
                 stuff.res->setMorale(stuff.res->getMorale() - 1);
             } else if (material.first == "IncomeTax") {
-                stuff.res->setIncomeTax(stuff.res->getIncomeTax() + material.second);
+                stuff.res->setIncomeTaxRate(stuff.res->getIncomeTaxRate() + material.second);
                 stuff.res->setMorale(stuff.res->getMorale() - 1);
             } else if (material.first == "BusinessTax") {
-                stuff.res->setBusinessTax(stuff.res->getBusinessTax() + material.second);
+                stuff.res->setBusinessTaxRate(stuff.res->getBusinessTaxRate() + material.second);
                 stuff.res->setMorale(stuff.res->getMorale() - 1);
             }
         }

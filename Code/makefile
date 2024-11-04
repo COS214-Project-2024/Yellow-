@@ -37,3 +37,4 @@ c:
 
 cgov:
 	rm *.o main *.gcda *.gcno *.gcov
+

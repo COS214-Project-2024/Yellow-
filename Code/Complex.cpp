@@ -2,10 +2,17 @@
 
 Complex::Complex() : Residential("Complex")
 {
+    maxCitizens = 15;
 }
 
-float Complex::taxBuilding()
+Cell *Complex::clone()
 {
-    // TODO - implement Complex::taxBuilding
-	throw "Not yet implemented";
+    Cell* c = new Complex();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}
+
+void Complex::setIcon()
+{
 }

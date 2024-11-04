@@ -1,6 +1,6 @@
 #ifndef CITY_H
 #define CITY_H
-
+#include <vector>
 #include "Resources.h"
 #include "Government.h"
 #include "Section.h"
@@ -21,7 +21,6 @@ struct Varibals
 	Population* population;
 	Resources* res;
 	Section* head;
-	Map* map;
 	People* people;
     Budget* budget;
     Disatisfaction* dissatisfaction;
@@ -43,6 +42,8 @@ class City {
 		void nextIteration();
 		void collection();
 		void dealWithPolicies();
+
+		void addBuilding(Cell *newBuilding);
 };
 
 #endif

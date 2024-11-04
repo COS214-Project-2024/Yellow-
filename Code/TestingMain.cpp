@@ -5,6 +5,7 @@
 #include "ResidentialFactory.h"
 #include "CommercialFactory.h"
 #include "ServiceFactory.h"
+#include "UtilityFactory.h"
 #include "Block.h"
 #include "Visitor.h"
 #include "Section.h"
