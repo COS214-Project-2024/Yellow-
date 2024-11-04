@@ -57,7 +57,7 @@ TEST_CASE("City Test")
     {
         City::instanceCity().nextIteration();
     }
-    
+
 }
 
 // TEST_CASE("Visitor")
@@ -474,7 +474,7 @@ TEST_CASE("City Test")
 //         std::streambuf* coutBuf = std::cout.rdbuf();
 //         std::cout.rdbuf(oss.rdbuf());
 
-//         population.notify(); 
+//         population.notify();
 
 //         std::cout.rdbuf(coutBuf);  // Restore std::cout
 //         std::string output = oss.str();
