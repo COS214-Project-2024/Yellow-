@@ -1,0 +1,25 @@
+name: Run Tests on Main Merge
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  
+
+      - name: Set up C++ compiler
+        run: sudo apt-get update && sudo apt-get install -y g++ cmake
+
+      - name: Build project
+        run: |
+          cmake -S . -B build       
+          cmake --build build      
+
+      - name: Run TestingMain
+        run: ./build/TestingMain    
