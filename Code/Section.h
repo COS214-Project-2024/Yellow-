@@ -37,8 +37,12 @@ public:
 	
 	virtual void createBuildingResource() = 0;
 
-	float getMoney() override;
-	void setMoney(float newAmount) override;
+	float getMoney();
+	void setMoney(float newAmount);
+
+    virtual void setProductionRate(int newRate);
+    virtual void taxBuilding();
+    virtual void addCitizenToBuilding(Citizen* newCitizen);
 };
 
 #endif

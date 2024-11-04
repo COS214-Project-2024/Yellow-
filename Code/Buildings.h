@@ -25,9 +25,9 @@ protected:
 public:
 	Buildings(string cellType);
 
-	float getMoney() override;
+	float getMoney();
 
-	void setMoney(float newAmount) override;
+	void setMoney(float newAmount);
 	
 	int getMaxCitizens();
 
