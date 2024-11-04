@@ -13,6 +13,11 @@ City::City()
     stuff.dissatisfaction = new Disatisfaction(new Green());
 }
 
+void City::setHead(Section* head)
+{
+
+}
+
 City &City::instanceCity()
 {
     static City onlyInstance;

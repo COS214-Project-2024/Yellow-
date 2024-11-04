@@ -38,6 +38,7 @@ class City {
 	public:
 		Varibals stuff;
 		City();
+		void setHead(Section* head);
 		//City(Section* head);
 		static City& instanceCity();
 		void nextIteration();
