@@ -45,11 +45,9 @@ void City::collection()
     vector<Cell*> building = stuff.head->getChildren();
     for(Cell* build : building)
     {
-        if (typeid(build) == typeid(Industrial*))
-        {
+
             build->createBuildingResource();
             build->taxBuilding();
-        }
     }
 }
 
