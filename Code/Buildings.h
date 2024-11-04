@@ -21,9 +21,9 @@ public:
     void setMoney(float newAmount) override;
 
     int getMaxCitizens();
-    void addSection(Section* section);
+    void addSection(Cell* section);
     void removeSection(int idx);
-    Section* getSection(int idx);
+    Cell* getSection(int idx);
     void acceptVisitor(Visitor* v);
 
     virtual void taxBuilding() = 0;

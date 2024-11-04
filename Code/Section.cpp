@@ -2,9 +2,9 @@
 
 Section::Section(string cellType) : Cell(cellType) {}
 
-vector<Section *> Section::getChildren()
+vector<Cell *> Section::getChildren()
 {
-    vector<Section*> emptyChild;
+    vector<Cell*> emptyChild;
     return emptyChild;
 }
 

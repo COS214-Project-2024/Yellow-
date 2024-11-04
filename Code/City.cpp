@@ -8,9 +8,6 @@ City::City()
 	prevMoral = 0;
 	prevBudget = 0;
 	prevPopulation = 0;
-	stuff.people = new People(new Green());
-    stuff.budget = new Budget(new Green());
-    stuff.dissatisfaction = new Disatisfaction(new Green());
 }
 
 void City::setHead(Section* head)
@@ -37,8 +34,8 @@ void City::nextIteration()
 
 void City::collection()
 {
-    vector<Section*> building = stuff.head->getChildren();
-    for(Section* build : building)
+    vector<Cell*> building = stuff.head->getChildren();
+    for(Cell* build : building)
     {
         if (typeid(build) == typeid(Industrial*))
         {

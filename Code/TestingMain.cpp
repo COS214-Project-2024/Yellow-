@@ -39,13 +39,12 @@ TEST_CASE("City Test")
     Section* test = new Block();
     Section* test2 = new Block();
 
-    Section* building1 = new Hospital();
-    Section* building2 = new Park();
-    Section* concrete = new ConcreteFactory();
+    IndustrialFactory* industrial = new IndustrialFactory();
+    Coordinate c1 = Coordinate();
+    vector<Coordinate> v1 = vector<Coordinate>();
+    v1.push_back(c1);
 
-    test->addSection(building1);
-    test->addSection(building2);
-    test->addSection(concrete);
+    test->addSection(industrial->createConcreteFactory(v1));
 
     City::instanceCity().setHead(test);
 

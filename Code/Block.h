@@ -10,7 +10,7 @@
 class Block : public Section {
 
 private:
-    vector<Section*> children;
+    vector<Cell*> children;
 
 	Buildings* building;
 
@@ -18,15 +18,15 @@ public:
 	Block();
 	~Block();
 
-	void addSection(Section* section);
+	void addSection(Cell* section);
 
 	void removeSection(int idx);
 
-	Section* getSection(int idx);
+	Cell* getSection(int idx);
 
 	void acceptVisitor(Visitor* v);
 
-	vector<Section*> getChildren();
+	vector<Cell*> getChildren();
 	
 	virtual Cell* clone();
 	

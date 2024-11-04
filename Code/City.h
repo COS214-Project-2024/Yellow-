@@ -22,9 +22,6 @@ struct Varibals
 	Population* population;
 	Resources* res;
 	Section* head;
-	People* people;
-    Budget* budget;
-    Disatisfaction* dissatisfaction;
 };
 
 class City {

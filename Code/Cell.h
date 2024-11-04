@@ -28,6 +28,7 @@ public:
     virtual void taxBuilding()=0;
 	virtual void payEmployees()=0;
     virtual float getMoney() = 0;
+    virtual vector<Cell*> getChildren(){}
 };
 
 
