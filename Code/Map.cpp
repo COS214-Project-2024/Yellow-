@@ -20,7 +20,7 @@ Map::Map(){
     map.resize(rows, vector<Cell*>(cols, nullptr));
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
-            map[i][j] = new OpenField();
+            //map[i][j] = new OpenField();
         }
     }
 }

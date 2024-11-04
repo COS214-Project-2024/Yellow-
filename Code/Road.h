@@ -21,10 +21,10 @@ protected:
 public:
     Road();
     vector<Cell*> buildings;
-    void setIcon() override;
+    void setIcon();
     void addBuilding(Cell* building);
     void removeBuilding(Cell* building);
-    Cell * clone() override;
+    Cell * clone();
     bool contains(Cell* object);
 };
 

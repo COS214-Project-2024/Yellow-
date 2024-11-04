@@ -19,7 +19,7 @@ class Commercial : public Buildings {
 public:
 	Commercial(string cellType);
 	
-	void taxBuilding() override;
+	void taxBuilding();
 
 	void acceptVisitor(Visitor* v);
 	
@@ -27,11 +27,11 @@ public:
 
 	virtual Cell* clone() = 0;
 
-	void payEmployees() override;
+	void payEmployees();
 	
-	void addCitizenToBuilding(Citizen* newCitizen) override;
+	void addCitizenToBuilding(Citizen* newCitizen);
 
-	void createBuildingResource() override;
+	void createBuildingResource();
 };
 
 #endif
