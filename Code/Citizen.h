@@ -1,3 +1,13 @@
+/**
+ * @file Citizen.h
+ * @author Rorisang Manamela
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef CITIZEN_H
 #define CITIZEN_H
 class Buildings;

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1417/bin/cmake
+CMAKE_COMMAND = /usr/local/homebrew/Cellar/cmake/3.30.5/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1417/bin/cmake -E rm -f
+RM = /usr/local/homebrew/Cellar/cmake/3.30.5/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code"
+CMAKE_SOURCE_DIR = /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build"
+CMAKE_BINARY_DIR = /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ClionProject.dir/depend.make
@@ -70,1054 +70,1040 @@ include CMakeFiles/ClionProject.dir/progress.make
 include CMakeFiles/ClionProject.dir/flags.make
 
 CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/AddPublicTransport.cpp
+CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/AddPublicTransport.cpp
 CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o -MF CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o.d -o CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/AddPublicTransport.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o -MF CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o.d -o CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/AddPublicTransport.cpp
 
 CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/AddPublicTransport.cpp" > CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/AddPublicTransport.cpp > CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.i
 
 CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/AddPublicTransport.cpp" -o CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/AddPublicTransport.cpp -o CMakeFiles/ClionProject.dir/AddPublicTransport.cpp.s
 
 CMakeFiles/ClionProject.dir/Airport.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Airport.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Airport.cpp
+CMakeFiles/ClionProject.dir/Airport.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Airport.cpp
 CMakeFiles/ClionProject.dir/Airport.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClionProject.dir/Airport.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Airport.cpp.o -MF CMakeFiles/ClionProject.dir/Airport.cpp.o.d -o CMakeFiles/ClionProject.dir/Airport.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Airport.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClionProject.dir/Airport.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Airport.cpp.o -MF CMakeFiles/ClionProject.dir/Airport.cpp.o.d -o CMakeFiles/ClionProject.dir/Airport.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Airport.cpp
 
 CMakeFiles/ClionProject.dir/Airport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Airport.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Airport.cpp" > CMakeFiles/ClionProject.dir/Airport.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Airport.cpp > CMakeFiles/ClionProject.dir/Airport.cpp.i
 
 CMakeFiles/ClionProject.dir/Airport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Airport.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Airport.cpp" -o CMakeFiles/ClionProject.dir/Airport.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Airport.cpp -o CMakeFiles/ClionProject.dir/Airport.cpp.s
 
 CMakeFiles/ClionProject.dir/Amenities.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Amenities.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Amenities.cpp
+CMakeFiles/ClionProject.dir/Amenities.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Amenities.cpp
 CMakeFiles/ClionProject.dir/Amenities.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClionProject.dir/Amenities.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Amenities.cpp.o -MF CMakeFiles/ClionProject.dir/Amenities.cpp.o.d -o CMakeFiles/ClionProject.dir/Amenities.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Amenities.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClionProject.dir/Amenities.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Amenities.cpp.o -MF CMakeFiles/ClionProject.dir/Amenities.cpp.o.d -o CMakeFiles/ClionProject.dir/Amenities.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Amenities.cpp
 
 CMakeFiles/ClionProject.dir/Amenities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Amenities.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Amenities.cpp" > CMakeFiles/ClionProject.dir/Amenities.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Amenities.cpp > CMakeFiles/ClionProject.dir/Amenities.cpp.i
 
 CMakeFiles/ClionProject.dir/Amenities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Amenities.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Amenities.cpp" -o CMakeFiles/ClionProject.dir/Amenities.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Amenities.cpp -o CMakeFiles/ClionProject.dir/Amenities.cpp.s
 
 CMakeFiles/ClionProject.dir/Apartment.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Apartment.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Apartment.cpp
+CMakeFiles/ClionProject.dir/Apartment.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Apartment.cpp
 CMakeFiles/ClionProject.dir/Apartment.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ClionProject.dir/Apartment.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Apartment.cpp.o -MF CMakeFiles/ClionProject.dir/Apartment.cpp.o.d -o CMakeFiles/ClionProject.dir/Apartment.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Apartment.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ClionProject.dir/Apartment.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Apartment.cpp.o -MF CMakeFiles/ClionProject.dir/Apartment.cpp.o.d -o CMakeFiles/ClionProject.dir/Apartment.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Apartment.cpp
 
 CMakeFiles/ClionProject.dir/Apartment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Apartment.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Apartment.cpp" > CMakeFiles/ClionProject.dir/Apartment.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Apartment.cpp > CMakeFiles/ClionProject.dir/Apartment.cpp.i
 
 CMakeFiles/ClionProject.dir/Apartment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Apartment.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Apartment.cpp" -o CMakeFiles/ClionProject.dir/Apartment.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Apartment.cpp -o CMakeFiles/ClionProject.dir/Apartment.cpp.s
 
 CMakeFiles/ClionProject.dir/Block.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Block.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Block.cpp
+CMakeFiles/ClionProject.dir/Block.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Block.cpp
 CMakeFiles/ClionProject.dir/Block.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ClionProject.dir/Block.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Block.cpp.o -MF CMakeFiles/ClionProject.dir/Block.cpp.o.d -o CMakeFiles/ClionProject.dir/Block.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Block.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ClionProject.dir/Block.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Block.cpp.o -MF CMakeFiles/ClionProject.dir/Block.cpp.o.d -o CMakeFiles/ClionProject.dir/Block.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Block.cpp
 
 CMakeFiles/ClionProject.dir/Block.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Block.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Block.cpp" > CMakeFiles/ClionProject.dir/Block.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Block.cpp > CMakeFiles/ClionProject.dir/Block.cpp.i
 
 CMakeFiles/ClionProject.dir/Block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Block.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Block.cpp" -o CMakeFiles/ClionProject.dir/Block.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Block.cpp -o CMakeFiles/ClionProject.dir/Block.cpp.s
 
 CMakeFiles/ClionProject.dir/Budget.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Budget.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Budget.cpp
+CMakeFiles/ClionProject.dir/Budget.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Budget.cpp
 CMakeFiles/ClionProject.dir/Budget.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ClionProject.dir/Budget.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Budget.cpp.o -MF CMakeFiles/ClionProject.dir/Budget.cpp.o.d -o CMakeFiles/ClionProject.dir/Budget.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Budget.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ClionProject.dir/Budget.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Budget.cpp.o -MF CMakeFiles/ClionProject.dir/Budget.cpp.o.d -o CMakeFiles/ClionProject.dir/Budget.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Budget.cpp
 
 CMakeFiles/ClionProject.dir/Budget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Budget.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Budget.cpp" > CMakeFiles/ClionProject.dir/Budget.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Budget.cpp > CMakeFiles/ClionProject.dir/Budget.cpp.i
 
 CMakeFiles/ClionProject.dir/Budget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Budget.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Budget.cpp" -o CMakeFiles/ClionProject.dir/Budget.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Budget.cpp -o CMakeFiles/ClionProject.dir/Budget.cpp.s
 
 CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/BuildingFactory.cpp
+CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/BuildingFactory.cpp
 CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o -MF CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/BuildingFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o -MF CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/BuildingFactory.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/BuildingFactory.cpp
 
 CMakeFiles/ClionProject.dir/BuildingFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/BuildingFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/BuildingFactory.cpp" > CMakeFiles/ClionProject.dir/BuildingFactory.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/BuildingFactory.cpp > CMakeFiles/ClionProject.dir/BuildingFactory.cpp.i
 
 CMakeFiles/ClionProject.dir/BuildingFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/BuildingFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/BuildingFactory.cpp" -o CMakeFiles/ClionProject.dir/BuildingFactory.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/BuildingFactory.cpp -o CMakeFiles/ClionProject.dir/BuildingFactory.cpp.s
 
 CMakeFiles/ClionProject.dir/Buildings.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Buildings.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Buildings.cpp
+CMakeFiles/ClionProject.dir/Buildings.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Buildings.cpp
 CMakeFiles/ClionProject.dir/Buildings.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ClionProject.dir/Buildings.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Buildings.cpp.o -MF CMakeFiles/ClionProject.dir/Buildings.cpp.o.d -o CMakeFiles/ClionProject.dir/Buildings.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Buildings.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ClionProject.dir/Buildings.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Buildings.cpp.o -MF CMakeFiles/ClionProject.dir/Buildings.cpp.o.d -o CMakeFiles/ClionProject.dir/Buildings.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Buildings.cpp
 
 CMakeFiles/ClionProject.dir/Buildings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Buildings.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Buildings.cpp" > CMakeFiles/ClionProject.dir/Buildings.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Buildings.cpp > CMakeFiles/ClionProject.dir/Buildings.cpp.i
 
 CMakeFiles/ClionProject.dir/Buildings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Buildings.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Buildings.cpp" -o CMakeFiles/ClionProject.dir/Buildings.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Buildings.cpp -o CMakeFiles/ClionProject.dir/Buildings.cpp.s
 
 CMakeFiles/ClionProject.dir/CVisitor.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/CVisitor.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/CVisitor.cpp
+CMakeFiles/ClionProject.dir/CVisitor.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CVisitor.cpp
 CMakeFiles/ClionProject.dir/CVisitor.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ClionProject.dir/CVisitor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/CVisitor.cpp.o -MF CMakeFiles/ClionProject.dir/CVisitor.cpp.o.d -o CMakeFiles/ClionProject.dir/CVisitor.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CVisitor.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ClionProject.dir/CVisitor.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/CVisitor.cpp.o -MF CMakeFiles/ClionProject.dir/CVisitor.cpp.o.d -o CMakeFiles/ClionProject.dir/CVisitor.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CVisitor.cpp
 
 CMakeFiles/ClionProject.dir/CVisitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/CVisitor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CVisitor.cpp" > CMakeFiles/ClionProject.dir/CVisitor.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CVisitor.cpp > CMakeFiles/ClionProject.dir/CVisitor.cpp.i
 
 CMakeFiles/ClionProject.dir/CVisitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/CVisitor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CVisitor.cpp" -o CMakeFiles/ClionProject.dir/CVisitor.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CVisitor.cpp -o CMakeFiles/ClionProject.dir/CVisitor.cpp.s
 
 CMakeFiles/ClionProject.dir/Cell.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Cell.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Cell.cpp
+CMakeFiles/ClionProject.dir/Cell.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Cell.cpp
 CMakeFiles/ClionProject.dir/Cell.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ClionProject.dir/Cell.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Cell.cpp.o -MF CMakeFiles/ClionProject.dir/Cell.cpp.o.d -o CMakeFiles/ClionProject.dir/Cell.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Cell.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ClionProject.dir/Cell.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Cell.cpp.o -MF CMakeFiles/ClionProject.dir/Cell.cpp.o.d -o CMakeFiles/ClionProject.dir/Cell.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Cell.cpp
 
 CMakeFiles/ClionProject.dir/Cell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Cell.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Cell.cpp" > CMakeFiles/ClionProject.dir/Cell.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Cell.cpp > CMakeFiles/ClionProject.dir/Cell.cpp.i
 
 CMakeFiles/ClionProject.dir/Cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Cell.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Cell.cpp" -o CMakeFiles/ClionProject.dir/Cell.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Cell.cpp -o CMakeFiles/ClionProject.dir/Cell.cpp.s
 
 CMakeFiles/ClionProject.dir/Citizen.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Citizen.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Citizen.cpp
+CMakeFiles/ClionProject.dir/Citizen.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Citizen.cpp
 CMakeFiles/ClionProject.dir/Citizen.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ClionProject.dir/Citizen.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Citizen.cpp.o -MF CMakeFiles/ClionProject.dir/Citizen.cpp.o.d -o CMakeFiles/ClionProject.dir/Citizen.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Citizen.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ClionProject.dir/Citizen.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Citizen.cpp.o -MF CMakeFiles/ClionProject.dir/Citizen.cpp.o.d -o CMakeFiles/ClionProject.dir/Citizen.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Citizen.cpp
 
 CMakeFiles/ClionProject.dir/Citizen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Citizen.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Citizen.cpp" > CMakeFiles/ClionProject.dir/Citizen.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Citizen.cpp > CMakeFiles/ClionProject.dir/Citizen.cpp.i
 
 CMakeFiles/ClionProject.dir/Citizen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Citizen.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Citizen.cpp" -o CMakeFiles/ClionProject.dir/Citizen.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Citizen.cpp -o CMakeFiles/ClionProject.dir/Citizen.cpp.s
 
 CMakeFiles/ClionProject.dir/City.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/City.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/City.cpp
+CMakeFiles/ClionProject.dir/City.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/City.cpp
 CMakeFiles/ClionProject.dir/City.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ClionProject.dir/City.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/City.cpp.o -MF CMakeFiles/ClionProject.dir/City.cpp.o.d -o CMakeFiles/ClionProject.dir/City.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/City.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ClionProject.dir/City.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/City.cpp.o -MF CMakeFiles/ClionProject.dir/City.cpp.o.d -o CMakeFiles/ClionProject.dir/City.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/City.cpp
 
 CMakeFiles/ClionProject.dir/City.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/City.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/City.cpp" > CMakeFiles/ClionProject.dir/City.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/City.cpp > CMakeFiles/ClionProject.dir/City.cpp.i
 
 CMakeFiles/ClionProject.dir/City.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/City.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/City.cpp" -o CMakeFiles/ClionProject.dir/City.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/City.cpp -o CMakeFiles/ClionProject.dir/City.cpp.s
 
 CMakeFiles/ClionProject.dir/CityMediator.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/CityMediator.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/CityMediator.cpp
+CMakeFiles/ClionProject.dir/CityMediator.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CityMediator.cpp
 CMakeFiles/ClionProject.dir/CityMediator.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ClionProject.dir/CityMediator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/CityMediator.cpp.o -MF CMakeFiles/ClionProject.dir/CityMediator.cpp.o.d -o CMakeFiles/ClionProject.dir/CityMediator.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CityMediator.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ClionProject.dir/CityMediator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/CityMediator.cpp.o -MF CMakeFiles/ClionProject.dir/CityMediator.cpp.o.d -o CMakeFiles/ClionProject.dir/CityMediator.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CityMediator.cpp
 
 CMakeFiles/ClionProject.dir/CityMediator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/CityMediator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CityMediator.cpp" > CMakeFiles/ClionProject.dir/CityMediator.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CityMediator.cpp > CMakeFiles/ClionProject.dir/CityMediator.cpp.i
 
 CMakeFiles/ClionProject.dir/CityMediator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/CityMediator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CityMediator.cpp" -o CMakeFiles/ClionProject.dir/CityMediator.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CityMediator.cpp -o CMakeFiles/ClionProject.dir/CityMediator.cpp.s
 
 CMakeFiles/ClionProject.dir/Commercial.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Commercial.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Commercial.cpp
+CMakeFiles/ClionProject.dir/Commercial.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Commercial.cpp
 CMakeFiles/ClionProject.dir/Commercial.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ClionProject.dir/Commercial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Commercial.cpp.o -MF CMakeFiles/ClionProject.dir/Commercial.cpp.o.d -o CMakeFiles/ClionProject.dir/Commercial.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Commercial.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ClionProject.dir/Commercial.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Commercial.cpp.o -MF CMakeFiles/ClionProject.dir/Commercial.cpp.o.d -o CMakeFiles/ClionProject.dir/Commercial.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Commercial.cpp
 
 CMakeFiles/ClionProject.dir/Commercial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Commercial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Commercial.cpp" > CMakeFiles/ClionProject.dir/Commercial.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Commercial.cpp > CMakeFiles/ClionProject.dir/Commercial.cpp.i
 
 CMakeFiles/ClionProject.dir/Commercial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Commercial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Commercial.cpp" -o CMakeFiles/ClionProject.dir/Commercial.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Commercial.cpp -o CMakeFiles/ClionProject.dir/Commercial.cpp.s
 
 CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/CommercialFactory.cpp
+CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CommercialFactory.cpp
 CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o -MF CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CommercialFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o -MF CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/CommercialFactory.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CommercialFactory.cpp
 
 CMakeFiles/ClionProject.dir/CommercialFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/CommercialFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CommercialFactory.cpp" > CMakeFiles/ClionProject.dir/CommercialFactory.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CommercialFactory.cpp > CMakeFiles/ClionProject.dir/CommercialFactory.cpp.i
 
 CMakeFiles/ClionProject.dir/CommercialFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/CommercialFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/CommercialFactory.cpp" -o CMakeFiles/ClionProject.dir/CommercialFactory.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/CommercialFactory.cpp -o CMakeFiles/ClionProject.dir/CommercialFactory.cpp.s
 
 CMakeFiles/ClionProject.dir/Complex.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Complex.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Complex.cpp
+CMakeFiles/ClionProject.dir/Complex.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Complex.cpp
 CMakeFiles/ClionProject.dir/Complex.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ClionProject.dir/Complex.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Complex.cpp.o -MF CMakeFiles/ClionProject.dir/Complex.cpp.o.d -o CMakeFiles/ClionProject.dir/Complex.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Complex.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ClionProject.dir/Complex.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Complex.cpp.o -MF CMakeFiles/ClionProject.dir/Complex.cpp.o.d -o CMakeFiles/ClionProject.dir/Complex.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Complex.cpp
 
 CMakeFiles/ClionProject.dir/Complex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Complex.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Complex.cpp" > CMakeFiles/ClionProject.dir/Complex.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Complex.cpp > CMakeFiles/ClionProject.dir/Complex.cpp.i
 
 CMakeFiles/ClionProject.dir/Complex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Complex.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Complex.cpp" -o CMakeFiles/ClionProject.dir/Complex.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Complex.cpp -o CMakeFiles/ClionProject.dir/Complex.cpp.s
 
 CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/ConcreteFactory.cpp
+CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ConcreteFactory.cpp
 CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o -MF CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ConcreteFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o -MF CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ConcreteFactory.cpp
 
 CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ConcreteFactory.cpp" > CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ConcreteFactory.cpp > CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.i
 
 CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ConcreteFactory.cpp" -o CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ConcreteFactory.cpp -o CMakeFiles/ClionProject.dir/ConcreteFactory.cpp.s
 
 CMakeFiles/ClionProject.dir/DemoMain.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/DemoMain.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/DemoMain.cpp
+CMakeFiles/ClionProject.dir/DemoMain.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/DemoMain.cpp
 CMakeFiles/ClionProject.dir/DemoMain.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ClionProject.dir/DemoMain.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/DemoMain.cpp.o -MF CMakeFiles/ClionProject.dir/DemoMain.cpp.o.d -o CMakeFiles/ClionProject.dir/DemoMain.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/DemoMain.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ClionProject.dir/DemoMain.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/DemoMain.cpp.o -MF CMakeFiles/ClionProject.dir/DemoMain.cpp.o.d -o CMakeFiles/ClionProject.dir/DemoMain.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/DemoMain.cpp
 
 CMakeFiles/ClionProject.dir/DemoMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/DemoMain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/DemoMain.cpp" > CMakeFiles/ClionProject.dir/DemoMain.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/DemoMain.cpp > CMakeFiles/ClionProject.dir/DemoMain.cpp.i
 
 CMakeFiles/ClionProject.dir/DemoMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/DemoMain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/DemoMain.cpp" -o CMakeFiles/ClionProject.dir/DemoMain.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/DemoMain.cpp -o CMakeFiles/ClionProject.dir/DemoMain.cpp.s
 
 CMakeFiles/ClionProject.dir/Department.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Department.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Department.cpp
+CMakeFiles/ClionProject.dir/Department.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Department.cpp
 CMakeFiles/ClionProject.dir/Department.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ClionProject.dir/Department.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Department.cpp.o -MF CMakeFiles/ClionProject.dir/Department.cpp.o.d -o CMakeFiles/ClionProject.dir/Department.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Department.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ClionProject.dir/Department.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Department.cpp.o -MF CMakeFiles/ClionProject.dir/Department.cpp.o.d -o CMakeFiles/ClionProject.dir/Department.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Department.cpp
 
 CMakeFiles/ClionProject.dir/Department.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Department.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Department.cpp" > CMakeFiles/ClionProject.dir/Department.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Department.cpp > CMakeFiles/ClionProject.dir/Department.cpp.i
 
 CMakeFiles/ClionProject.dir/Department.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Department.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Department.cpp" -o CMakeFiles/ClionProject.dir/Department.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Department.cpp -o CMakeFiles/ClionProject.dir/Department.cpp.s
 
 CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Disatisfaction.cpp
+CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Disatisfaction.cpp
 CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o -MF CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o.d -o CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Disatisfaction.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o -MF CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o.d -o CMakeFiles/ClionProject.dir/Disatisfaction.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Disatisfaction.cpp
 
 CMakeFiles/ClionProject.dir/Disatisfaction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Disatisfaction.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Disatisfaction.cpp" > CMakeFiles/ClionProject.dir/Disatisfaction.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Disatisfaction.cpp > CMakeFiles/ClionProject.dir/Disatisfaction.cpp.i
 
 CMakeFiles/ClionProject.dir/Disatisfaction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Disatisfaction.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Disatisfaction.cpp" -o CMakeFiles/ClionProject.dir/Disatisfaction.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Disatisfaction.cpp -o CMakeFiles/ClionProject.dir/Disatisfaction.cpp.s
 
 CMakeFiles/ClionProject.dir/ExpandCity.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/ExpandCity.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/ExpandCity.cpp
+CMakeFiles/ClionProject.dir/ExpandCity.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ExpandCity.cpp
 CMakeFiles/ClionProject.dir/ExpandCity.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ClionProject.dir/ExpandCity.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ExpandCity.cpp.o -MF CMakeFiles/ClionProject.dir/ExpandCity.cpp.o.d -o CMakeFiles/ClionProject.dir/ExpandCity.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ExpandCity.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ClionProject.dir/ExpandCity.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ExpandCity.cpp.o -MF CMakeFiles/ClionProject.dir/ExpandCity.cpp.o.d -o CMakeFiles/ClionProject.dir/ExpandCity.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ExpandCity.cpp
 
 CMakeFiles/ClionProject.dir/ExpandCity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/ExpandCity.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ExpandCity.cpp" > CMakeFiles/ClionProject.dir/ExpandCity.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ExpandCity.cpp > CMakeFiles/ClionProject.dir/ExpandCity.cpp.i
 
 CMakeFiles/ClionProject.dir/ExpandCity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/ExpandCity.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ExpandCity.cpp" -o CMakeFiles/ClionProject.dir/ExpandCity.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ExpandCity.cpp -o CMakeFiles/ClionProject.dir/ExpandCity.cpp.s
 
 CMakeFiles/ClionProject.dir/Finances.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Finances.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Finances.cpp
+CMakeFiles/ClionProject.dir/Finances.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Finances.cpp
 CMakeFiles/ClionProject.dir/Finances.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ClionProject.dir/Finances.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Finances.cpp.o -MF CMakeFiles/ClionProject.dir/Finances.cpp.o.d -o CMakeFiles/ClionProject.dir/Finances.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Finances.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ClionProject.dir/Finances.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Finances.cpp.o -MF CMakeFiles/ClionProject.dir/Finances.cpp.o.d -o CMakeFiles/ClionProject.dir/Finances.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Finances.cpp
 
 CMakeFiles/ClionProject.dir/Finances.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Finances.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Finances.cpp" > CMakeFiles/ClionProject.dir/Finances.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Finances.cpp > CMakeFiles/ClionProject.dir/Finances.cpp.i
 
 CMakeFiles/ClionProject.dir/Finances.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Finances.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Finances.cpp" -o CMakeFiles/ClionProject.dir/Finances.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Finances.cpp -o CMakeFiles/ClionProject.dir/Finances.cpp.s
 
 CMakeFiles/ClionProject.dir/Forestry.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Forestry.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Forestry.cpp
+CMakeFiles/ClionProject.dir/Forestry.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Forestry.cpp
 CMakeFiles/ClionProject.dir/Forestry.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ClionProject.dir/Forestry.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Forestry.cpp.o -MF CMakeFiles/ClionProject.dir/Forestry.cpp.o.d -o CMakeFiles/ClionProject.dir/Forestry.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Forestry.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ClionProject.dir/Forestry.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Forestry.cpp.o -MF CMakeFiles/ClionProject.dir/Forestry.cpp.o.d -o CMakeFiles/ClionProject.dir/Forestry.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Forestry.cpp
 
 CMakeFiles/ClionProject.dir/Forestry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Forestry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Forestry.cpp" > CMakeFiles/ClionProject.dir/Forestry.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Forestry.cpp > CMakeFiles/ClionProject.dir/Forestry.cpp.i
 
 CMakeFiles/ClionProject.dir/Forestry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Forestry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Forestry.cpp" -o CMakeFiles/ClionProject.dir/Forestry.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Forestry.cpp -o CMakeFiles/ClionProject.dir/Forestry.cpp.s
 
 CMakeFiles/ClionProject.dir/FrontEnd.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/FrontEnd.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/FrontEnd.cpp
+CMakeFiles/ClionProject.dir/FrontEnd.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/FrontEnd.cpp
 CMakeFiles/ClionProject.dir/FrontEnd.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ClionProject.dir/FrontEnd.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/FrontEnd.cpp.o -MF CMakeFiles/ClionProject.dir/FrontEnd.cpp.o.d -o CMakeFiles/ClionProject.dir/FrontEnd.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/FrontEnd.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ClionProject.dir/FrontEnd.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/FrontEnd.cpp.o -MF CMakeFiles/ClionProject.dir/FrontEnd.cpp.o.d -o CMakeFiles/ClionProject.dir/FrontEnd.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/FrontEnd.cpp
 
 CMakeFiles/ClionProject.dir/FrontEnd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/FrontEnd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/FrontEnd.cpp" > CMakeFiles/ClionProject.dir/FrontEnd.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/FrontEnd.cpp > CMakeFiles/ClionProject.dir/FrontEnd.cpp.i
 
 CMakeFiles/ClionProject.dir/FrontEnd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/FrontEnd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/FrontEnd.cpp" -o CMakeFiles/ClionProject.dir/FrontEnd.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/FrontEnd.cpp -o CMakeFiles/ClionProject.dir/FrontEnd.cpp.s
 
 CMakeFiles/ClionProject.dir/Government.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Government.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Government.cpp
+CMakeFiles/ClionProject.dir/Government.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Government.cpp
 CMakeFiles/ClionProject.dir/Government.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ClionProject.dir/Government.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Government.cpp.o -MF CMakeFiles/ClionProject.dir/Government.cpp.o.d -o CMakeFiles/ClionProject.dir/Government.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Government.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ClionProject.dir/Government.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Government.cpp.o -MF CMakeFiles/ClionProject.dir/Government.cpp.o.d -o CMakeFiles/ClionProject.dir/Government.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Government.cpp
 
 CMakeFiles/ClionProject.dir/Government.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Government.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Government.cpp" > CMakeFiles/ClionProject.dir/Government.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Government.cpp > CMakeFiles/ClionProject.dir/Government.cpp.i
 
 CMakeFiles/ClionProject.dir/Government.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Government.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Government.cpp" -o CMakeFiles/ClionProject.dir/Government.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Government.cpp -o CMakeFiles/ClionProject.dir/Government.cpp.s
 
 CMakeFiles/ClionProject.dir/Green.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Green.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Green.cpp
+CMakeFiles/ClionProject.dir/Green.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Green.cpp
 CMakeFiles/ClionProject.dir/Green.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ClionProject.dir/Green.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Green.cpp.o -MF CMakeFiles/ClionProject.dir/Green.cpp.o.d -o CMakeFiles/ClionProject.dir/Green.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Green.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ClionProject.dir/Green.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Green.cpp.o -MF CMakeFiles/ClionProject.dir/Green.cpp.o.d -o CMakeFiles/ClionProject.dir/Green.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Green.cpp
 
 CMakeFiles/ClionProject.dir/Green.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Green.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Green.cpp" > CMakeFiles/ClionProject.dir/Green.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Green.cpp > CMakeFiles/ClionProject.dir/Green.cpp.i
 
 CMakeFiles/ClionProject.dir/Green.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Green.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Green.cpp" -o CMakeFiles/ClionProject.dir/Green.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Green.cpp -o CMakeFiles/ClionProject.dir/Green.cpp.s
 
 CMakeFiles/ClionProject.dir/HappyObserver.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/HappyObserver.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/HappyObserver.cpp
+CMakeFiles/ClionProject.dir/HappyObserver.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/HappyObserver.cpp
 CMakeFiles/ClionProject.dir/HappyObserver.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ClionProject.dir/HappyObserver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/HappyObserver.cpp.o -MF CMakeFiles/ClionProject.dir/HappyObserver.cpp.o.d -o CMakeFiles/ClionProject.dir/HappyObserver.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/HappyObserver.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ClionProject.dir/HappyObserver.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/HappyObserver.cpp.o -MF CMakeFiles/ClionProject.dir/HappyObserver.cpp.o.d -o CMakeFiles/ClionProject.dir/HappyObserver.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/HappyObserver.cpp
 
 CMakeFiles/ClionProject.dir/HappyObserver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/HappyObserver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/HappyObserver.cpp" > CMakeFiles/ClionProject.dir/HappyObserver.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/HappyObserver.cpp > CMakeFiles/ClionProject.dir/HappyObserver.cpp.i
 
 CMakeFiles/ClionProject.dir/HappyObserver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/HappyObserver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/HappyObserver.cpp" -o CMakeFiles/ClionProject.dir/HappyObserver.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/HappyObserver.cpp -o CMakeFiles/ClionProject.dir/HappyObserver.cpp.s
 
 CMakeFiles/ClionProject.dir/Hospital.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Hospital.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Hospital.cpp
+CMakeFiles/ClionProject.dir/Hospital.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Hospital.cpp
 CMakeFiles/ClionProject.dir/Hospital.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ClionProject.dir/Hospital.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Hospital.cpp.o -MF CMakeFiles/ClionProject.dir/Hospital.cpp.o.d -o CMakeFiles/ClionProject.dir/Hospital.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Hospital.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ClionProject.dir/Hospital.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Hospital.cpp.o -MF CMakeFiles/ClionProject.dir/Hospital.cpp.o.d -o CMakeFiles/ClionProject.dir/Hospital.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Hospital.cpp
 
 CMakeFiles/ClionProject.dir/Hospital.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Hospital.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Hospital.cpp" > CMakeFiles/ClionProject.dir/Hospital.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Hospital.cpp > CMakeFiles/ClionProject.dir/Hospital.cpp.i
 
 CMakeFiles/ClionProject.dir/Hospital.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Hospital.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Hospital.cpp" -o CMakeFiles/ClionProject.dir/Hospital.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Hospital.cpp -o CMakeFiles/ClionProject.dir/Hospital.cpp.s
 
 CMakeFiles/ClionProject.dir/House.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/House.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/House.cpp
+CMakeFiles/ClionProject.dir/House.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/House.cpp
 CMakeFiles/ClionProject.dir/House.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ClionProject.dir/House.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/House.cpp.o -MF CMakeFiles/ClionProject.dir/House.cpp.o.d -o CMakeFiles/ClionProject.dir/House.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/House.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ClionProject.dir/House.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/House.cpp.o -MF CMakeFiles/ClionProject.dir/House.cpp.o.d -o CMakeFiles/ClionProject.dir/House.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/House.cpp
 
 CMakeFiles/ClionProject.dir/House.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/House.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/House.cpp" > CMakeFiles/ClionProject.dir/House.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/House.cpp > CMakeFiles/ClionProject.dir/House.cpp.i
 
 CMakeFiles/ClionProject.dir/House.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/House.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/House.cpp" -o CMakeFiles/ClionProject.dir/House.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/House.cpp -o CMakeFiles/ClionProject.dir/House.cpp.s
 
 CMakeFiles/ClionProject.dir/HouseHold.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/HouseHold.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/HouseHold.cpp
+CMakeFiles/ClionProject.dir/HouseHold.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/HouseHold.cpp
 CMakeFiles/ClionProject.dir/HouseHold.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ClionProject.dir/HouseHold.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/HouseHold.cpp.o -MF CMakeFiles/ClionProject.dir/HouseHold.cpp.o.d -o CMakeFiles/ClionProject.dir/HouseHold.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/HouseHold.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ClionProject.dir/HouseHold.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/HouseHold.cpp.o -MF CMakeFiles/ClionProject.dir/HouseHold.cpp.o.d -o CMakeFiles/ClionProject.dir/HouseHold.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/HouseHold.cpp
 
 CMakeFiles/ClionProject.dir/HouseHold.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/HouseHold.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/HouseHold.cpp" > CMakeFiles/ClionProject.dir/HouseHold.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/HouseHold.cpp > CMakeFiles/ClionProject.dir/HouseHold.cpp.i
 
 CMakeFiles/ClionProject.dir/HouseHold.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/HouseHold.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/HouseHold.cpp" -o CMakeFiles/ClionProject.dir/HouseHold.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/HouseHold.cpp -o CMakeFiles/ClionProject.dir/HouseHold.cpp.s
 
 CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/IncreaseTaxes.cpp
+CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IncreaseTaxes.cpp
 CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o -MF CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o.d -o CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IncreaseTaxes.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o -MF CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o.d -o CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IncreaseTaxes.cpp
 
 CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IncreaseTaxes.cpp" > CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IncreaseTaxes.cpp > CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.i
 
 CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IncreaseTaxes.cpp" -o CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IncreaseTaxes.cpp -o CMakeFiles/ClionProject.dir/IncreaseTaxes.cpp.s
 
 CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/IncreaseWages.cpp
+CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IncreaseWages.cpp
 CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o -MF CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o.d -o CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IncreaseWages.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o -MF CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o.d -o CMakeFiles/ClionProject.dir/IncreaseWages.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IncreaseWages.cpp
 
 CMakeFiles/ClionProject.dir/IncreaseWages.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/IncreaseWages.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IncreaseWages.cpp" > CMakeFiles/ClionProject.dir/IncreaseWages.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IncreaseWages.cpp > CMakeFiles/ClionProject.dir/IncreaseWages.cpp.i
 
 CMakeFiles/ClionProject.dir/IncreaseWages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/IncreaseWages.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IncreaseWages.cpp" -o CMakeFiles/ClionProject.dir/IncreaseWages.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IncreaseWages.cpp -o CMakeFiles/ClionProject.dir/IncreaseWages.cpp.s
 
 CMakeFiles/ClionProject.dir/Industrial.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Industrial.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Industrial.cpp
+CMakeFiles/ClionProject.dir/Industrial.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Industrial.cpp
 CMakeFiles/ClionProject.dir/Industrial.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ClionProject.dir/Industrial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Industrial.cpp.o -MF CMakeFiles/ClionProject.dir/Industrial.cpp.o.d -o CMakeFiles/ClionProject.dir/Industrial.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Industrial.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ClionProject.dir/Industrial.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Industrial.cpp.o -MF CMakeFiles/ClionProject.dir/Industrial.cpp.o.d -o CMakeFiles/ClionProject.dir/Industrial.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Industrial.cpp
 
 CMakeFiles/ClionProject.dir/Industrial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Industrial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Industrial.cpp" > CMakeFiles/ClionProject.dir/Industrial.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Industrial.cpp > CMakeFiles/ClionProject.dir/Industrial.cpp.i
 
 CMakeFiles/ClionProject.dir/Industrial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Industrial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Industrial.cpp" -o CMakeFiles/ClionProject.dir/Industrial.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Industrial.cpp -o CMakeFiles/ClionProject.dir/Industrial.cpp.s
 
 CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/IndustrialFactory.cpp
+CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IndustrialFactory.cpp
 CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o -MF CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IndustrialFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o -MF CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IndustrialFactory.cpp
 
 CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IndustrialFactory.cpp" > CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IndustrialFactory.cpp > CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.i
 
 CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/IndustrialFactory.cpp" -o CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/IndustrialFactory.cpp -o CMakeFiles/ClionProject.dir/IndustrialFactory.cpp.s
 
 CMakeFiles/ClionProject.dir/Labour.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Labour.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Labour.cpp
+CMakeFiles/ClionProject.dir/Labour.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Labour.cpp
 CMakeFiles/ClionProject.dir/Labour.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ClionProject.dir/Labour.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Labour.cpp.o -MF CMakeFiles/ClionProject.dir/Labour.cpp.o.d -o CMakeFiles/ClionProject.dir/Labour.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Labour.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ClionProject.dir/Labour.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Labour.cpp.o -MF CMakeFiles/ClionProject.dir/Labour.cpp.o.d -o CMakeFiles/ClionProject.dir/Labour.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Labour.cpp
 
 CMakeFiles/ClionProject.dir/Labour.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Labour.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Labour.cpp" > CMakeFiles/ClionProject.dir/Labour.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Labour.cpp > CMakeFiles/ClionProject.dir/Labour.cpp.i
 
 CMakeFiles/ClionProject.dir/Labour.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Labour.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Labour.cpp" -o CMakeFiles/ClionProject.dir/Labour.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Labour.cpp -o CMakeFiles/ClionProject.dir/Labour.cpp.s
 
 CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/LandmarkFactory.cpp
+CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/LandmarkFactory.cpp
 CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o -MF CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/LandmarkFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o -MF CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/LandmarkFactory.cpp
 
 CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/LandmarkFactory.cpp" > CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/LandmarkFactory.cpp > CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.i
 
 CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/LandmarkFactory.cpp" -o CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/LandmarkFactory.cpp -o CMakeFiles/ClionProject.dir/LandmarkFactory.cpp.s
 
 CMakeFiles/ClionProject.dir/Landmarks.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Landmarks.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Landmarks.cpp
+CMakeFiles/ClionProject.dir/Landmarks.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Landmarks.cpp
 CMakeFiles/ClionProject.dir/Landmarks.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/ClionProject.dir/Landmarks.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Landmarks.cpp.o -MF CMakeFiles/ClionProject.dir/Landmarks.cpp.o.d -o CMakeFiles/ClionProject.dir/Landmarks.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Landmarks.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/ClionProject.dir/Landmarks.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Landmarks.cpp.o -MF CMakeFiles/ClionProject.dir/Landmarks.cpp.o.d -o CMakeFiles/ClionProject.dir/Landmarks.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Landmarks.cpp
 
 CMakeFiles/ClionProject.dir/Landmarks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Landmarks.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Landmarks.cpp" > CMakeFiles/ClionProject.dir/Landmarks.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Landmarks.cpp > CMakeFiles/ClionProject.dir/Landmarks.cpp.i
 
 CMakeFiles/ClionProject.dir/Landmarks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Landmarks.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Landmarks.cpp" -o CMakeFiles/ClionProject.dir/Landmarks.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Landmarks.cpp -o CMakeFiles/ClionProject.dir/Landmarks.cpp.s
 
 CMakeFiles/ClionProject.dir/Mall.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Mall.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Mall.cpp
+CMakeFiles/ClionProject.dir/Mall.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Mall.cpp
 CMakeFiles/ClionProject.dir/Mall.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/ClionProject.dir/Mall.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Mall.cpp.o -MF CMakeFiles/ClionProject.dir/Mall.cpp.o.d -o CMakeFiles/ClionProject.dir/Mall.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Mall.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/ClionProject.dir/Mall.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Mall.cpp.o -MF CMakeFiles/ClionProject.dir/Mall.cpp.o.d -o CMakeFiles/ClionProject.dir/Mall.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Mall.cpp
 
 CMakeFiles/ClionProject.dir/Mall.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Mall.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Mall.cpp" > CMakeFiles/ClionProject.dir/Mall.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Mall.cpp > CMakeFiles/ClionProject.dir/Mall.cpp.i
 
 CMakeFiles/ClionProject.dir/Mall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Mall.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Mall.cpp" -o CMakeFiles/ClionProject.dir/Mall.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Mall.cpp -o CMakeFiles/ClionProject.dir/Mall.cpp.s
 
 CMakeFiles/ClionProject.dir/Map.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Map.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Map.cpp
+CMakeFiles/ClionProject.dir/Map.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Map.cpp
 CMakeFiles/ClionProject.dir/Map.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/ClionProject.dir/Map.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Map.cpp.o -MF CMakeFiles/ClionProject.dir/Map.cpp.o.d -o CMakeFiles/ClionProject.dir/Map.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Map.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/ClionProject.dir/Map.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Map.cpp.o -MF CMakeFiles/ClionProject.dir/Map.cpp.o.d -o CMakeFiles/ClionProject.dir/Map.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Map.cpp
 
 CMakeFiles/ClionProject.dir/Map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Map.cpp" > CMakeFiles/ClionProject.dir/Map.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Map.cpp > CMakeFiles/ClionProject.dir/Map.cpp.i
 
 CMakeFiles/ClionProject.dir/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Map.cpp" -o CMakeFiles/ClionProject.dir/Map.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Map.cpp -o CMakeFiles/ClionProject.dir/Map.cpp.s
 
 CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/MaterialOrder.cpp
+CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/MaterialOrder.cpp
 CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o -MF CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o.d -o CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/MaterialOrder.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o -MF CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o.d -o CMakeFiles/ClionProject.dir/MaterialOrder.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/MaterialOrder.cpp
 
 CMakeFiles/ClionProject.dir/MaterialOrder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/MaterialOrder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/MaterialOrder.cpp" > CMakeFiles/ClionProject.dir/MaterialOrder.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/MaterialOrder.cpp > CMakeFiles/ClionProject.dir/MaterialOrder.cpp.i
 
 CMakeFiles/ClionProject.dir/MaterialOrder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/MaterialOrder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/MaterialOrder.cpp" -o CMakeFiles/ClionProject.dir/MaterialOrder.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/MaterialOrder.cpp -o CMakeFiles/ClionProject.dir/MaterialOrder.cpp.s
 
 CMakeFiles/ClionProject.dir/Museum.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Museum.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Museum.cpp
+CMakeFiles/ClionProject.dir/Museum.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Museum.cpp
 CMakeFiles/ClionProject.dir/Museum.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/ClionProject.dir/Museum.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Museum.cpp.o -MF CMakeFiles/ClionProject.dir/Museum.cpp.o.d -o CMakeFiles/ClionProject.dir/Museum.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Museum.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/ClionProject.dir/Museum.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Museum.cpp.o -MF CMakeFiles/ClionProject.dir/Museum.cpp.o.d -o CMakeFiles/ClionProject.dir/Museum.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Museum.cpp
 
 CMakeFiles/ClionProject.dir/Museum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Museum.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Museum.cpp" > CMakeFiles/ClionProject.dir/Museum.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Museum.cpp > CMakeFiles/ClionProject.dir/Museum.cpp.i
 
 CMakeFiles/ClionProject.dir/Museum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Museum.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Museum.cpp" -o CMakeFiles/ClionProject.dir/Museum.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Museum.cpp -o CMakeFiles/ClionProject.dir/Museum.cpp.s
 
 CMakeFiles/ClionProject.dir/Observer.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Observer.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Observer.cpp
+CMakeFiles/ClionProject.dir/Observer.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Observer.cpp
 CMakeFiles/ClionProject.dir/Observer.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/ClionProject.dir/Observer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Observer.cpp.o -MF CMakeFiles/ClionProject.dir/Observer.cpp.o.d -o CMakeFiles/ClionProject.dir/Observer.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Observer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/ClionProject.dir/Observer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Observer.cpp.o -MF CMakeFiles/ClionProject.dir/Observer.cpp.o.d -o CMakeFiles/ClionProject.dir/Observer.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Observer.cpp
 
 CMakeFiles/ClionProject.dir/Observer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Observer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Observer.cpp" > CMakeFiles/ClionProject.dir/Observer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Observer.cpp > CMakeFiles/ClionProject.dir/Observer.cpp.i
 
 CMakeFiles/ClionProject.dir/Observer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Observer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Observer.cpp" -o CMakeFiles/ClionProject.dir/Observer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Observer.cpp -o CMakeFiles/ClionProject.dir/Observer.cpp.s
 
 CMakeFiles/ClionProject.dir/Office.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Office.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Office.cpp
+CMakeFiles/ClionProject.dir/Office.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Office.cpp
 CMakeFiles/ClionProject.dir/Office.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/ClionProject.dir/Office.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Office.cpp.o -MF CMakeFiles/ClionProject.dir/Office.cpp.o.d -o CMakeFiles/ClionProject.dir/Office.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Office.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/ClionProject.dir/Office.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Office.cpp.o -MF CMakeFiles/ClionProject.dir/Office.cpp.o.d -o CMakeFiles/ClionProject.dir/Office.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Office.cpp
 
 CMakeFiles/ClionProject.dir/Office.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Office.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Office.cpp" > CMakeFiles/ClionProject.dir/Office.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Office.cpp > CMakeFiles/ClionProject.dir/Office.cpp.i
 
 CMakeFiles/ClionProject.dir/Office.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Office.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Office.cpp" -o CMakeFiles/ClionProject.dir/Office.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Office.cpp -o CMakeFiles/ClionProject.dir/Office.cpp.s
 
 CMakeFiles/ClionProject.dir/Park.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Park.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Park.cpp
+CMakeFiles/ClionProject.dir/Park.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Park.cpp
 CMakeFiles/ClionProject.dir/Park.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/ClionProject.dir/Park.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Park.cpp.o -MF CMakeFiles/ClionProject.dir/Park.cpp.o.d -o CMakeFiles/ClionProject.dir/Park.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Park.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/ClionProject.dir/Park.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Park.cpp.o -MF CMakeFiles/ClionProject.dir/Park.cpp.o.d -o CMakeFiles/ClionProject.dir/Park.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Park.cpp
 
 CMakeFiles/ClionProject.dir/Park.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Park.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Park.cpp" > CMakeFiles/ClionProject.dir/Park.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Park.cpp > CMakeFiles/ClionProject.dir/Park.cpp.i
 
 CMakeFiles/ClionProject.dir/Park.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Park.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Park.cpp" -o CMakeFiles/ClionProject.dir/Park.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Park.cpp -o CMakeFiles/ClionProject.dir/Park.cpp.s
 
 CMakeFiles/ClionProject.dir/People.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/People.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/People.cpp
+CMakeFiles/ClionProject.dir/People.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/People.cpp
 CMakeFiles/ClionProject.dir/People.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/ClionProject.dir/People.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/People.cpp.o -MF CMakeFiles/ClionProject.dir/People.cpp.o.d -o CMakeFiles/ClionProject.dir/People.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/People.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/ClionProject.dir/People.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/People.cpp.o -MF CMakeFiles/ClionProject.dir/People.cpp.o.d -o CMakeFiles/ClionProject.dir/People.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/People.cpp
 
 CMakeFiles/ClionProject.dir/People.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/People.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/People.cpp" > CMakeFiles/ClionProject.dir/People.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/People.cpp > CMakeFiles/ClionProject.dir/People.cpp.i
 
 CMakeFiles/ClionProject.dir/People.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/People.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/People.cpp" -o CMakeFiles/ClionProject.dir/People.cpp.s
-
-CMakeFiles/ClionProject.dir/Pet.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Pet.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Pet.cpp
-CMakeFiles/ClionProject.dir/Pet.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/ClionProject.dir/Pet.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Pet.cpp.o -MF CMakeFiles/ClionProject.dir/Pet.cpp.o.d -o CMakeFiles/ClionProject.dir/Pet.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Pet.cpp"
-
-CMakeFiles/ClionProject.dir/Pet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Pet.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Pet.cpp" > CMakeFiles/ClionProject.dir/Pet.cpp.i
-
-CMakeFiles/ClionProject.dir/Pet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Pet.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Pet.cpp" -o CMakeFiles/ClionProject.dir/Pet.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/People.cpp -o CMakeFiles/ClionProject.dir/People.cpp.s
 
 CMakeFiles/ClionProject.dir/PoliceStation.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/PoliceStation.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/PoliceStation.cpp
+CMakeFiles/ClionProject.dir/PoliceStation.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/PoliceStation.cpp
 CMakeFiles/ClionProject.dir/PoliceStation.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/ClionProject.dir/PoliceStation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/PoliceStation.cpp.o -MF CMakeFiles/ClionProject.dir/PoliceStation.cpp.o.d -o CMakeFiles/ClionProject.dir/PoliceStation.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/PoliceStation.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/ClionProject.dir/PoliceStation.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/PoliceStation.cpp.o -MF CMakeFiles/ClionProject.dir/PoliceStation.cpp.o.d -o CMakeFiles/ClionProject.dir/PoliceStation.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/PoliceStation.cpp
 
 CMakeFiles/ClionProject.dir/PoliceStation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/PoliceStation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/PoliceStation.cpp" > CMakeFiles/ClionProject.dir/PoliceStation.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/PoliceStation.cpp > CMakeFiles/ClionProject.dir/PoliceStation.cpp.i
 
 CMakeFiles/ClionProject.dir/PoliceStation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/PoliceStation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/PoliceStation.cpp" -o CMakeFiles/ClionProject.dir/PoliceStation.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/PoliceStation.cpp -o CMakeFiles/ClionProject.dir/PoliceStation.cpp.s
 
 CMakeFiles/ClionProject.dir/Policies.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Policies.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Policies.cpp
+CMakeFiles/ClionProject.dir/Policies.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Policies.cpp
 CMakeFiles/ClionProject.dir/Policies.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/ClionProject.dir/Policies.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Policies.cpp.o -MF CMakeFiles/ClionProject.dir/Policies.cpp.o.d -o CMakeFiles/ClionProject.dir/Policies.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Policies.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/ClionProject.dir/Policies.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Policies.cpp.o -MF CMakeFiles/ClionProject.dir/Policies.cpp.o.d -o CMakeFiles/ClionProject.dir/Policies.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Policies.cpp
 
 CMakeFiles/ClionProject.dir/Policies.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Policies.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Policies.cpp" > CMakeFiles/ClionProject.dir/Policies.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Policies.cpp > CMakeFiles/ClionProject.dir/Policies.cpp.i
 
 CMakeFiles/ClionProject.dir/Policies.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Policies.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Policies.cpp" -o CMakeFiles/ClionProject.dir/Policies.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Policies.cpp -o CMakeFiles/ClionProject.dir/Policies.cpp.s
 
 CMakeFiles/ClionProject.dir/Population.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Population.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Population.cpp
+CMakeFiles/ClionProject.dir/Population.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Population.cpp
 CMakeFiles/ClionProject.dir/Population.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/ClionProject.dir/Population.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Population.cpp.o -MF CMakeFiles/ClionProject.dir/Population.cpp.o.d -o CMakeFiles/ClionProject.dir/Population.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Population.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/ClionProject.dir/Population.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Population.cpp.o -MF CMakeFiles/ClionProject.dir/Population.cpp.o.d -o CMakeFiles/ClionProject.dir/Population.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Population.cpp
 
 CMakeFiles/ClionProject.dir/Population.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Population.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Population.cpp" > CMakeFiles/ClionProject.dir/Population.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Population.cpp > CMakeFiles/ClionProject.dir/Population.cpp.i
 
 CMakeFiles/ClionProject.dir/Population.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Population.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Population.cpp" -o CMakeFiles/ClionProject.dir/Population.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Population.cpp -o CMakeFiles/ClionProject.dir/Population.cpp.s
 
 CMakeFiles/ClionProject.dir/PowerPlant.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/PowerPlant.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/PowerPlant.cpp
+CMakeFiles/ClionProject.dir/PowerPlant.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/PowerPlant.cpp
 CMakeFiles/ClionProject.dir/PowerPlant.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/ClionProject.dir/PowerPlant.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/PowerPlant.cpp.o -MF CMakeFiles/ClionProject.dir/PowerPlant.cpp.o.d -o CMakeFiles/ClionProject.dir/PowerPlant.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/PowerPlant.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/ClionProject.dir/PowerPlant.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/PowerPlant.cpp.o -MF CMakeFiles/ClionProject.dir/PowerPlant.cpp.o.d -o CMakeFiles/ClionProject.dir/PowerPlant.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/PowerPlant.cpp
 
 CMakeFiles/ClionProject.dir/PowerPlant.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/PowerPlant.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/PowerPlant.cpp" > CMakeFiles/ClionProject.dir/PowerPlant.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/PowerPlant.cpp > CMakeFiles/ClionProject.dir/PowerPlant.cpp.i
 
 CMakeFiles/ClionProject.dir/PowerPlant.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/PowerPlant.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/PowerPlant.cpp" -o CMakeFiles/ClionProject.dir/PowerPlant.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/PowerPlant.cpp -o CMakeFiles/ClionProject.dir/PowerPlant.cpp.s
 
 CMakeFiles/ClionProject.dir/RandomUtil.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/RandomUtil.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/RandomUtil.cpp
+CMakeFiles/ClionProject.dir/RandomUtil.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/RandomUtil.cpp
 CMakeFiles/ClionProject.dir/RandomUtil.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/ClionProject.dir/RandomUtil.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/RandomUtil.cpp.o -MF CMakeFiles/ClionProject.dir/RandomUtil.cpp.o.d -o CMakeFiles/ClionProject.dir/RandomUtil.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/RandomUtil.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/ClionProject.dir/RandomUtil.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/RandomUtil.cpp.o -MF CMakeFiles/ClionProject.dir/RandomUtil.cpp.o.d -o CMakeFiles/ClionProject.dir/RandomUtil.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/RandomUtil.cpp
 
 CMakeFiles/ClionProject.dir/RandomUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/RandomUtil.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/RandomUtil.cpp" > CMakeFiles/ClionProject.dir/RandomUtil.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/RandomUtil.cpp > CMakeFiles/ClionProject.dir/RandomUtil.cpp.i
 
 CMakeFiles/ClionProject.dir/RandomUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/RandomUtil.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/RandomUtil.cpp" -o CMakeFiles/ClionProject.dir/RandomUtil.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/RandomUtil.cpp -o CMakeFiles/ClionProject.dir/RandomUtil.cpp.s
 
 CMakeFiles/ClionProject.dir/Red.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Red.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Red.cpp
+CMakeFiles/ClionProject.dir/Red.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Red.cpp
 CMakeFiles/ClionProject.dir/Red.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/ClionProject.dir/Red.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Red.cpp.o -MF CMakeFiles/ClionProject.dir/Red.cpp.o.d -o CMakeFiles/ClionProject.dir/Red.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Red.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/ClionProject.dir/Red.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Red.cpp.o -MF CMakeFiles/ClionProject.dir/Red.cpp.o.d -o CMakeFiles/ClionProject.dir/Red.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Red.cpp
 
 CMakeFiles/ClionProject.dir/Red.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Red.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Red.cpp" > CMakeFiles/ClionProject.dir/Red.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Red.cpp > CMakeFiles/ClionProject.dir/Red.cpp.i
 
 CMakeFiles/ClionProject.dir/Red.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Red.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Red.cpp" -o CMakeFiles/ClionProject.dir/Red.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Red.cpp -o CMakeFiles/ClionProject.dir/Red.cpp.s
 
 CMakeFiles/ClionProject.dir/Residential.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Residential.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Residential.cpp
+CMakeFiles/ClionProject.dir/Residential.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Residential.cpp
 CMakeFiles/ClionProject.dir/Residential.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/ClionProject.dir/Residential.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Residential.cpp.o -MF CMakeFiles/ClionProject.dir/Residential.cpp.o.d -o CMakeFiles/ClionProject.dir/Residential.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Residential.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/ClionProject.dir/Residential.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Residential.cpp.o -MF CMakeFiles/ClionProject.dir/Residential.cpp.o.d -o CMakeFiles/ClionProject.dir/Residential.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Residential.cpp
 
 CMakeFiles/ClionProject.dir/Residential.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Residential.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Residential.cpp" > CMakeFiles/ClionProject.dir/Residential.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Residential.cpp > CMakeFiles/ClionProject.dir/Residential.cpp.i
 
 CMakeFiles/ClionProject.dir/Residential.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Residential.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Residential.cpp" -o CMakeFiles/ClionProject.dir/Residential.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Residential.cpp -o CMakeFiles/ClionProject.dir/Residential.cpp.s
 
 CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/ResidentialFactory.cpp
+CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ResidentialFactory.cpp
 CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o -MF CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ResidentialFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o -MF CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ResidentialFactory.cpp
 
 CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ResidentialFactory.cpp" > CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ResidentialFactory.cpp > CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.i
 
 CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ResidentialFactory.cpp" -o CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ResidentialFactory.cpp -o CMakeFiles/ClionProject.dir/ResidentialFactory.cpp.s
 
 CMakeFiles/ClionProject.dir/Resources.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Resources.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Resources.cpp
+CMakeFiles/ClionProject.dir/Resources.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Resources.cpp
 CMakeFiles/ClionProject.dir/Resources.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/ClionProject.dir/Resources.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Resources.cpp.o -MF CMakeFiles/ClionProject.dir/Resources.cpp.o.d -o CMakeFiles/ClionProject.dir/Resources.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Resources.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/ClionProject.dir/Resources.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Resources.cpp.o -MF CMakeFiles/ClionProject.dir/Resources.cpp.o.d -o CMakeFiles/ClionProject.dir/Resources.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Resources.cpp
 
 CMakeFiles/ClionProject.dir/Resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Resources.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Resources.cpp" > CMakeFiles/ClionProject.dir/Resources.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Resources.cpp > CMakeFiles/ClionProject.dir/Resources.cpp.i
 
 CMakeFiles/ClionProject.dir/Resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Resources.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Resources.cpp" -o CMakeFiles/ClionProject.dir/Resources.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Resources.cpp -o CMakeFiles/ClionProject.dir/Resources.cpp.s
 
 CMakeFiles/ClionProject.dir/Save.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Save.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Save.cpp
+CMakeFiles/ClionProject.dir/Save.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.cpp
 CMakeFiles/ClionProject.dir/Save.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/ClionProject.dir/Save.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Save.cpp.o -MF CMakeFiles/ClionProject.dir/Save.cpp.o.d -o CMakeFiles/ClionProject.dir/Save.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Save.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/ClionProject.dir/Save.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Save.cpp.o -MF CMakeFiles/ClionProject.dir/Save.cpp.o.d -o CMakeFiles/ClionProject.dir/Save.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.cpp
 
 CMakeFiles/ClionProject.dir/Save.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Save.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Save.cpp" > CMakeFiles/ClionProject.dir/Save.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.cpp > CMakeFiles/ClionProject.dir/Save.cpp.i
 
 CMakeFiles/ClionProject.dir/Save.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Save.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Save.cpp" -o CMakeFiles/ClionProject.dir/Save.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.cpp -o CMakeFiles/ClionProject.dir/Save.cpp.s
 
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/SaveAndLoad.cpp
+CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SaveAndLoad.cpp
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o -MF CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o.d -o CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/SaveAndLoad.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o -MF CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o.d -o CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SaveAndLoad.cpp
 
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/SaveAndLoad.cpp" > CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SaveAndLoad.cpp > CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.i
 
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/SaveAndLoad.cpp" -o CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SaveAndLoad.cpp -o CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.s
 
 CMakeFiles/ClionProject.dir/School.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/School.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/School.cpp
+CMakeFiles/ClionProject.dir/School.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/School.cpp
 CMakeFiles/ClionProject.dir/School.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/ClionProject.dir/School.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/School.cpp.o -MF CMakeFiles/ClionProject.dir/School.cpp.o.d -o CMakeFiles/ClionProject.dir/School.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/School.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/ClionProject.dir/School.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/School.cpp.o -MF CMakeFiles/ClionProject.dir/School.cpp.o.d -o CMakeFiles/ClionProject.dir/School.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/School.cpp
 
 CMakeFiles/ClionProject.dir/School.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/School.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/School.cpp" > CMakeFiles/ClionProject.dir/School.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/School.cpp > CMakeFiles/ClionProject.dir/School.cpp.i
 
 CMakeFiles/ClionProject.dir/School.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/School.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/School.cpp" -o CMakeFiles/ClionProject.dir/School.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/School.cpp -o CMakeFiles/ClionProject.dir/School.cpp.s
 
 CMakeFiles/ClionProject.dir/Section.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Section.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Section.cpp
+CMakeFiles/ClionProject.dir/Section.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Section.cpp
 CMakeFiles/ClionProject.dir/Section.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/ClionProject.dir/Section.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Section.cpp.o -MF CMakeFiles/ClionProject.dir/Section.cpp.o.d -o CMakeFiles/ClionProject.dir/Section.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Section.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/ClionProject.dir/Section.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Section.cpp.o -MF CMakeFiles/ClionProject.dir/Section.cpp.o.d -o CMakeFiles/ClionProject.dir/Section.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Section.cpp
 
 CMakeFiles/ClionProject.dir/Section.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Section.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Section.cpp" > CMakeFiles/ClionProject.dir/Section.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Section.cpp > CMakeFiles/ClionProject.dir/Section.cpp.i
 
 CMakeFiles/ClionProject.dir/Section.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Section.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Section.cpp" -o CMakeFiles/ClionProject.dir/Section.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Section.cpp -o CMakeFiles/ClionProject.dir/Section.cpp.s
 
 CMakeFiles/ClionProject.dir/Service.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Service.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Service.cpp
+CMakeFiles/ClionProject.dir/Service.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Service.cpp
 CMakeFiles/ClionProject.dir/Service.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/ClionProject.dir/Service.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Service.cpp.o -MF CMakeFiles/ClionProject.dir/Service.cpp.o.d -o CMakeFiles/ClionProject.dir/Service.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Service.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/ClionProject.dir/Service.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Service.cpp.o -MF CMakeFiles/ClionProject.dir/Service.cpp.o.d -o CMakeFiles/ClionProject.dir/Service.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Service.cpp
 
 CMakeFiles/ClionProject.dir/Service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Service.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Service.cpp" > CMakeFiles/ClionProject.dir/Service.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Service.cpp > CMakeFiles/ClionProject.dir/Service.cpp.i
 
 CMakeFiles/ClionProject.dir/Service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Service.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Service.cpp" -o CMakeFiles/ClionProject.dir/Service.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Service.cpp -o CMakeFiles/ClionProject.dir/Service.cpp.s
 
 CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/ServiceFactory.cpp
+CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ServiceFactory.cpp
 CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o -MF CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ServiceFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o -MF CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/ServiceFactory.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ServiceFactory.cpp
 
 CMakeFiles/ClionProject.dir/ServiceFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/ServiceFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ServiceFactory.cpp" > CMakeFiles/ClionProject.dir/ServiceFactory.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ServiceFactory.cpp > CMakeFiles/ClionProject.dir/ServiceFactory.cpp.i
 
 CMakeFiles/ClionProject.dir/ServiceFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/ServiceFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/ServiceFactory.cpp" -o CMakeFiles/ClionProject.dir/ServiceFactory.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/ServiceFactory.cpp -o CMakeFiles/ClionProject.dir/ServiceFactory.cpp.s
 
 CMakeFiles/ClionProject.dir/Shop.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Shop.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Shop.cpp
+CMakeFiles/ClionProject.dir/Shop.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Shop.cpp
 CMakeFiles/ClionProject.dir/Shop.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/ClionProject.dir/Shop.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Shop.cpp.o -MF CMakeFiles/ClionProject.dir/Shop.cpp.o.d -o CMakeFiles/ClionProject.dir/Shop.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Shop.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/ClionProject.dir/Shop.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Shop.cpp.o -MF CMakeFiles/ClionProject.dir/Shop.cpp.o.d -o CMakeFiles/ClionProject.dir/Shop.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Shop.cpp
 
 CMakeFiles/ClionProject.dir/Shop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Shop.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Shop.cpp" > CMakeFiles/ClionProject.dir/Shop.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Shop.cpp > CMakeFiles/ClionProject.dir/Shop.cpp.i
 
 CMakeFiles/ClionProject.dir/Shop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Shop.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Shop.cpp" -o CMakeFiles/ClionProject.dir/Shop.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Shop.cpp -o CMakeFiles/ClionProject.dir/Shop.cpp.s
 
 CMakeFiles/ClionProject.dir/SteelFactory.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/SteelFactory.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/SteelFactory.cpp
+CMakeFiles/ClionProject.dir/SteelFactory.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SteelFactory.cpp
 CMakeFiles/ClionProject.dir/SteelFactory.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/ClionProject.dir/SteelFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/SteelFactory.cpp.o -MF CMakeFiles/ClionProject.dir/SteelFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/SteelFactory.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/SteelFactory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/ClionProject.dir/SteelFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/SteelFactory.cpp.o -MF CMakeFiles/ClionProject.dir/SteelFactory.cpp.o.d -o CMakeFiles/ClionProject.dir/SteelFactory.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SteelFactory.cpp
 
 CMakeFiles/ClionProject.dir/SteelFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/SteelFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/SteelFactory.cpp" > CMakeFiles/ClionProject.dir/SteelFactory.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SteelFactory.cpp > CMakeFiles/ClionProject.dir/SteelFactory.cpp.i
 
 CMakeFiles/ClionProject.dir/SteelFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/SteelFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/SteelFactory.cpp" -o CMakeFiles/ClionProject.dir/SteelFactory.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SteelFactory.cpp -o CMakeFiles/ClionProject.dir/SteelFactory.cpp.s
 
 CMakeFiles/ClionProject.dir/Strategy.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Strategy.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Strategy.cpp
+CMakeFiles/ClionProject.dir/Strategy.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Strategy.cpp
 CMakeFiles/ClionProject.dir/Strategy.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/ClionProject.dir/Strategy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Strategy.cpp.o -MF CMakeFiles/ClionProject.dir/Strategy.cpp.o.d -o CMakeFiles/ClionProject.dir/Strategy.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Strategy.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/ClionProject.dir/Strategy.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Strategy.cpp.o -MF CMakeFiles/ClionProject.dir/Strategy.cpp.o.d -o CMakeFiles/ClionProject.dir/Strategy.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Strategy.cpp
 
 CMakeFiles/ClionProject.dir/Strategy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Strategy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Strategy.cpp" > CMakeFiles/ClionProject.dir/Strategy.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Strategy.cpp > CMakeFiles/ClionProject.dir/Strategy.cpp.i
 
 CMakeFiles/ClionProject.dir/Strategy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Strategy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Strategy.cpp" -o CMakeFiles/ClionProject.dir/Strategy.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Strategy.cpp -o CMakeFiles/ClionProject.dir/Strategy.cpp.s
 
 CMakeFiles/ClionProject.dir/TarRoad.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/TarRoad.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/TarRoad.cpp
+CMakeFiles/ClionProject.dir/TarRoad.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TarRoad.cpp
 CMakeFiles/ClionProject.dir/TarRoad.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/ClionProject.dir/TarRoad.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TarRoad.cpp.o -MF CMakeFiles/ClionProject.dir/TarRoad.cpp.o.d -o CMakeFiles/ClionProject.dir/TarRoad.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TarRoad.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/ClionProject.dir/TarRoad.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TarRoad.cpp.o -MF CMakeFiles/ClionProject.dir/TarRoad.cpp.o.d -o CMakeFiles/ClionProject.dir/TarRoad.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TarRoad.cpp
 
 CMakeFiles/ClionProject.dir/TarRoad.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/TarRoad.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TarRoad.cpp" > CMakeFiles/ClionProject.dir/TarRoad.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TarRoad.cpp > CMakeFiles/ClionProject.dir/TarRoad.cpp.i
 
 CMakeFiles/ClionProject.dir/TarRoad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/TarRoad.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TarRoad.cpp" -o CMakeFiles/ClionProject.dir/TarRoad.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TarRoad.cpp -o CMakeFiles/ClionProject.dir/TarRoad.cpp.s
 
 CMakeFiles/ClionProject.dir/TestingMain.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/TestingMain.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/TestingMain.cpp
+CMakeFiles/ClionProject.dir/TestingMain.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TestingMain.cpp
 CMakeFiles/ClionProject.dir/TestingMain.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/ClionProject.dir/TestingMain.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TestingMain.cpp.o -MF CMakeFiles/ClionProject.dir/TestingMain.cpp.o.d -o CMakeFiles/ClionProject.dir/TestingMain.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TestingMain.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/ClionProject.dir/TestingMain.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TestingMain.cpp.o -MF CMakeFiles/ClionProject.dir/TestingMain.cpp.o.d -o CMakeFiles/ClionProject.dir/TestingMain.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TestingMain.cpp
 
 CMakeFiles/ClionProject.dir/TestingMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/TestingMain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TestingMain.cpp" > CMakeFiles/ClionProject.dir/TestingMain.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TestingMain.cpp > CMakeFiles/ClionProject.dir/TestingMain.cpp.i
 
 CMakeFiles/ClionProject.dir/TestingMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/TestingMain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TestingMain.cpp" -o CMakeFiles/ClionProject.dir/TestingMain.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TestingMain.cpp -o CMakeFiles/ClionProject.dir/TestingMain.cpp.s
 
 CMakeFiles/ClionProject.dir/TownHall.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/TownHall.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/TownHall.cpp
+CMakeFiles/ClionProject.dir/TownHall.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TownHall.cpp
 CMakeFiles/ClionProject.dir/TownHall.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/ClionProject.dir/TownHall.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TownHall.cpp.o -MF CMakeFiles/ClionProject.dir/TownHall.cpp.o.d -o CMakeFiles/ClionProject.dir/TownHall.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TownHall.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/ClionProject.dir/TownHall.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TownHall.cpp.o -MF CMakeFiles/ClionProject.dir/TownHall.cpp.o.d -o CMakeFiles/ClionProject.dir/TownHall.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TownHall.cpp
 
 CMakeFiles/ClionProject.dir/TownHall.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/TownHall.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TownHall.cpp" > CMakeFiles/ClionProject.dir/TownHall.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TownHall.cpp > CMakeFiles/ClionProject.dir/TownHall.cpp.i
 
 CMakeFiles/ClionProject.dir/TownHall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/TownHall.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TownHall.cpp" -o CMakeFiles/ClionProject.dir/TownHall.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TownHall.cpp -o CMakeFiles/ClionProject.dir/TownHall.cpp.s
 
 CMakeFiles/ClionProject.dir/TrainStation.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/TrainStation.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/TrainStation.cpp
+CMakeFiles/ClionProject.dir/TrainStation.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TrainStation.cpp
 CMakeFiles/ClionProject.dir/TrainStation.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/ClionProject.dir/TrainStation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TrainStation.cpp.o -MF CMakeFiles/ClionProject.dir/TrainStation.cpp.o.d -o CMakeFiles/ClionProject.dir/TrainStation.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TrainStation.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/ClionProject.dir/TrainStation.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/TrainStation.cpp.o -MF CMakeFiles/ClionProject.dir/TrainStation.cpp.o.d -o CMakeFiles/ClionProject.dir/TrainStation.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TrainStation.cpp
 
 CMakeFiles/ClionProject.dir/TrainStation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/TrainStation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TrainStation.cpp" > CMakeFiles/ClionProject.dir/TrainStation.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TrainStation.cpp > CMakeFiles/ClionProject.dir/TrainStation.cpp.i
 
 CMakeFiles/ClionProject.dir/TrainStation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/TrainStation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/TrainStation.cpp" -o CMakeFiles/ClionProject.dir/TrainStation.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/TrainStation.cpp -o CMakeFiles/ClionProject.dir/TrainStation.cpp.s
 
 CMakeFiles/ClionProject.dir/Transport.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Transport.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Transport.cpp
+CMakeFiles/ClionProject.dir/Transport.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Transport.cpp
 CMakeFiles/ClionProject.dir/Transport.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/ClionProject.dir/Transport.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Transport.cpp.o -MF CMakeFiles/ClionProject.dir/Transport.cpp.o.d -o CMakeFiles/ClionProject.dir/Transport.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Transport.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/ClionProject.dir/Transport.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Transport.cpp.o -MF CMakeFiles/ClionProject.dir/Transport.cpp.o.d -o CMakeFiles/ClionProject.dir/Transport.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Transport.cpp
 
 CMakeFiles/ClionProject.dir/Transport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Transport.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Transport.cpp" > CMakeFiles/ClionProject.dir/Transport.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Transport.cpp > CMakeFiles/ClionProject.dir/Transport.cpp.i
 
 CMakeFiles/ClionProject.dir/Transport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Transport.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Transport.cpp" -o CMakeFiles/ClionProject.dir/Transport.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Transport.cpp -o CMakeFiles/ClionProject.dir/Transport.cpp.s
 
 CMakeFiles/ClionProject.dir/Utilities.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Utilities.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Utilities.cpp
+CMakeFiles/ClionProject.dir/Utilities.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Utilities.cpp
 CMakeFiles/ClionProject.dir/Utilities.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/ClionProject.dir/Utilities.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Utilities.cpp.o -MF CMakeFiles/ClionProject.dir/Utilities.cpp.o.d -o CMakeFiles/ClionProject.dir/Utilities.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Utilities.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/ClionProject.dir/Utilities.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Utilities.cpp.o -MF CMakeFiles/ClionProject.dir/Utilities.cpp.o.d -o CMakeFiles/ClionProject.dir/Utilities.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Utilities.cpp
 
 CMakeFiles/ClionProject.dir/Utilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Utilities.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Utilities.cpp" > CMakeFiles/ClionProject.dir/Utilities.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Utilities.cpp > CMakeFiles/ClionProject.dir/Utilities.cpp.i
 
 CMakeFiles/ClionProject.dir/Utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Utilities.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Utilities.cpp" -o CMakeFiles/ClionProject.dir/Utilities.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Utilities.cpp -o CMakeFiles/ClionProject.dir/Utilities.cpp.s
 
 CMakeFiles/ClionProject.dir/Vehicle.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Vehicle.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Vehicle.cpp
+CMakeFiles/ClionProject.dir/Vehicle.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Vehicle.cpp
 CMakeFiles/ClionProject.dir/Vehicle.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/ClionProject.dir/Vehicle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Vehicle.cpp.o -MF CMakeFiles/ClionProject.dir/Vehicle.cpp.o.d -o CMakeFiles/ClionProject.dir/Vehicle.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Vehicle.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/ClionProject.dir/Vehicle.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Vehicle.cpp.o -MF CMakeFiles/ClionProject.dir/Vehicle.cpp.o.d -o CMakeFiles/ClionProject.dir/Vehicle.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Vehicle.cpp
 
 CMakeFiles/ClionProject.dir/Vehicle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Vehicle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Vehicle.cpp" > CMakeFiles/ClionProject.dir/Vehicle.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Vehicle.cpp > CMakeFiles/ClionProject.dir/Vehicle.cpp.i
 
 CMakeFiles/ClionProject.dir/Vehicle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Vehicle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Vehicle.cpp" -o CMakeFiles/ClionProject.dir/Vehicle.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Vehicle.cpp -o CMakeFiles/ClionProject.dir/Vehicle.cpp.s
 
 CMakeFiles/ClionProject.dir/WasteManagement.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/WasteManagement.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/WasteManagement.cpp
+CMakeFiles/ClionProject.dir/WasteManagement.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/WasteManagement.cpp
 CMakeFiles/ClionProject.dir/WasteManagement.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/ClionProject.dir/WasteManagement.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/WasteManagement.cpp.o -MF CMakeFiles/ClionProject.dir/WasteManagement.cpp.o.d -o CMakeFiles/ClionProject.dir/WasteManagement.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/WasteManagement.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/ClionProject.dir/WasteManagement.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/WasteManagement.cpp.o -MF CMakeFiles/ClionProject.dir/WasteManagement.cpp.o.d -o CMakeFiles/ClionProject.dir/WasteManagement.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/WasteManagement.cpp
 
 CMakeFiles/ClionProject.dir/WasteManagement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/WasteManagement.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/WasteManagement.cpp" > CMakeFiles/ClionProject.dir/WasteManagement.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/WasteManagement.cpp > CMakeFiles/ClionProject.dir/WasteManagement.cpp.i
 
 CMakeFiles/ClionProject.dir/WasteManagement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/WasteManagement.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/WasteManagement.cpp" -o CMakeFiles/ClionProject.dir/WasteManagement.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/WasteManagement.cpp -o CMakeFiles/ClionProject.dir/WasteManagement.cpp.s
 
 CMakeFiles/ClionProject.dir/WaterPlant.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/WaterPlant.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/WaterPlant.cpp
+CMakeFiles/ClionProject.dir/WaterPlant.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/WaterPlant.cpp
 CMakeFiles/ClionProject.dir/WaterPlant.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/ClionProject.dir/WaterPlant.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/WaterPlant.cpp.o -MF CMakeFiles/ClionProject.dir/WaterPlant.cpp.o.d -o CMakeFiles/ClionProject.dir/WaterPlant.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/WaterPlant.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/ClionProject.dir/WaterPlant.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/WaterPlant.cpp.o -MF CMakeFiles/ClionProject.dir/WaterPlant.cpp.o.d -o CMakeFiles/ClionProject.dir/WaterPlant.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/WaterPlant.cpp
 
 CMakeFiles/ClionProject.dir/WaterPlant.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/WaterPlant.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/WaterPlant.cpp" > CMakeFiles/ClionProject.dir/WaterPlant.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/WaterPlant.cpp > CMakeFiles/ClionProject.dir/WaterPlant.cpp.i
 
 CMakeFiles/ClionProject.dir/WaterPlant.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/WaterPlant.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/WaterPlant.cpp" -o CMakeFiles/ClionProject.dir/WaterPlant.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/WaterPlant.cpp -o CMakeFiles/ClionProject.dir/WaterPlant.cpp.s
 
 CMakeFiles/ClionProject.dir/Yellow.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/Yellow.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Yellow.cpp
+CMakeFiles/ClionProject.dir/Yellow.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Yellow.cpp
 CMakeFiles/ClionProject.dir/Yellow.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/ClionProject.dir/Yellow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Yellow.cpp.o -MF CMakeFiles/ClionProject.dir/Yellow.cpp.o.d -o CMakeFiles/ClionProject.dir/Yellow.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Yellow.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/ClionProject.dir/Yellow.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/Yellow.cpp.o -MF CMakeFiles/ClionProject.dir/Yellow.cpp.o.d -o CMakeFiles/ClionProject.dir/Yellow.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Yellow.cpp
 
 CMakeFiles/ClionProject.dir/Yellow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/Yellow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Yellow.cpp" > CMakeFiles/ClionProject.dir/Yellow.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Yellow.cpp > CMakeFiles/ClionProject.dir/Yellow.cpp.i
 
 CMakeFiles/ClionProject.dir/Yellow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/Yellow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/Yellow.cpp" -o CMakeFiles/ClionProject.dir/Yellow.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Yellow.cpp -o CMakeFiles/ClionProject.dir/Yellow.cpp.s
 
 CMakeFiles/ClionProject.dir/main.cpp.o: CMakeFiles/ClionProject.dir/flags.make
-CMakeFiles/ClionProject.dir/main.cpp.o: /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/main.cpp
+CMakeFiles/ClionProject.dir/main.cpp.o: /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/main.cpp
 CMakeFiles/ClionProject.dir/main.cpp.o: CMakeFiles/ClionProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/ClionProject.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/main.cpp.o -MF CMakeFiles/ClionProject.dir/main.cpp.o.d -o CMakeFiles/ClionProject.dir/main.cpp.o -c "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/ClionProject.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClionProject.dir/main.cpp.o -MF CMakeFiles/ClionProject.dir/main.cpp.o.d -o CMakeFiles/ClionProject.dir/main.cpp.o -c /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/main.cpp
 
 CMakeFiles/ClionProject.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClionProject.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/main.cpp" > CMakeFiles/ClionProject.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/main.cpp > CMakeFiles/ClionProject.dir/main.cpp.i
 
 CMakeFiles/ClionProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClionProject.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/main.cpp" -o CMakeFiles/ClionProject.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/main.cpp -o CMakeFiles/ClionProject.dir/main.cpp.s
 
 # Object files for target ClionProject
 ClionProject_OBJECTS = \
@@ -1166,7 +1152,6 @@ ClionProject_OBJECTS = \
 "CMakeFiles/ClionProject.dir/Office.cpp.o" \
 "CMakeFiles/ClionProject.dir/Park.cpp.o" \
 "CMakeFiles/ClionProject.dir/People.cpp.o" \
-"CMakeFiles/ClionProject.dir/Pet.cpp.o" \
 "CMakeFiles/ClionProject.dir/PoliceStation.cpp.o" \
 "CMakeFiles/ClionProject.dir/Policies.cpp.o" \
 "CMakeFiles/ClionProject.dir/Population.cpp.o" \
@@ -1245,7 +1230,6 @@ ClionProject: CMakeFiles/ClionProject.dir/Observer.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Office.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Park.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/People.cpp.o
-ClionProject: CMakeFiles/ClionProject.dir/Pet.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/PoliceStation.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Policies.cpp.o
 ClionProject: CMakeFiles/ClionProject.dir/Population.cpp.o
@@ -1282,7 +1266,7 @@ ClionProject: _deps/ftxui-build/libftxui-component.a
 ClionProject: _deps/ftxui-build/libftxui-dom.a
 ClionProject: _deps/ftxui-build/libftxui-screen.a
 ClionProject: CMakeFiles/ClionProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_76) "Linking CXX executable ClionProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking CXX executable ClionProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClionProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1294,6 +1278,6 @@ CMakeFiles/ClionProject.dir/clean:
 .PHONY : CMakeFiles/ClionProject.dir/clean
 
 CMakeFiles/ClionProject.dir/depend:
-	cd "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code" "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code" "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build" "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build" "/mnt/c/Users/Personal/OneDrive - University of Pretoria/Documents/School/Classes/Semester 2/COS 214/Project Files/COS-214-Project/Code/build/CMakeFiles/ClionProject.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/CMakeFiles/ClionProject.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ClionProject.dir/depend
 

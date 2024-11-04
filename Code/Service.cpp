@@ -1,3 +1,11 @@
+/**
+* @class Service
+* @brief Class that represents a Service building
+* @ingroup Factory
+* @implements Service factory
+*
+* The Service class is a concrete factory participant of the Factory design pattern. It is used to create a service building.
+*/
 #include "Service.h"
 #include "Citizen.h"
 Service::Service(string cellType) : Buildings(cellType)

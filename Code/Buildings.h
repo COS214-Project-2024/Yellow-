@@ -1,3 +1,13 @@
+/**
+ * @file Buildings.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
 #include <iostream>
@@ -39,6 +49,7 @@ public:
 	virtual Cell* clone() = 0;
 	virtual void setProductionRate(int newRate);
 	virtual void createBuildingResource() = 0;
+	virtual ~Buildings();
 
 };
 

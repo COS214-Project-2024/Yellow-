@@ -1,3 +1,11 @@
+/**
+* @class MaterialOrder
+* @brief MaterialOrder class
+* @ingroup Factory
+* @implements MaterialOrder
+*
+* The MaterialOrder class is a concrete factory participant of the Factory design pattern. It is used to create a material order.
+*/
 #ifndef CODE_MATERIALORDER_H
 #define CODE_MATERIALORDER_H
 
@@ -6,12 +14,8 @@
 using namespace std;
 
 class MaterialOrder {
-
-    //TODO: implement changes and chat to Stefan on how each policy will affect the city
-    //TODO: implement the randomised function
 public:
-    vector<string>  materials;
-    vector<float> materialQuantities;
+    vector<pair<string, float>>  materials;
 
     void addMaterial(string newMaterial, float newQuantity);
 };

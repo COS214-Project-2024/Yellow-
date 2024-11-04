@@ -1,262 +1,181 @@
-// // Copyright 2021 Arthur Sonzogni. All rights reserved.
-// // Use of this source code is governed by the MIT license that can be found in
-// // the LICENSED file.
-// #include <cmath>                   // for sin, cos
-// #include <ftxui/dom/elements.hpp>  // for canvas, Element, separator, hbox, operator|, border
-// #include <ftxui/screen/screen.hpp>  // for Pixel
-// #include <memory>   // for allocator, shared_ptr, __shared_ptr_access
-// #include <string>   // for string, basic_string
-// #include <utility>  // for move
-// #include <vector>   // for vector, __alloc_traits<>::value_type
+//#include <ftxui/component/component.hpp>
+//#include <ftxui/component/component_base.hpp>
+//#include <ftxui/component/screen_interactive.hpp>
+//#include <ftxui/dom/elements.hpp>
+//#include <ftxui/dom/flexbox_config.hpp>
+//#include <ftxui/dom/table.hpp>
+//#include <ftxui/screen/color.hpp>
+//#include <iostream>
+//#include <string>
+//#include <vector>
 //
-// #include "ftxui/component/component.hpp"  // for Renderer, CatchEvent, Horizontal, Menu, Tab
-// #include "ftxui/component/component_base.hpp"      // for ComponentBase
-// #include "ftxui/component/event.hpp"               // for Event
-// #include "ftxui/component/mouse.hpp"               // for Mouse
-// #include "ftxui/component/screen_interactive.hpp"  // for ScreenInteractive
-// #include "ftxui/dom/canvas.hpp"                    // for Canvas
-// #include "ftxui/screen/color.hpp"  // for Color, Color::Red, Color::Blue, Color::Green, ftxui
+//using namespace ftxui;
 //
-// int main() {
-//   using namespace ftxui;
+//// Helper function to create a button with a custom style
+//ButtonOption Style() {
+//    auto option = ButtonOption::Animated();
+//    option.transform = [](const EntryState& s) {
+//        auto element = text(s.label);
+//        if (s.focused) {
+//            element |= bold;
+//        }
+//        return element | center | borderEmpty | flex;
+//    };
+//    return option;
+//}
 //
-//   int mouse_x = 0;
-//   int mouse_y = 0;
+//int main() {
+//    auto screen = ScreenInteractive::Fullscreen();
 //
-//   // A triangle following the mouse, using braille characters.
-//   auto renderer_line_braille = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "Several lines (braille)");
-//     c.DrawPointLine(mouse_x, mouse_y, 80, 10, Color::Red);
-//     c.DrawPointLine(80, 10, 80, 40, Color::Blue);
-//     c.DrawPointLine(80, 40, mouse_x, mouse_y, Color::Green);
-//     return canvas(std::move(c));
-//   });
+//    int space_right = 30;   // Space for the resizable right edge
+//    int space_bottom = 10;   // Space for the resizable bottom edge
+//    int space_top = 5;      // Space for the resizable top edge
+//    int space_left = 30;    // Space for the resizable left edge
+//    int space_middle = 30;  // Space for the resizable middle section
 //
-//   // A triangle following the mouse, using block characters.
-//   auto renderer_line_block = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "Several lines (block)");
-//     c.DrawBlockLine(mouse_x, mouse_y, 80, 10, Color::Red);
-//     c.DrawBlockLine(80, 10, 80, 40, Color::Blue);
-//     c.DrawBlockLine(80, 40, mouse_x, mouse_y, Color::Green);
-//     return canvas(std::move(c));
-//   });
+//    // List of buildings with corresponding colors
+//    std::vector<std::pair<std::string, Color>> buildings = {
+//        {"1. Power Plant", Color::RedLight},
+//        {"2. Water Plant", Color::Cyan},
+//        {"3. Waste Management", Color::YellowLight},
+//        {"4. School", Color::Green},
+//        {"5. Hospital", Color::Cyan},
+//        {"6. Town Hall", Color::Magenta},
+//        {"7. Police Station", Color::GrayLight},
+//        {"8. Airport", Color::White},
+//        {"9. Train Station", Color::BlueLight},
+//        {"10. Concrete Factory", Color::RedLight},
+//        {"11. Steel Factory", Color::Cyan},
+//        {"12. Forestry", Color::GreenLight},
+//        {"13. Mall", Color::YellowLight},
+//        {"14. Office", Color::CyanLight},
+//        {"15. Shop", Color::MagentaLight},
+//        {"16. Museum", Color::Orange1},
+//        {"17. Park", Color::SpringGreen1},
+//        {"18. House", Color::Yellow3},
+//        {"19. Apartment", Color::HotPink},
+//        {"20. Complex", Color::Cyan},
+//        {"21. Road", Color::DarkSlateGray1}
+//    };
 //
-//   // A circle following the mouse, using braille characters.
-//   auto renderer_circle_braille = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A circle (braille)");
-//     c.DrawPointCircle(mouse_x, mouse_y, 30);
-//     return canvas(std::move(c));
-//   });
+//    // Create elements for each building
+//    std::vector<Element> building_elements;
+//    for (const auto& [name, color] : buildings) {
+//        building_elements.push_back(text(name) | ftxui::color(color));
+//    }
 //
-//   // A circle following the mouse, using block characters.
-//   auto renderer_circle_block = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A circle (block)");
-//     c.DrawBlockCircle(mouse_x, mouse_y, 30);
-//     return canvas(std::move(c));
-//   });
+//    // Renderer for the building list with a heading and border
+//    auto building_renderer = Renderer([&] {
+//        return vbox({
+//            text("Available Buildings") | bold | center,
+//            separator(),
+//            vbox(building_elements) | border
+//        }) | bgcolor(Color::Black);
+//    });
 //
-//   // A filled circle following the mouse, using braille characters.
-//   auto renderer_circle_filled_braille = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A circle filled (braille)");
-//     c.DrawPointCircleFilled(mouse_x, mouse_y, 30);
-//     return canvas(std::move(c));
-//   });
+//    // Input field for user prompt
+//    auto input_text = std::make_shared<std::string>();
+//    auto input_component = Input(&*input_text, "Enter building number (1-21):");
 //
-//   // A filled circle following the mouse, using block characters.
-//   auto renderer_circle_filled_block = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A circle filled (block)");
-//     c.DrawBlockCircleFilled(mouse_x, mouse_y, 30);
-//     return canvas(std::move(c));
-//   });
+//    // Label to display the selected building
+//    auto selected_building = std::make_shared<std::string>("");
 //
-//   // An ellipse following the mouse, using braille characters.
-//   auto renderer_ellipse_braille = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "An ellipse (braille)");
-//     c.DrawPointEllipse(mouse_x / 2, mouse_y / 2, mouse_x / 2, mouse_y / 2);
-//     return canvas(std::move(c));
-//   });
+//    // Button to confirm the choice
+//    auto button = Button("Confirm", [&] {
+//        try {
+//            int building_number = std::stoi(*input_text);
+//            if (building_number >= 1 && building_number <= 21) {
+//                *selected_building = "You have selected building: " + buildings[building_number - 1].first;
+//            } else {
+//                *selected_building = "Invalid building number!";
+//            }
+//        } catch (const std::exception& e) {
+//            *selected_building = "Error: " + std::string(e.what());
+//        }
+//    }, Style());
 //
-//   // An ellipse following the mouse, using block characters.
-//   auto renderer_ellipse_block = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "An ellipse (block)");
-//     c.DrawBlockEllipse(mouse_x / 2, mouse_y / 2, mouse_x / 2, mouse_y / 2);
-//     return canvas(std::move(c));
-//   });
+//    // Renderer for the input field, button, and selected building label
+//    auto input_renderer = Renderer(Container::Vertical({
+//        input_component,
+//        button
+//    }), [&] {
+//        return vbox({
+//            text("User Input") | bold | center,
+//            separator(),
+//            input_component->Render() | border,
+//            button->Render() | center,
+//            text(*selected_building) | center | color(Color::Yellow)
+//        }) | bgcolor(Color::Black);
+//    });
 //
-//   // An ellipse following the mouse filled, using braille characters.
-//   auto renderer_ellipse_filled_braille = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A filled ellipse (braille)");
-//     c.DrawPointEllipseFilled(mouse_x / 2, mouse_y / 2, mouse_x / 2,
-//                              mouse_y / 2);
-//     return canvas(std::move(c));
-//   });
+//    // Placeholder for the map
+//    auto map_renderer = Renderer([&] {
+//        return text("Reserved for the map") | center | border;
+//    });
 //
-//   // An ellipse following the mouse filled, using block characters.
-//   auto renderer_ellipse_filled_block = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A filled ellipse (block)");
-//     c.DrawBlockEllipseFilled(mouse_x / 2, mouse_y / 2, mouse_x / 2,
-//                              mouse_y / 2);
-//     c.DrawBlockEllipse(mouse_x / 2, mouse_y / 2, mouse_x / 2, mouse_y / 2);
-//     return canvas(std::move(c));
-//   });
+//    // Buttons for the left upper panel
+//    auto load_button = Button("Load", [] {
+//        std::cout << "Load button pressed!" << std::endl;
+//    }, Style());
 //
-//   // A text following the mouse
-//   auto renderer_text = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A piece of text");
-//     c.DrawText(mouse_x, mouse_y, "This is a piece of text with effects",
-//                [](Pixel& p) {
-//                  p.foreground_color = Color::Red;
-//                  p.underlined = true;
-//                  p.bold = true;
-//                });
-//     return canvas(std::move(c));
-//   });
+//    auto save_button = Button("Save", [] {
+//        std::cout << "Save button pressed!" << std::endl;
+//    }, Style());
 //
-//   auto renderer_plot_1 = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A graph");
+//    // Renderer for the left upper panel with load and save buttons
+//    auto left_upper_renderer = Renderer(Container::Horizontal({
+//        load_button,
+//        save_button
+//    }), [&] {
+//        return hbox({
+//            load_button->Render() | center,
+//            separator() | size(WIDTH, EQUAL, 1), // Small gap between buttons
+//            save_button->Render() | center
+//        }) | center;
+//    });
 //
-//     std::vector<int> ys(100);
-//     for (int x = 0; x < 100; x++) {
-//       float dx = float(x - mouse_x);
-//       float dy = 50.f;
-//       ys[x] = int(dy + 20 * cos(dx * 0.14) + 10 * sin(dx * 0.42));
-//     }
-//     for (int x = 1; x < 99; x++)
-//       c.DrawPointLine(x, ys[x], x + 1, ys[x + 1]);
+//    // Renderer for the right middle panel with city specs
+//    auto city_specs_renderer = Renderer([&] {
+//        return vbox({
+//            text("How your city is doing") | bold | center,
+//            separator(),
+//            text("Morale: 40") | center,
+//            text("Budget: 100000") | center,
+//            text("Population: 20") | center,
+//            text("Energy: 200") | center,
+//            text("Water: 300") | center,
+//            text("Building materials: 50") | center
+//        }) | border | center;
+//    });
 //
-//     return canvas(std::move(c));
-//   });
+//    // Center configuration for the resizable elements
+//    auto center = FlexboxConfig()
+//            .Set(FlexboxConfig::JustifyContent::Center)
+//            .Set(FlexboxConfig::AlignContent::Center);
 //
-//   auto renderer_plot_2 = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A symmetrical graph filled");
-//     std::vector<int> ys(100);
-//     for (int x = 0; x < 100; x++) {
-//       ys[x] = int(30 +                                  //
-//                   10 * cos(x * 0.2 - mouse_x * 0.05) +  //
-//                   5 * sin(x * 0.4) +                    //
-//                   5 * sin(x * 0.3 - mouse_y * 0.05));   //
-//     }
-//     for (int x = 0; x < 100; x++) {
-//       c.DrawPointLine(x, 50 + ys[x], x, 50 - ys[x], Color::Red);
-//     }
+//    // Split the top panel into three sections
+//    auto top_renderer = ResizableSplitLeft(
+//        left_upper_renderer,
+//        ResizableSplitRight(
+//            city_specs_renderer,
+//            Renderer([&] { return flexbox({text("Notifications")}, center); }),
+//            &space_middle),
+//        &space_left);
 //
-//     return canvas(std::move(c));
-//   });
+//    // Make content_renderer resizable with top, right, and bottom panels
+//    auto content_renderer = ResizableSplitRight(
+//            building_renderer, // Use the building renderer directly
+//            map_renderer, // Use the map renderer for the right panel
+//            &space_right);
+//    content_renderer = ResizableSplitBottom(
+//            input_renderer, // Use the input renderer for the bottom panel
+//            content_renderer, &space_bottom);
+//    content_renderer = ResizableSplitTop(
+//            top_renderer, // Use the top renderer for the top panel
+//            content_renderer, &space_top);
 //
-//   auto renderer_plot_3 = Renderer([&] {
-//     auto c = Canvas(100, 100);
-//     c.DrawText(0, 0, "A 2D gaussian plot");
-//     int size = 15;
+//    // Run the screen loop
+//    screen.Loop(content_renderer);
 //
-//     // mouse_x = 5mx + 3*my
-//     // mouse_y = 0mx + -5my + 90
-//     float my = (mouse_y - 90) / -5.f;
-//     float mx = (mouse_x - 3 * my) / 5.f;
-//     std::vector<std::vector<float>> ys(size, std::vector<float>(size));
-//     for (int y = 0; y < size; y++) {
-//       for (int x = 0; x < size; x++) {
-//         float dx = x - mx;
-//         float dy = y - my;
-//         ys[y][x] = -1.5 + 3.0 * std::exp(-0.2f * (dx * dx + dy * dy));
-//       }
-//     }
-//     for (int y = 0; y < size; y++) {
-//       for (int x = 0; x < size; x++) {
-//         if (x != 0) {
-//           c.DrawPointLine(
-//               5 * (x - 1) + 3 * (y - 0), 90 - 5 * (y - 0) - 5 * ys[y][x - 1],
-//               5 * (x - 0) + 3 * (y - 0), 90 - 5 * (y - 0) - 5 * ys[y][x]);
-//         }
-//         if (y != 0) {
-//           c.DrawPointLine(
-//               5 * (x - 0) + 3 * (y - 1), 90 - 5 * (y - 1) - 5 * ys[y - 1][x],
-//               5 * (x - 0) + 3 * (y - 0), 90 - 5 * (y - 0) - 5 * ys[y][x]);
-//         }
-//       }
-//     }
-//
-//     return canvas(std::move(c));
-//   });
-//
-//   int selected_tab = 12;
-//   auto tab = Container::Tab(
-//       {
-//           renderer_line_braille,
-//           renderer_line_block,
-//           renderer_circle_braille,
-//           renderer_circle_block,
-//           renderer_circle_filled_braille,
-//           renderer_circle_filled_block,
-//           renderer_ellipse_braille,
-//           renderer_ellipse_block,
-//           renderer_ellipse_filled_braille,
-//           renderer_ellipse_filled_block,
-//
-//           renderer_plot_1,
-//           renderer_plot_2,
-//           renderer_plot_3,
-//
-//           renderer_text,
-//       },
-//       &selected_tab);
-//
-//   // This capture the last mouse position.
-//   auto tab_with_mouse = CatchEvent(tab, [&](Event e) {
-//     if (e.is_mouse()) {
-//       mouse_x = (e.mouse().x - 1) * 2;
-//       mouse_y = (e.mouse().y - 1) * 4;
-//     }
-//     return false;
-//   });
-//
-//   std::vector<std::string> tab_titles = {
-//       "line (braille)",
-//       "line (block)",
-//       "circle (braille)",
-//       "circle (block)",
-//       "circle filled (braille)",
-//       "circle filled (block)",
-//       "ellipse (braille)",
-//       "ellipse (block)",
-//       "ellipse filled (braille)",
-//       "ellipse filled (block)",
-//       "plot_1 simple",
-//       "plot_2 filled",
-//       "plot_3 3D",
-//       "text",
-//   };
-//   auto tab_toggle = Menu(&tab_titles, &selected_tab);
-//
-//   auto component = Container::Horizontal({
-//       tab_with_mouse,
-//       tab_toggle,
-//   });
-//
-//   // Add some separator to decorate the whole component:
-//   auto component_renderer = Renderer(component, [&] {
-//     return hbox({
-//                tab_with_mouse->Render(),
-//                separator(),
-//                tab_toggle->Render(),
-//            }) |
-//            border;
-//   });
-//
-//   auto screen = ScreenInteractive::FitComponent();
-//   screen.Loop(component_renderer);
-//
-//   return 0;
-// }
+//    return 0;
+//}

@@ -1,6 +1,6 @@
-prefix="/usr/local"
-libdir="/usr/local/lib"
-includedir="/usr/local/include"
+prefix="/usr/local/homebrew"
+libdir="/usr/local/homebrew/lib"
+includedir="/usr/local/homebrew/include"
 
 Name: ftxui
 Description: 

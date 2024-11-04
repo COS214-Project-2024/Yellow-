@@ -1,5 +1,4 @@
 CMakeFiles/ClionProject.dir/Save.cpp.o: \
- /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Save.cpp \
- /usr/include/stdc-predef.h \
- /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/Save.h \
- /mnt/c/Users/Personal/OneDrive\ -\ University\ of\ Pretoria/Documents/School/Classes/Semester\ 2/COS\ 214/Project\ Files/COS-214-Project/Code/SystemState.h
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.cpp \
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.h \
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SystemState.h

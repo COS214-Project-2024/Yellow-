@@ -1,3 +1,11 @@
+/**
+* @class LandmarkFactory
+* @brief Class that represents a Landmark Factory
+* @ingroup Factory
+* @implements BuildingFactory
+*
+* The LandmarkFactory class is a concrete factory participant of the Factory design pattern. It is used to create landmark buildings.
+*/
 #include "LandmarkFactory.h"
 
 Cell* LandmarkFactory::createPark(vector<Coordinate> coordinates) {

@@ -89,8 +89,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClionProject.dir/Park.cpp.o.d"
   "CMakeFiles/ClionProject.dir/People.cpp.o"
   "CMakeFiles/ClionProject.dir/People.cpp.o.d"
-  "CMakeFiles/ClionProject.dir/Pet.cpp.o"
-  "CMakeFiles/ClionProject.dir/Pet.cpp.o.d"
   "CMakeFiles/ClionProject.dir/PoliceStation.cpp.o"
   "CMakeFiles/ClionProject.dir/PoliceStation.cpp.o.d"
   "CMakeFiles/ClionProject.dir/Policies.cpp.o"

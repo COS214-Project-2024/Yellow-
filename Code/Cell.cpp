@@ -1,3 +1,11 @@
+/**
+* @class Cell
+* @brief Class that represents a cell in the city
+* @ingroup Factory
+* @implements Cell
+*
+* The Cell class is a concrete factory participant of the Factory design pattern. It is used to create a cell in the city.
+*/
 #include "Cell.h"
 
 Cell::Cell(string cellType) {
@@ -28,18 +36,12 @@ Cell::~Cell()
 {
 }
 
-void Cell::addCitizenToBuilding(Citizen *newCitizen)
-{
-}
+
 
 Cell * Cell::clone() {
 
 }
 
-void Cell::setProductionRate(int newRate)
-{
-}
 
-void Cell::taxBuilding()
-{
-}
+
+
