@@ -1,0 +1,9 @@
+prefix="/usr/local/homebrew"
+libdir="/usr/local/homebrew/lib"
+includedir="/usr/local/homebrew/include"
+
+Name: ftxui
+Description: 
+Version: 5.0.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lftxui-component -lftxui-dom -lftxui-screen

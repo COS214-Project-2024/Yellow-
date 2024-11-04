@@ -1,3 +1,11 @@
+/**
+* @class IndustrialFactory
+* @brief Class that represents an Industrial Factory
+* @ingroup Factory
+* @implements BuildingFactory
+*
+* The IndustrialFactory class is a concrete factory participant of the Factory design pattern. It is used to create industrial buildings.
+*/
 #include "IndustrialFactory.h"
 Industrial* IndustrialFactory::createForestry() {
     if (useBuildingResources(80,80,80,700) == false)

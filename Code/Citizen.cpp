@@ -1,3 +1,11 @@
+/**
+* @class Citizen
+* @brief Class that represents a Citizen in the city
+* @ingroup Factory
+* @implements Citizen
+*
+* The Citizen class is a concrete factory participant of the Factory design pattern. It is used to create a Citizen in the city.
+*/
 #include "Citizen.h"
 
 ////////////// Constructors ///////////////

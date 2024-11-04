@@ -1,3 +1,13 @@
+/**
+ * @file BuildingFactory.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-11-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef BUILDINGFACTORY_H
 #define BUILDINGFACTORY_H
 #include "WasteManagement.h"

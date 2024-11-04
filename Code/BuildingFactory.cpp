@@ -1,3 +1,11 @@
+/**
+* @class BuildingFactory
+* @brief Class that represents the factory for creating buildings
+* @ingroup Factory
+* @implements BuildingFactory
+*
+* The BuildingFactory class is a concrete factory participant of the Factory design pattern. It is used to create buildings.
+*/
 #include "BuildingFactory.h"
 
 bool BuildingFactory::useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget)

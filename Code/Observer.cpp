@@ -1,3 +1,11 @@
+/**
+* @class Observer
+* @brief Class that represents an Observer
+* @ingroup Observer
+* @implements Observer
+*
+* The Observer class is a concrete observer participant of the Observer design pattern. It is used to observe the state of the city.
+*/
 #include "Observer.h"
 
 Observer::Observer() {}

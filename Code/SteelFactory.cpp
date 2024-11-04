@@ -1,3 +1,11 @@
+/**
+* @class SteelFactory
+* @brief Class that represents a Steel Factory building
+* @ingroup Factory
+* @implements Industrial factory
+*
+* The SteelFactory class is a concrete factory participant of the Factory design pattern. It is used to create a steel factory building.
+*/
 #include "SteelFactory.h"
 
 SteelFactory::SteelFactory() : Industrial("SteelFactory")

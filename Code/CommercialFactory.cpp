@@ -1,3 +1,11 @@
+/**
+* @class CommercialFactory
+* @brief A class that represents a commercial factory.
+* @ingroup Factory
+* @implements BuildingFactory
+*
+* The CommercialFactory class is a concrete factory participant of the Factory design pattern. It is used to create commercial buildings.
+*/
 #include "CommercialFactory.h"
 
 Commercial* CommercialFactory::createShop() {

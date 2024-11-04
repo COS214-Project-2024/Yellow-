@@ -20,14 +20,13 @@ cov:
 	gcov *.cpp
 
 doxygenCreate:
-	mkdlr docs
+	mkdir docs
 	cd docs/
 	doxygen -g
 
 doxygenFiles:
 	doxygen ./docs/Doxyfile
 v: 
-	make debugcpp
 	valgrind --tool=memcheck --leak-check=yes --track-origins=yes --log-file=valg.txt ./main
 	make c
 

@@ -1,3 +1,11 @@
+/**
+* @class ExpandCity
+* @brief ExpandCity is a concrete strategy participant of the Strategy design pattern.
+* @ingroup Strategy
+* @implements Strategy
+*
+* ExpandCity is a concrete strategy participant of the Strategy design pattern. It is used to implement a policy that expands the city.
+*/
 #include "ExpandCity.h"
 
 Policies* ExpandCity::implementPolicy(string stateType, string prevStateColour, string currStateColour) {

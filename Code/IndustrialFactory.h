@@ -1,3 +1,13 @@
+/**
+ * @file IndustrialFactory.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef INDUSTRIALFACTORY_H
 #define INDUSTRIALFACTORY_H
 #include "BuildingFactory.h"

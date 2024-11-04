@@ -1,3 +1,11 @@
+/**
+* @class Resources
+* @brief A class that stores the resources of the city
+* @ingroup Resources
+* @implements Resources
+*
+* The Resources class is a concrete participant of the Resources design pattern. It is used to store the resources of the city.
+*/
 
 #include "Resources.h"
 

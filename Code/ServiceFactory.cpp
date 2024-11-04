@@ -1,3 +1,11 @@
+/**
+* @class ServiceFactory
+* @brief A class used to create service buildings
+* @ingroup Factory
+* @implements ServiceFactory
+*
+* The ServiceFactory class is a concrete factory participant of the Factory design pattern. It is used to create service buildings.
+*/
 #include "ServiceFactory.h"
 
 Service* ServiceFactory::createHospital() {

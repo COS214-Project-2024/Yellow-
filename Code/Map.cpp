@@ -1,7 +1,11 @@
-//
-// Created by sjvr0 on 2024/10/22.
-//
-
+/**
+* @class Map
+* @brief A class that creates a map of the city
+* @ingroup Composite
+* @implements Section
+*
+* The Map class is a composite participant of the Composite design pattern. It is used to represent a map of the city.
+*/
 #include "Map.h"
 Map::Map(vector<vector<Cell*>> map, vector<vector<Cell*>> distanceMatrix)
         : map(map), distanceMatrix(distanceMatrix) {}

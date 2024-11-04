@@ -1,3 +1,11 @@
+/**
+* @class Green
+* @brief Class that represents a Green severity
+* @ingroup State
+* @implements Severity
+*
+* The Green class is a concrete state participant of the State design pattern. It is used to represent a green severity.
+*/
 #include "Green.h"
 
 string Green::getSeverity() {
