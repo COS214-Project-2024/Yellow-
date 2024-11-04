@@ -14,13 +14,12 @@
 #include "Visitor.h"
 #include <iostream>
 
+using namespace std;
 
 class CVisitor : public Visitor {
 
 public:
 	void visitCitizens(Citizen* ele);
-
-	void visitTransport(Vehicle* ele);
 
 	void visitBuilding(Section* ele);
 };

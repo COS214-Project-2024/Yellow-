@@ -12,7 +12,6 @@
 #define VISITOR_H
 
 class Citizen;
-#include "Vehicle.h"
 class Section;
 class Visitor {
 
