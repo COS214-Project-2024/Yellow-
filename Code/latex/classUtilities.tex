@@ -1,0 +1,64 @@
+\hypertarget{classUtilities}{}\doxysection{Utilities Class Reference}
+\label{classUtilities}\index{Utilities@{Utilities}}
+
+
+A class used to represent a utility building
+
+factory.  
+
+
+Inheritance diagram for Utilities\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.703704cm]{classUtilities}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUtilities_a2a15f3f4ac5b554e3fc51f3c484ca98b}\label{classUtilities_a2a15f3f4ac5b554e3fc51f3c484ca98b}} 
+{\bfseries Utilities} (string cell\+Type)
+\item 
+\mbox{\Hypertarget{classUtilities_a0ca8f313de87e1c47e788fc3abd49e95}\label{classUtilities_a0ca8f313de87e1c47e788fc3abd49e95}} 
+void {\bfseries accept\+Visitor} (\mbox{\hyperlink{classVisitor}{Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classUtilities_a92a45b324952d6a6628d5089c5772c8f}\label{classUtilities_a92a45b324952d6a6628d5089c5772c8f}} 
+virtual void {\bfseries tax\+Building} ()
+\item 
+\mbox{\Hypertarget{classUtilities_a2568fee8adbb278af11fa27088257621}\label{classUtilities_a2568fee8adbb278af11fa27088257621}} 
+virtual void {\bfseries create\+Building\+Resource} ()=0
+\item 
+\mbox{\Hypertarget{classUtilities_ac74953c6218ed901e67a47214b648e66}\label{classUtilities_ac74953c6218ed901e67a47214b648e66}} 
+virtual void {\bfseries set\+Icon} ()
+\item 
+\mbox{\Hypertarget{classUtilities_a89af63db2c36413e789cf89470cbb904}\label{classUtilities_a89af63db2c36413e789cf89470cbb904}} 
+virtual \mbox{\hyperlink{classCell}{Cell}} $\ast$ {\bfseries clone} ()=0
+\item 
+\mbox{\Hypertarget{classUtilities_a695dbde15a41c14a3578c2ae9ad1896b}\label{classUtilities_a695dbde15a41c14a3578c2ae9ad1896b}} 
+void {\bfseries set\+Production\+Rate} (int new\+Rate)
+\item 
+\mbox{\Hypertarget{classUtilities_aa4c437e37c9024229f109096c2fa7fe3}\label{classUtilities_aa4c437e37c9024229f109096c2fa7fe3}} 
+void {\bfseries pay\+Employees} ()
+\item 
+\mbox{\Hypertarget{classUtilities_ab7b56d96623c2e3a1522f55d6b05788c}\label{classUtilities_ab7b56d96623c2e3a1522f55d6b05788c}} 
+void {\bfseries add\+Citizen\+To\+Building} (\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$new\+Citizen)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUtilities_a88869408209be71629bb13282cd53645}\label{classUtilities_a88869408209be71629bb13282cd53645}} 
+int {\bfseries production\+Per\+Cell}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class used to represent a utility building
+
+factory. 
+
+The \mbox{\hyperlink{classUtilities}{Utilities}} class is a concrete factory participant of the Factory design pattern. It is used to create a utility building. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Utilities_8h}{Utilities.\+h}}\item 
+Utilities.\+cpp\end{DoxyCompactItemize}

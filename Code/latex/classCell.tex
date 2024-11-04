@@ -1,0 +1,84 @@
+\hypertarget{classCell}{}\doxysection{Cell Class Reference}
+\label{classCell}\index{Cell@{Cell}}
+
+
+Class that represents a cell in the city.  
+
+
+Inheritance diagram for Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.764706cm]{classCell}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCell_adb0e84dccaf1a28bebf5530bd219362f}\label{classCell_adb0e84dccaf1a28bebf5530bd219362f}} 
+{\bfseries Cell} (string cell\+Type)
+\item 
+\mbox{\Hypertarget{classCell_a75b2f4e484d02ad5985c887e90507ac5}\label{classCell_a75b2f4e484d02ad5985c887e90507ac5}} 
+string {\bfseries get\+Cell\+Type} ()
+\item 
+\mbox{\Hypertarget{classCell_ab886c4e31b43f0408fd4d798fa5f789e}\label{classCell_ab886c4e31b43f0408fd4d798fa5f789e}} 
+\mbox{\hyperlink{classCell}{Cell}} $\ast$ {\bfseries get\+Cell} ()
+\item 
+\mbox{\Hypertarget{classCell_a57c3eb4d44e1414c6e50a49e7f5678bc}\label{classCell_a57c3eb4d44e1414c6e50a49e7f5678bc}} 
+vector$<$ \mbox{\hyperlink{classCoordinate}{Coordinate}} $>$ {\bfseries get\+Coordinates} ()
+\item 
+\mbox{\Hypertarget{classCell_a7f2159edb1c1e0d6a19819becfe80414}\label{classCell_a7f2159edb1c1e0d6a19819becfe80414}} 
+void {\bfseries set\+Coordinates} (vector$<$ \mbox{\hyperlink{classCoordinate}{Coordinate}} $>$ new\+Coordinates)
+\item 
+\mbox{\Hypertarget{classCell_aea6faf2653015720e6f201274b58ea17}\label{classCell_aea6faf2653015720e6f201274b58ea17}} 
+virtual void {\bfseries set\+Icon} ()=0
+\item 
+\mbox{\Hypertarget{classCell_a02d8fd7dc31aaf873eb9ba00264eb6b2}\label{classCell_a02d8fd7dc31aaf873eb9ba00264eb6b2}} 
+void {\bfseries set\+Cell\+Type} (string str)
+\item 
+\mbox{\Hypertarget{classCell_a5cf7559abefb63634b10202b60cd6178}\label{classCell_a5cf7559abefb63634b10202b60cd6178}} 
+virtual void {\bfseries add\+Citizen\+To\+Building} (\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$new\+Citizen)
+\item 
+\mbox{\Hypertarget{classCell_a45c7ac5c4b78b4eae3aabe7b15cc14ff}\label{classCell_a45c7ac5c4b78b4eae3aabe7b15cc14ff}} 
+virtual \mbox{\hyperlink{classCell}{Cell}} $\ast$ {\bfseries clone} ()=0
+\item 
+\mbox{\Hypertarget{classCell_a31fb2f2101e6543d62a46c2aab0d19ec}\label{classCell_a31fb2f2101e6543d62a46c2aab0d19ec}} 
+virtual void {\bfseries set\+Production\+Rate} (int new\+Rate)=0
+\item 
+\mbox{\Hypertarget{classCell_a3c11347ded672aa20c74ca3bdcc7a114}\label{classCell_a3c11347ded672aa20c74ca3bdcc7a114}} 
+virtual void {\bfseries create\+Building\+Resource} ()=0
+\item 
+\mbox{\Hypertarget{classCell_ac839e2573338651298c2349ea647e1ce}\label{classCell_ac839e2573338651298c2349ea647e1ce}} 
+virtual void {\bfseries tax\+Building} ()=0
+\item 
+\mbox{\Hypertarget{classCell_aa21e165cd22aa592c2818c8c051e9575}\label{classCell_aa21e165cd22aa592c2818c8c051e9575}} 
+virtual void {\bfseries pay\+Employees} ()=0
+\item 
+\mbox{\Hypertarget{classCell_ac055ae053b5739eab183681a43f18ca1}\label{classCell_ac055ae053b5739eab183681a43f18ca1}} 
+virtual float {\bfseries get\+Money} ()=0
+\item 
+\mbox{\Hypertarget{classCell_acd8f8be8018b07c8f0bdb506c15a6d36}\label{classCell_acd8f8be8018b07c8f0bdb506c15a6d36}} 
+virtual vector$<$ \mbox{\hyperlink{classCell}{Cell}} $\ast$ $>$ {\bfseries get\+Children} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCell_af52507688c2661bff7396ff005c0c414}\label{classCell_af52507688c2661bff7396ff005c0c414}} 
+string {\bfseries type}
+\item 
+\mbox{\Hypertarget{classCell_abd1daa4037bb91cbd9c7d6754a00ed83}\label{classCell_abd1daa4037bb91cbd9c7d6754a00ed83}} 
+vector$<$ \mbox{\hyperlink{classCoordinate}{Coordinate}} $>$ {\bfseries coordinates} = vector$<$\mbox{\hyperlink{classCoordinate}{Coordinate}}$>$()
+\item 
+\mbox{\Hypertarget{classCell_ace6ba62d6dd084df54fcc25bd73fba92}\label{classCell_ace6ba62d6dd084df54fcc25bd73fba92}} 
+char {\bfseries icon}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents a cell in the city. 
+
+The \mbox{\hyperlink{classCell}{Cell}} class is a concrete factory participant of the Factory design pattern. It is used to create a cell in the city. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Cell_8h}{Cell.\+h}}\item 
+Cell.\+cpp\end{DoxyCompactItemize}

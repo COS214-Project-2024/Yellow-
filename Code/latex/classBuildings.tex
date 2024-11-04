@@ -1,0 +1,90 @@
+\hypertarget{classBuildings}{}\doxysection{Buildings Class Reference}
+\label{classBuildings}\index{Buildings@{Buildings}}
+
+
+\mbox{\hyperlink{classBuildings}{Buildings}} class.  
+
+
+Inheritance diagram for Buildings\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{classBuildings}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBuildings_a51c0b3386c2668bb370154a4776d36dd}\label{classBuildings_a51c0b3386c2668bb370154a4776d36dd}} 
+{\bfseries Buildings} (std\+::string cell\+Type)
+\item 
+\mbox{\Hypertarget{classBuildings_a0311d2b2b6b61e85a0474e109cdff8b2}\label{classBuildings_a0311d2b2b6b61e85a0474e109cdff8b2}} 
+float {\bfseries get\+Money} () override
+\item 
+\mbox{\Hypertarget{classBuildings_a6ea904383b6b024e5ca5d081a4723fee}\label{classBuildings_a6ea904383b6b024e5ca5d081a4723fee}} 
+void {\bfseries set\+Money} (float new\+Amount) override
+\item 
+\mbox{\Hypertarget{classBuildings_af6b86749193843c23f3e06697bde3e16}\label{classBuildings_af6b86749193843c23f3e06697bde3e16}} 
+int {\bfseries get\+Max\+Citizens} ()
+\item 
+\mbox{\Hypertarget{classBuildings_a6f3cdf2a528239f7cb593bf84dcc83de}\label{classBuildings_a6f3cdf2a528239f7cb593bf84dcc83de}} 
+void {\bfseries add\+Section} (\mbox{\hyperlink{classCell}{Cell}} $\ast$section)
+\item 
+\mbox{\Hypertarget{classBuildings_a775f2f3d3b42a18e717b1a2af3366b94}\label{classBuildings_a775f2f3d3b42a18e717b1a2af3366b94}} 
+void {\bfseries remove\+Section} (int idx)
+\item 
+\mbox{\Hypertarget{classBuildings_acbedf8f311bc33108809487b875ff044}\label{classBuildings_acbedf8f311bc33108809487b875ff044}} 
+\mbox{\hyperlink{classCell}{Cell}} $\ast$ {\bfseries get\+Section} (int idx)
+\item 
+\mbox{\Hypertarget{classBuildings_af8e98d89691dafc3e94055b3c53fd3d1}\label{classBuildings_af8e98d89691dafc3e94055b3c53fd3d1}} 
+void {\bfseries accept\+Visitor} (\mbox{\hyperlink{classVisitor}{Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classBuildings_a5a4e0bd74684e1d454032968ee4db114}\label{classBuildings_a5a4e0bd74684e1d454032968ee4db114}} 
+virtual void {\bfseries tax\+Building} ()=0
+\item 
+\mbox{\Hypertarget{classBuildings_a92a107368e3536a342e70a35326ae8c7}\label{classBuildings_a92a107368e3536a342e70a35326ae8c7}} 
+virtual void {\bfseries pay\+Employees} ()=0
+\item 
+\mbox{\Hypertarget{classBuildings_acebf0bf88c6d559f1bdcc84493f95c19}\label{classBuildings_acebf0bf88c6d559f1bdcc84493f95c19}} 
+virtual void {\bfseries set\+Icon} ()
+\item 
+\mbox{\Hypertarget{classBuildings_a7c2d5f4ab46747fde902a67e37bcdf5f}\label{classBuildings_a7c2d5f4ab46747fde902a67e37bcdf5f}} 
+virtual void {\bfseries add\+Citizen\+To\+Building} (\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$new\+Citizen)=0
+\item 
+\mbox{\Hypertarget{classBuildings_a7e8d11c8a047d7a8995f79e70acd392a}\label{classBuildings_a7e8d11c8a047d7a8995f79e70acd392a}} 
+virtual \mbox{\hyperlink{classCell}{Cell}} $\ast$ {\bfseries clone} ()=0
+\item 
+\mbox{\Hypertarget{classBuildings_a28957b9e1c53f334838d8dd5b3c1c627}\label{classBuildings_a28957b9e1c53f334838d8dd5b3c1c627}} 
+virtual void {\bfseries set\+Production\+Rate} (int new\+Rate)
+\item 
+\mbox{\Hypertarget{classBuildings_a5d8218d1d3ce23e349f0470254fd29e6}\label{classBuildings_a5d8218d1d3ce23e349f0470254fd29e6}} 
+virtual void {\bfseries create\+Building\+Resource} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBuildings_ad9e06f3692def9d6b4743b38cd80ece4}\label{classBuildings_ad9e06f3692def9d6b4743b38cd80ece4}} 
+int {\bfseries max\+Citizens}
+\item 
+\mbox{\Hypertarget{classBuildings_a67545e642bb5a62c3cf682a323762768}\label{classBuildings_a67545e642bb5a62c3cf682a323762768}} 
+int {\bfseries current\+Number\+Of\+Citizens}
+\item 
+\mbox{\Hypertarget{classBuildings_a91e9a91611caf8c2c74d72bc71a04102}\label{classBuildings_a91e9a91611caf8c2c74d72bc71a04102}} 
+float {\bfseries building\+Money}
+\item 
+\mbox{\Hypertarget{classBuildings_a7ee66395e376df15eac9d4d9a54e1699}\label{classBuildings_a7ee66395e376df15eac9d4d9a54e1699}} 
+std\+::vector$<$ \mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ $>$ {\bfseries dependent\+Citizens}
+\item 
+\mbox{\Hypertarget{classBuildings_aa114d5ae63535ae340f8eb328aad7867}\label{classBuildings_aa114d5ae63535ae340f8eb328aad7867}} 
+int {\bfseries production\+Per\+Cell}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classBuildings}{Buildings}} class. 
+
+The \mbox{\hyperlink{classBuildings}{Buildings}} class is a composite participant of the Composite design pattern. It is used to represent a building. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Buildings_8h}{Buildings.\+h}}\item 
+Buildings.\+cpp\end{DoxyCompactItemize}

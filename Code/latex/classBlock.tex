@@ -1,0 +1,58 @@
+\hypertarget{classBlock}{}\doxysection{Block Class Reference}
+\label{classBlock}\index{Block@{Block}}
+
+
+A class that represents a block of buildings.  
+
+
+Inheritance diagram for Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classBlock}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBlock_a2fc989daefa1b945dbcf43c5def3b542}\label{classBlock_a2fc989daefa1b945dbcf43c5def3b542}} 
+void {\bfseries add\+Section} (\mbox{\hyperlink{classCell}{Cell}} $\ast$section)
+\item 
+\mbox{\Hypertarget{classBlock_a52fe62be13666e72ddb5e2b367c5835a}\label{classBlock_a52fe62be13666e72ddb5e2b367c5835a}} 
+void {\bfseries remove\+Section} (int idx)
+\item 
+\mbox{\Hypertarget{classBlock_ac8d59b136698222c9bbbfbede88d3239}\label{classBlock_ac8d59b136698222c9bbbfbede88d3239}} 
+\mbox{\hyperlink{classCell}{Cell}} $\ast$ {\bfseries get\+Section} (int idx)
+\item 
+\mbox{\Hypertarget{classBlock_a6a93710f6883557901282ab3ef394fb1}\label{classBlock_a6a93710f6883557901282ab3ef394fb1}} 
+void {\bfseries accept\+Visitor} (\mbox{\hyperlink{classVisitor}{Visitor}} $\ast$v)
+\item 
+\mbox{\Hypertarget{classBlock_ae6e533ef108900f1a4d1ff23bbebf885}\label{classBlock_ae6e533ef108900f1a4d1ff23bbebf885}} 
+vector$<$ \mbox{\hyperlink{classCell}{Cell}} $\ast$ $>$ {\bfseries get\+Children} ()
+\item 
+\mbox{\Hypertarget{classBlock_a3f7f140dc315050cb00a13da6b663328}\label{classBlock_a3f7f140dc315050cb00a13da6b663328}} 
+virtual \mbox{\hyperlink{classCell}{Cell}} $\ast$ {\bfseries clone} ()
+\item 
+\mbox{\Hypertarget{classBlock_ad659298ec28c98157c2f5f74650292a9}\label{classBlock_ad659298ec28c98157c2f5f74650292a9}} 
+void {\bfseries create\+Building\+Resource} () override
+\item 
+\mbox{\Hypertarget{classBlock_a110b3de183d9c3d6287fe89c88fa6276}\label{classBlock_a110b3de183d9c3d6287fe89c88fa6276}} 
+virtual void {\bfseries set\+Production\+Rate} (int new\+Rate)
+\item 
+\mbox{\Hypertarget{classBlock_abf41049b22a308c82f80f60a5cd1ff60}\label{classBlock_abf41049b22a308c82f80f60a5cd1ff60}} 
+virtual void {\bfseries tax\+Building} ()
+\item 
+\mbox{\Hypertarget{classBlock_a7982ce41bc36f887c5d00298c1c8900e}\label{classBlock_a7982ce41bc36f887c5d00298c1c8900e}} 
+virtual void {\bfseries pay\+Employees} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a block of buildings. 
+
+The \mbox{\hyperlink{classBlock}{Block}} class is a composite participant of the Composite design pattern. It is used to represent a block of buildings. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Block_8h}{Block.\+h}}\item 
+Block.\+cpp\end{DoxyCompactItemize}
