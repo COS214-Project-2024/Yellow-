@@ -15,8 +15,9 @@ class Office : public Commercial {
 
 
 public:
-	float taxBuilding();
 	Office();
+	void setIcon() override;
+    Cell* clone() override;
 };
 
 #endif

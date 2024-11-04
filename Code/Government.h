@@ -1,13 +1,3 @@
-/**
- * @file Government.h
- * @author Saskia Steyn
- * @brief 
- * @version 0.1
- * @date 2024-10-10
- * 
- * @copyright Copyright (c) 2024
- * 
- */
 #ifndef GOVERNMENT_H
 #define GOVERNMENT_H
 
@@ -19,6 +9,11 @@
 #include "MaterialOrder.h"
 #include "Policies.h"
 #include "Department.h"
+#include "AddPublicTransport.h"
+#include "Transport.h"
+#include "Labour.h"
+#include "Amenities.h"
+#include "Finances.h"
 
 #include <iostream>
 #include <typeinfo>
@@ -35,9 +30,9 @@ class Government {
         Department* department;
 
     protected:
-        Government(){};
 
     public:
+        Government();
         ~Government(){
             delete peopleState;
             delete budgetState;
@@ -47,10 +42,10 @@ class Government {
         };
 
         //Strategy methods
-        Policies* implementPolicy(string stateType, Severity* prevState, Severity* currState);
-        Policies* implementPolicyPeople(Severity* prevState);
-        Policies* implementPolicyBudget(Severity* prevState);
-        Policies* implementPolicyMorale(Severity* prevState);
+        Policies* implementPolicy(string stateType, string prevState, string currState);
+        Policies* implementPolicyPeople(string prevState);
+        Policies* implementPolicyBudget(string prevState);
+        Policies* implementPolicyMorale(string prevState);
         void setStrategy(Strategy* newStrategy);
 
 

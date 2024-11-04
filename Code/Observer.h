@@ -12,6 +12,7 @@
 #define OBSERVER_H
 #include "Citizen.h"
 #include <string>
+#include <vector> 
 class Citizen;
 using namespace std;
 

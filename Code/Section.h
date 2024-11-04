@@ -30,6 +30,15 @@ public:
 	virtual void acceptVisitor(Visitor* v) = 0;
 
 	virtual vector<Section*> getChildren();
+	
+	virtual void setIcon();
+
+	virtual Cell* clone();
+	
+	virtual void createBuildingResource() = 0;
+
+	float getMoney() override;
+	void setMoney(float newAmount) override;
 };
 
 #endif

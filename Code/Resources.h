@@ -1,45 +1,62 @@
-/**
- * @file Resources.h
- * @author Stefan Muller
- * @brief 
- * @version 0.1
- * @date 2024-10-10
- * 
- * @copyright Copyright (c) 2024
- * 
- */
 #ifndef RESOURCES_H
 #define RESOURCES_H
 
+#include <iostream>
+#include <cmath>
 class Resources {
 
 private:
 	int concrete;
 	int steel;
 	int wood;
-	int energy;
-	int water;
+	int powerGrid;
+	int powerUsage;
+	int waterGrid;
+	int waterUsage;
 	float budget;
     int population;
     int morale;
-
+	float propertyTaxRate;
+	float incomeTaxRate;
+	float businessTaxRate;
+	float wage;
 public:
-	void setConcrete(int newAmount);
-	int getConcrete();
-	void setSteel(int newAmount);
-	int getSteel();
-	void setEnergy(int newAmount);
-	int getEnergy();
-	void setWater(int newAmount);
-	int getWater();
-	void setBudget(float newAmount);
-	float getBudget();
-	void setPopulation(int newAmount);
-	int getPopulation();
-	void setMorale(int newAmount);
-	int getMorale();
-	void setWood(int newAmount);
-	int getWood();
+
+    Resources();
+    void printResources();
+
+	// Setters
+    void setConcrete(int newValue);
+    void setSteel(int newValue);
+    void setWood(int newValue);
+    void setPowerGrid(int newValue);
+    void setPowerUsage(int newValue);
+    void setWaterGrid(int newValue);
+    void setWaterUsage(int newValue);
+    void setBudget(float newValue);
+    void setPopulation(int newValue);
+    void setMorale(int newValue);
+    void setBusinessTaxRate(float newRate);
+    void setPropertyTaxRate(float newRate);
+    void setIncomeTaxRate(float newRate);
+	void setWage(float newWage);
+
+    // Getters
+    int getConcrete() const;
+    int getSteel() const;
+    int getWood() const;
+    int getPowerGrid() const;
+    int getPowerUsage() const;
+    int getWaterGrid() const;
+    int getWaterUsage() const;
+    float getBudget() const;
+    int getPopulation() const;
+    int getMorale() const;
+    int getBusinessTax() const;
+    float getPropertyTaxRate() const;
+    float getIncomeTaxRate() const;
+	float getBusinessTaxRate() const;
+	float getWage() const;
 };
 
 #endif

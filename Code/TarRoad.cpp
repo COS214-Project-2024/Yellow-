@@ -9,4 +9,5 @@
 #include "TarRoad.h"
 TarRoad::TarRoad(int cost) {
     this->cost = cost;
+    this->setCellType("Road");
 }

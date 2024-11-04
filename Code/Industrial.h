@@ -15,16 +15,25 @@
 #include "Visitor.h"
 
 class Industrial : public Buildings {
-
-
+	
 public:
 	Industrial(string cellType);
 	
-	virtual float taxBuilding() = 0;
+	void taxBuilding() override;
 
 	void acceptVisitor(Visitor* v);
 
 	virtual void createBuildingResource() = 0;
+
+	virtual void setIcon();
+
+	virtual Cell* clone() = 0;
+
+	void setProductionRate(int newRate) override;
+
+	void payEmployees() override;
+
+	void addCitizenToBuilding(Citizen* newCitizen) override;
 };
 
 #endif

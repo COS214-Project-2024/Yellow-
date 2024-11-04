@@ -14,7 +14,7 @@ Block::Block() : Section("Block") //review
 
 Block::~Block()
 {
-	
+	children.clear();
 }
 
 void Block::addSection(Section *section)
@@ -53,4 +53,13 @@ void Block::acceptVisitor(Visitor* v) {
 vector<Section*> Block::getChildren()
 {
 	return children;
+}
+
+Cell *Block::clone()
+{
+    return nullptr;
+}
+
+void Block::createBuildingResource()
+{
 }

@@ -32,54 +32,57 @@
 #include "Shop.h"
 #include "HouseHold.h"
 #include "City.h"
+#include "Coordinate.h"
+
+#include <vector>
 
 class BuildingFactory {
 
 
 protected:
-	bool useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget); // add to factory functions
+	bool useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget, int cellCount); // add to factory functions
 
-	virtual Service* createHospital() = 0;
+	virtual Cell* createHospital(vector<Coordinate> coordinates) = 0;
 
-	virtual Service* createTownHall() = 0;
+	virtual Cell* createTownHall(vector<Coordinate> coordinates) = 0;
 
-	virtual Utilities* createWaterPlant() = 0;
+	virtual Cell* createWaterPlant(vector<Coordinate> coordinates) = 0;
 
-	virtual Utilities* createPowerPlant() = 0;
+	virtual Cell* createPowerPlant(vector<Coordinate> coordinates) = 0;
 
-	virtual Utilities* createWastePlant() = 0;
+	virtual Cell* createWastePlant(vector<Coordinate> coordinates) = 0;
 
-	virtual Service* createSchool() = 0;
+	virtual Cell* createSchool(vector<Coordinate> coordinates) = 0;
 
-	virtual Service* createTrainStation() = 0;
+	virtual Cell* createTrainStation(vector<Coordinate> coordinates) = 0;
 
-	virtual Service* createAirport() = 0;
+	virtual Cell* createAirport(vector<Coordinate> coordinates) = 0;
 
-	virtual Service* createPoliceStation() = 0;
+	virtual Cell* createPoliceStation(vector<Coordinate> coordinates) = 0;
 
-	virtual Residential* createHouse() = 0;
+	virtual Cell* createHouse(vector<Coordinate> coordinates) = 0;
 
-	virtual Residential* createApartment() = 0;
+	virtual Cell* createApartment(vector<Coordinate> coordinates) = 0;
 
-	virtual Residential* createComplex() = 0;
+	virtual Cell* createComplex(vector<Coordinate> coordinates) = 0;
 
-	virtual Residential* createHouseHold() = 0;
+	virtual Cell* createHouseHold(vector<Coordinate> coordinates) = 0;
 
-	virtual Industrial* createForestry() = 0;
+	virtual Cell* createForestry(vector<Coordinate> coordinates) = 0;
 
-	virtual Industrial* createSteelFactory() = 0;
+	virtual Cell* createSteelFactory(vector<Coordinate> coordinates) = 0;
 
-	virtual Industrial* createConcreteFactory() = 0;
+	virtual Cell* createConcreteFactory(vector<Coordinate> coordinates) = 0;
 
-	virtual Commercial* createShop() = 0;
+	virtual Cell* createShop(vector<Coordinate> coordinates) = 0;
 
-	virtual Commercial* createOffice() = 0;
+	virtual Cell* createOffice(vector<Coordinate> coordinates) = 0;
 
-	virtual Commercial* createMall() = 0;
+	virtual Cell* createMall(vector<Coordinate> coordinates) = 0;
 
-	virtual Landmarks* createPark() = 0;
+	virtual Cell* createPark(vector<Coordinate> coordinates) = 0;
 
-	virtual Landmarks* createMuseum() = 0;
+	virtual Cell* createMuseum(vector<Coordinate> coordinates) = 0;
 	
 	virtual ~BuildingFactory();
 };

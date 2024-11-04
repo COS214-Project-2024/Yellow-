@@ -16,7 +16,8 @@ class Apartment : public Residential{
 
 public:
 	Apartment();
-	float taxBuilding();
+	void setIcon() override;
+    Cell* clone() override;
 };
 
 #endif

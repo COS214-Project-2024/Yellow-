@@ -1,11 +1,3 @@
-/**
-* @class Population
-* @brief Class that represents a policy
-* @ingroup Observer
-* @implements Population
-*
-* The Population class is a concrete observer participant of the Observer design pattern. It is used to observe the population of the city.
-*/
 #include "Population.h"
 #include "Citizen.h"
 #include <iostream>

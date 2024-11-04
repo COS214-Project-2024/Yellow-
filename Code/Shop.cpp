@@ -12,8 +12,10 @@ Shop::Shop() : Commercial("Shop")
 {
 }
 
-float Shop::taxBuilding()
+Cell *Shop::clone()
 {
-    // TODO - implement Shop::taxBuilding
-	throw "Not yet implemented";
+    Cell* c = new Shop();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
 }

@@ -12,8 +12,14 @@ Mall::Mall() : Commercial("Mall")
 {
 }
 
-float Mall::taxBuilding()
+void Mall::setIcon()
 {
-    // TODO - implement Mall::taxBuilding
-	throw "Not yet implemented";
+}
+
+Cell *Mall::clone()
+{
+    Cell* c = new Mall();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
 }

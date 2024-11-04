@@ -1,13 +1,3 @@
-/**
- * @file Population.h
- * @author Rorisang Manamela
- * @brief 
- * @version 0.1
- * @date 2024-10-10
- * 
- * @copyright Copyright (c) 2024
- * 
- */
 #ifndef POPULATION_H
 #define POPULATION_H
 #include "Observer.h"

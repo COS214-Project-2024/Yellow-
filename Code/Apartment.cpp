@@ -7,13 +7,19 @@
 * The Apartment class is a concrete factory participant of the Factory design pattern. It is used to create an apartment building.
 */
 #include "Apartment.h"
-
 Apartment::Apartment() : Residential("Apartment")
+{
+    maxCitizens = 5;
+}
+
+void Apartment::setIcon()
 {
 }
 
-float Apartment::taxBuilding()
+Cell *Apartment::clone()
 {
-    // TODO - implement Apartment::taxBuilding
-	throw "Not yet implemented";
+    Cell* c = new Apartment();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
 }

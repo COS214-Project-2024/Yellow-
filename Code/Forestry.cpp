@@ -12,16 +12,22 @@ Forestry::Forestry() : Industrial("Forestry")
 {
 }
 
-float Forestry::taxBuilding()
-{
-    // TODO - implement Forestry::taxBuilding
-	throw "Not yet implemented";
-}
-
 void Forestry::createBuildingResource()
 {
 	if (&City::instanceCity() == nullptr)
 		return;
 	City c = City::instanceCity();
-    c.stuff.res->setWood(c.stuff.res->getWood() + 90);
+    c.stuff.res->setWood(c.stuff.res->getWood() + productionPerCell*coordinates.size());
+}
+
+void Forestry::setIcon()
+{
+}
+
+Cell *Forestry::clone()
+{
+    Cell* c = new Forestry();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
 }

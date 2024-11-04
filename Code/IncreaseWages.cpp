@@ -1,11 +1,3 @@
-/**
-* @class IncreaseWages
-* @brief IncreaseWages is a concrete strategy participant of the Strategy design pattern.
-* @ingroup Strategy
-* @implements Strategy
-*
-* IncreaseWages is a concrete strategy participant of the Strategy design pattern. It is used to implement a policy that increases wages in the city.
-*/
 #include "IncreaseWages.h"
 
 Policies* IncreaseWages::implementPolicy(string stateType, string prevStateColour, string currStateColour) {

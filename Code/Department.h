@@ -17,8 +17,8 @@
 
 class Department {
 
-private:
-	Department* successor;
+protected:
+    Department* successor;
     RandomUtil* randomVal;
 
 public:

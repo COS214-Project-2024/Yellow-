@@ -1,81 +1,177 @@
-/**
-* @class Resources
-* @brief A class that stores the resources of the city
-* @ingroup Resources
-* @implements Resources
-*
-* The Resources class is a concrete participant of the Resources design pattern. It is used to store the resources of the city.
-*/
-
+#include "City.h"
 #include "Resources.h"
 
-void Resources::setConcrete(int newAmount)
+Resources::Resources()
 {
-    concrete = newAmount;
+    concrete = 0;
+    steel = 0;
+    wood = 0;
+    powerGrid = 150;
+    powerUsage = 150;
+    waterGrid = 150;
+    waterUsage = 150;
+	budget = 10000;
+    population = 10;
+    morale = 60;
+    businessTaxRate = 5.0;
+    propertyTaxRate = 7.0;
+    incomeTaxRate = 10.0;
 }
 
-int Resources::getConcrete()
+void Resources::printResources()
 {
-    return concrete;
+    cout << "Population: " << population << endl;
+    cout << "Budget: " << budget << endl;
+    cout << "Moral: " << morale << "/100" << endl;
+    cout << "Concrete: " << concrete << endl;
+    cout << "Steel: " << steel << endl;
+    cout << "Wood: " << wood << endl;
+    cout << "Power: " << powerUsage << "/" << powerGrid << endl;
+    cout << "Water: " << waterUsage << "/" << waterGrid << endl;
+    cout << "Business Tax: " << businessTaxRate << "%" << endl;
+    cout << "Property Tax: " << propertyTaxRate << "%" << endl;
+    cout << "Income Tax: " << incomeTaxRate << "%" << endl;
+    cout << "====================================" << endl;
 }
 
-void Resources::setSteel(int newAmount)
+// Setters
+void Resources::setConcrete(int newValue)
+{ 
+    concrete = newValue; 
+}
+
+void Resources::setSteel(int newValue) 
+{ 
+    steel = newValue; 
+}
+
+void Resources::setWood(int newValue) 
+{ 
+    wood = newValue; 
+}
+
+void Resources::setPowerGrid(int newValue) 
+{ 
+    powerGrid = newValue; 
+}
+
+void Resources::setPowerUsage(int newValue) 
+{ 
+    powerUsage = newValue; 
+}
+
+void Resources::setWaterGrid(int newValue) 
+{ 
+    waterGrid = newValue; 
+}
+
+void Resources::setWaterUsage(int newValue) 
+{ 
+    waterUsage = newValue; 
+}
+
+void Resources::setBudget(float newValue) 
+{ 
+    budget = newValue; 
+}
+
+void Resources::setPopulation(int newValue) 
+{ 
+    population = newValue; 
+}
+
+void Resources::setMorale(int newValue) 
+{ 
+    morale = min(newValue, 100);
+}
+
+void Resources::setPropertyTaxRate(float newRate)
 {
-    steel = newAmount;
+    propertyTaxRate = newRate;
 }
 
-int Resources::getSteel()
+void Resources::setIncomeTaxRate(float newRate)
 {
-    return steel;
+    incomeTaxRate = newRate;
 }
 
-void Resources::setEnergy(int newAmount)
+void Resources::setBusinessTaxRate(float newRate)
 {
-    this->energy = newAmount;
+    businessTaxRate = newRate;
 }
 
-int Resources::getEnergy() {
-    return this->energy;
-}
-
-void Resources::setWater(int newAmount) {
-    this->water = newAmount;
-}
-
-int Resources::getWater() {
-    return this->water;
-}
-
-void Resources::setBudget(float newAmount) {
-    this->budget = newAmount;
-}
-
-float Resources::getBudget() {
-    return this->budget;
-}
-
-void Resources::setPopulation(int newAmount) {
-    this->population = newAmount;
-}
-
-int Resources::getPopulation() {
-    return this->population;
-}
-
-void Resources::setMorale(int newAmount) {
-    this->morale = newAmount;
-}
-
-int Resources::getMorale() {
-    return this->morale;
-}
-
-void Resources::setWood(int newAmount)
+void Resources::setWage(float newWage)
 {
-    wood = newAmount;
+    wage = newWage;
 }
 
-int Resources::getWood()
+// Getters
+int Resources::getConcrete() const 
+{ 
+    return concrete; 
+}
+
+int Resources::getSteel() const 
+{ 
+    return steel; 
+}
+
+int Resources::getWood() const 
+{ 
+    return wood; 
+}
+
+int Resources::getPowerGrid() const 
+{ 
+    return powerGrid; 
+}
+
+int Resources::getPowerUsage() const 
+{ 
+    return powerUsage; 
+}
+
+int Resources::getWaterGrid() const 
+{ 
+    return waterGrid; 
+}
+
+int Resources::getWaterUsage() const 
+{ 
+    return waterUsage; 
+}
+
+float Resources::getBudget() const 
+{ 
+    return budget; 
+}
+
+int Resources::getPopulation() const 
+{ 
+    return population; 
+}
+
+int Resources::getMorale() const 
+{ 
+    return morale; 
+}
+
+float Resources::getPropertyTaxRate() const
 {
-    return this->wood;
+    return propertyTaxRate;
+}
+
+float Resources::getIncomeTaxRate() const
+{
+    return incomeTaxRate;
+}
+
+float Resources::getBusinessTaxRate() const
+{
+    return businessTaxRate;
+}
+
+float Resources::getWage() const
+{
+    return wage;
 }

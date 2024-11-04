@@ -14,7 +14,8 @@
 class HouseHold : public Residential {
 public:
 	HouseHold();
-	float taxBuilding() override;
+    Cell* clone() override;
+	void setIcon() override;
 private:
 	float houseIncome;
 };

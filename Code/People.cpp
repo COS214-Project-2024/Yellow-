@@ -1,11 +1,3 @@
-/**
-* @class People
-* @brief Class that the state of the population
-* @ingroup State
-* @implements Severity
-*
-* The People class is a concrete state participant of the State design pattern. It is used to represent the state of the population.
-*/
 #include "People.h"
 
 void People::setSeverity(Severity *sev) {
@@ -30,9 +22,4 @@ People::~People() {
 
 Severity *People::getState() {
     return this->severity;
-}
-
-void People::increaseDisatidfaction() {
-    // TODO - implement People::increaseDisatidfaction
-    throw "Not yet implemented";
 }

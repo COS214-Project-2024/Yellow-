@@ -1,18 +1,18 @@
-/**
-* @class HouseHold
-* @brief Class that represents a House building
-* @ingroup Factory
-* @implements Residential factory
-*
-* The HouseHold class is a concrete factory participant of the Factory design pattern. It is used to create a house building.
-*/
 #include "HouseHold.h"
 
 HouseHold::HouseHold() : Residential("Household")
 {
+    maxCitizens = 10;
 }
 
-float HouseHold::taxBuilding()
+Cell *HouseHold::clone()
 {
-    return 0.0;
+    Cell* c = new HouseHold();
+    c->setCellType(this->getCellType());
+    c->setCoordinates(this->getCoordinates());
+    return c;
+}
+
+void HouseHold::setIcon()
+{
 }
