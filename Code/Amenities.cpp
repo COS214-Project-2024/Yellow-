@@ -1,3 +1,12 @@
+/**
+ * @class Amenities
+ * @brief Concrete handler participant of the Chain of Responsibility design pattern
+ * @ingroup Chain of responsibility
+ * @implements Department
+ *
+ * The Amenities class is a concrete handler participant of the Chain of Responsibility design pattern. It is used to handle the ExpandCity policy.
+ * 
+ */
 #include "Amenities.h"
 
 MaterialOrder* Amenities::handle(Policies* policy) {
