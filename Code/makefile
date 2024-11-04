@@ -4,19 +4,17 @@ run: main
 
 main: *.o
 	g++ -std=c++23  -o main *.o
-	g++ -std=c++23  -o main *.o
 
 *.o: *.cpp
-	g++ -std=c++23  -c -w *.cpp
 	g++ -std=c++23  -c -w *.cpp
 
 debugcpp: debugo
 	g++ -std=c++23 -ggdb3 -fprofile-arcs -ftest-coverage -o main *.o
-	g++ -std=c++23 -ggdb3 -fprofile-arcs -ftest-coverage -o main *.o
+
 
 debugo: *.cpp
 	g++ -std=c++23 -ggdb3 -fprofile-arcs -ftest-coverage -c -w *.cpp
-	g++ -std=c++23 -ggdb3 -fprofile-arcs -ftest-coverage -c -w *.cpp
+
 
 cov: 
 	make main
