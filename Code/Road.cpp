@@ -1,3 +1,13 @@
+/**
+ * @file RandomUtil.h
+ * @author Saskia Steyn
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "Road.h"
 Road::Road() : Cell("Road") {
     setCellType("Road");
@@ -41,23 +51,3 @@ bool Road::contains(Cell *object) {
     return false;
 }
 
-void Road::addCitizenToBuilding(Citizen *newCitizen)
-{
-}
-
-void Road::setProductionRate(int newRate)
-{
-}
-
-void Road::createBuildingResource()
-{
-}
-
-float Road::getMoney()
-{
-    return 0.0f;
-}
-
-void Road::setMoney(float newAmount)
-{
-}

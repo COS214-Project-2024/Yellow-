@@ -1,6 +1,11 @@
-//
-// Created by sjvr0 on 2024/10/28.
-//
+/**
+* @class Coordinate
+* @brief 
+* @ingroup 
+* @implements 
+*
+* Creates coordinates to use in the map class
+*/
 
 #include "Coordinate.h"
 Coordinate::Coordinate() {

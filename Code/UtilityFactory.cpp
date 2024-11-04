@@ -1,3 +1,11 @@
+/**
+* @class UtilityFactory
+* @brief Implementation of Cell factory for utility buildings
+* @ingroup Factory
+* @implements BuildingFactory
+*
+* UtilityFactory is a concrete factory participant of the Factory design pattern. It is used to create a utility building.
+*/
 #include "UtilityFactory.h"
 
 Cell *UtilityFactory::createHouse(vector<Coordinate> coordinates)

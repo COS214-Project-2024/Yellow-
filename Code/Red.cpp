@@ -1,4 +1,11 @@
-
+/**
+* @class Red
+* @brief A class used to indicate the state of the city
+* @ingroup State
+* @implements Severity
+*
+* The Red class is a concrete state participant of the State design pattern. It is used to indicate that the city is in a state of emergency.
+*/
 #include "Red.h"
 
 string Red::getSeverity() {

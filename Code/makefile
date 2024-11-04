@@ -28,7 +28,7 @@ gdb-run: debugcpp
 	gdb -q -ex run ./main
 
 doxygenCreate:
-	mkdlr docs
+	mkdir docs
 	cd docs/
 	doxygen -g
 

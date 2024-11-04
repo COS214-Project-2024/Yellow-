@@ -1,46 +1,56 @@
+/**
+ * @file UtilityFactory.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "BuildingFactory.h"
 
 class UtilityFactory : public BuildingFactory {
     public:
-    Cell* createHouse(vector<Coordinate> coordinates) override;
+    Cell* createHouse(vector<Coordinate> coordinates);
 
-	Cell* createApartment(vector<Coordinate> coordinates) override;
+	Cell* createApartment(vector<Coordinate> coordinates);
 
-	Cell* createComplex(vector<Coordinate> coordinates) override;
+	Cell* createComplex(vector<Coordinate> coordinates);
 
-	Cell* createHouseHold(vector<Coordinate> coordinates) override;
+	Cell* createHouseHold(vector<Coordinate> coordinates);
 	
-	Cell* createPark(vector<Coordinate> coordinates) override;
+	Cell* createPark(vector<Coordinate> coordinates);
 
-	Cell* createMuseum(vector<Coordinate> coordinates) override;
+	Cell* createMuseum(vector<Coordinate> coordinates);
 
-	Cell* createHospital(vector<Coordinate> coordinates) override;
+	Cell* createHospital(vector<Coordinate> coordinates);
 
-	Cell* createTownHall(vector<Coordinate> coordinates) override;
+	Cell* createTownHall(vector<Coordinate> coordinates);
 
-	Cell* createWaterPlant(vector<Coordinate> coordinates) override;
+	Cell* createWaterPlant(vector<Coordinate> coordinates);
 
-	Cell* createPowerPlant(vector<Coordinate> coordinates) override;
+	Cell* createPowerPlant(vector<Coordinate> coordinates);
 
-	Cell* createWastePlant(vector<Coordinate> coordinates) override;
+	Cell* createWastePlant(vector<Coordinate> coordinates);
 
-	Cell* createSchool(vector<Coordinate> coordinates) override;
+	Cell* createSchool(vector<Coordinate> coordinates);
 
-	Cell* createTrainStation(vector<Coordinate> coordinates) override;
+	Cell* createTrainStation(vector<Coordinate> coordinates);
 
-	Cell* createAirport(vector<Coordinate> coordinates) override;
+	Cell* createAirport(vector<Coordinate> coordinates);
 
-	Cell* createPoliceStation(vector<Coordinate> coordinates) override;
+	Cell* createPoliceStation(vector<Coordinate> coordinates);
 
-	Cell* createForestry(vector<Coordinate> coordinates) override;
+	Cell* createForestry(vector<Coordinate> coordinates);
 
-	Cell* createSteelFactory(vector<Coordinate> coordinates) override;
+	Cell* createSteelFactory(vector<Coordinate> coordinates);
 
-	Cell* createConcreteFactory(vector<Coordinate> coordinates) override;
+	Cell* createConcreteFactory(vector<Coordinate> coordinates);
 
-	Cell* createShop(vector<Coordinate> coordinates) override;
+	Cell* createShop(vector<Coordinate> coordinates);
 
-	Cell* createOffice(vector<Coordinate> coordinates) override;
+	Cell* createOffice(vector<Coordinate> coordinates);
 
-	Cell* createMall(vector<Coordinate> coordinates) override;
+	Cell* createMall(vector<Coordinate> coordinates);
 };
