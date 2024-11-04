@@ -17,9 +17,9 @@ class Forestry : public Industrial {
 
 public:
 	Forestry();
-	void createBuildingResource() override;
+	void createBuildingResource();
 	void setIcon() override;
-    Cell* clone() override;
+    Cell* clone();
 };
 
 #endif

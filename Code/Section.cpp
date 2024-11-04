@@ -10,19 +10,14 @@
 
 Section::Section(string cellType) : Cell(cellType) {}
 
-vector<Section *> Section::getChildren()
+vector<Cell *> Section::getChildren()
 {
-    vector<Section*> emptyChild;
+    vector<Cell*> emptyChild;
     return emptyChild;
 }
 
 void Section::setIcon()
 {
-}
-
-Cell *Section::clone()
-{
-    return nullptr;
 }
 
 float Section::getMoney()
@@ -32,4 +27,5 @@ float Section::getMoney()
 
 void Section::setMoney(float newAmount)
 {
+    
 }

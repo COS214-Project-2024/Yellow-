@@ -14,6 +14,8 @@
 #include "Residential.h"
 
 //////////////////////// Constructors ////////////////////////
+#include <iostream>
+////////////// Constructors ///////////////
 
 /// Default Constructor
 Citizen::Citizen(){
@@ -125,14 +127,14 @@ void Citizen::petChanceCalculator() {
         return;
     }
     if(weGotAPet < 50) {
-        pet = new Dog(this);
+        pet = (Pet*) new Dog(this);
         return;
     }
     if(weGotAPet < 75) {
-        pet = new Cat(this);
+        pet = (Pet*) new Cat(this);
         return;
     }
     if(weGotAPet < 100) {
-        pet = new Hamster(this);
+        pet = (Pet*) new Hamster(this);
     }
 }

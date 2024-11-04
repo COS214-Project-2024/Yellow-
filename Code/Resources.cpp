@@ -13,9 +13,9 @@
 
 Resources::Resources()
 {
-    concrete = 0;
-    steel = 0;
-    wood = 0;
+    concrete = 300;
+    steel = 300;
+    wood = 300;
     powerGrid = 150;
     powerUsage = 150;
     waterGrid = 150;
@@ -116,72 +116,77 @@ void Resources::setWage(float newWage)
 }
 
 // Getters
-int Resources::getConcrete() const 
+int Resources::getConcrete() 
 { 
     return concrete; 
 }
 
-int Resources::getSteel() const 
+int Resources::getSteel() 
 { 
     return steel; 
 }
 
-int Resources::getWood() const 
+int Resources::getWood() 
 { 
     return wood; 
 }
 
-int Resources::getPowerGrid() const 
+int Resources::getPowerGrid() 
 { 
     return powerGrid; 
 }
 
-int Resources::getPowerUsage() const 
+int Resources::getPowerUsage() 
 { 
     return powerUsage; 
 }
 
-int Resources::getWaterGrid() const 
+int Resources::getWaterGrid() 
 { 
     return waterGrid; 
 }
 
-int Resources::getWaterUsage() const 
+int Resources::getWaterUsage() 
 { 
     return waterUsage; 
 }
 
-float Resources::getBudget() const 
+float Resources::getBudget() 
 { 
     return budget; 
 }
 
-int Resources::getPopulation() const 
+int Resources::getPopulation() 
 { 
     return population; 
 }
 
-int Resources::getMorale() const 
+int Resources::getMorale() 
 { 
     return morale; 
 }
 
-float Resources::getPropertyTaxRate() const
-{
-    return propertyTaxRate;
-}
-
-float Resources::getIncomeTaxRate() const
-{
-    return incomeTaxRate;
-}
-
-float Resources::getBusinessTaxRate() const
+int Resources::getBusinessTax()
 {
     return businessTaxRate;
 }
 
-float Resources::getWage() const
+float Resources::getPropertyTaxRate()
+{
+    return propertyTaxRate;
+}
+
+float Resources::getIncomeTaxRate()
+{
+    return incomeTaxRate;
+}
+
+float Resources::getBusinessTaxRate()
+{
+    return businessTaxRate;
+}
+
+float Resources::getWage()
 {
     return wage;
 }

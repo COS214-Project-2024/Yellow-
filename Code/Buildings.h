@@ -10,20 +10,21 @@
  */
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
-#include <iostream>
-#include "Section.h"
-#include "City.h"
-class Citizen;
-class Buildings : public Section {
 
+#include <vector>
+#include "Section.h"
+class Citizen;
+
+class Buildings : public Section {
 protected:
-	int maxCitizens;
-	int currentNumberOfCitizens;
-	float buildingMoney;
-	vector<Citizen*> dependentCitizens;
-	int productionPerCell;
+    int maxCitizens;
+    int currentNumberOfCitizens;
+    float buildingMoney;
+    std::vector<Citizen*> dependentCitizens;
+    int productionPerCell;						
+
 public:
-	Buildings(string cellType);
+    Buildings(std::string cellType);
 
 	float getMoney();
 
@@ -31,15 +32,15 @@ public:
 	
 	int getMaxCitizens();
 
-	void addSection(Section* section);
+	void addSection(Cell* section);
 
 	void removeSection(int idx);
 
-	Section* getSection(int idx);
+	Cell* getSection(int idx);
 
 	void acceptVisitor(Visitor* v);
 
-	//virtual void taxBuilding() = 0;
+	virtual void taxBuilding() = 0;
 
 	virtual void payEmployees() = 0;
 
@@ -53,4 +54,4 @@ public:
 
 };
 
-#endif
+#endif // BUILDINGS_H

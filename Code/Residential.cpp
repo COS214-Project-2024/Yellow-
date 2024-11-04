@@ -8,6 +8,7 @@
 */
 #include "Residential.h"
 #include "Citizen.h"
+#include "City.h"
 Residential::Residential(string cellType) : Buildings(cellType) {}
 
 void Residential::taxBuilding()
@@ -42,9 +43,5 @@ void Residential::addCitizenToBuilding(Citizen *newCitizen)
     newCitizen->setAccommodation(dynamic_cast<Residential*>(this));
 }
 void Residential::createBuildingResource()
-{
-}
-
-Residential::~Residential()
 {
 }

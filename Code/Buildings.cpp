@@ -9,11 +9,11 @@
 
 #include "Buildings.h"
 
-void Buildings::addSection(Section* section){}
+void Buildings::addSection(Cell* section){}
 
 void Buildings::removeSection(int idx){}
 
-Section* Buildings::getSection(int idx)
+Cell* Buildings::getSection(int idx)
 {
 	return nullptr;
 }
