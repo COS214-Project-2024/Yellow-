@@ -15,7 +15,7 @@ City::City()
 
 void City::setHead(Section* head)
 {
-
+    this->stuff.head = head;
 }
 
 City &City::instanceCity()

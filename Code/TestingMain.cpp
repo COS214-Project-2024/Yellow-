@@ -42,10 +42,9 @@ TEST_CASE("City Test")
     Section* building1 = new Hospital();
     Section* building2 = new Park();
 
-    
+    City::instanceCity().setHead(test);
 
     City::instanceCity().nextIteration();
-    //CHECK(16 == City::instanceCity().stuff.res->getPopulation());
 
     for (int i = 0; i < 10; i++)
     {

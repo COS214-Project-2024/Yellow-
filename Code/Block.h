@@ -31,6 +31,10 @@ public:
 	virtual Cell* clone();
 	
 	void createBuildingResource() override;
+
+	virtual void setProductionRate(int newRate){}
+	virtual void taxBuilding(){}
+	virtual void payEmployees(){}
 };
 
 #endif

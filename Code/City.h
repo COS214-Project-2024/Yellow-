@@ -39,7 +39,6 @@ class City {
 		Varibals stuff;
 		City();
 		void setHead(Section* head);
-		//City(Section* head);
 		static City& instanceCity();
 		void nextIteration();
 		void collection();

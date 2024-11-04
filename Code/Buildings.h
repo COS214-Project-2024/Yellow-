@@ -12,7 +12,7 @@ protected:
     int currentNumberOfCitizens;
     float buildingMoney;
     std::vector<Citizen*> dependentCitizens;
-    int productionPerCell;
+    int productionPerCell;						
 
 public:
     Buildings(std::string cellType);
