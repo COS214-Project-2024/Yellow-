@@ -33,8 +33,7 @@ v:
 	make c
 
 c:
-	rm *.o
-
+	rm *.o main
 cgov:
 	rm *.o main *.gcda *.gcno *.gcov
 

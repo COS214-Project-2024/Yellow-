@@ -50,6 +50,8 @@ TEST_CASE("City Test")
     v1.push_back(c1);
 
     test->addSection(industrial->createConcreteFactory(v1));
+    test->addSection(industrial->createSteelFactory(v1));
+    test->addSection(industrial->createForestry(v1));
 
     City::instanceCity().setHead(test);
 
