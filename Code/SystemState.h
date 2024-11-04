@@ -1,27 +1,27 @@
-#ifndef SYSTEMSTATE_H
-#define SYSTEMSTATE_H
+// #ifndef SYSTEMSTATE_H
+// #define SYSTEMSTATE_H
 
-#include <string>
-#include <iostream>
+// #include <string>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-class SystemState {
-friend class SaveAndLoad;
+// class SystemState {
+// friend class SaveAndLoad;
 
-    protected:
-        //FOR TESTING
-        int dummyInt;
-        string dummyString;
+//     protected:
+//         //FOR TESTING
+//         int dummyInt;
+//         string dummyString;
+    
+//     public:
+//         // FOR TESTING
+//         void printState() const
+//         {
+//             int temp = this->dummyInt;
+//             cout << "SystemState: dummyInt = "  << temp << ", dummyString = " << this->dummyString << endl;
+//             // cout << "SystemState: dummyInt = " << endl;
+//         }
+// };
 
-    public:
-        // FOR TESTING
-        void printState() const
-        {
-            int temp = this->dummyInt;
-            cout << "SystemState: dummyInt = "  << temp << ", dummyString = " << this->dummyString << endl;
-            // cout << "SystemState: dummyInt = " << endl;
-        }
-};
-
-#endif
+// #endif

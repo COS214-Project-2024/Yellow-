@@ -4,7 +4,6 @@
 HistoryBranch::HistoryBranch()
 {
     this->head = nullptr;
-    this->current = this->head;
     this->tail = this->head;
     this->branchID = "M";
     this->size = 0;
@@ -37,16 +36,6 @@ HistoryNode* HistoryBranch::getHead() {
     return this->head;
 }
 
-HistoryNode* HistoryBranch::getCurrent()
-{
-    return this->current;
-}
-
-// void HistoryBranch::setCurrent(string path)
-// {
-//     this->current = current;
-// }
-
 HistoryNode* HistoryBranch::getTail()
 {
     return this->tail;
@@ -73,21 +62,21 @@ void HistoryBranch::setBranchID(string branchID)
     this->branchID = branchID;
 }
 
-void HistoryBranch::startAltHistory(Save *cityData)
+void HistoryBranch::startAltHistory(Save *cityData, HistoryNode *cursor)
 {
-    if (this->current != nullptr)
+    if (cursor != nullptr)
     {
         // Create new branch
         HistoryBranch *newBranch = new HistoryBranch();
         // Create a new node and insert it in the new historyBranch
-        newBranch->addNode(cityData);
+        newBranch->addNode(cityData, cursor);
         // Insert the new historyBranch into the alternatives vector of the node
-        this->current->getAlternativesByRef().push_back(newBranch);
+        cursor->getAlternativesByRef().push_back(newBranch);
         // Connect the new node.previous to the branchpoint (the node, into which we added a new branch)
-        newBranch->getHead()->setPrevious(this->current);
+        newBranch->getHead()->setPrevious(cursor);
 
         // Set the ID of the branch to numberOfBranchPointNode.alternatives.size() + 1
-        newBranch->setBranchID(generateAltBranchID(this->current));
+        newBranch->setBranchID(generateAltBranchID(cursor));
 
         // Set the ID of the new node to branchID.1.
         newBranch->getHead()->setName("1");
@@ -96,28 +85,28 @@ void HistoryBranch::startAltHistory(Save *cityData)
         
         newBranch->setParentBranch(this);
 
-        addToAllBranchPoints(this->current);
+        addToAllBranchPoints(cursor);
 
         // FOR TESTING
         // Iterate over all the branches inside the current node's alternatives and print the parentBranch branchID
-        for (HistoryBranch *branch : this->current->getAlternatives())
+        for (HistoryBranch *branch : cursor->getAlternatives())
         {
             std::cout << "Parent branch ID: " << branch->getParentBranch()->getBranchID() << std::endl;
         }
     }
 }
 
-void HistoryBranch::removeBranch(string letter)
+void HistoryBranch::removeBranch(string letter, HistoryNode *cursor)
 {
     // Check if the current node has alternatives
-    if (this->current->getAlternatives().empty())
+    if (cursor->getAlternatives().empty())
     {
         return;
     }
 
     // Find the branch to remove
     HistoryBranch *branchToRemove = nullptr;
-    for (HistoryBranch *branch : this->current->getAlternatives())
+    for (HistoryBranch *branch : cursor->getAlternatives())
     {
         if (branch->getBranchAlpha() == letter)
         {
@@ -133,11 +122,11 @@ void HistoryBranch::removeBranch(string letter)
     }
 
     // Remove the branch from the alternatives vector
-    for (auto it = this->current->getAlternativesByRef().begin(); it != this->current->getAlternativesByRef().end(); ++it)
+    for (auto it = cursor->getAlternativesByRef().begin(); it != cursor->getAlternativesByRef().end(); ++it)
     {
         if (*it == branchToRemove)
         {
-            this->current->getAlternativesByRef().erase(it);
+            cursor->getAlternativesByRef().erase(it);
             break;
         }
     }
@@ -199,7 +188,7 @@ vector<HistoryNode *> HistoryBranch::getAllBranchPoints() const
     return this->allBranchPoints;
 }
 
-void HistoryBranch::addNode(Save *cityData)
+void HistoryBranch::addNode(Save *cityData, HistoryNode* cursor)
 {
     string name = "";
     if (this->head == nullptr)
@@ -208,32 +197,32 @@ void HistoryBranch::addNode(Save *cityData)
         name = "1";
         HistoryNode *newNode = new HistoryNode(name, cityData);
         this->head = newNode;
-        this->current = this->head;
+        cursor = this->head;
         this->tail = this->head;
         this->size++;
     }
-    else if (this->current == this->tail)
+    else if (cursor == this->tail)
     {
         // Add the new node at the end
         name = incrementName(this->tail->getName());
         HistoryNode *newNode = new HistoryNode(name, cityData);
         this->tail->setNext(newNode);
         newNode->setPrevious(this->tail);
-        this->current = newNode;
+        cursor = newNode;
         this->tail = newNode;
         this->size++;
     }
     else
     {
         // Add the new node after the current node and delete all data after the current node
-        name = incrementName(this->current->getName());
+        name = incrementName(cursor->getName());
         HistoryNode *newNode = new HistoryNode(name, cityData);
-        HistoryNode *nextNode = this->current->getNext();
+        HistoryNode *nextNode = cursor->getNext();
 
         // Set the new node in the correct position
-        this->current->setNext(newNode);
-        newNode->setPrevious(this->current);
-        this->current = newNode;
+        cursor->setNext(newNode);
+        newNode->setPrevious(cursor);
+        cursor = newNode;
         this->tail = newNode;
         this->size++;
 
@@ -288,36 +277,36 @@ string HistoryBranch::incrementName(const string &name)
     return baseName + to_string(number);
 }
 
-void HistoryBranch::removeNode()
+void HistoryBranch::removeNode(HistoryNode* cursor)
 {
-    if (this->current == nullptr)
+    if (cursor == nullptr)
     {
         return;
     }
 
-    bool hasBranches = !this->current->getAlternatives().empty();
-    HistoryNode *previous = this->current->getPrevious();
-    HistoryNode *next = this->current->getNext();
+    bool hasBranches = !cursor->getAlternatives().empty();
+    HistoryNode *previous = cursor->getPrevious();
+    HistoryNode *next = cursor->getNext();
 
     if (hasBranches)
     {
         if (previous != nullptr)
         {
             // Move all the alternatives to the previous node
-            for (HistoryBranch *branch : this->current->getAlternatives())
+            for (HistoryBranch *branch : cursor->getAlternatives())
             {
                 previous->addAltHistory(branch);
                 branch->getHead()->setPrevious(previous);
             }
 
             // Debugging: Print alternatives before clearing
-            cout << "Alternatives before clearing: " << this->current->getAlternatives().size() << endl;
+            cout << "Alternatives before clearing: " << cursor->getAlternatives().size() << endl;
 
             // Clear the alternatives vector
-            this->current->getAlternativesByRef().clear();
+            cursor->getAlternativesByRef().clear();
 
             // Debugging: Print alternatives after clearing
-            cout << "Alternatives after clearing: " << this->current->getAlternatives().size() << endl;
+            cout << "Alternatives after clearing: " << cursor->getAlternatives().size() << endl;
 
             // Add the previous node to allBranchPoints
             addToAllBranchPoints(previous);
@@ -325,27 +314,27 @@ void HistoryBranch::removeNode()
         else
         {
             // Delete the branches
-            for (HistoryBranch *branch : this->current->getAlternatives())
+            for (HistoryBranch *branch : cursor->getAlternatives())
             {
                 delete branch;
             }
 
             // Debugging: Print alternatives before clearing
-            cout << "Alternatives before clearing: " << this->current->getAlternatives().size() << endl;
+            cout << "Alternatives before clearing: " << cursor->getAlternatives().size() << endl;
 
             // Clear the alternatives vector
-            this->current->getAlternativesByRef().clear();
+            cursor->getAlternativesByRef().clear();
 
             // Debugging: Print alternatives after clearing
-            cout << "Alternatives after clearing: " << this->current->getAlternatives().size() << endl;
+            cout << "Alternatives after clearing: " << cursor->getAlternatives().size() << endl;
         }
 
         // Remove the current node from allBranchPoints
-        removeFromAllBranchPoints(this->current);
+        removeFromAllBranchPoints(cursor);
     }
 
     // Connect previous to the next node if current is not the head
-    if (this->current != this->head)
+    if (cursor != this->head)
     {
         if (previous != nullptr)
         {
@@ -367,7 +356,7 @@ void HistoryBranch::removeNode()
     }
 
     // Handle the case where the head of a child branch is being removed
-    if (this->current == this->head && this->head != nullptr)
+    if (cursor == this->head && this->head != nullptr)
     {
         HistoryNode *childHeadNext = this->head->getNext();
         if (childHeadNext != nullptr)
@@ -377,33 +366,33 @@ void HistoryBranch::removeNode()
     }
 
     // Delete the current node and update the current pointer
-    HistoryNode *temp = this->current;
+    HistoryNode *temp = cursor;
 
     if (next != nullptr)
     {
-        this->current = next;
+        cursor = next;
     } else if (previous != nullptr) {
-        this->current = previous;
+        cursor = previous;
     } else {
-        this->current = nullptr;
+        cursor = nullptr;
     }
 
         delete temp;
     }
 
-void HistoryBranch::moveBack()
+void HistoryBranch::moveBack(HistoryNode* cursor)
 {
-    if (this->current != nullptr && this->current != this->head)
+    if (cursor != nullptr && cursor != this->head)
     {
-        this->current = this->current->getPrevious();
+        cursor = cursor->getPrevious();
     }
 }
 
-void HistoryBranch::moveForward()
+void HistoryBranch::moveForward(HistoryNode* cursor)
 {
-    if (this->current != nullptr && this->current != this->tail)
+    if (cursor != nullptr && cursor != this->tail)
     {
-        this->current = this->current->getNext();
+        cursor = cursor->getNext();
     }
 }
 

@@ -12,6 +12,10 @@ private:
 	Varibals* systemState;
 
 public:
+
+    Save(Map* map, Varibals* systemState);
+    ~Save();
+
 	Varibals* getSystemState();
 	void setSystemState(Varibals *sState);
 

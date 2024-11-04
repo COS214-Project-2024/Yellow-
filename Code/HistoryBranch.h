@@ -13,7 +13,7 @@ class HistoryBranch{
 
     private:
         HistoryNode* head;
-        HistoryNode* current;
+        // HistoryNode* current;
         HistoryNode* tail;
         HistoryBranch* parentBranch;
         vector <HistoryNode*> allBranchPoints;
@@ -30,10 +30,9 @@ class HistoryBranch{
         void setParentBranch(HistoryBranch* parentBranch);
         string getBranchID();
         void setBranchID(string branchID);
-        void setCurrent(string path);
-        void addNode(Save *cityData);
-        void startAltHistory(Save *cityData);
-        void removeBranch(string letter);
+        void addNode(Save *cityData, HistoryNode *cursor);
+        void startAltHistory(Save *cityData, HistoryNode *cursor);
+        void removeBranch(string letter, HistoryNode *cursor);
         string getBranchAlpha();
         string generateAltBranchID(HistoryNode* branchPointNode);
         void addToAllBranchPoints(HistoryNode *branchPoint);
@@ -41,9 +40,9 @@ class HistoryBranch{
         void removeFromAllBranchPoints(HistoryNode *branchPoint);
         string generateAlternativeName(const string &branchRootName, int count);
         string incrementName(const string &name);
-        void removeNode();
-        void moveBack();
-        void moveForward();
+        void removeNode(HistoryNode *cursor);
+        void moveBack(HistoryNode *cursor);
+        void moveForward(HistoryNode *cursor);
   
         // FOR TESTING
         string printBranch();

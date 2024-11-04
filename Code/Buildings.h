@@ -15,9 +15,9 @@ protected:
 public:
 	Buildings(string cellType);
 
-	float getMoney();
+	float getMoney() override;
 
-	void setMoney(float newAmount);
+	void setMoney(float newAmount) override;
 	
 	int getMaxCitizens();
 
@@ -39,6 +39,7 @@ public:
 	virtual Cell* clone() = 0;
 	virtual void setProductionRate(int newRate);
 	virtual void createBuildingResource() = 0;
+	virtual ~Buildings();
 
 };
 

@@ -34,10 +34,6 @@ HistoryNode::~HistoryNode()
     // Delete alternatives
     for (HistoryBranch *branch : this->alternatives)
     {
-        cout << "Deleting branch" << endl;
-        cout<< "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n";
-        cout<< branch->getHead()->getName() << endl;
-        cout<< "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n";
         delete branch;
     }
     this->alternatives.clear();

@@ -14,10 +14,6 @@ void Disatisfaction::handleSeverity(bool upOrDown) {
 
 }
 
-void Disatisfaction::lowerTaxes() {
-	// TODO - implement Disatisfaction::lowerTaxes
-	throw "Not yet implemented";
-}
 
 Severity *Disatisfaction::getState() {
     return this->severity;

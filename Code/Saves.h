@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "HistoryBranch.h"
+#include "HistoryNode.h"
 
 class Saves
 {
@@ -14,18 +15,23 @@ private:
 public:
     Saves();
     ~Saves();
-    void save();
-    HistoryBranch *getSaves(); //exposes the tree for visualisation
+    void save(Save* save, bool overwrite = false);//saves at cursor
+    HistoryBranch *getSaves() const; //exposes the tree for visualisation. Set to const, to make sure it the tree does not get mutilated by the caller
     Save *loadAtCursor();//returns the save at cursor;
+    HistoryNode* goToNode(string path);
+    Save* viewSave(string path); //loads a save at a specific path; example "M.1_a.2_c.9_f.3", where the last number is the number/name of the node on that branch
     Save* loadSave(string path); //loads a save at a specific path; example "M.1_a.2_c.9_f.3", where the last number is the number/name of the node on that branch
+    void deleteSave(string path); //deletes a save at a specific path; example "M.1_a.2_c.9_f.3", where the last number is the number/name of the node on that branch
+    void deleteBranch(string path);
     HistoryNode* getCursor();
     void moveForward();
     void moveBack();
     void moveIntoBranch(string branchAlpha); //examples: "a", "b", "ab", "cb"; "a" moves to the 1st branch, "ab" moves to the 27th branch
+    void moveOutOfBranch(); //moves out of the current branch to the parent branch. Must set cursor to current of branch we just moved into
     string getCurrentBranchPath();
-    void loadBranch(string path);
-    void deleteBranch(string path);
-    void deleteSave(string path);
+    HistoryBranch* loadBranch(string path);
+    void resetToMainBranch();
+    void resetCursor(bool toMainBranch = true, bool toHead = true);
 
 };
 

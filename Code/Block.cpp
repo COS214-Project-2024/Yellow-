@@ -6,7 +6,7 @@ Block::Block() : Section("Block") //review
 
 Block::~Block()
 {
-	
+	children.clear();
 }
 
 void Block::addSection(Section *section)
@@ -50,4 +50,8 @@ vector<Section*> Block::getChildren()
 Cell *Block::clone()
 {
     return nullptr;
+}
+
+void Block::createBuildingResource()
+{
 }

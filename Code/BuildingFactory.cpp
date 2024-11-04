@@ -3,7 +3,6 @@
 bool BuildingFactory::useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget, int cellCount)
 {
     City* city = &City::instanceCity();
-    if (city != nullptr) {
         int s = city->stuff.res->getSteel();
         int c = city->stuff.res->getConcrete();
         int w = city->stuff.res->getWood();
@@ -16,9 +15,6 @@ bool BuildingFactory::useBuildingResources(int numSteel, int numConcrete, int nu
             city->stuff.res->setWood(w - (numWood * cellCount));
             city->stuff.res->setBudget(b - (numBudget * cellCount));
         }
-    } else {
-        return false;
-    }
     return true;
 }
 

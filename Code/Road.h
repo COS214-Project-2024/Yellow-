@@ -20,6 +20,7 @@ public:
     void setProductionRate(int newRate) override;
     void createBuildingResource() override;
     float getMoney() override;
+    void setMoney(float newAmount) override;
 };
 
 #endif
