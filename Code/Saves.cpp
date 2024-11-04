@@ -23,17 +23,14 @@ void Saves::save(Save *save, bool overwrite)
 {
     if (this->historyTree->getHead() == nullptr || this->cursor == this->historyTree->getTail()) {
         this->historyTree->addNode(save, this->cursor);
-        resetCursor(true, true);
+        this->cursor = this->historyTree->getTail();
     } else if (this->cursor->getNext() == nullptr) {
         this->historyTree->addNode(save, this->cursor);
-        resetCursor(true, true);
     } else {
         if (overwrite) {
             this->historyTree->addNode(save, this->cursor);
-            resetCursor(true, true);
         } else {
             this->historyTree->startAltHistory(save, this->cursor);
-            resetCursor(true, true);
         }
     }
 }
@@ -237,10 +234,10 @@ void Saves::resetCursor(bool toMainBranch, bool toHead){
     
 }
 
-void Saves::printBranch()
+void Saves::printTree()
 {
     string result = "";
-    this->historyTree->printBranch();
+    result += this->historyTree->printBranch();
     cout << result;
 }
 
