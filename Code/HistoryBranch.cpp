@@ -384,6 +384,9 @@ void HistoryBranch::moveBack(HistoryNode* cursor)
 {
     if (cursor != nullptr && cursor != this->head)
     {
+        cout << "Moving back-------------------------------------" << endl;
+        cout << "Cursor name: " << cursor->getName() << endl;
+        cout<< "Cursor previous name: " << cursor->getPrevious()->getName() << endl;
         cursor = cursor->getPrevious();
     }
 }

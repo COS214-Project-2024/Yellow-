@@ -45,6 +45,7 @@ public:
     void resetToMainBranch();
     void resetCursor(bool toMainBranch = true, bool toHead = true);
     void printTree();
+    void printCursor();
 
 };
 
