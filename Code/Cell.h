@@ -31,13 +31,9 @@ public:
     virtual void setIcon() = 0;
     void setCellType(string str);
     virtual ~Cell();
-    virtual void addCitizenToBuilding(Citizen* newCitizen);
+
     virtual Cell* clone() = 0;
-    virtual void setProductionRate(int newRate);
-    virtual void createBuildingResource() = 0;
-    virtual void taxBuilding();
-    virtual float getMoney() = 0;
-    virtual void setMoney(float newAmount) = 0;
+
 };
 
 
