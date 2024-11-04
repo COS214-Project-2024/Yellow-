@@ -48,7 +48,6 @@ void Block::acceptVisitor(Visitor* v) {
 	for (Cell* sec : children)
 	{
 		//v->visitBuilding(sec);
-		//v->visitBuilding(sec);
 	}
 }
 
