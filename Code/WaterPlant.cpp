@@ -7,7 +7,7 @@ WaterPlant::WaterPlant() : Utilities("WaterPlant")
 void WaterPlant::createBuildingResource()
 {
     City c = City::instanceCity();
-    c.stuff.res->setWater(c.stuff.res->getWater() + productionPerCell*coordinates.size());
+    c.stuff.res->setWaterGrid(c.stuff.res->getWaterGrid() + productionPerCell*coordinates.size());
 }
 
 void WaterPlant::setIcon()

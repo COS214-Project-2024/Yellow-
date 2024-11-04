@@ -39,3 +39,8 @@ int Buildings::getMaxCitizens()
 {
     return this->maxCitizens;
 }
+
+Buildings::~Buildings()
+{
+	
+}

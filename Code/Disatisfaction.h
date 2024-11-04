@@ -18,8 +18,6 @@ class Disatisfaction {
         Severity* getState();
         void handleSeverity(bool upOrDown);
 
-
-        void lowerTaxes();
 };
 
 #endif
