@@ -8,7 +8,7 @@
 
 class CellFactory {
 public:
-    bool useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget, int cellCount);
+    //bool useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget, int cellCount);
 };
 
 

@@ -1,7 +1,7 @@
 #ifndef GROUPPROJECT_CELL_H
 #define GROUPPROJECT_CELL_H
 #include <string>
-#include <map>
+//#include <map>
 #include "Coordinate.h"
 #include <vector>
 using namespace std;

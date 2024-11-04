@@ -6,9 +6,10 @@
 #define CODE_ROADFACTORY_H
 #include "CellFactory.h"
 #include "Road.h"
+#include "Coordinate.h"
 class RoadFactory : CellFactory{
 public:
-    Cell* createRoad(vector<Coordinate> coordinates) override;
+    Cell* createRoad(vector<Coordinate> coordinates);
 
 
 };

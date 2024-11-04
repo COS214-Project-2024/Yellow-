@@ -13,7 +13,7 @@
 #include <iostream>
 #include <typeinfo>
 using namespace std;
-
+class City;
 class Government {
 
     private:
@@ -28,6 +28,7 @@ class Government {
         Government(){};
 
     public:
+        friend class City;
         ~Government(){
             delete peopleState;
             delete budgetState;

@@ -1,5 +1,6 @@
 #ifndef BUILDINGFACTORY_H
 #define BUILDINGFACTORY_H
+#include "Cell.h"
 #include "WasteManagement.h"
 #include "WaterPlant.h"
 #include "House.h"
