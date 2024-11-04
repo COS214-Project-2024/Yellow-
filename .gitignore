@@ -1,5 +1,4 @@
 .idea/
-CMakeLists.txt
 cmake-build-debug/
 main.cpp
 Main.cpp
@@ -10,8 +9,6 @@ Main.cpp/
 main.cpp/
 Main.h/
 main.h/
-*.gcda
-*.gcno
 valg.txt
 Makefile
-makefile
+

@@ -1,3 +1,11 @@
+/**
+* @class Transport
+* @brief A class used to handle the addition of public transport to the city
+* @ingroup Chain of responsibility
+* @implements Department
+*
+* The Transport class is a concrete handler participant of the Chain of Responsibility design pattern. It is used to handle the AddPublicTransport policy.
+*/
 #include "Transport.h"
 
 MaterialOrder* Transport::handle(Policies* policy) {

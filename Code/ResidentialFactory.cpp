@@ -1,3 +1,11 @@
+/**
+* @class ResidentialFactory
+* @brief A class that creates residential buildings
+* @ingroup Factory
+* @implements BuildingFactory
+*
+* The ResidentialFactory class is a concrete factory participant of the Factory design pattern. It is used to create residential buildings.
+*/
 #include "ResidentialFactory.h"
 
 Cell* ResidentialFactory::createHouse(vector<Coordinate> coordinates) {

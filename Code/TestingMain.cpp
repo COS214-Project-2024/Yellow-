@@ -38,12 +38,20 @@ TEST_CASE("City Test")
 {
     Section* test = new Block();
     Section* test2 = new Block();
+    City city = City::instanceCity();
 
-    Section* building1 = new Hospital();
-    Section* building2 = new Park();
+    IndustrialFactory* industrial = new IndustrialFactory();
+    Coordinate c1 = Coordinate();
+    vector<Coordinate> v1 = vector<Coordinate>();
+    v1.push_back(c1);
+
+    test->addSection(industrial->createConcreteFactory(v1));
+    test->addSection(industrial->createSteelFactory(v1));
+    test->addSection(industrial->createForestry(v1));
+
+    City::instanceCity().setHead(test);
 
     City::instanceCity().nextIteration();
-    //CHECK(16 == City::instanceCity().stuff.res->getPopulation());
 
     for (int i = 0; i < 10; i++)
     {

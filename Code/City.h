@@ -1,3 +1,13 @@
+/**
+ * @file City.h
+ * @author Stefan Muller
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef CITY_H
 #define CITY_H
 #include <vector>
@@ -13,6 +23,9 @@
 #include "IncreaseTaxes.h"
 #include "ExpandCity.h"
 #include "AddPublicTransport.h"
+
+class Cell;
+class Industrial;
 #include <vector>
 #include <cmath>
 
@@ -21,9 +34,6 @@ struct Varibals
 	Population* population;
 	Resources* res;
 	Section* head;
-	People* people;
-    Budget* budget;
-    Disatisfaction* dissatisfaction;
 };
 
 class City {
@@ -37,13 +47,13 @@ class City {
 	public:
 		Varibals stuff;
 		City();
-		//City(Section* head);
+		void setHead(Section* head);
 		static City& instanceCity();
 		void nextIteration();
 		void collection();
 		void dealWithPolicies();
 
-		void addBuilding(Cell *newBuilding);
+		//void addBuilding(Cell *newBuilding);
 };
 
 #endif

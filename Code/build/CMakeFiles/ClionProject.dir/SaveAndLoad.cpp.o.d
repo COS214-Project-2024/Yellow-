@@ -1,4 +1,5 @@
 CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: \
+<<<<<<< HEAD
  /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/SaveAndLoad.cpp \
  /usr/include/stdc-predef.h \
  /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/SaveAndLoad.h \
@@ -214,3 +215,9 @@ CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o: \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/ctime
+=======
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SaveAndLoad.cpp \
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SaveAndLoad.h \
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SystemState.h \
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.h
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20

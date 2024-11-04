@@ -1,3 +1,13 @@
+/**
+ * @file Block.h
+ * @author Stefan Muller
+ * @brief 
+ * @version 0.1
+ * @date 2024-11-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef BLOCK_H
 #define BLOCK_H
 
@@ -10,7 +20,7 @@
 class Block : public Section {
 
 private:
-    vector<Section*> children;
+    vector<Cell*> children;
 
 	Buildings* building;
 
@@ -18,19 +28,23 @@ public:
 	Block();
 	~Block();
 
-	void addSection(Section* section);
+	void addSection(Cell* section);
 
 	void removeSection(int idx);
 
-	Section* getSection(int idx);
+	Cell* getSection(int idx);
 
 	void acceptVisitor(Visitor* v);
 
-	vector<Section*> getChildren();
+	vector<Cell*> getChildren();
 	
 	virtual Cell* clone();
 	
 	void createBuildingResource() override;
+
+	virtual void setProductionRate(int newRate){}
+	virtual void taxBuilding(){}
+	virtual void payEmployees(){}
 };
 
 #endif

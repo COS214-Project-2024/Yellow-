@@ -1,3 +1,13 @@
+/**
+ * @file Section.h
+ * @author Stefan Muller
+ * @brief 
+ * @version 0.1
+ * @date 2024-11-04
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef SECTION_H
 #define SECTION_H
 
@@ -11,24 +21,24 @@ class Section : public Cell {
 public:
 	Section(string cellType);
 
-	virtual void addSection(Section* section) = 0;
+	virtual void addSection(Cell* section) = 0;
 
 	virtual void removeSection(int idx) = 0;
 
-	virtual Section* getSection(int idx) = 0;
+	virtual Cell* getSection(int idx) = 0;
 
 	virtual void acceptVisitor(Visitor* v) = 0;
 
-	virtual vector<Section*> getChildren();
+	virtual vector<Cell*> getChildren();
 	
 	virtual void setIcon();
 
-	virtual Cell* clone();
+	virtual Cell* clone() = 0;
 	
 	virtual void createBuildingResource() = 0;
 
-	float getMoney() override;
-	void setMoney(float newAmount) override;
+	virtual float getMoney();
+	virtual void setMoney(float newAmount);
 };
 
 #endif

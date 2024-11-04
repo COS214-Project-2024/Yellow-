@@ -1,3 +1,13 @@
+/**
+ * @file TrainStation.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef TRAINSTATION_H
 #define TRAINSTATION_H
 #include <vector>
@@ -5,7 +15,7 @@
 class TrainStation : public Service{
     public:
     TrainStation();
-    Cell* clone() override;
+    Cell* clone();
 private:
     vector<TrainStation*> availableStops;
     vector<int> rideTime;

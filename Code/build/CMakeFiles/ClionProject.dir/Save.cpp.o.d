@@ -1,4 +1,5 @@
 CMakeFiles/ClionProject.dir/Save.cpp.o: \
+<<<<<<< HEAD
  /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Save.cpp \
  /usr/include/stdc-predef.h \
  /media/daniel/STORE/1.\ Silver/_UPWork/Year\ 3/Semester\ 2/COS214/Project/COS-214-Project/Code/Save.h \
@@ -159,3 +160,8 @@ CMakeFiles/ClionProject.dir/Save.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc
+=======
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.cpp \
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/Save.h \
+  /Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/SystemState.h
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20

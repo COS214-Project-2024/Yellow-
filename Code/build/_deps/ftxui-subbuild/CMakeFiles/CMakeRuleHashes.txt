@@ -1,4 +1,5 @@
 # Hashes of file build rules.
+<<<<<<< HEAD
 c865d725496fe446420cdf9148b7e493 CMakeFiles/ftxui-populate
 68f767710f1ef480e886e308d29432ae CMakeFiles/ftxui-populate-complete
 4d1ff260c678e442813e7d6b7150f663 ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build
@@ -9,3 +10,15 @@ c9e6b45bf5522b59079ea7044f792afc ftxui-populate-prefix/src/ftxui-populate-stamp/
 bde2a64032b5dd842f4baca9f86cb1f8 ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch_disconnected
 b4d67a0db04f81c4b1d8df3092bbe3f7 ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test
 8f9acec9b44f2815aaa8980146841c7b ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update_disconnected
+=======
+85611efa8cfd9cc89dff6e4eeda28c97 CMakeFiles/ftxui-populate
+499e6fe781090d497dbb0a4132e297a1 CMakeFiles/ftxui-populate-complete
+98fffab3d171468de63db82b5cb2867f ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build
+de90430732fd29beeb00af9cbbc434f9 ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure
+b507baf82b4296df7b84ac7f29226463 ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download
+c50ac1f4acac89ae1100b96bc29ee63b ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install
+cf0da5324dc115ae8c394b769859235e ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir
+58c90aa2d36ed78ec03bc9c3f9d2e363 ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch_disconnected
+178510b7b4cbdcb85b6cc02aa0fab074 ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test
+9b50e73e56a2d545cb225039b2f64bfb ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update_disconnected
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20

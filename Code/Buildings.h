@@ -1,8 +1,17 @@
+/**
+ * @file Buildings.h
+ * @author Amadeus Fidos
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef BUILDINGS_H
 #define BUILDINGS_H
 #include <iostream>
 #include "Section.h"
-#include "City.h"
 class Citizen;
 class Buildings : public Section {
 
@@ -15,13 +24,13 @@ protected:
 public:
 	Buildings(string cellType);
 
-	float getMoney() override;
+	float getMoney();
 
-	void setMoney(float newAmount) override;
+	void setMoney(float newAmount);
 	
 	int getMaxCitizens();
 
-	void addSection(Section* section);
+	void addSection(Cell* section);
 
 	void removeSection(int idx);
 
@@ -29,7 +38,7 @@ public:
 
 	void acceptVisitor(Visitor* v);
 
-	//virtual void taxBuilding() = 0;
+	virtual void taxBuilding() = 0;
 
 	virtual void payEmployees() = 0;
 

@@ -1,7 +1,13 @@
-//
-// Created by sjvr0 on 2024/10/22.
-//
-
+/**
+ * @file Map.h
+ * @author Stefan and Johan Jansen van Rensburg
+ * @brief 
+ * @version 0.1
+ * @date 2024-10-10
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef GROUPPROJECT_MAP_H
 #define GROUPPROJECT_MAP_H
 

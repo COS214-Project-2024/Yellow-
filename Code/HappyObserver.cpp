@@ -1,3 +1,11 @@
+/**
+* @class HappyObserver
+* @brief Class that represents an observer for happiness
+* @ingroup Observer
+* @implements Observer
+*
+* The HappyObserver class is a concrete observer participant of the Observer design pattern. It is used to observe the happiness of citizens.
+*/
 #include "HappyObserver.h"
 #include <iostream>
 
