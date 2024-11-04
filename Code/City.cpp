@@ -32,13 +32,15 @@ void City::nextIteration()
 
 void City::collection()
 {
-	//Collect Resources
-
-
-	//Collect Taxes
-	//stuff.res->setMorale(stuff.res->getMorale() +50);
-	
-	stuff.res->setBudget(stuff.res->getBudget() + stuff.res->getBudget() * (stuff.res->getBusinessTaxRate() + stuff.res->getIncomeTaxRate() + stuff.res->getPropertyTaxRate())/100);
+    vector<Section*> building = stuff.head->getChildren();
+    for(Section* build : building)
+    {
+        if (typeid(build) == typeid(Industrial*))
+        {
+            build->createBuildingResource();
+            build->taxBuilding();
+        }
+    }
 }
 
 void City::dealWithPolicies()
