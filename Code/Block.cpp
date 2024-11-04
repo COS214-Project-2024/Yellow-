@@ -6,7 +6,7 @@ Block::Block() : Section("Block") //review
 
 Block::~Block()
 {
-	
+	children.clear();
 }
 
 void Block::addSection(Section *section)

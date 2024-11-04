@@ -3,26 +3,47 @@
 #include <vector>
 #include "Resources.h"
 #include "Government.h"
-class Buildings;
-class Cell;
+#include "Section.h"
+#include "Population.h"
+#include "Map.h"
+#include "MaterialOrder.h"
+#include "Severity.h"
+#include "Green.h"
+#include "IncreaseWages.h"
+#include "IncreaseTaxes.h"
+#include "ExpandCity.h"
+#include "AddPublicTransport.h"
+#include <vector>
+#include <cmath>
+
 struct Varibals
 {
-	Resources* res = new Resources();
+	Population* population;
+	Resources* res;
+	Section* head;
+	People* people;
+    Budget* budget;
+    Disatisfaction* dissatisfaction;
 };
 
 class City {
-protected:
-	vector<Buildings*> buildings;
-public:
-	Varibals stuff;
-	City();
-	static City& instanceCity();
-	void collectResources();
-	void collectTaxes();
-	void dealWithResources();
-	void dealWithPolicies();
-	void addBuilding(Cell* newBuilding);
-	vector<Buildings*> getBuildings();
+
+	private:
+		int prevMoral;
+		int prevPopulation;
+		int prevBudget;
+		Government gov;
+
+	public:
+		Varibals stuff;
+		City();
+		//City(Section* head);
+		static City& instanceCity();
+		void nextIteration();
+		void collection();
+		void dealWithPolicies();
+
+		void addBuilding(Cell *newBuilding);
 };
 
 #endif

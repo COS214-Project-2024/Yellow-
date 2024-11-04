@@ -7,7 +7,7 @@ PowerPlant::PowerPlant() : Utilities("PowerPlant")
 void PowerPlant::createBuildingResource()
 {
     City c = City::instanceCity();
-    c.stuff.res->setEnergy(c.stuff.res->getEnergy() + 150); // + any number - 150 chosen at random
+    c.stuff.res->setPowerGrid(c.stuff.res->getPowerGrid() + 150); // + any number - 150 chosen at random
 }
 
 void PowerPlant::addCitizenToBuilding(Citizen *newCitizen)
