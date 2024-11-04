@@ -8,6 +8,10 @@ Saves::Saves()
     this->currentBranchPath = "M";
     this->historyTree = new HistoryBranch();
     this->cursor = this->historyTree->getHead();
+
+    cout << "-=-=-=-=-=-=-=-=-=-=-" << endl;
+    cout << "Saves created" << endl;
+    cout << "-=-=-=-=-=-=-=-=-=-=-" << endl;
 }
 
 Saves::~Saves()
@@ -19,13 +23,17 @@ void Saves::save(Save *save, bool overwrite)
 {
     if (this->historyTree->getHead() == nullptr || this->cursor == this->historyTree->getTail()) {
         this->historyTree->addNode(save, this->cursor);
+        resetCursor(true, true);
     } else if (this->cursor->getNext() == nullptr) {
         this->historyTree->addNode(save, this->cursor);
+        resetCursor(true, true);
     } else {
         if (overwrite) {
             this->historyTree->addNode(save, this->cursor);
+            resetCursor(true, true);
         } else {
             this->historyTree->startAltHistory(save, this->cursor);
+            resetCursor(true, true);
         }
     }
 }
@@ -141,25 +149,61 @@ string Saves::getCurrentBranchPath()
     return this->currentBranchPath;
 }
 
-HistoryBranch* Saves::loadBranch(string path)
+HistoryBranch *Saves::loadBranch(string path)
 {
     resetToMainBranch();
     vector<string> branchNames;
     string traversalPath = path;
     size_t pos = 0;
 
+    // Handle the main branch prefix "M"
+    if (traversalPath.substr(0, 2) == "M.")
+    {
+        traversalPath.erase(0, 2);
+    }
+
     while ((pos = traversalPath.find(".")) != string::npos)
     {
         branchNames.push_back(traversalPath.substr(0, pos));
         traversalPath.erase(0, pos + 1);
     }
+    if (!traversalPath.empty())
+    {
+        branchNames.push_back(traversalPath);
+    }
 
-    HistoryBranch* branch = loadBranchHelper(branchNames, this->historyTree);
+    HistoryBranch *branch = loadBranchHelper(branchNames, this->historyTree);
     if (branch == nullptr)
     {
         cout << "Branch not found\n";
     }
     return branch;
+}
+
+HistoryBranch *Saves::loadBranchHelper(vector<string> branchNames, HistoryBranch *currentBranch)
+{
+    if (branchNames.empty())
+    {
+        return currentBranch;
+    }
+
+    string name = branchNames[0].substr(0, branchNames[0].find("_"));
+    for (HistoryNode *node : currentBranch->getAllBranchPoints())
+    {
+        if (node->getName() == name)
+        {
+            for (HistoryBranch *branch : node->getAlternatives())
+            {
+                if (branch->getBranchID() == branchNames[0])
+                {
+                    // Create a copy of the vector without the first element
+                    vector<string> remainingBranchNames(branchNames.begin() + 1, branchNames.end());
+                    return loadBranchHelper(remainingBranchNames, branch);
+                }
+            }
+        }
+    }
+    return nullptr;
 }
 
 void Saves::setBranch(string path)
@@ -173,24 +217,6 @@ void Saves::setBranch(string path)
     this->historyTree = branch;
     this->cursor = branch->getHead();
     this->currentBranchPath = path;
-}
-
-HistoryBranch* Saves::loadBranchHelper(vector <string> branchNames, HistoryBranch* currentBranch){
-    if (branchNames.size() == 0){
-        return currentBranch;
-    }
-    string name = branchNames[0].substr(0, branchNames[0].find("_"));
-    for (HistoryNode* node : currentBranch->getAllBranchPoints()){
-        if (node->getName() == name){
-            for (HistoryBranch* branch : node->getAlternatives()){
-                if (branch->getBranchID() == branchNames[0]) {
-                    vector<string> remainingBranchNames(branchNames.begin() + 1, branchNames.end());
-                    return loadBranchHelper(remainingBranchNames, branch);
-                }
-            }
-        }
-    }
-    return nullptr;
 }
 
 void Saves::resetToMainBranch()
