@@ -197,19 +197,5 @@ void makeItWork() {
 int main() {
     makeItWork();
 
-    // vector <Coordinate> v;
-    // Coordinate co = Coordinate(0, 0);
-    // v.push_back(co);
-    // co = Coordinate(0, 1);
-    // v.push_back(co);
-    // co = Coordinate(0, 2);
-    // v.push_back(co);
-    // co = Coordinate(0, 3);
-    // v.push_back(co);
-    //
-    // for (auto & i : v) {
-    //     cout << "<" << i.getX() << ", " << i.getY() << ">" << endl;
-    // }
-
     return 0;
 }
