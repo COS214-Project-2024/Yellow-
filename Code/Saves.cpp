@@ -69,6 +69,18 @@ Save *Saves::viewSave(string path) // path example: "M.1_a.2_c.9_f.3"
     return node->getData();
 }
 
+Save *Saves::loadSave(string path) // path example: "M.1_a.2_c.9_f.3"
+{
+    HistoryNode *node = this->goToNode(path);
+    if (node == nullptr)
+    {
+        cout << "Node not found\n";
+        return nullptr;
+    }
+    this->cursor = node;
+    return node->getData();
+}
+
 HistoryNode* Saves::getCursor()
 {
     return this->cursor;
@@ -79,7 +91,6 @@ void Saves::moveForward()
     if (this->cursor->getNext() != nullptr)
     {
         this->historyTree->moveForward(this->cursor);
-        this->cursor = this->historyTree->getCurrent();
     }
 }
 
@@ -88,7 +99,6 @@ void Saves::moveBack()
     if (this->cursor->getPrevious() != nullptr)
     {
         this->historyTree->moveBack(this->cursor);
-        this->cursor = this->historyTree->getCurrent();
     }
 }
 
@@ -125,7 +135,6 @@ void Saves::moveOutOfBranch()
     }
     this->currentBranchPath = this->currentBranchPath.substr(0, this->currentBranchPath.find_last_of("."));
     this->historyTree = this->historyTree->getParentBranch();
-    this->cursor = this->historyTree->getCurrent();
 }
 
 string Saves::getCurrentBranchPath()
@@ -154,7 +163,20 @@ HistoryBranch* Saves::loadBranch(string path)
     return branch;
 }
 
-HistoryBranch* loadBranchHelper(vector <string> branchNames, HistoryBranch* currentBranch){
+void Saves::setBranch(string path)
+{
+    HistoryBranch* branch = loadBranch(path);
+    if (branch == nullptr)
+    {
+        cout << "Branch not found\n";
+        return;
+    }
+    this->historyTree = branch;
+    this->cursor = branch->getHead();
+    this->currentBranchPath = path;
+}
+
+HistoryBranch* Saves::loadBranchHelper(vector <string> branchNames, HistoryBranch* currentBranch){
     if (branchNames.size() == 0){
         return currentBranch;
     }
@@ -188,4 +210,36 @@ void Saves::resetCursor(bool toMainBranch, bool toHead){
         this->cursor = this->historyTree->getHead();
     }
     
+}
+
+void Saves::printBranch()
+{
+    string result = "";
+    this->historyTree->printBranch();
+    cout << result;
+}
+
+void Saves::deleteSave(string path)
+{
+    HistoryNode *node = goToNode(path);
+    if (node == nullptr)
+    {
+        cout << "Node not found\n";
+        return;
+    }
+    this->historyTree->removeNode(node);
+}
+
+void Saves::deleteBranch(string path)
+{
+
+    string alpha = path.substr(path.find_last_of(".") + 1);
+    string branchPath = path.substr(0, path.find_last_of("."));
+    HistoryBranch *branch = loadBranch(branchPath);
+    if (branch == nullptr)
+    {
+        cout << "Branch not found\n";
+        return;
+    }
+    branch->removeBranch(alpha, this->cursor);
 }

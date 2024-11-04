@@ -40,8 +40,11 @@ public:
     void moveOutOfBranch(); //moves out of the current branch to the parent branch. Must set cursor to current of branch we just moved into
     string getCurrentBranchPath();
     HistoryBranch* loadBranch(string path);
+    HistoryBranch* loadBranchHelper(vector<string> branchNames, HistoryBranch* currentBranch);
+    void setBranch(string path);
     void resetToMainBranch();
     void resetCursor(bool toMainBranch = true, bool toHead = true);
+    void printBranch();
 
 };
 

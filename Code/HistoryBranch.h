@@ -46,9 +46,6 @@ class HistoryBranch{
   
         // FOR TESTING
         string printBranch();
-        void printBranchHelper(HistoryBranch *branch, string &result, int indentLevel, bool isMainBranch);
-        // void printCurrent();
-        // void printRoot();
 };
 
 #endif
