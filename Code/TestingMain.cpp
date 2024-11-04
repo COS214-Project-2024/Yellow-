@@ -39,11 +39,7 @@ TEST_CASE("City Test")
     Section* test = new Block();
     Section* test2 = new Block();
     City city = City::instanceCity();
-    cout << "city wood: " << city.stuff.res->getWood() << endl;
-    city.stuff.res->setConcrete(80);
-    city.stuff.res->setWood(80);
-    city.stuff.res->setSteel(80);
-    cout << "city wood: " << city.stuff.res->getWood() << endl;
+
     IndustrialFactory* industrial = new IndustrialFactory();
     Coordinate c1 = Coordinate();
     vector<Coordinate> v1 = vector<Coordinate>();

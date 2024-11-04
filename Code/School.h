@@ -10,7 +10,7 @@
  */
 #ifndef SCHOOL_H
 #define SCHOOL_H
-#include "Service.h"
+class Service;
 class School : public Service {
     public:
         School();

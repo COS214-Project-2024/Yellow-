@@ -23,6 +23,12 @@
 #include "IncreaseTaxes.h"
 #include "ExpandCity.h"
 #include "AddPublicTransport.h"
+#include "ServiceFactory.h";
+#include "ResidentialFactory.h";
+#include "IndustrialFactory.h";
+#include "CommercialFactory.h";
+#include "LandmarkFactory.h";
+class Cell;
 class Industrial;
 #include <vector>
 #include <cmath>

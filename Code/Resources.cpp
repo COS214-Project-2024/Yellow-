@@ -13,16 +13,16 @@
 
 Resources::Resources()
 {
-    concrete = 0;
-    steel = 0;
-    wood = 0;
+    concrete = 300;
+    steel = 300;
+    wood = 300;
     powerGrid = 150;
     powerUsage = 150;
     waterGrid = 150;
     waterUsage = 150;
 	budget = 10000;
     population = 10;
-    morale = 50;
+    morale = 60;
     businessTaxRate = 5.0;
     propertyTaxRate = 7.0;
     incomeTaxRate = 10.0;
@@ -33,7 +33,7 @@ void Resources::printResources()
     cout << "Population: " << population << endl;
     cout << "Budget: " << budget << endl;
     cout << "Moral: " << morale << "/100" << endl;
-    cout << "Concrete: " << getConcrete() << endl;
+    cout << "Concrete: " << concrete << endl;
     cout << "Steel: " << steel << endl;
     cout << "Wood: " << wood << endl;
     cout << "Power: " << powerUsage << "/" << powerGrid << endl;

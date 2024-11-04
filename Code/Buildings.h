@@ -13,7 +13,7 @@
 
 #include <vector>
 #include "Section.h"
-#include "City.h"
+class City;
 class Citizen;
 
 class Buildings : public Section {
