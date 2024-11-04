@@ -51,3 +51,7 @@ Cell *Block::clone()
 {
     return nullptr;
 }
+
+void Block::createBuildingResource()
+{
+}

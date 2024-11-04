@@ -24,3 +24,7 @@ float OpenField::getMoney()
 {
     return 0.0f;
 }
+
+void OpenField::setMoney(float newAmount)
+{
+}

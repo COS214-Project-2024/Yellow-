@@ -57,3 +57,7 @@ float Road::getMoney()
 {
     return 0.0f;
 }
+
+void Road::setMoney(float newAmount)
+{
+}

@@ -5,6 +5,7 @@ class HouseHold : public Residential {
 public:
 	HouseHold();
     Cell* clone() override;
+	void setIcon() override;
 private:
 	float houseIncome;
 };

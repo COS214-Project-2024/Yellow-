@@ -1,27 +1,30 @@
 #include "ResidentialFactory.h"
 
 Cell* ResidentialFactory::createHouse(vector<Coordinate> coordinates) {
-    if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
-	    return nullptr;
-    House* cell = new House();
-    cell->setCoordinates(coordinates);
-    return cell;
+    if (useBuildingResources(50,50,50,500,coordinates.size())) {
+        House* cell = new House();
+        cell->setCoordinates(coordinates);
+        return cell;
+    }
+	return nullptr;
 }
 
 Cell* ResidentialFactory::createApartment(vector<Coordinate> coordinates) { 
-    if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
-        return nullptr;
-    Apartment* cell = new Apartment();
-    cell->setCoordinates(coordinates);
-    return cell;
+    if (useBuildingResources(50,50,50,500,coordinates.size())) {
+        Apartment* cell = new Apartment();
+        cell->setCoordinates(coordinates);
+        return cell;
+    }
+    return nullptr;
 }
 
 Cell* ResidentialFactory::createComplex(vector<Coordinate> coordinates) {
-    if (useBuildingResources(50,50,50,500,coordinates.size()) == false)
-        return nullptr;
-    Complex* cell = new Complex();
-    cell->setCoordinates(coordinates);
-    return cell;
+    if (useBuildingResources(50,50,50,500,coordinates.size())) {
+        Complex* cell = new Complex();
+        cell->setCoordinates(coordinates);
+        return cell;
+    }
+    return nullptr;
 }
 
 Cell *ResidentialFactory::createHouseHold(vector<Coordinate> coordinates)

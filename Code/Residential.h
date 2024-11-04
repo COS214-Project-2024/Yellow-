@@ -18,6 +18,7 @@ public:
 	virtual Cell* clone() = 0;
 	void addCitizenToBuilding(Citizen* newCitizen) override;
 	void createBuildingResource() override;
+	virtual ~Residential();
 };
 
 #endif
