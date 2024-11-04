@@ -52,21 +52,21 @@ public:
 	void setWage(float newWage);
 
     // Getters
-    int getConcrete() const;
-    int getSteel() const;
-    int getWood() const;
-    int getPowerGrid() const;
-    int getPowerUsage() const;
-    int getWaterGrid() const;
-    int getWaterUsage() const;
-    float getBudget() const;
-    int getPopulation() const;
-    int getMorale() const;
-    int getBusinessTax() const;
-    float getPropertyTaxRate() const;
-    float getIncomeTaxRate() const;
-	float getBusinessTaxRate() const;
-	float getWage() const;
+    int getConcrete();
+    int getSteel();
+    int getWood();
+    int getPowerGrid();
+    int getPowerUsage();
+    int getWaterGrid();
+    int getWaterUsage();
+    float getBudget();
+    int getPopulation();
+    int getMorale();
+    int getBusinessTax();
+    float getPropertyTaxRate();
+    float getIncomeTaxRate();
+	float getBusinessTaxRate();
+	float getWage();
 };
 
 #endif

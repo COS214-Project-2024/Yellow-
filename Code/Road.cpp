@@ -38,8 +38,8 @@ void Road::removeBuilding(Cell *building) {
 }
 
 Cell *Road::clone() {
-    Cell* newRoad = new Road();
-    return newRoad;
+    //Cell* newRoad = new Road();
+    //return newRoad;
 }
 
 bool Road::contains(Cell *object) {

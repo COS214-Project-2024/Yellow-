@@ -16,7 +16,7 @@ void OpenField::setIcon() {
 }
 
 Cell *OpenField::clone() {
-    Cell* newField = new OpenField();
-    return newField;
+    //Cell* newField = new OpenField();
+    //return newField;
 }
 

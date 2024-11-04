@@ -9,11 +9,12 @@
 #include "City.h"
 #include <typeinfo>
 #include "Buildings.h"
-#include "ServiceFactory.h";
-#include "ResidentialFactory.h";
-#include "IndustrialFactory.h";
-#include "CommercialFactory.h";
-#include "LandmarkFactory.h";
+#include "ServiceFactory.h"
+#include "UtilityFactory.h"
+#include "LandmarkFactory.h" 
+#include "ResidentialFactory.h"
+#include "IndustrialFactory.h"
+#include "CommercialFactory.h"
 City::City()
 {
 	stuff.res = new Resources();
@@ -141,6 +142,7 @@ void City::dealWithPolicies()
     IndustrialFactory* industrialFactory = new IndustrialFactory();
     CommercialFactory* commercialFactory = new CommercialFactory();
     LandmarkFactory* landmarkFactory = new LandmarkFactory();
+    UtilityFactory* utilitiesFactory = new UtilityFactory();
 
     Coordinate c1 = Coordinate();
     vector<Coordinate> v1 = vector<Coordinate>();
@@ -171,68 +173,82 @@ void City::dealWithPolicies()
             }
             else if (material.first == "Apartment")
             {
+                stuff.head->addSection(residentialFactory->createApartment(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "Complex")
             {
+                stuff.head->addSection(residentialFactory->createApartment(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "PowerPlant")
             {
+                stuff.head->addSection(utilitiesFactory->createPowerPlant(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
-                stuff.res->setPowerGrid(stuff.res->getPowerGrid() + 150);
             }
             else if (material.first == "WaterPlant")
             {
+                stuff.head->addSection(utilitiesFactory->createWastePlant(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
-                stuff.res->setWaterGrid(stuff.res->getWaterGrid() + 150);
             }
             else if (material.first == "WasteManagement")
             {
+                stuff.head->addSection(utilitiesFactory->createWastePlant(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "ConcreteFactory")
             {
+                stuff.head->addSection(industrialFactory->createConcreteFactory(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "SteelFactory")
             {
+                stuff.head->addSection(industrialFactory->createSteelFactory(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "Forestry")
             {
+                stuff.head->addSection(industrialFactory->createForestry(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "School")
             {
+                stuff.head->addSection(serviceFactory->createSchool(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "Hospital")
             {
+                stuff.head->addSection(serviceFactory->createHospital(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "PoliceStation")
             {
+                stuff.head->addSection(serviceFactory->createPoliceStation(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "Mall")
             {
+                stuff.head->addSection(commercialFactory->createMall(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "Office")
             {
+                stuff.head->addSection(commercialFactory->createOffice(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "Shop")
             {
+                stuff.head->addSection(commercialFactory->createShop(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "Museum")
             {
+                stuff.head->addSection(landmarkFactory->createMuseum(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
             else if (material.first == "Park")
             {
+                stuff.head->addSection(landmarkFactory->createPark(v1));
                 stuff.res->setMorale(stuff.res->getMorale() + material.second);
             }
         }

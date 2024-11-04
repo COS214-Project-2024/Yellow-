@@ -11,13 +11,23 @@ main: *.o
 debugcpp: debugo
 	g++ -std=c++23 -ggdb3 -fprofile-arcs -ftest-coverage -o main *.o
 
+
 debugo: *.cpp
 	g++ -std=c++23 -ggdb3 -fprofile-arcs -ftest-coverage -c -w *.cpp
+
 
 cov: 
 	make main
 	./main
 	gcov *.cpp
+
+# GDB target to run the program in gdb
+gdb: debugcpp
+	gdb -q ./main
+
+# GDB target to run gdb and immediately start execution
+gdb-run: debugcpp
+	gdb -q -ex run ./main
 
 # GDB target to run the program in gdb
 gdb: debugcpp
@@ -40,4 +50,6 @@ v:
 	make c
 
 c:
+	rm *.o main
+cgov:
 	rm *.o main *.gcda *.gcno *.gcov

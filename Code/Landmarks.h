@@ -19,7 +19,7 @@ class Landmarks : public Buildings {
 public:
 	Landmarks(string cellType);
 
-	void taxBuilding() override;
+	void taxBuilding();
 
 	void acceptVisitor(Visitor* v);
 
@@ -27,11 +27,9 @@ public:
 	
 	virtual void setIcon();
 	
-	void payEmployees() override;
+	void payEmployees();
 
-	virtual Cell* clone() = 0;
-
-	void addCitizenToBuilding(Citizen* newCitizen) override;
+	void addCitizenToBuilding(Citizen* newCitizen);
 };
 
 #endif

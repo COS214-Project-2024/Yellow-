@@ -8,6 +8,7 @@
 */
 #include "Citizen.h"
 #include "Residential.h"
+#include <iostream>
 ////////////// Constructors ///////////////
 
 /// Default Constructor

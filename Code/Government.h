@@ -48,6 +48,7 @@ class Government {
             // delete strategy;
             // uniqueInstanceGov = nullptr;
         };
+        friend class City;
 
         //Strategy methods
         Policies* implementPolicy(string stateType, string prevState, string currState);
