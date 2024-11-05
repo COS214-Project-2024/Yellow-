@@ -1,3 +1,5 @@
+// #ifndef SYSTEMSTATE_H
+// #define SYSTEMSTATE_H
 /**
  * @file SystemState.h
  * @author Stefan Muller
@@ -8,10 +10,28 @@
  * @copyright Copyright (c) 2024
  * 
  */
-#ifndef SYSTEMSTATE_H
-#define SYSTEMSTATE_H
 
-class SystemState {
-};
+// #include <string>
+// #include <iostream>
 
-#endif
+// using namespace std;
+
+// class SystemState {
+// friend class SaveAndLoad;
+
+//     protected:
+//         //FOR TESTING
+//         int dummyInt;
+//         string dummyString;
+    
+//     public:
+//         // FOR TESTING
+//         void printState() const
+//         {
+//             int temp = this->dummyInt;
+//             cout << "SystemState: dummyInt = "  << temp << ", dummyString = " << this->dummyString << endl;
+//             // cout << "SystemState: dummyInt = " << endl;
+//         }
+// };
+
+// #endif

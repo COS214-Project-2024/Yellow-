@@ -1,0 +1,3 @@
+[submodule "Code/Code/build/_deps/ftxui-src"]
+	path = Code/Code/build/_deps/ftxui-src
+	url = https://github.com/ArthurSonzogni/FTXUI.git

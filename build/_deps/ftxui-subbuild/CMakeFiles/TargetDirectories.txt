@@ -1,0 +1,3 @@
+/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.dir
+/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-subbuild/CMakeFiles/edit_cache.dir
+/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/build/_deps/ftxui-subbuild/CMakeFiles/rebuild_cache.dir
