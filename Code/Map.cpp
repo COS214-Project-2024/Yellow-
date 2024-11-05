@@ -21,13 +21,13 @@ Map::Map(){
     map = vector<vector<Cell*>>();
     distanceMatrix = vector<vector<int>>();
 
-    int rows = 18;
-    int cols = 18;
+    int rows = 10;
+    int cols = 20;
 
     map.resize(rows, vector<Cell*>(cols, nullptr));
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
-            //map[i][j] = new OpenField();
+            map[i][j] = new OpenField();
         }
     }
 }
@@ -59,54 +59,180 @@ void Map::addNode(Cell *object, int x, int y, int height, int width) {
 
 }
 
-// Function to render a building with the name displayed in the middle
-std::vector<std::string> renderBuilding(const std::string& name) {
-    std::vector<std::string> result;
-    result.push_back("|-------|");  // Adjust the outer box to have a width of 9
+// // Function to render a building with the name displayed in the middle
+// std::vector<std::string> renderBuilding(const std::string& name) {
+//     std::vector<std::string> result;
+//     result.push_back("|-----|");  // Adjust the outer box to have a width of 9
+//
+//     // Create a string from the first character or abbreviation
+//     std::string firstChar;
+//
+//     // Set the abbreviation based on the building name
+//     if (name == "Townhall") {
+//         firstChar = "TH";  // 2 characters
+//     }
+//     else if (name == "WasteManagement") {
+//         firstChar = "WM";  // 2 characters
+//     }
+//     else if (name == "TrainStation") {
+//         firstChar = "TS";  // 2 characters
+//     }
+//     else if (name == "SteelFactory") {
+//         firstChar = "SF";  // 2 characters
+//     }
+//     else if (name == "PowerPlant") {
+//         firstChar = "PP";  // 2 characters
+//     }
+//     else if (name == "Police") {
+//         firstChar = "PS";  // 2 characters
+//     }
+//     else if (name == "Airport") {
+//         firstChar = "Air";  // 3 characters
+//     }
+//     else {
+//         // Default to the first character if no abbreviation is defined
+//         firstChar = std::string(1, name[0]);  // 1 character
+//     }
+//
+//     // Calculate padding to center `firstChar` in a 7-character space (leaving borders)
+//     int totalPadding = 5 - firstChar.size();  // Total padding needed for 7 characters
+//     int leftPadding = totalPadding / 2;       // Divide evenly for left padding
+//     int rightPadding = totalPadding - leftPadding;  // Remainder for right padding
+//
+//     // Construct the centered line
+//     result.push_back("|" + std::string(leftPadding, ' ') + firstChar + std::string(rightPadding, ' ') + "|");
+//
+//     result.push_back("|-----|");  // Closing box line
+//     return result;
+// }
+//
+// // Function to render a field as a box without any name inside
+// std::vector<std::string> renderField() {
+//     std::vector<std::string> result;
+//     result.push_back("-------");
+//     result.push_back("-     -");
+//     result.push_back("-------");
+//     return result;
+// }
+//
+// // Function to render a road as an empty box of the same size
+// std::vector<std::string> renderRoad() {
+//     std::vector<std::string> result;
+//     result.push_back("     ");
+//     result.push_back("     ");
+//     result.push_back("     ");
+//     return result;
+// }
+//
+// void displayMap(const vector<vector<Cell*>> &map) {
+//     unordered_set<Cell*> renderedCells;
+//
+//     for (const auto& row : map) {
+//         // Each cell in the row will contribute a set of 5 strings, one for each line of the cell
+//         vector<string> line1, line2, line3;
+//
+//         for (const auto& cell : row) {
+//             if (!cell) continue; // Skip null pointers
+//
+//             // Skip if the cell has already been rendered
+//             if (renderedCells.find(cell) != renderedCells.end()) {
+//                 continue;
+//             }
+//             renderedCells.insert(cell);
+//
+//             // Determine the rendering type based on the cell type
+//             vector<string> cellLines;
+//             string cellType = cell->getCellType();
+//             if (cellType == "Road") {
+//                 cellLines = renderRoad();
+//             } else if (cellType == "Field") {
+//                 cellLines = renderField();
+//             } else {
+//                 cellLines = renderBuilding(cellType);
+//             }
+//
+//             // Add each line of the cell to the corresponding output line
+//             line1.push_back(cellLines[0]);
+//             line2.push_back(cellLines[1]);
+//             line3.push_back(cellLines[2]);
+//         }
+//
+//         // Print each row of cells as one line
+//         for (const auto& line : {line1, line2, line3}) {
+//             for (const auto& part : line) {
+//                 cout << part << " ";
+//             }
+//             cout << "\n";
+//         }
+//     }
+// }
 
-    // Create a string from the first character or abbreviation
-    std::string firstChar;
+std::vector<std::string> renderBuilding(const std::string& name, int widthCells, int heightCells) {
+    int cellWidth = 9;    // Width of a single cell (internal space)
+    int cellHeight = 3;   // Height of a single cell (internal space)
 
-    // Set the abbreviation based on the building name
-    if (name == "Townhall") {
-        firstChar = "TH";  // 2 characters
-    }
-    else if (name == "WasteManagement") {
-        firstChar = "WM";  // 2 characters
-    }
-    else if (name == "TrainStation") {
-        firstChar = "TS";  // 2 characters
-    }
-    else if (name == "SteelFactory") {
-        firstChar = "SF";  // 2 characters
-    }
-    else if (name == "PowerPlant") {
-        firstChar = "PP";  // 2 characters
-    }
-    else if (name == "Police") {
-        firstChar = "PS";  // 2 characters
-    }
-    else if (name == "Airport") {
-        firstChar = "Air";  // 3 characters
+    int totalWidth = (widthCells * cellWidth) + widthCells - 1; // Total width including borders
+    int totalHeight = (heightCells * cellHeight); // Total height including borders
+
+    // cout << name << ": total height = " << totalHeight << endl << endl;
+
+    // Building box
+    std::vector<std::string> result(totalHeight, std::string(totalWidth, ' '));
+
+    // Top and bottom borders
+    result[0] = std::string(totalWidth, '-');
+    result[totalHeight - 1] = std::string(totalWidth, '-');
+
+    // Side borders and interior space
+    if (totalHeight > 3) {
+        for (int i = 1; i < totalHeight - 1; ++i) {
+            result[i] = std::string(totalWidth, ' ');
+            result[i][0] = '|';
+            result[i][totalWidth - 1] = '|';
+        }
     }
     else {
-        // Default to the first character if no abbreviation is defined
-        firstChar = std::string(1, name[0]);  // 1 character
+        result[1] = std::string(totalWidth, ' ');
+        result[1][0] = '|';
+        result[1][totalWidth - 1] = '|';
     }
 
-    // Calculate padding to center `firstChar` in a 7-character space (leaving borders)
-    int totalPadding = 7 - firstChar.size();  // Total padding needed for 7 characters
-    int leftPadding = totalPadding / 2;       // Divide evenly for left padding
-    int rightPadding = totalPadding - leftPadding;  // Remainder for right padding
 
-    // Construct the centered line
-    result.push_back("|" + std::string(leftPadding, ' ') + firstChar + std::string(rightPadding, ' ') + "|");
+    // Create abbreviation for the building name
+    std::string abbreviation;
+    if (name == "Townhall") {
+        abbreviation = "TH";
+    } else if (name == "WasteManagement") {
+        abbreviation = "WM";
+    } else if (name == "TrainStation") {
+        abbreviation = "TS";
+    } else if (name == "SteelFactory") {
+        abbreviation = "SF";
+    } else if (name == "PowerPlant") {
+        abbreviation = "PP";
+    } else if (name == "Police") {
+        abbreviation = "PS";
+    } else if (name == "Airport") {
+        abbreviation = "Air";
+    } else {
+        // abbreviation = std::string(1, name[0]);
+        abbreviation = name[0];
+    }
 
-    result.push_back("|-------|");  // Closing box line
+    // Center the abbreviation in the middle of the building
+    int textRow = totalHeight / 2;
+    int textCol = (totalWidth - abbreviation.size()) / 2;
+    if (abbreviation.size() == 1) {
+        textCol = totalWidth / 2;
+    }
+    for (int i = 0; i < abbreviation.size(); ++i) {
+        result[textRow][textCol + i] = abbreviation[i];
+    }
+
     return result;
 }
 
-// Function to render a field as a box without any name inside
+// Render a field as an empty box
 std::vector<std::string> renderField() {
     std::vector<std::string> result;
     result.push_back("---------");
@@ -115,54 +241,91 @@ std::vector<std::string> renderField() {
     return result;
 }
 
-// Function to render a road as an empty box of the same size
+// Render a road as an empty box
 std::vector<std::string> renderRoad() {
     std::vector<std::string> result;
-    result.push_back("       ");
-    result.push_back("       ");
-    result.push_back("       ");
+    result.push_back("         ");
+    result.push_back("         ");
+    result.push_back("         ");
     return result;
 }
 
-void displayMap(const vector<vector<Cell*>> &map) {
-    unordered_set<Cell*> renderedCells;
+// Determine if a cell is the top-left of a multi-cell building
+bool isTopLeftCellOfBuilding(const vector<vector<Cell*>>& map, int row, int col) {
+    if (!map[row][col]) return false;
+    return (row == 0 || map[row - 1][col] != map[row][col]) &&
+           (col == 0 || map[row][col - 1] != map[row][col]);
+}
 
-    for (const auto& row : map) {
-        // Each cell in the row will contribute a set of 5 strings, one for each line of the cell
-        vector<string> line1, line2, line3;
+// Determine the width and height in cells for a building starting at (row, col)
+pair<int, int> getBuildingDimensions(const vector<vector<Cell*>>& map, int row, int col) {
+    int width = 0, height = 0;
 
-        for (const auto& cell : row) {
-            if (!cell) continue; // Skip null pointers
+    // Calculate width
+    while (col + width < map[row].size() && map[row][col + width] == map[row][col]) {
+        width++;
+    }
 
-            // Skip if the cell has already been rendered
-            if (renderedCells.find(cell) != renderedCells.end()) {
+    // Calculate height
+    while (row + height < map.size() && map[row + height][col] == map[row][col]) {
+        height++;
+    }
+
+    return {width, height};
+}
+
+// Display the map with multi-cell building rendering
+void displayMap(const vector<vector<Cell*>>& map) {
+     std::unordered_set<Cell*> renderedCells;
+
+    for (int row = 0; row < map.size(); ++row) {
+        int maxLines = 0;
+        std::vector<std::vector<std::string>> cellRenders;
+        std::vector<int> cellWidths;
+
+        for (int col = 0; col < map[row].size(); ++col) {
+            Cell* cell = map[row][col];
+            if (!cell) {
+                cellRenders.push_back(renderField());
+                cellWidths.push_back(renderField()[0].size());
                 continue;
             }
-            renderedCells.insert(cell);
 
-            // Determine the rendering type based on the cell type
-            vector<string> cellLines;
-            string cellType = cell->getCellType();
-            if (cellType == "Road") {
-                cellLines = renderRoad();
-            } else if (cellType == "Field") {
-                cellLines = renderField();
-            } else {
-                cellLines = renderBuilding(cellType);
+            if (renderedCells.find(cell) != renderedCells.end()) {
+                cellRenders.push_back(renderField());
+                cellWidths.push_back(renderField()[0].size());
+                continue;
             }
 
-            // Add each line of the cell to the corresponding output line
-            line1.push_back(cellLines[0]);
-            line2.push_back(cellLines[1]);
-            line3.push_back(cellLines[2]);
+            if (isTopLeftCellOfBuilding(map, row, col)) {
+                auto [widthCells, heightCells] = getBuildingDimensions(map, row, col);
+
+                for (int i = 0; i < heightCells; ++i) {
+                    for (int j = 0; j < widthCells; ++j) {
+                        renderedCells.insert(map[row + i][col + j]);
+                    }
+                }
+
+                std::string cellType = cell->getCellType();
+                std::vector<std::string> cellLines = (cellType == "Road") ? renderRoad() :
+                                                     (cellType == "Field") ? renderField() :
+                                                     renderBuilding(cellType, widthCells, heightCells);
+
+                maxLines = std::max(maxLines, static_cast<int>(cellLines.size()));
+                cellRenders.push_back(cellLines);
+                cellWidths.push_back(cellLines[0].size());
+            } else {
+                cellRenders.push_back(renderField());
+                cellWidths.push_back(renderField()[0].size());
+            }
         }
 
-        // Print each row of cells as one line
-        for (const auto& line : {line1, line2, line3}) {
-            for (const auto& part : line) {
-                cout << part << " ";
+        for (int lineIndex = 0; lineIndex < maxLines; ++lineIndex) {
+            for (size_t i = 0; i < cellRenders.size(); ++i) {
+                const auto& cellLines = cellRenders[i];
+                std::cout << (lineIndex < cellLines.size() ? cellLines[lineIndex] : std::string(cellWidths[i], ' ')) << " ";
             }
-            cout << "\n";
+            std::cout << "\n";
         }
     }
 }
@@ -171,12 +334,6 @@ void Map::printMap() {
 
     displayMap(map);
 
-    // for (int i = 0; i < map.size(); i++) {
-    //     for (int j = 0; j < map[i].size(); j++) {
-    //
-    //     }
-    //     cout << endl << endl;
-    // }
 }
 
 void Map::addNode(Cell *object) {

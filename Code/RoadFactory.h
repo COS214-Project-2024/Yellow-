@@ -7,10 +7,13 @@
 #include "CellFactory.h"
 #include "Road.h"
 #include "Coordinate.h"
+#include "City.h"
+
 class RoadFactory : CellFactory{
 public:
-    Cell* createRoad(vector<Coordinate> coordinates);
 
+    Cell* createRoad(vector<Coordinate> coordinates);
+    bool useBuildingResources(int numSteel, int numConcrete, int numWood, float numBudget, int cellCount);
 
 };
 
