@@ -21,5 +21,6 @@ Cell *Airport::clone()
     Cell* c = new Airport();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

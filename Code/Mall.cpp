@@ -21,5 +21,6 @@ Cell *Mall::clone()
     Cell* c = new Mall();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

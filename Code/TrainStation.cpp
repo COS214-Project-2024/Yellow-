@@ -17,5 +17,6 @@ Cell *TrainStation::clone()
     Cell* c = new TrainStation();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

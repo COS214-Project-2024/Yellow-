@@ -18,6 +18,7 @@ Cell *HouseHold::clone()
     Cell* c = new HouseHold();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }
 

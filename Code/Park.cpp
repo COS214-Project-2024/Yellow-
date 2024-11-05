@@ -25,5 +25,6 @@ Cell *Park::clone()
     Cell* c = new Park();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }
