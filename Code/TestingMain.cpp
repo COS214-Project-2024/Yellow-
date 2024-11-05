@@ -674,3 +674,192 @@
 // //     city.collection();
 // //     CHECK(currBudget < city.stuff.res->getBudget());
 // // }
+
+#include <iostream>
+#include "Saves.h"
+#include "Save.h"
+
+using namespace std;
+
+void printMenu()
+{
+    cout << "1. Add save" << endl;
+    cout << "2. Go to a specific node based on a path" << endl;
+    cout << "3. View a save" << endl;
+    cout << "4. Load a save" << endl;
+    cout << "5. Delete a save" << endl;
+    cout << "6. Delete a branch" << endl;
+    cout << "7. Move forward" << endl;
+    cout << "8. Move back" << endl;
+    cout << "9. Move into a branch" << endl;
+    cout << "10. Move back to parent branch" << endl;
+    cout << "11. Load a branch (for viewing)" << endl;
+    cout << "12. Set a branch" << endl;
+    cout << "13. Reset to main branch" << endl;
+    cout << "14. Reset cursor" << endl;
+    cout << "15. Print branch" << endl;
+    cout << "16. Print cursor node name" << endl;
+    cout << "17. Print Full Path To Cursor" << endl;
+    cout << "18. Exit" << endl;
+}
+
+int main()
+{
+    Saves *saves = new Saves();
+    Save *currentSave = nullptr;
+    int choice;
+    string path, branchAlpha, saveData;
+
+    while (true)
+    {
+        printMenu();
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            currentSave = new Save(nullptr, nullptr);//Map*, Varibals*
+            saves->save(currentSave);
+            cout << "Save added." << endl;
+            break;
+        case 2:
+            cout << "Enter the path to the node: ";
+            cin >> path;
+            saves->goToNode(path);
+            if (saves->getCursor() != nullptr)
+            {
+                HistoryNode *node = saves->getCursor();
+                cout << "Moved to node: " << path << endl;
+                cout << "Node name: " << node->getName() << endl;
+            }
+            else
+            {
+                cout << "Node not found." << endl;
+            }
+            break;
+        case 3:
+            cout << "Enter the path to the save: ";
+            cin >> path;
+            currentSave = saves->viewSave(path);
+            if (currentSave != nullptr)
+            {
+                cout << "Save data: [output Save Data Here]" << endl;
+            }
+            else
+            {
+                cout << "Save not found." << endl;
+            }
+            break;
+        case 4:
+            cout << "Enter the path to the save: ";
+            cin >> path;
+            currentSave = saves->loadSave();
+            if (currentSave != nullptr)
+            {
+                cout << "Save loaded." << endl;
+            }
+            else
+            {
+                cout << "Save not found." << endl;
+            }
+            break;
+        case 5:
+            saves->goToNode(path);
+            if (saves->getCursor() != nullptr)
+            {
+                saves->deleteSave();
+                cout << "Save deleted." << endl;
+            }
+            else
+            {
+                cout << "Save not found." << endl;
+            }
+            break;
+        case 6:
+            cout << "Enter alpha to the branch to delete: ";
+            cin >> path;
+            if (saves->getCursor() != nullptr)
+            {
+                saves->deleteBranch(path);
+                cout << "Branch deleted." << endl;
+            }
+            else
+            {
+                cout << "Branch not found." << endl;
+            }
+            break;
+        case 7:
+            saves->moveForward();
+            cout << "Moved forward." << endl;
+            break;
+        case 8:
+            saves->moveBack();
+            cout << "Moved back." << endl;
+            break;
+        case 9:
+            cout << "Enter the branch alpha: ";
+            cin >> branchAlpha;
+            saves->moveIntoBranch(branchAlpha);
+            cout << "Moved into branch: " << branchAlpha << endl;
+            break;
+        case 10:
+            saves->moveOutOfBranch();
+            cout << "Moved back to parent branch." << endl;
+            break;
+        case 11:
+            cout << "Enter the path to the branch to load: ";
+            cin >> path;
+            if (saves->loadBranch(path) != nullptr)
+            {
+                cout << "Branch loaded." << endl;
+            }
+            else
+            {
+                cout << "Branch not found." << endl;
+            }
+            break;
+        case 12:
+            cout << "Enter the path to the branch to set: ";
+            cin >> path;
+            saves->setBranch(path);
+            cout << "Branch set to: " << path << endl;
+            break;
+        case 13:
+            saves->resetToMainBranch();
+            cout << "Reset to main branch. Current branch ID: " << saves->getCurrentBranchPath() << endl;
+            break;
+        case 14:
+            saves->resetCursor(true, true);
+            cout << "Cursor reset. Current branch ID: " << saves->getCurrentBranchPath() << ", Node name: " << saves->getCursor()->getName() << endl;
+            break;
+        case 15:
+            cout << "Branch: " + saves->getSaves()->getBranchID() << endl;
+            saves->printTree();
+            break;
+        case 16:
+            cout << "Node at cursor: " << saves->getCursor()->getName() << endl;
+            break;
+        case 17:
+            cout << "Node at cursor: ";
+            saves->printFullPathToCursor();
+            break;
+        case 18:
+            return 0;
+        default:
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    }
+
+    return 0;
+}
+
+
+
+/*
+take map and varibals
+create copies of them
+create a Save memento with them
+shove them into Caretaker
+
+*/
