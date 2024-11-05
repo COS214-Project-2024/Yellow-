@@ -17,11 +17,12 @@ Block::~Block()
 	children.clear();
 }
 
-void Block::addSection(Section *section)
+void Block::addSection(Cell *section)
 {
-	 if (Block* blockSection = dynamic_cast<Block*>(section)) {
-        const auto& blockChildren = section->getChildren();
-        for (Section* child : blockChildren)
+	 if (typeid(Block*) == typeid(section)) {
+		Block* s = dynamic_cast<Block*>(section);
+        const auto& blockChildren = s->getChildren();
+        for (Cell* child : blockChildren)
 		{
 			this->addSection(child);
 		}
@@ -36,7 +37,7 @@ void Block::removeSection(int idx){
 	children.erase(children.begin() + idx);
 }
 
-Section* Block::getSection(int idx){	
+Cell* Block::getSection(int idx){	
 	if (idx < 0 || idx >= children.size()) {
         return nullptr;
     }
@@ -44,13 +45,13 @@ Section* Block::getSection(int idx){
 }
 
 void Block::acceptVisitor(Visitor* v) {
-	for (Section* sec : children)
+	for (Cell* sec : children)
 	{
-		v->visitBuilding(sec);
+		//v->visitBuilding(sec);
 	}
 }
 
-vector<Section*> Block::getChildren()
+vector<Cell*> Block::getChildren()
 {
 	return children;
 }

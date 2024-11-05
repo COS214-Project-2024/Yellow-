@@ -15,9 +15,9 @@
 class WasteManagement : public Utilities {
 public:
     WasteManagement();
-    void createBuildingResource() override;
-    void setIcon() override;
-    Cell* clone() override;
+    void createBuildingResource();
+    void setIcon();
+    Cell* clone();
 };
 
 #endif

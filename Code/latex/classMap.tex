@@ -1,0 +1,61 @@
+\hypertarget{classMap}{}\doxysection{Map Class Reference}
+\label{classMap}\index{Map@{Map}}
+
+
+A class that creates a map of the city.  
+
+
+Inheritance diagram for Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMap}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMap_af19b58ddac9be188873d8e24133dd95b}\label{classMap_af19b58ddac9be188873d8e24133dd95b}} 
+{\bfseries Map} (const \mbox{\hyperlink{classMap}{Map}} \&other)
+\item 
+\mbox{\Hypertarget{classMap_aa250418083acf22ebb428dfe654e0df8}\label{classMap_aa250418083acf22ebb428dfe654e0df8}} 
+{\bfseries Map} (vector$<$ vector$<$ \mbox{\hyperlink{classCell}{Cell}} $\ast$ $>$$>$ map, vector$<$ vector$<$ int $>$$>$ distance\+Matrix, vector$<$ \mbox{\hyperlink{classCell}{Cell}} $\ast$ $>$ pos)
+\item 
+\mbox{\Hypertarget{classMap_abe4e663c2ef2066c9fefd068eff97fbb}\label{classMap_abe4e663c2ef2066c9fefd068eff97fbb}} 
+vector$<$ \mbox{\hyperlink{classCoordinate}{Coordinate}} $>$ {\bfseries return\+Free\+Coords} ()
+\item 
+\mbox{\Hypertarget{classMap_a8e05c5244d6883b88776c407254e0831}\label{classMap_a8e05c5244d6883b88776c407254e0831}} 
+void {\bfseries add\+Node} (\mbox{\hyperlink{classCell}{Cell}} $\ast$object, int x, int y, int height, int width)
+\item 
+\mbox{\Hypertarget{classMap_a2fdafeb015c166ba62755d04870d81d8}\label{classMap_a2fdafeb015c166ba62755d04870d81d8}} 
+void {\bfseries add\+Node} (\mbox{\hyperlink{classCell}{Cell}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classMap_a1be63959fe2fa2749ef5855a26f9e6d1}\label{classMap_a1be63959fe2fa2749ef5855a26f9e6d1}} 
+void {\bfseries add\+Node} (\mbox{\hyperlink{classCell}{Cell}} $\ast$object, vector$<$ \mbox{\hyperlink{classCoordinate}{Coordinate}} $>$ coordinates)
+\item 
+\mbox{\Hypertarget{classMap_a1cefc1b8ed6692667e2019f64acc0f5a}\label{classMap_a1cefc1b8ed6692667e2019f64acc0f5a}} 
+void {\bfseries print\+Map} ()
+\item 
+\mbox{\Hypertarget{classMap_ab754e89ac02a1d2ef5c9ec2f98111dbd}\label{classMap_ab754e89ac02a1d2ef5c9ec2f98111dbd}} 
+void {\bfseries remove\+Node} (\mbox{\hyperlink{classCell}{Cell}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classMap_ae48f16471f191c98516776a6310b7fff}\label{classMap_ae48f16471f191c98516776a6310b7fff}} 
+void {\bfseries remove\+Node} (\mbox{\hyperlink{classCoordinate}{Coordinate}} $\ast$coordinate)
+\item 
+\mbox{\Hypertarget{classMap_aa70920284a5316204f91060a8a2a088c}\label{classMap_aa70920284a5316204f91060a8a2a088c}} 
+void {\bfseries djikstras\+Aneurysm} (\mbox{\hyperlink{classCell}{Cell}} $\ast$object)
+\item 
+\mbox{\Hypertarget{classMap_a6df3df86bcdd7c61703be1feeee89f0b}\label{classMap_a6df3df86bcdd7c61703be1feeee89f0b}} 
+int {\bfseries retrieve\+Distance} (\mbox{\hyperlink{classCell}{Cell}} $\ast$res, \mbox{\hyperlink{classCell}{Cell}} $\ast$job)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class that creates a map of the city. 
+
+The \mbox{\hyperlink{classMap}{Map}} class is a composite participant of the Composite design pattern. It is used to represent a map of the city. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Map_8h}{Map.\+h}}\item 
+Map.\+cpp\end{DoxyCompactItemize}

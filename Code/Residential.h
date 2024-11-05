@@ -18,7 +18,7 @@ protected:
 	int numberOfHouseholds;
 public:
 	Residential(string cellType);
-	void taxBuilding() override;
+	void taxBuilding();
 
 	void acceptVisitor(Visitor* v);
 	virtual void setIcon();
@@ -26,9 +26,8 @@ public:
 	void payEmployees() override;
 	
 	virtual Cell* clone() = 0;
-	void addCitizenToBuilding(Citizen* newCitizen) override;
+	void addCitizenToBuilding(Citizen* newCitizen);
 	void createBuildingResource() override;
-	virtual ~Residential();
 };
 
 #endif

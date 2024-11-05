@@ -1,9 +1,9 @@
 .idea/
-CMakeLists.txt
 cmake-build-debug/
 main.cpp
 Main.cpp
 .vscode/
+CMakeLists.txt
 Main.h
 main.h
 Main.cpp/
@@ -12,4 +12,3 @@ Main.h/
 main.h/
 valg.txt
 Makefile
-makefile

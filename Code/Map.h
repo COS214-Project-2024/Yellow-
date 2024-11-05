@@ -47,6 +47,7 @@ public:
     void removeNode(Coordinate* coordinate);
     void djikstrasAneurysm(Cell* object);//TODO
     int retrieveDistance(Cell* res, Cell* job);
+    vector<vector<Cell*>> getMap();
     //TODO: blocks system
 };
 #endif //GROUPPROJECT_MAP_H

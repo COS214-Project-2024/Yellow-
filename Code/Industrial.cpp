@@ -8,6 +8,7 @@
 */
 #include "Industrial.h"
 #include "Citizen.h"
+#include "City.h"
 void Industrial::setProductionRate(int newRate)
 {
     productionPerCell = newRate;

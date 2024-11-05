@@ -17,7 +17,7 @@ class ConcreteFactory : public Industrial {
 
 public:
 	ConcreteFactory();
-	void createBuildingResource() override;
+	void createBuildingResource();
 	void setIcon() override;
     Cell* clone() override;
 };

@@ -21,16 +21,11 @@ protected:
 public:
     Road();
     vector<Cell*> buildings;
-    void setIcon() override;
+    void setIcon();
     void addBuilding(Cell* building);
     void removeBuilding(Cell* building);
-    Cell * clone() override;
+    Cell * clone();
     bool contains(Cell* object);
-    void addCitizenToBuilding(Citizen* newCitizen) override;
-    void setProductionRate(int newRate) override;
-    void createBuildingResource() override;
-    float getMoney() override;
-    void setMoney(float newAmount) override;
 };
 
 #endif

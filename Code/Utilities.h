@@ -24,9 +24,9 @@ public:
 	virtual void createBuildingResource() = 0;
 	virtual void setIcon();
 	virtual Cell* clone() = 0;
-	void setProductionRate(int newRate) override;
-	void payEmployees() override;
-	void addCitizenToBuilding(Citizen* newCitizen) override;
+	void setProductionRate(int newRate);
+	void payEmployees();
+	void addCitizenToBuilding(Citizen* newCitizen);
 };
 
 #endif

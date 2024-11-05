@@ -7,7 +7,7 @@
 * The Forestry class is a concrete factory participant of the Factory design pattern. It is used to create a forestry building.
 */
 #include "Forestry.h"
-
+#include "City.h"
 Forestry::Forestry() : Industrial("Forestry")
 {
 }
@@ -17,7 +17,8 @@ void Forestry::createBuildingResource()
 	if (&City::instanceCity() == nullptr)
 		return;
 	City c = City::instanceCity();
-    c.stuff.res->setWood(c.stuff.res->getWood() + productionPerCell*coordinates.size());
+    int oldAmount =c.stuff.res->getWood();
+    c.stuff.res->setWood(oldAmount + productionPerCell*coordinates.size());
 }
 
 void Forestry::setIcon()

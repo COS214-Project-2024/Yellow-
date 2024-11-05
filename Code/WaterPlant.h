@@ -15,9 +15,9 @@
 class WaterPlant : public Utilities {
     public:
     WaterPlant();
-    void createBuildingResource() override;
-    void setIcon() override;
-    Cell* clone() override;
+    void createBuildingResource();
+    void setIcon();
+    Cell* clone();
 };
 
 #endif

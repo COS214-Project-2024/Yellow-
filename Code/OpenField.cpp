@@ -20,15 +20,3 @@ Cell *OpenField::clone() {
     return newField;
 }
 
-void OpenField::createBuildingResource()
-{
-}
-
-float OpenField::getMoney()
-{
-    return 0.0f;
-}
-
-void OpenField::setMoney(float newAmount)
-{
-}

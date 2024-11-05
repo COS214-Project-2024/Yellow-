@@ -36,18 +36,12 @@ Cell::~Cell()
 {
 }
 
-void Cell::addCitizenToBuilding(Citizen *newCitizen)
-{
-}
+
 
 Cell * Cell::clone() {
 
 }
 
-void Cell::setProductionRate(int newRate)
-{
-}
 
-void Cell::taxBuilding()
-{
-}
+
+

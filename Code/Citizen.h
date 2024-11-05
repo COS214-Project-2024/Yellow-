@@ -12,6 +12,7 @@
 #define CITIZEN_H
 #include "Observer.h"
 #include <string>
+#include <iostream>
 class Buildings;
 class Residential;
 using namespace std;
