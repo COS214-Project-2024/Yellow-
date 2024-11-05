@@ -277,7 +277,7 @@ string HistoryBranch::incrementName(const string &name)
     return baseName + to_string(number);
 }
 
-void HistoryBranch::removeNode(HistoryNode* cursor)
+void HistoryBranch::removeNode(HistoryNode *cursor)
 {
     if (cursor == nullptr)
     {
@@ -290,44 +290,20 @@ void HistoryBranch::removeNode(HistoryNode* cursor)
 
     if (hasBranches)
     {
-        if (previous != nullptr)
+        // Delete the branches
+        for (HistoryBranch *branch : cursor->getAlternatives())
         {
-            // Move all the alternatives to the previous node
-            for (HistoryBranch *branch : cursor->getAlternatives())
-            {
-                previous->addAltHistory(branch);
-                branch->getHead()->setPrevious(previous);
-            }
-
-            // Debugging: Print alternatives before clearing
-            cout << "Alternatives before clearing: " << cursor->getAlternatives().size() << endl;
-
-            // Clear the alternatives vector
-            cursor->getAlternativesByRef().clear();
-
-            // Debugging: Print alternatives after clearing
-            cout << "Alternatives after clearing: " << cursor->getAlternatives().size() << endl;
-
-            // Add the previous node to allBranchPoints
-            addToAllBranchPoints(previous);
+            delete branch;
         }
-        else
-        {
-            // Delete the branches
-            for (HistoryBranch *branch : cursor->getAlternatives())
-            {
-                delete branch;
-            }
 
-            // Debugging: Print alternatives before clearing
-            cout << "Alternatives before clearing: " << cursor->getAlternatives().size() << endl;
+        // Debugging: Print alternatives before clearing
+        cout << "Alternatives before clearing: " << cursor->getAlternatives().size() << endl;
 
-            // Clear the alternatives vector
-            cursor->getAlternativesByRef().clear();
+        // Clear the alternatives vector
+        cursor->getAlternativesByRef().clear();
 
-            // Debugging: Print alternatives after clearing
-            cout << "Alternatives after clearing: " << cursor->getAlternatives().size() << endl;
-        }
+        // Debugging: Print alternatives after clearing
+        cout << "Alternatives after clearing: " << cursor->getAlternatives().size() << endl;
 
         // Remove the current node from allBranchPoints
         removeFromAllBranchPoints(cursor);
@@ -371,14 +347,18 @@ void HistoryBranch::removeNode(HistoryNode* cursor)
     if (next != nullptr)
     {
         cursor = next;
-    } else if (previous != nullptr) {
+    }
+    else if (previous != nullptr)
+    {
         cursor = previous;
-    } else {
+    }
+    else
+    {
         cursor = nullptr;
     }
 
-        delete temp;
-    }
+    delete temp;
+}
 
 void HistoryBranch::moveBack(HistoryNode* cursor)
 {

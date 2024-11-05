@@ -28,10 +28,10 @@ public:
     void save(Save* save, bool overwrite = false);//saves at cursor
     HistoryBranch *getSaves() const; //exposes the tree for visualisation. Set to const, to make sure it the tree does not get mutilated by the caller
     Save *loadAtCursor();//returns the save at cursor;
-    HistoryNode* goToNode(string path);
+    void goToNode(string path);
     Save* viewSave(string path); //loads a save at a specific path; example "M.1_a.2_c.9_f.3", where the last number is the number/name of the node on that branch
-    Save* loadSave(string path); //loads a save at a specific path; example "M.1_a.2_c.9_f.3", where the last number is the number/name of the node on that branch
-    void deleteSave(string path); //deletes a save at a specific path; example "M.1_a.2_c.9_f.3", where the last number is the number/name of the node on that branch
+    Save* loadSave(); //loads a save at a specific path; example "M.1_a.2_c.9_f.3", where the last number is the number/name of the node on that branch
+    void deleteSave(); //deletes a save at a specific path; example "M.1_a.2_c.9_f.3", where the last number is the number/name of the node on that branch
     void deleteBranch(string path);
     HistoryNode* getCursor();
     void moveForward();
@@ -46,6 +46,7 @@ public:
     void resetCursor(bool toMainBranch = true, bool toHead = true);
     void printTree();
     void printCursor();
+    void printFullPathToCursor();
 
 };
 

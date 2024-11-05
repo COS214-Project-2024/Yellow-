@@ -50,44 +50,70 @@ Save *Saves::loadAtCursor()
     return this->cursor->getData();
 }
 
-HistoryNode *Saves::goToNode(string path) // path example: "M_0.1_a.2_c.9_f.3"
+void Saves::goToNode(string path) // path example: "M_0.1_a.2_c.9_f.3"
 {
     HistoryBranch *branch = loadBranch(path);
+    if (branch == nullptr)
+    {
+        cout << "Branch not found\n";
+        return;
+    }
+
+    cout << "Branch id" << branch->getBranchID() << endl;
+
     HistoryNode *current = branch->getHead();
     string name = path.substr(path.find_last_of(".") + 1);
     while (current != nullptr)
     {
         if (current->getName() == name)
         {
-            return current;
+            this->cursor = current;
+            cout << "================================================" << endl;
+            cout << this->historyTree->printBranch();
+            cout << branch->printBranch();
+
+            this->historyTree = branch;
+            this->currentBranchPath = path.substr(0, path.find_last_of("."));
+            return;
         }
         current = current->getNext();
     }
 
-    return nullptr;
+    resetCursor(true, true);
+    return;
 }
 
 Save *Saves::viewSave(string path) // path example: "M_0.1_a.2_c.9_f.3"
 {
-    HistoryNode *node = this->goToNode(path);
-    if (node == nullptr)
+    HistoryBranch *branch = loadBranch(path);
+    if (branch == nullptr)
     {
-        cout << "Node not found\n";
+        cout << "Branch not found\n";
         return nullptr;
     }
-    return node->getData();
+    HistoryNode *current = branch->getHead();
+    string name = path.substr(path.find_last_of(".") + 1);
+    while (current != nullptr)
+    {
+        if (current->getName() == name)
+        {
+            return current->getData(); // Return the data without changing the cursor
+        }
+        current = current->getNext();
+    }
+
+    cout << "Node not found\n";
+    return nullptr;
 }
 
-Save *Saves::loadSave(string path) // path example: "M_0.1_a.2_c.9_f.3"
+Save *Saves::loadSave() // Load the data at the cursor
 {
-    HistoryNode *node = this->goToNode(path);
-    if (node == nullptr)
+    if (this->cursor == nullptr)
     {
-        cout << "Node not found\n";
+        cout << "Cursor is not pointing to any node\n";
         return nullptr;
     }
-    this->cursor = node;
-    return node->getData();
+    return this->cursor->getData();
 }
 
 HistoryNode *Saves::getCursor()
@@ -153,81 +179,76 @@ string Saves::getCurrentBranchPath()
 HistoryBranch *Saves::loadBranch(string path)
 {
     resetToMainBranch();
-    vector<string> branchNames;
-    string traversalPath = path;
-    size_t pos = 0;
-
-    // Handle the main branch prefix "M"
-    if (traversalPath == "M")
+    // Check if the path is just the main branch
+    if (path == "M_0")
     {
-        // If the path is only "M", return the main branch
         return this->historyTree;
     }
-    else if (traversalPath.substr(0, 3) == "M_0")
+
+    // Remove any trailing ".x" where x is a number
+    size_t dotPos = path.find_last_of(".");
+    if (dotPos != string::npos && isdigit(path[dotPos + 1]))
     {
-        // Check if there are any more branches after "M_0"
-        pos = traversalPath.find(".");
-        if (pos == 3 || pos == string::npos)
+        path = path.substr(0, dotPos);
+    }
+
+    // Split the path into sections
+    vector<string> sections;
+    stringstream ss(path);
+    string section;
+    while (getline(ss, section, '.'))
+    {
+        sections.push_back(section);
+    }
+
+    // Start with the main branch
+    HistoryBranch *currentBranch = this->historyTree;
+
+    // Traverse the path sections
+    for (size_t i = 1; i < sections.size(); ++i)
+    {
+        string nodeName = sections[i].substr(0, sections[i].find('_'));
+        string branchID = sections[i];
+
+        // Find the node in allBranchPoints
+        HistoryNode *currentNode = nullptr;
+        for (HistoryNode *node : currentBranch->getAllBranchPoints())
         {
-            // If no more branches, return the main branch
-            return this->historyTree;
+            if (node->getName() == nodeName)
+            {
+                currentNode = node;
+                break;
+            }
         }
-        else
+
+        if (currentNode == nullptr)
         {
-            // Remove the "M_0." prefix
-            traversalPath.erase(0, pos + 1);
+            return nullptr; // Node not found
+        }
+
+        // Find the branch in alternatives
+        currentBranch = nullptr;
+        for (HistoryBranch *branch : currentNode->getAlternatives())
+        {
+            if (branch->getBranchID() == branchID)
+            {
+                currentBranch = branch;
+                break;
+            }
+        }
+
+        if (currentBranch == nullptr)
+        {
+            return nullptr; // Branch not found
         }
     }
 
-    while ((pos = traversalPath.find(".")) != string::npos)
-    {
-        branchNames.push_back(traversalPath.substr(0, pos));
-        traversalPath.erase(0, pos + 1);
-    }
-    if (!traversalPath.empty())
-    {
-        branchNames.push_back(traversalPath);
-    }
-
-    HistoryBranch *branch = loadBranchHelper(branchNames, this->historyTree);
-    if (branch == nullptr)
-    {
-        cout << "Branch not found\n";
-    }
-    return branch;
+    return currentBranch;
 }
 
 HistoryBranch *Saves::loadBranchHelper(vector<string> branchNames, HistoryBranch *currentBranch)
 {
-    if (branchNames.empty())
-    {
-        return currentBranch;
-    }
 
-    string name = branchNames[0];
-    if (name == "M_0")
-    {
-        // Handle the main branch case
-        return loadBranchHelper(vector<string>(branchNames.begin() + 1, branchNames.end()), currentBranch);
-    }
-
-    string nodeName = name.substr(0, name.find("_"));
-    for (HistoryNode *node : currentBranch->getAllBranchPoints())
-    {
-        if (node->getName() == nodeName)
-        {
-            for (HistoryBranch *branch : node->getAlternatives())
-            {
-                if (branch->getBranchID() == name)
-                {
-                    // Create a copy of the vector without the first element
-                    vector<string> remainingBranchNames(branchNames.begin() + 1, branchNames.end());
-                    return loadBranchHelper(remainingBranchNames, branch);
-                }
-            }
-        }
-    }
-    return nullptr;
 }
 
 void Saves::setBranch(string path)
@@ -249,6 +270,8 @@ void Saves::resetToMainBranch()
     {
         moveOutOfBranch();
     }
+
+    this->cursor = this->historyTree->getHead();
 }
 
 void Saves::resetCursor(bool toMainBranch, bool toHead)
@@ -275,28 +298,62 @@ void Saves::printCursor()
     cout << "Cursor: " << this->cursor->getName() << endl;
 }
 
-void Saves::deleteSave(string path)
+void Saves::printFullPathToCursor()
 {
-    HistoryNode *node = goToNode(path);
-    if (node == nullptr)
-    {
-        cout << "Node not found\n";
-        return;
-    }
-    this->historyTree->removeNode(node);
+    cout << "Path to cursor: " << this->currentBranchPath + "." + this->cursor->getName() << endl;
 }
 
-void Saves::deleteBranch(string path)
+void Saves::deleteSave()
 {
-    string alpha = path.substr(path.find_last_of(".") + 1);
-    string branchPath = path.substr(0, path.find_last_of("."));
-    HistoryBranch *branch = loadBranch(branchPath);
-    if (branch == nullptr)
+    if (this->cursor == nullptr)
+    {
+        cout << "Cursor is not pointing to any node\n";
+        return;
+    }
+    this->historyTree->removeNode(this->cursor);
+    this->cursor = nullptr; // Optionally, reset the cursor after deletion
+}
+
+void Saves::deleteBranch(string alpha)
+{
+    if (this->cursor == nullptr)
+    {
+        cout << "Cursor is not pointing to any node\n";
+        return;
+    }
+
+    // Create the branch ID by adding the alpha to the current node's name
+    string branchID = this->cursor->getName() + "_" + alpha;
+
+    // Find the branch in the alternatives of the current node
+    vector<HistoryBranch *> &alternatives = this->cursor->getAlternativesByRef();
+    bool branchFound = false;
+    cout <<"=--=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=";
+    for (auto it = alternatives.begin(); it != alternatives.end(); ++it)
+    {
+
+        cout << ((*it)->getBranchID() == branchID) << endl ;
+        if ((*it)->getBranchID() == branchID)
+        {
+            // Branch found, delete it
+            HistoryBranch *branchToDelete = *it;
+            alternatives.erase(it);
+            delete branchToDelete;
+            branchFound = true;
+            break;
+        }
+    }
+
+    if (branchFound)
+    {
+        // If this was the last branch, remove the current node from allBranchPoints
+        if (alternatives.empty())
+        {
+            this->historyTree->removeFromAllBranchPoints(this->cursor);
+        }
+    }
+    else
     {
         cout << "Branch not found\n";
-        return;
     }
-    branch->removeBranch(alpha, this->cursor);
 }
-
-//sorta works so far
