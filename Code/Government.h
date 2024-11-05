@@ -42,12 +42,11 @@ class Government {
     public:
         Government();
         ~Government(){
-
-//            delete budgetState;
-//            delete peopleState;
-//            delete disatisfactionState;
-//            delete strategy;
-//            uniqueInstanceGov = nullptr;
+            // delete peopleState;
+            // delete budgetState;
+            // delete disatisfactionState;
+            // delete strategy;
+            // uniqueInstanceGov = nullptr;
         };
         friend class City;
 
@@ -72,9 +71,6 @@ class Government {
         void setPeopleState(People* people);
         void setBudgetState(Budget* budget);
         void setMoraleState(Disatisfaction* morale);
-
 };
-
-
 
 #endif
