@@ -28,5 +28,6 @@ Cell *ConcreteFactory::clone()
     Cell* c = new ConcreteFactory();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

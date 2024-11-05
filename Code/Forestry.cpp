@@ -30,5 +30,6 @@ Cell *Forestry::clone()
     Cell* c = new Forestry();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

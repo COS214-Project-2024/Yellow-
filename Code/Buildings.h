@@ -22,6 +22,7 @@ protected:
     float buildingMoney;
     std::vector<Citizen*> dependentCitizens;
     int productionPerCell;						
+	void setBaseForClone(Cell* cell);
 
 public:
     Buildings(std::string cellType);
@@ -51,7 +52,6 @@ public:
 	virtual void setProductionRate(int newRate);
 	virtual void createBuildingResource() = 0;
 	virtual ~Buildings();
-
 };
 
 #endif // BUILDINGS_H

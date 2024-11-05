@@ -17,5 +17,6 @@ Cell *TownHall::clone()
     Cell* c = new TownHall();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

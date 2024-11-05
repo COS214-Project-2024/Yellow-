@@ -27,5 +27,6 @@ Cell *WaterPlant::clone()
     Cell* c = new WaterPlant();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

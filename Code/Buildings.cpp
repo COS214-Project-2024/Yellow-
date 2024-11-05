@@ -53,3 +53,16 @@ Buildings::~Buildings()
 {
 	
 }
+
+void Buildings::setBaseForClone(Cell *cell)
+{
+    Buildings* b = dynamic_cast<Buildings*>(cell);
+    b->maxCitizens = this->maxCitizens;
+    b->currentNumberOfCitizens = this->currentNumberOfCitizens;
+    b->buildingMoney = this->buildingMoney;
+    b->productionPerCell = this->productionPerCell;
+    b->icon = this->icon;
+    for (size_t i = 0; i < b->dependentCitizens.size() && i < this->dependentCitizens.size(); ++i) {
+        b->dependentCitizens.push_back(this->dependentCitizens[i]);
+    }
+}

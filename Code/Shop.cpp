@@ -17,5 +17,6 @@ Cell *Shop::clone()
     Cell* c = new Shop();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

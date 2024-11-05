@@ -17,5 +17,6 @@ Cell *School::clone()
     Cell* c = new School();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }
