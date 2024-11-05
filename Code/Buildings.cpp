@@ -62,7 +62,7 @@ void Buildings::setBaseForClone(Cell *cell)
     b->buildingMoney = this->buildingMoney;
     b->productionPerCell = this->productionPerCell;
     b->icon = this->icon;
-    for (size_t i = 0; i < b->dependentCitizens.size() && i < this->dependentCitizens.size(); ++i) {
+    for (size_t i = 0; i < this->dependentCitizens.size(); ++i) {
         b->dependentCitizens.push_back(this->dependentCitizens[i]);
     }
 }
