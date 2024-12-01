@@ -10,20 +10,20 @@
 
 Observer::Observer() {}
 
-Observer::Observer(vector<Citizen*> subj) {
-    listOfSubjects = subj;
+Observer::Observer(Population* subj) {
+    this->subject = subj;
 }
 
 string Observer::getObservationType() {
     return observationType;
 }
 
-void Observer::setSubject(vector<Citizen*> subj) {
-    listOfSubjects = subj;
+void Observer::setSubject(Population* subj) {
+    this->subject = subj;
 }
 
-vector<Citizen*> Observer::getSubject() const{
-    return listOfSubjects;
+Population* Observer::getSubject() const{
+    return subject;
 }
 
 // void Observer::update() {

@@ -7,32 +7,54 @@
 * The Citizen class is a concrete factory participant of the Factory design pattern. It is used to create a Citizen in the city.
 */
 #include "Citizen.h"
+#include "Cat.h"
+#include "Dog.h"
+#include "Hamster.h"
+#include "Population.h"
 #include "Residential.h"
+
+//////////////////////// Constructors ////////////////////////
 #include <iostream>
 ////////////// Constructors ///////////////
 
 /// Default Constructor
 Citizen::Citizen(){
-    happiness = 100;
+    identityNum = ++identityNumbers;
+    happiness = 50;
 	employment = "no job";
 	money = 0;
+    petChanceCalculator();
     businessAddress = nullptr;
     accommodation = nullptr;
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 /// Variable constructor
-Citizen::Citizen(int happy, Residential* acc, string job, float cash, Buildings* addr)
-        : happiness(happy), accommodation(acc), employment(job), money(cash), businessAddress(addr) {
+Citizen::Citizen(int happy, string job, float cash,  Pet* pet, Residential* acc,  Buildings* addr){
+    identityNum = ++identityNumbers;
+
+    this->happiness = happy;
+    this->employment = job;
+    this->money = cash;
+    petChanceCalculator();
+    this->accommodation = acc;
+    this->businessAddress = addr;
     std::cout << "A new Citizen has entered the city." << std::endl;
 }
 
 /// Copy Constructor
 Citizen::Citizen(const Citizen& other){
-    happiness = other.happiness;
-	employment = other.employment;
-	money = other.getMoney();
+    identityNum = ++identityNumbers;
+
+    this->happiness = other.happiness;
+	this->employment = other.employment;
+	this->money = other.getMoney();
     std::cout << "A new Citizen has entered the city." << std::endl;
+}
+
+//////////////////////// Prorotype ////////////////////////
+CitizenPrototype* Citizen::procreate() {
+    return new Citizen(*this);
 }
 
 ////////////// Happiness ///////////////
@@ -44,17 +66,6 @@ int Citizen::getHappiness() const {
 /// Set happiness
 void Citizen::setHappiness(int value) {
     happiness = value;
-}
-
-//////////// Residence /////////////
-
-/// Get residence
-Residential* Citizen::getAccommodation() const{
-    return accommodation;
-}
-/// Set residence
-void Citizen::setAccommodation(Residential* acc){
-    accommodation = acc;
 }
 
 //////////// Employment /////////////
@@ -86,8 +97,21 @@ void Citizen::setMoney(float cash){
     }
 }
 
+//////////// Residence /////////////
+
+/// Get residence
+Residential* Citizen::getAccommodation() const{
+    return accommodation;
+}
+/// Set residence
+void Citizen::setAccommodation(Residential* acc){
+    accommodation = acc;
+}
+
+//////////// Business Address /////////////
+
 // Citizen - Get Business Address
-Buildings* Citizen::getBusinessAddress(){
+Buildings* Citizen::getBusinessAddress() const{
     return businessAddress;
 }
 
@@ -95,6 +119,22 @@ void Citizen::setBusinessAddress(Buildings* address){
     businessAddress = address;
 }
 
-Citizen* Citizen::procreate() {
-	return new Citizen(*this);
+void Citizen::petChanceCalculator() {
+    int weGotAPet = generator.randomVal(0,100);
+
+    if(weGotAPet < 25) {
+        pet = nullptr;
+        return;
+    }
+    if(weGotAPet < 50) {
+        pet = (Pet*) new Dog(this);
+        return;
+    }
+    if(weGotAPet < 75) {
+        pet = (Pet*) new Cat(this);
+        return;
+    }
+    if(weGotAPet < 100) {
+        pet = (Pet*) new Hamster(this);
+    }
 }

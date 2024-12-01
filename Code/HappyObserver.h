@@ -14,9 +14,9 @@
 
 class HappyObserver : public Observer {
 public:
-	int totalHappiness;
+	int averageHappiness;
 	HappyObserver();
-	HappyObserver(vector<Citizen*> subj);
+	HappyObserver(Population* subj);
 	void update();
 };
 
