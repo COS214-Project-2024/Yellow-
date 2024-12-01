@@ -13,7 +13,8 @@
 #include "Cell.h"
 #include "Road.h"
 #include "RoadFactory.h"
-
+#include "Saves.h"
+#include "Save.h"
 using namespace std;
 
 void makeItWork() {
@@ -321,12 +322,12 @@ void makeItWork() {
     v.push_back(co1);
     gameMap.addNode(road.createRoad(v));
 
-    // gameMap.addNode()
-
 
     gameMap.printMap();
 }
-
+    Save* createMemento(Map* m, Varibals* v) {
+        return new Save(m,v);
+    }
 int main() {
     makeItWork();
 

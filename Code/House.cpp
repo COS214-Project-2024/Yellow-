@@ -22,5 +22,6 @@ Cell *House::clone()
     Cell* c = new House();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

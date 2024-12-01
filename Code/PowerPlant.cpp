@@ -27,5 +27,6 @@ Cell *PowerPlant::clone()
     Cell* c = new PowerPlant();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

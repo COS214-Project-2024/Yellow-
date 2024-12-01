@@ -53,6 +53,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClionProject.dir/Green.cpp.o.d"
   "CMakeFiles/ClionProject.dir/HappyObserver.cpp.o"
   "CMakeFiles/ClionProject.dir/HappyObserver.cpp.o.d"
+<<<<<<< HEAD
+  "CMakeFiles/ClionProject.dir/HistoryNode.cpp.o"
+  "CMakeFiles/ClionProject.dir/HistoryNode.cpp.o.d"
+=======
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   "CMakeFiles/ClionProject.dir/Hospital.cpp.o"
   "CMakeFiles/ClionProject.dir/Hospital.cpp.o.d"
   "CMakeFiles/ClionProject.dir/House.cpp.o"
@@ -111,6 +116,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClionProject.dir/Save.cpp.o.d"
   "CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o"
   "CMakeFiles/ClionProject.dir/SaveAndLoad.cpp.o.d"
+<<<<<<< HEAD
+  "CMakeFiles/ClionProject.dir/Saves.cpp.o"
+  "CMakeFiles/ClionProject.dir/Saves.cpp.o.d"
+=======
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   "CMakeFiles/ClionProject.dir/School.cpp.o"
   "CMakeFiles/ClionProject.dir/School.cpp.o.d"
   "CMakeFiles/ClionProject.dir/Section.cpp.o"

@@ -8,12 +8,21 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+<<<<<<< HEAD
+  "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/box.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.o.d"
+  "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/color.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.o.d"
+  "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/color_info.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.o.d"
+  "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/screen.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.o.d"
+  "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/string.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.o.d"
+  "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/terminal.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.o.d"
+=======
   "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/box.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.o.d"
   "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/color.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.o.d"
   "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/color_info.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.o.d"
   "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/screen.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.o.d"
   "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/string.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.o.d"
   "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src/src/ftxui/screen/terminal.cpp" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.o" "gcc" "_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.o.d"
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   )
 
 # Targets to which this target links which contain Fortran sources.

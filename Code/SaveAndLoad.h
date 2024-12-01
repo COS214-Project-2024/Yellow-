@@ -1,3 +1,5 @@
+// #ifndef SAVEANDLOAD_H
+// #define SAVEANDLOAD_H
 /**
  * @file SaveAndLoad.h
  * @author Daniel Lukyanov
@@ -8,21 +10,33 @@
  * @copyright Copyright (c) 2024
  * 
  */
-#ifndef SAVEANDLOAD_H
-#define SAVEANDLOAD_H
 
-#include "SystemState.h"
-#include "Save.h"
+// #include "Saves.h"
+// #include "HistoryBranch.h"
+// #include "HistoryNode.h"
+// #include "City.h"
+// #include <string>
 
-class SaveAndLoad {
+// class SaveAndLoad
+// {
+// private:
+// 	HistoryBranch *historyBranch;
+// 	HistoryNode *centralisedPointer;
+// 	string currentBranchPath; //example: M.3_a.2_b.21_ab;
+// 	Saves *saves;
 
-private:
-	SystemState* currentSave;
+// public:
+// 	SaveAndLoad();
+// 	~SaveAndLoad();
+// 	void saveState();
+// 	void startAltHistory();
+// 	void loadState();
+// 	void removeNode();
+// 	void moveForward();
+// 	void moveBack();
+// 	void selectBranch(string branchPath);
+// 	void printCurrentBranch();
+// 	void printAllBranchPoints();
+// };
 
-public:
-	Save* createSave();
-
-	void LoadSystem(Save* save);
-};
-
-#endif
+// #endif // SAVEANDLOAD_H

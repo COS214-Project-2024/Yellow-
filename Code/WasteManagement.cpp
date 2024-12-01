@@ -27,5 +27,6 @@ Cell *WasteManagement::clone()
     Cell* c = new WasteManagement();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

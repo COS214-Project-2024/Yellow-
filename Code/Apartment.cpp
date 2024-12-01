@@ -21,5 +21,6 @@ Cell *Apartment::clone()
     Cell* c = new Apartment();
     c->setCellType(this->getCellType());
     c->setCoordinates(this->getCoordinates());
+    setBaseForClone(c);
     return c;
 }

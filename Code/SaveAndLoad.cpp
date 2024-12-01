@@ -1,3 +1,6 @@
+// #include "SaveAndLoad.h"
+// #include <iostream>
+// #include <sstream>
 /**
 * @class SaveAndLoad
 * @brief A class used to save and load the current state of a city
@@ -8,12 +11,23 @@
 */
 #include "SaveAndLoad.h"
 
-Save* SaveAndLoad::createSave() {
-	// TODO - implement SaveAndLoad::createSave
-	throw "Not yet implemented";
-}
+// using namespace std;
 
-void SaveAndLoad::LoadSystem(Save* save) {
-	// TODO - implement SaveAndLoad::LoadSystem
-	throw "Not yet implemented";
-}
+// SaveAndLoad::SaveAndLoad()
+// {
+// 	this->historyBranch = nullptr;
+// 	this->saves = new Saves();
+// 	this->centralisedPointer = nullptr;
+// 	this->currentBranchPath = "M";
+// }
+
+// SaveAndLoad::~SaveAndLoad()
+// {
+// 	delete this->saves;
+// }
+
+// void SaveAndLoad::saveState()
+// {
+// 	// Save the current state of the system
+// 	this->saves->Save();
+// }

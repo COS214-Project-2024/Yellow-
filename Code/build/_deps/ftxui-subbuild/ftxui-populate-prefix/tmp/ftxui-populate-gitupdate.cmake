@@ -3,6 +3,8 @@
 
 cmake_minimum_required(VERSION 3.5)
 
+<<<<<<< HEAD
+=======
 # Even at VERBOSE level, we don't want to see the commands executed, but
 # enabling them to be shown for DEBUG may be useful to help diagnose problems.
 cmake_language(GET_MESSAGE_LOG_LEVEL active_log_level)
@@ -12,20 +14,30 @@ else()
   set(maybe_show_command "")
 endif()
 
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
 function(do_fetch)
   message(VERBOSE "Fetching latest from the remote origin")
   execute_process(
     COMMAND "/usr/bin/git" --git-dir=.git fetch --tags --force "origin"
+<<<<<<< HEAD
+    WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+    COMMAND_ERROR_IS_FATAL LAST
+=======
     WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
     COMMAND_ERROR_IS_FATAL LAST
     ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   )
 endfunction()
 
 function(get_hash_for_ref ref out_var err_var)
   execute_process(
     COMMAND "/usr/bin/git" --git-dir=.git rev-parse "${ref}^0"
+<<<<<<< HEAD
+    WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+=======
     WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     RESULT_VARIABLE error_code
     OUTPUT_VARIABLE ref_hash
     ERROR_VARIABLE error_msg
@@ -44,6 +56,12 @@ if(head_sha STREQUAL "")
   message(FATAL_ERROR "Failed to get the hash for HEAD:\n${error_msg}")
 endif()
 
+<<<<<<< HEAD
+
+execute_process(
+  COMMAND "/usr/bin/git" --git-dir=.git show-ref "v5.0.0"
+  WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+=======
 if("${can_fetch}" STREQUAL "")
   set(can_fetch "NO")
 endif()
@@ -51,6 +69,7 @@ endif()
 execute_process(
   COMMAND "/usr/bin/git" --git-dir=.git show-ref "v5.0.0"
   WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   OUTPUT_VARIABLE show_ref_output
 )
 if(show_ref_output MATCHES "^[a-z0-9]+[ \\t]+refs/remotes/")
@@ -70,7 +89,11 @@ elseif(show_ref_output MATCHES "^[a-z0-9]+[ \\t]+refs/tags/")
   # FIXME: We should provide an option to always fetch for this case
   get_hash_for_ref("v5.0.0" tag_sha error_msg)
   if(tag_sha STREQUAL head_sha)
+<<<<<<< HEAD
+    message(VERBOSE "Already at requested tag: ${tag_sha}")
+=======
     message(VERBOSE "Already at requested tag: v5.0.0")
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     return()
   endif()
 
@@ -110,7 +133,11 @@ else()
     # because it can be confusing for users to see a failed git command.
     # That failure is being handled here, so it isn't an error.
     if(NOT error_msg STREQUAL "")
+<<<<<<< HEAD
+      message(VERBOSE "${error_msg}")
+=======
       message(DEBUG "${error_msg}")
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     endif()
     do_fetch()
     set(checkout_name "v5.0.0")
@@ -139,7 +166,11 @@ if(git_update_strategy MATCHES "^REBASE(_CHECKOUT)?$")
   # branch isn't tracking the one we want to checkout.
   execute_process(
     COMMAND "/usr/bin/git" --git-dir=.git symbolic-ref -q HEAD
+<<<<<<< HEAD
+    WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+=======
     WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     OUTPUT_VARIABLE current_branch
     OUTPUT_STRIP_TRAILING_WHITESPACE
     # Don't test for an error. If this isn't a branch, we get a non-zero error
@@ -155,7 +186,11 @@ if(git_update_strategy MATCHES "^REBASE(_CHECKOUT)?$")
   else()
     execute_process(
       COMMAND "/usr/bin/git" --git-dir=.git for-each-ref "--format=%(upstream:short)" "${current_branch}"
+<<<<<<< HEAD
+      WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+=======
       WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
       OUTPUT_VARIABLE upstream_branch
       OUTPUT_STRIP_TRAILING_WHITESPACE
       COMMAND_ERROR_IS_FATAL ANY  # There is no error if no upstream is set
@@ -178,7 +213,11 @@ endif()
 # Check if stash is needed
 execute_process(
   COMMAND "/usr/bin/git" --git-dir=.git status --porcelain
+<<<<<<< HEAD
+  WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+=======
   WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   RESULT_VARIABLE error_code
   OUTPUT_VARIABLE repo_status
 )
@@ -192,23 +231,37 @@ string(LENGTH "${repo_status}" need_stash)
 if(need_stash)
   execute_process(
     COMMAND "/usr/bin/git" --git-dir=.git stash save --quiet;--include-untracked
+<<<<<<< HEAD
+    WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+    COMMAND_ERROR_IS_FATAL ANY
+=======
     WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
     COMMAND_ERROR_IS_FATAL ANY
     ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   )
 endif()
 
 if(git_update_strategy STREQUAL "CHECKOUT")
   execute_process(
     COMMAND "/usr/bin/git" --git-dir=.git checkout "${checkout_name}"
+<<<<<<< HEAD
+    WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+    COMMAND_ERROR_IS_FATAL ANY
+=======
     WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
     COMMAND_ERROR_IS_FATAL ANY
     ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   )
 else()
   execute_process(
     COMMAND "/usr/bin/git" --git-dir=.git rebase "${checkout_name}"
+<<<<<<< HEAD
+    WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+=======
     WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     RESULT_VARIABLE error_code
     OUTPUT_VARIABLE rebase_output
     ERROR_VARIABLE  rebase_output
@@ -217,8 +270,12 @@ else()
     # Rebase failed, undo the rebase attempt before continuing
     execute_process(
       COMMAND "/usr/bin/git" --git-dir=.git rebase --abort
+<<<<<<< HEAD
+      WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+=======
       WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
       ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     )
 
     if(NOT git_update_strategy STREQUAL "REBASE_CHECKOUT")
@@ -226,11 +283,18 @@ else()
       if(need_stash)
         execute_process(
           COMMAND "/usr/bin/git" --git-dir=.git stash pop --index --quiet
+<<<<<<< HEAD
+          WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+          )
+      endif()
+      message(FATAL_ERROR "\nFailed to rebase in: '/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src'."
+=======
           WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
           ${maybe_show_command}
           )
       endif()
       message(FATAL_ERROR "\nFailed to rebase in: '/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src'."
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
                           "\nOutput from the attempted rebase follows:"
                           "\n${rebase_output}"
                           "\n\nYou will have to resolve the conflicts manually")
@@ -251,16 +315,26 @@ else()
       COMMAND "/usr/bin/git" --git-dir=.git tag -a
               -m "ExternalProject attempting to move from here to ${checkout_name}"
               ${tag_name}
+<<<<<<< HEAD
+      WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+      COMMAND_ERROR_IS_FATAL ANY
+=======
       WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
       COMMAND_ERROR_IS_FATAL ANY
       ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     )
 
     execute_process(
       COMMAND "/usr/bin/git" --git-dir=.git checkout "${checkout_name}"
+<<<<<<< HEAD
+      WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+      COMMAND_ERROR_IS_FATAL ANY
+=======
       WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
       COMMAND_ERROR_IS_FATAL ANY
       ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     )
   endif()
 endif()
@@ -269,14 +343,27 @@ if(need_stash)
   # Put back the stashed changes
   execute_process(
     COMMAND "/usr/bin/git" --git-dir=.git stash pop --index --quiet
+<<<<<<< HEAD
+    WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+    RESULT_VARIABLE error_code
+=======
     WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     )
   if(error_code)
     # Stash pop --index failed: Try again dropping the index
     execute_process(
       COMMAND "/usr/bin/git" --git-dir=.git reset --hard --quiet
+<<<<<<< HEAD
+      WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+    )
+    execute_process(
+      COMMAND "/usr/bin/git" --git-dir=.git stash pop --quiet
+      WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+      RESULT_VARIABLE error_code
+=======
       WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
       ${maybe_show_command}
     )
@@ -285,11 +372,21 @@ if(need_stash)
       WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
       RESULT_VARIABLE error_code
       ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
     )
     if(error_code)
       # Stash pop failed: Restore previous state.
       execute_process(
         COMMAND "/usr/bin/git" --git-dir=.git reset --hard --quiet ${head_sha}
+<<<<<<< HEAD
+        WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+      )
+      execute_process(
+        COMMAND "/usr/bin/git" --git-dir=.git stash pop --index --quiet
+        WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+      )
+      message(FATAL_ERROR "\nFailed to unstash changes in: '/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src'."
+=======
         WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
         ${maybe_show_command}
       )
@@ -299,6 +396,7 @@ if(need_stash)
         ${maybe_show_command}
       )
       message(FATAL_ERROR "\nFailed to unstash changes in: '/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src'."
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
                           "\nYou will have to resolve the conflicts manually")
     endif()
   endif()
@@ -310,8 +408,13 @@ if(init_submodules)
     COMMAND "/usr/bin/git"
             --git-dir=.git 
             submodule update --recursive --init 
+<<<<<<< HEAD
+    WORKING_DIRECTORY "/media/daniel/STORE/1. Silver/_UPWork/Year 3/Semester 2/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
+    COMMAND_ERROR_IS_FATAL ANY
+=======
     WORKING_DIRECTORY "/Users/joshuacilliers/Documents/2024/COS214/Project/COS-214-Project/Code/build/_deps/ftxui-src"
     COMMAND_ERROR_IS_FATAL ANY
     ${maybe_show_command}
+>>>>>>> 5ed6fd9fbbc33feab7df21f4a1a7e48efebf6e20
   )
 endif()
